@@ -1,0 +1,21 @@
+/* Main page background */
+body {
+    background-color: #F8F8F8;
+}
+
+
+/* Navigation bar */
+.monogramImg {
+    width: 20%;
+    height: 200%;
+}
+
+.navBar {
+    padding-top: 1.3em;
+}
+
+.navBar .nav > li > a{
+    color: #303030;
+    font-size: 3em;
+    font-family: "Abel",sans-serif;
+}
