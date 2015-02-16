@@ -5,13 +5,17 @@ body {
 
 
 /* Navigation bar */
-.monogramImg {
-    width: 20%;
-    height: 200%;
+.navBar img {
+    width: 100%;
 }
 
 .navBar {
+    /*display: table;*/
     padding-top: 1.3em;
+}
+
+.navText {
+    padding-top: 1.5em;
 }
 
 .navBar .nav > li > a{
