@@ -23,3 +23,23 @@ body {
     font-size: 3em;
     font-family: "Abel",sans-serif;
 }
+
+/* Research */
+.neuronActivityImg {
+    padding-left: 15px;
+    vertical-align: top;
+    float: right;
+}
+
+.sequencesHarvey2012 img{
+    width: 50%;
+    height: 50%;
+    vertical-align: bottom;
+    float: right;
+}
+
+.researchStatement p {
+    text-align: justify;
+    font-family: "Abel",sans-serif;
+    font-size: 1.3em;
+}
