@@ -4,6 +4,8 @@ body {
 }
 
 
+/* Hovered over */
+
 /* Navigation bar */
 .navBar img {
     width: 100%;
@@ -26,16 +28,8 @@ body {
 
 /* Research */
 .neuronActivityImg {
-    padding-left: 15px;
-    vertical-align: top;
     float: right;
-}
-
-.sequencesHarvey2012 img{
-    width: 50%;
-    height: 50%;
-    vertical-align: bottom;
-    float: right;
+    padding-left: 1em;
 }
 
 .researchStatement p {
@@ -43,3 +37,38 @@ body {
     font-family: "Abel",sans-serif;
     font-size: 1.3em;
 }
+
+.cvLink a {
+    font-size: 2em;
+}
+
+/* Contact */
+.contactHeader h1 {
+    color: #303030;
+    font-family: "Abel", sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+    padding-bottom: 0.15em;
+}
+
+.emailLink img {
+    width: 8.5%;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+}
+
+.socialLinks a {
+    font-family: "Abel", sans-serif;
+    font-size: 2em;
+}
+
+.twitterLink img {
+    width: 7%;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+}
+
+.githubLink img {
+    padding-right: 0.7em;
+}
+
