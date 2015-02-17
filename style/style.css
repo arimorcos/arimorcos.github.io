@@ -3,27 +3,32 @@ body {
     background-color: #F8F8F8;
 }
 
-
-/* Hovered over */
-
 /* Navigation bar */
 .navBar img {
-    width: 100%;
+    height: 125px;
 }
 
 .navBar {
     /*display: table;*/
     padding-top: 1.3em;
+    line-height: 125px;
 }
 
 .navText {
-    padding-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navBar .nav > li > a{
     color: #303030;
     font-size: 3em;
     font-family: "Abel",sans-serif;
+}
+
+.navBar .nav > li > a:hover {
+    font-weight: bolder;
+    text-shadow: -0.1em 0.1em 0.5em darkgray;
+    background-color: inherit;
 }
 
 /* Research */
@@ -40,6 +45,28 @@ body {
 
 .cvLink a {
     font-size: 2em;
+}
+
+/* About */
+.aboutSummary {
+    padding-top: 1em;
+}
+
+.aboutSummaryText {
+    padding-top: 5em;
+}
+.aboutSummary p {
+    color: #303030;
+    font-family: "Abel", sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.personalImg {
+    float: right;
+    box-shadow: -0.6em 0.4em 0.5em darkgray;
+    height: 600px;
+    margin-left: 1em;
 }
 
 /* Contact */
@@ -70,5 +97,12 @@ body {
 
 .githubLink img {
     padding-right: 0.7em;
+}
+
+.socialLinks a:hover {
+    font-weight: bolder;
+    text-shadow: -0.1em 0.1em 0.5em darkgray;
+    background-color: inherit;
+    text-decoration: none;
 }
 
