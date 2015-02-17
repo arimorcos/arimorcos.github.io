@@ -53,7 +53,6 @@ body {
 }
 
 .aboutSummaryText {
-    padding-top: 5em;
 }
 .aboutSummary p {
     color: #303030;
@@ -66,7 +65,8 @@ body {
     float: right;
     box-shadow: -0.6em 0.4em 0.5em darkgray;
     height: 600px;
-    margin-left: 1em;
+    margin-left: 2em;
+    margin-bottom: 1em;
 }
 
 /* Contact */
@@ -79,24 +79,28 @@ body {
 }
 
 .emailLink img {
-    width: 8.5%;
+    width: 100%;
     padding-bottom: 0.5em;
-    padding-right: 1em;
 }
 
 .socialLinks a {
     font-family: "Abel", sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
+    line-height: 2.5em;
+    vertical-align: middle;
+}
+
+.socialLinks row{
+    line-height: 1em;
 }
 
 .twitterLink img {
-    width: 7%;
+    width: 100%;
     padding-bottom: 0.5em;
-    padding-right: 1em;
 }
 
 .githubLink img {
-    padding-right: 0.7em;
+    width: 100%;
 }
 
 .socialLinks a:hover {
@@ -109,7 +113,7 @@ body {
 /* Footer Text */
 .footerText {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
 }
 
 .copyrightText {
