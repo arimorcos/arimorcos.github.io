@@ -106,3 +106,12 @@ body {
     text-decoration: none;
 }
 
+/* Footer Text */
+.footerText {
+    position: fixed;
+    bottom: 0px;
+}
+
+.copyrightText {
+    margin-left: 5em;
+}
