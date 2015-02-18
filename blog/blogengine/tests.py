@@ -38,7 +38,7 @@ class PostTest(TestCase):
 class AdminTest(LiveServerTestCase):
     fixtures = ['users.json']
 
-    def setUp(self):
+    def setUpAdminTest(self):
         self.client = Client()
 
     def test_login(self):
@@ -81,3 +81,93 @@ class AdminTest(LiveServerTestCase):
 
         # Check 'Log in' in response
         self.assertTrue('Log in' in response.content)
+
+    def test_create_post(self):
+        # Log in
+        self.client.login(username='bobsmith', password="password")
+
+        # Check response code
+        response = self.client.get('/admin/blogengine/post/add/', follow=True)
+        self.assertEquals(response.status_code, 200)
+
+        # Create the new post
+        response = self.client.post('/admin/blogengine/post/add/', {
+            'title': 'My first post',
+            'text': 'This is my first post',
+            'pub_date_0': '2013-12-28',
+            'pub_date_1': '22:00:04'
+            },
+            follow=True
+            )
+        self.assertEquals(response.status_code, 200)
+
+        # Check added successfully
+        self.assertTrue('added successfully' in response.content)
+
+        # Check new post now in database
+        all_posts = Post.objects.all()
+        self.assertEquals(len(all_posts), 1)
+
+    def test_edit_post(self):
+        # Create the post
+        post = Post()
+        post.title = 'My first post'
+        post.text = 'This is my first blog post'
+        post.pub_date = timezone.now()
+        post.save()
+
+        # Log in
+        self.client.login(username='bobsmith', password="password")
+
+        all_posts = Post.objects.all()
+        link = '/admin/blogengine/post/' + str(all_posts[0].id) + '/'
+
+        # Edit the post
+        response = self.client.post(link, {
+            'title': 'My second post',
+            'text': 'This is my second blog post',
+            'pub_date_0': '2013-12-28',
+            'pub_date_1': '22:00:04'
+        },
+        follow=True
+        )
+        self.assertEquals(response.status_code, 200)
+
+        # Check changed successfully
+        self.assertTrue('changed successfully' in response.content)
+
+        # Check post amended
+        all_posts = Post.objects.all()
+        self.assertEquals(len(all_posts), 1)
+        only_post = all_posts[0]
+        self.assertEquals(only_post.title, 'My second post')
+        self.assertEquals(only_post.text, 'This is my second blog post')
+
+    def test_delete_post(self):
+        # Create the post
+        post = Post()
+        post.title = 'My first post'
+        post.text = 'This is my first blog post'
+        post.pub_date = timezone.now()
+        post.save()
+
+        # Check new post saved
+        all_posts = Post.objects.all()
+        link = "/admin/blogengine/post/" + str(all_posts[0].id) + "/delete/"
+        self.assertEquals(len(all_posts), 1)
+
+        # Log in
+        self.client.login(username='bobsmith', password="password")
+
+        # Delete the post
+        response = self.client.post(link, {
+            'post': 'yes'
+        }, follow=True)
+        self.assertEquals(response.status_code, 200)
+
+        # Check deleted successfully
+        self.assertTrue('deleted successfully' in response.content)
+
+        # Check post amended
+        all_posts = Post.objects.all()
+        self.assertEquals(len(all_posts), 0)
