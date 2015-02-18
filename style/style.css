@@ -12,6 +12,7 @@ body {
     /*display: table;*/
     padding-top: 1.3em;
     line-height: 125px;
+    background-color: lightgray;
 }
 
 .navText {
@@ -32,6 +33,10 @@ body {
 }
 
 /* Research */
+.researchStatement {
+    padding-top: 1em;
+}
+
 .neuronActivityImg {
     float: right;
     padding-left: 1em;
