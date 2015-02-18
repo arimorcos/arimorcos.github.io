@@ -72,6 +72,11 @@ docs/_build/
 target/
 
 
+### SQL
+env/
+*.pyc
+db.sqlite3
+
 
 ### Jekyll template
 _site/
