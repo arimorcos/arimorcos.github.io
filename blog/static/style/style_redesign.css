@@ -11,10 +11,6 @@ html, body {
     padding: 0;
 }
 
-* {
-    margin: 0;
-}
-
 .page-wrap{
     min-height: 100%;
     margin-bottom: -5em;
@@ -33,6 +29,10 @@ html, body {
 }
 
 /* Name header */
+.nameHeader {
+    text-align: center;
+    padding-left: 2%;
+}
 .nameHeader h1{
     color: #F6F6F6;
     font-size: 5em;
@@ -41,31 +41,28 @@ html, body {
 }
 
 /* Navigation bar */
-.navBar img {
-    height: 125px;
+
+/*.navBar .nav > li > a:hover {*/
+    /*font-weight: bolder;*/
+    /*text-shadow: -0.1em 0.1em 0.5em darkgrey;*/
+    /*background-color: inherit;*/
+/*}*/
+.navIcon {
+    display: inline-flex;
 }
 
 .navBar {
-    /*display: table;*/
-    margin-top: 0;
-    line-height: 125px;
-    background-color: lightgray;
+    display: block;
+    text-align: center;
 }
 
-.navText {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.navBar .nav > li > a{
-    color: #303030;
-    font-size: 3em;
-}
-
-.navBar .nav > li > a:hover {
-    font-weight: bolder;
-    text-shadow: -0.1em 0.1em 0.5em darkgrey;
-    background-color: inherit;
+.navIcon img {
+    border-radius: 50%;
+    padding: 0.5em;
+    border: 0.5em solid #F6F6F6;
+    width: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /* Current Section */
@@ -77,6 +74,9 @@ html, body {
 
 .currSection h2 {
     color: #F6F6F6;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 2%;
 }
 
 *[role="heading"] {
