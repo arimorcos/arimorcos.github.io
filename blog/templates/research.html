@@ -1,0 +1,39 @@
+{% extends "site_template.html" %}
+
+{% block title %}
+    Research
+{% endblock %}
+
+{% block content %}
+
+<!-- Research statement -->
+<div class="container researchStatement">
+    <div class="row">
+        <p>
+            <img src="/static/images/AM144_activity_example.gif" alt="Sample neuronal activity in the PPC"
+                 class="neuronActivityImg">
+            My research focuses on how neuronal circuits in the brain allow us to accumulate evidence for decision-making.
+            We make important decisions every day, and the vast majority of them require us to accumulate multiple,
+            discrete, pieces of evidence on both short and long timescales to arrive at an accurate decision. For example,
+            on a short timescale, when deciding which way to turn while driving, we might combine our position, street
+            signs, information from maps, and landmarks to make a correct turn. On a long timescale, when deciding which
+            political candidate to vote for, we might combine information from the news, debates, and other sources to
+            ultimately arrive at our chosen candidate. The accumulation of evidence for decision-making is an essential
+            component of our daily lives, and yet, the neuronal circuit mechanisms which perform the computations necessary
+            for this complex task remain unknown.
+        </p>
+        <p>
+            To uncover the inner workings of these circuits, we use a recently developed behavioral paradigm to train
+            mice to perform complex decision-making tasks requiring the accumulation of multiple, discrete pieces of
+            evidence while simultaneously using two-photon microscopy to simultaneously image the activity of hundreds
+            of neurons in layers 2/3 of the Posterior Parietal Cortex (PPC). With these datasets in hand, we leverage
+            a variety of data analytics, ranging from the classic techniques of reverse correlation to recent
+            breakthroughs in machine learning to uncover the inner workings of these incredibly complex circuits.
+        </p>
+        <p class="cvLink">
+            <a href="/static/pdfs/Curriculum%20Vitae%20-%20Ari%20Morcos.pdf">Download my CV here</a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

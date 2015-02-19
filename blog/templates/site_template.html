@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    {# Page Title #}
+    <title>{% block title %}{% endblock %}</title>
+
+    {#  Page icons_show.html  #}
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    {#  Style  #}
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/style/style.css"/>
+
+    {#  jQuery  #}
+    <script type="text/javascript" src="/static/javascript/jquery-1.11.2.min.js"></script>
+{#    <script type="text/javascript" src="/static/javascript/main.js"></script>#}
+
+</head>
+<body>
+
+{# Navigation bar #}
+<div class="container">
+    <div class="row topBar">
+        <p></p>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="navBar" role="navigation">
+        <div class="row">
+            <ul class="nav">
+                <li class="text-center col-md-3 col-xs-3 col-sm-3 monogramImg">
+                    <a href="/index">
+                        <img src="/static/images/Personal Logo Brain Small.png" class="monogramImg img-responsive">
+                    </a>
+                </li>
+                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
+                    <a href="/research">Research</a>
+                </li>
+                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
+                    <a href="/about">About</a>
+                </li>
+                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{# Page Content #}
+{% block content %}{% endblock %}
+
+
+{# Footer #}
+<footer class="footerText">
+    <p class="copyrightText">
+        &copy 2015 Ari Morcos All rights reserved
+    </p>
+</footer>
+
+</body>
+</html>

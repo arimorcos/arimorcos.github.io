@@ -39,6 +39,12 @@ def post(name):
     # return the requested post rendered through the post template
     return render_template('post.html', post=post)
 
+# create router for general web pages
+@app.route('/<page>/')
+def webpage(page):
+    return render_template('{}.html'.format(page))
+
+
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "build":
         freezer.freeze()
