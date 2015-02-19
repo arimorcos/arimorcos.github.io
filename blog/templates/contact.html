@@ -1,24 +1,28 @@
-{% extends "site_template.html" %}
+{% extends "site_redesign.html" %}
 
 {% block title %}
+    Contact
+{% endblock %}
+
+{% block sectionName %}
     Contact
 {% endblock %}
 
 {% block content %}
 
     <!--Contact header-->
-    <div class="container contactHeader">
-        <div class="row">
-            <h1 class="col-md-3 col-md-offset-2">Contact</h1>
-        </div>
-    </div>
+    <!--<div class="container contactHeader">-->
+        <!--<div class="row">-->
+            <!--<h1 class="col-md-3 col-md-offset-2">Contact</h1>-->
+        <!--</div>-->
+    <!--</div>-->
 
     <!-- Logos -->
-    <div class="container socialLinks">
+    <div class="container socialLinks contentCard">
         <div class="row emailLink">
             <div class="col-md-offset-2 col-xs-offset-2 col-md-1 col-xs-2">
                 <a href="mailto:arimorcos@gmail.com">
-                    <img src="/static/images/email-icon_small.png" class="img-responsive">
+                    <img src="/static/images//logos/email-icon_small.png" class="img-responsive">
                 </a>
             </div>
             <div class="col-md-1 col-xs-4">
@@ -28,7 +32,7 @@
         <div class="row twitterLink">
             <div class="col-md-offset-2 col-xs-offset-2 col-md-1 col-xs-2">
                 <a href="https://twitter.com/arimorcos">
-                    <img src="/static/images/Twitter_logo_blue.png" class="img-responsive">
+                    <img src="/static/images/logos/Twitter_logo_blue.png" class="img-responsive">
                 </a>
             </div>
             <div class="col-md-1 col-xs-4">
@@ -38,11 +42,21 @@
         <div class="row githubLink">
             <div class="col-md-offset-2 col-xs-offset-2 col-md-1 col-xs-2">
                 <a href="https://github.com/arimorcos/">
-                    <img src="/static/images/GitHub-Mark-64px.png" class="img-responsive">
+                    <img src="/static/images//logos/GitHub-Mark-64px.png" class="img-responsive">
                 </a>
             </div>
             <div class="col-md-1 col-xs-4">
                 <a href="https://github.com/arimorcos/">Github</a>
+            </div>
+        </div>
+        <div class="row linkedInLink">
+            <div class="col-md-offset-2 col-xs-offset-2 col-md-1 col-xs-2">
+                <a href="http://www.linkedin.com/in/arimorcos">
+                    <img src="/static/images//logos/LinkedIn Logo.png" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-md-1 col-xs-4">
+                <a href="http://www.linkedin.com/in/arimorcos">LinkedIn</a>
             </div>
         </div>
     </div>

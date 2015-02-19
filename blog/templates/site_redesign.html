@@ -38,46 +38,53 @@
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="navBar" role="navigation">
-        <div class="row">
-            <ul class="nav">
-                <li class="text-center col-md-offset-1 col-md-1 col-xs-3 col-sm-3 monogramImg">
-                    <a href="/index">
-                        <img src="/static/images/Personal Logo Brain Small.png" class="monogramImg img-responsive">
-                    </a>
-                </li>
-                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
-                    <a href="/research/">Research</a>
-                </li>
-                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
-                    <a href="#">Blog</a>
-                </li>
-                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
-                    <a href="/about/">About</a>
-                </li>
-                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
-                    <a href="/contact/">Contact</a>
-                </li>
-            </ul>
+<div class="page-wrap">
+
+    <div class="container nameHeader">
+        <h1 class="text-center">Ari Morcos</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="navBar" role="navigation">
+            <div class="row">
+                <ul class="nav">
+                    <li class="text-center col-md-offset-1 col-md-1 col-xs-3 col-sm-3 monogramImg">
+                        <a href="/index">
+                            <img src="/static/images/Personal Logo Brain Small.png" class="monogramImg img-responsive">
+                        </a>
+                    </li>
+                    <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
+                        <a href="/research/">Research</a>
+                    </li>
+                    <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
+                        <a href="/about/">About</a>
+                    </li>
+                    <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
+                        <a href="/contact/">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="container-fluid">
-    <div class="row currSection">
-        <h2 class="text-center" role="heading">Research</h2>
+    <div class="container-fluid">
+        <div class="row currSection">
+            <h2 class="text-center" role="heading"> {% block sectionName %}{% endblock %} </h2>
+        </div>
     </div>
+
+    {# Page Content #}
+    {% block content %}{% endblock %}
+
 </div>
-
-{# Page Content #}
-{% block content %}{% endblock %}
-
 
 {# Footer #}
-<footer class="footerText">
-    <p class="copyrightText">
-        &copy 2015 Ari Morcos All rights reserved
+<footer class="siteFooter">
+    <p class="copyrightText text-center">
+        &copy; 2015 Ari Morcos All rights reserved
     </p>
 </footer>
 

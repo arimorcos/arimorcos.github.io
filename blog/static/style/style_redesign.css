@@ -1,11 +1,43 @@
 /* Main page background */
-body {
-    background-color: #404040;
+html, body {
+    background-color: #2B2B2B;
     font-family: "Abel", sans-serif;
+    color: #2B2B2B;
+    height: 100%;
 }
 
+/* General classes */
 .container-fluid{
     padding: 0;
+}
+
+* {
+    margin: 0;
+}
+
+.page-wrap{
+    min-height: 100%;
+    margin-bottom: -5em;
+}
+
+.page-wrap:after{
+    content: "";
+    display: block;
+}
+
+.contentCard {
+    background-color: #F6F6F6;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Name header */
+.nameHeader h1{
+    color: #F6F6F6;
+    font-size: 5em;
+    font-weight: bolder;
+    text-shadow: .03em .03em #505050;
 }
 
 /* Navigation bar */
@@ -15,7 +47,7 @@ body {
 
 .navBar {
     /*display: table;*/
-    margin-top: 5em;
+    margin-top: 0;
     line-height: 125px;
     background-color: lightgray;
 }
@@ -32,34 +64,29 @@ body {
 
 .navBar .nav > li > a:hover {
     font-weight: bolder;
-    text-shadow: -0.1em 0.1em 0.5em darkgray;
+    text-shadow: -0.1em 0.1em 0.5em darkgrey;
     background-color: inherit;
 }
 
 /* Current Section */
 .currSection {
-    background-color: black;
+    background-color: #DE1B1B;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 .currSection h2 {
-    color: white;
+    color: #F6F6F6;
 }
 
 *[role="heading"] {
     font-weight: bold;
-    text-shadow: 0.025em 0.025em darkgrey;
+    text-shadow: 0.05em 0.05em #505050;
     color: #303030;
     font-size: 3em;
 }
 
 /* Research */
-.researchStatement {
-    background-color: #ECEAE0;
-    padding: 1em;
-}
-
 .neuronActivityImg {
     float: right;
     padding-left: 1em;
@@ -95,6 +122,7 @@ body {
     height: 600px;
     margin-left: 2em;
     margin-bottom: 1em;
+    margin-right: 1em;
 }
 
 /* Contact */
@@ -137,11 +165,17 @@ body {
 }
 
 /* Footer Text */
-.footerText {
-    position: fixed;
-    bottom: 0;
+.siteFooter, .page-wrap:after{
+    height: 5em;
+}
+
+.siteFooter {
+    color: #F6F6F6;
+    background-color: #DE1B1B;
+    padding-top: 2em;
 }
 
 .copyrightText {
-    margin-left: 5em;
+    margin-top: auto;
+    margin-bottom: auto;
 }
