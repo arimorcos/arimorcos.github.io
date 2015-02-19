@@ -1,6 +1,7 @@
 /* Main page background */
 body {
-    background-color: #F8F8F8;
+    background-color: #404040;
+    font-family: "Abel", sans-serif;
 }
 
 .container-fluid{
@@ -14,7 +15,7 @@ body {
 
 .navBar {
     /*display: table;*/
-    margin-top: 1.3em;
+    margin-top: 5em;
     line-height: 125px;
     background-color: lightgray;
 }
@@ -27,7 +28,6 @@ body {
 .navBar .nav > li > a{
     color: #303030;
     font-size: 3em;
-    font-family: "Abel",sans-serif;
 }
 
 .navBar .nav > li > a:hover {
@@ -36,20 +36,40 @@ body {
     background-color: inherit;
 }
 
+/* Current Section */
+.currSection {
+    background-color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.currSection h2 {
+    color: white;
+}
+
+*[role="heading"] {
+    font-weight: bold;
+    text-shadow: 0.025em 0.025em darkgrey;
+    color: #303030;
+    font-size: 3em;
+}
+
 /* Research */
 .researchStatement {
-    padding-top: 1em;
+    background-color: #ECEAE0;
+    padding: 1em;
 }
 
 .neuronActivityImg {
     float: right;
     padding-left: 1em;
+    padding-right: 1em;
 }
 
 .researchStatement p {
     text-align: justify;
-    font-family: "Abel",sans-serif;
     font-size: 1.3em;
+    padding-left: 1em;
 }
 
 .cvLink a {
@@ -65,7 +85,6 @@ body {
 }
 .aboutSummary p {
     color: #303030;
-    font-family: "Abel", sans-serif;
     font-size: 1.3em;
     text-align: justify;
 }
@@ -81,7 +100,6 @@ body {
 /* Contact */
 .contactHeader h1 {
     color: #303030;
-    font-family: "Abel", sans-serif;
     font-weight: bold;
     font-size: 5em;
     padding-bottom: 0.15em;
