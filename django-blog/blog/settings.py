@@ -48,9 +48,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'blog.urls'
+ROOT_URLCONF = 'django-sdjfalf.urls'
 
-WSGI_APPLICATION = 'blog.wsgi.application'
+WSGI_APPLICATION = 'django-sdjfalf.wsgi.application'
 
 
 # Database
@@ -79,5 +79,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
 STATIC_URL = '/static/'
+
+# Template directory
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
