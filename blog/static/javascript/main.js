@@ -1,10 +1,32 @@
 var main = function () {
 
-    //Load in navigation bar
-    $("div.navBar#main").load("html/navBar.html");
+    $('.showTooltip').tooltipster( {
+        animation: 'fall',
+        offsetX: 0,
+        offsetY: 2,
+        touchDevices: false,
+        onlyOne: true,
+        theme: 'tooltipster-default'
+        });
 
-    //Load in footer bar
-    $("div.footerBar#main").load("html/footerBar.html");
+
+    changeAnimation();
+
+};
+
+function changeAnimation() {
+
+    // Get current url
+    var url = window.location.href;
+
+    // Process which class
+    if (url.search('about') > 0) {
+        $('.navAbout > a > img').toggleClass("animateAboutMe");
+    } else if (url.search('contact') > 0) {
+        $('.navBlog > a > img').toggleClass("animateBlog");
+    } else if (url.search('research') > 0 ) {
+        $('.navResearch > a > img').toggleClass("animateResearch");
+    }
 
 }
 

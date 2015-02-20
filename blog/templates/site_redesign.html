@@ -28,12 +28,17 @@
 
     {#  Style  #}
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abel">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+{#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">#}
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="/static/style/style_redesign.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/animations.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/tooltipster.css" />
 
     {#  jQuery  #}
     <script type="text/javascript" src="/static/javascript/jquery-1.11.2.min.js"></script>
-    {#    <script type="text/javascript" src="/static/javascript/main.js"></script>#}
+{#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>#}
+    <script type="text/javascript" src="/static/javascript/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="/static/javascript/main.js"></script>
 
 </head>
 <body>
@@ -50,17 +55,23 @@
                 <ul class="navIcon">
                     <li class="navAbout">
                         <a href="/about/">
-                            <img src="/static/images/navigation-icons/about_me.png" class="img-responsive">
+                            <img src="/static/images/navigation-icons/about_me.png"
+                                 class="img-responsive showTooltip"
+                                 title="About Me">
                         </a>
                     </li>
                     <li class="navResearch">
                         <a href="/research/">
-                            <img src="/static/images/navigation-icons/brain_icon.png" class="img-responsive">
+                            <img src="/static/images/navigation-icons/brain_icon.png"
+                                 class="img-responsive showTooltip"
+                                 title="Research">
                         </a>
                     </li>
                     <li class="navBlog">
                         <a href="/contact/">
-                            <img src="/static/images/navigation-icons/pencil.png" class="img-responsive">
+                            <img src="/static/images/navigation-icons/pencil.png"
+                                 class="img-responsive showTooltip"
+                                    title="Contact">
                         </a>
                     </li>
                 </ul>
