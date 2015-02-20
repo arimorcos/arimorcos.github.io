@@ -52,7 +52,7 @@ html, body {
 
 .navIcon a {
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 5px solid #F6F6F6;
     padding: 10px;
     width: 80px;
@@ -60,6 +60,8 @@ html, body {
     margin-left: 1em;
     margin-right: 1em;
     overflow: hidden;
+    mask: url(#maskCircle);
+    /*-webkit-clip-path: circle(50% at center);*/
 }
 
 .navIcon img {

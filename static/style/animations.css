@@ -424,3 +424,64 @@
     -webkit-animation: pencil-icon 2s 1s infinite;
     animation: pencil-icon 2s 1s infinite;
 }
+
+/* Contact */
+
+@-webkit-keyframes fly_plane{
+    0% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -webkit-transform: translate(60px, -60px);
+        transform: translate(60px, -60px);
+    }
+    51% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes fly_plane{
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(60px, -60px);
+    }
+    51% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.navContact > a:hover > img{
+    -webkit-animation: fly_plane 2s 150ms;
+    -moz-animation: fly_plane 2s 150ms;
+    -o-animation: fly_plane 2s 150ms;
+    -ms-animation: fly_plane 2s 150ms;
+    animation: fly_plane 2s 150ms;
+}
+
+.navContact > a:hover {
+    background-color: #DE1B1B;
+}
+
+
+.animateContactColor {
+    background-color: #DE1B1B;
+}
+
+.animateContact {
+    -moz-animation: fly_plane 2s 1s infinite;
+    -o-animation: fly_plane 2s 1s infinite;
+    -ms-animation: fly_plane 2s 1s infinite;
+    -webkit-animation: fly_plane 2s 1s infinite;
+    animation: fly_plane 2s 1s infinite;
+}
