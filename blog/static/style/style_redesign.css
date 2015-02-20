@@ -41,12 +41,43 @@ html, body {
 }
 
 /* Navigation bar */
-
 /*.navBar .nav > li > a:hover {*/
     /*font-weight: bolder;*/
     /*text-shadow: -0.1em 0.1em 0.5em darkgrey;*/
     /*background-color: inherit;*/
 /*}*/
+
+@-webkit-keyframes flipY {
+	from {
+		-webkit-transform: rotateY(0deg)
+	}
+	to {
+		-webkit-transform: rotateY(180deg);
+	}
+}
+
+@keyframes flipY {
+	from {
+		transform: rotateY(0deg)
+	}
+	to {
+		transform: rotateY(180deg);
+	}
+}
+
+.navAbout > a > img:hover{
+    border-color: red;
+
+    -webkit-animation: flipY 2s;
+	animation: flipY 2s;
+    /*animation-name: flipY;*/
+    /*animation-duration: 2s;*/
+    /*animation-delay: 500ms;*/
+    /*animation-iteration-count: 1;*/
+    /*animation-timing-function: linear;*/
+    /*animation-direction: alternate;*/
+}
+
 .navIcon {
     display: inline-flex;
 }
