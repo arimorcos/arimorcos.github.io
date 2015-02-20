@@ -76,8 +76,8 @@ html, body {
 
 .currSection h2 {
     color: #F6F6F6;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 1px;
+    margin-bottom: 1px;
     padding-left: 2%;
 }
 
