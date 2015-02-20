@@ -23,10 +23,8 @@ html, body {
 
 .contentCard {
     background-color: #F6F6F6;
-    padding: 1em;
-    margin-top: 1em;
+    padding: 2em;
     margin-bottom: 1em;
-    padding-left: 2em;
 }
 
 /* Name header */
@@ -42,28 +40,30 @@ html, body {
 }
 
 /* Navigation bar */
-/*.navBar .nav > li > a:hover {*/
-    /*font-weight: bolder;*/
-    /*text-shadow: -0.1em 0.1em 0.5em darkgrey;*/
-    /*background-color: inherit;*/
-/*}*/
 
 .navIcon {
     display: inline-flex;
 }
 
 .navBar {
-    display: block;
+    /*display: block;*/
     text-align: center;
 }
 
-.navIcon img {
+.navIcon a {
+    display: inline-block;
     border-radius: 50%;
-    padding: 0.5em;
-    border: 0.5em solid #F6F6F6;
-    width: 5em;
+    border: 5px solid #F6F6F6;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
     margin-left: 1em;
     margin-right: 1em;
+    overflow: hidden;
+}
+
+.navIcon img {
+    display: block;
 }
 
 /* Current Section */
@@ -109,8 +109,6 @@ html, body {
     padding-top: 1em;
 }
 
-.aboutSummaryText {
-}
 .aboutSummary p {
     color: #303030;
     font-size: 1.3em;
