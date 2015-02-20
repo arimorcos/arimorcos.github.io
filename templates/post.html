@@ -1,3 +1,17 @@
+{% extends "site_redesign.html" %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block sectionName %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+
 {{ post.html|safe }}
 {{ post.title }}
 {{ post.date }}
+
+{% endblock %}

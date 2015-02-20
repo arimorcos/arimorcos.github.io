@@ -7,6 +7,6 @@ You can have:
 * Lists
 * More Lists
 
-> And block quotes
+> And block quotes 
 
     And event highlighted code if you indent :)
