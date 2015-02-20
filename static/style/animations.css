@@ -221,11 +221,11 @@
 }
 
 .animateResearch {
-    -moz-animation: wiggle 3s 1s infinite;
-    -o-animation: wiggle 3s 1s infinite;
-    -ms-animation: wiggle 3s 1s infinite;
-    -webkit-animation: wiggle 3s 1s infinite;
-    animation: wiggle 3s 1s infinite;
+    -moz-animation: wiggle 3s 1s infinite alternate;
+    -o-animation: wiggle 3s 1s infinite alternate;
+    -ms-animation: wiggle 3s 1s infinite alternate;
+    -webkit-animation: wiggle 3s 1s infinite alternate;
+    animation: wiggle 3s 1s infinite alternate;
 }
 
 .animateResearchColor {
