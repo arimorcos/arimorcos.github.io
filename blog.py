@@ -40,28 +40,27 @@ def post(name):
     # return the requested post rendered through the post template
     return render_template('post.html', post=post)
 
-# create router for general web pages
-@app.route('/<page>/')
-def webpage(page):
-    return render_template('{}.html'.format(page))
+# Routing
+@app.route('/about/')
+def about():
+    return render_template('about.html')
+
+@app.route('/research/')
+def research():
+    return render_template('research.html')
+
+@app.route('/contact/')
+def contact():
+    return render_template('contact.html')
 
 # route index to about page
 @app.route('/')
 def index():
-    return redirect('/about/')
-
-# Add url generator
-@freezer.register_generator
-def pages():
-    path = app.root_path
-    pages = next(os.walk(path))[2]
-    for page in pages:
-        yield {"page": page}
-
+    return render_template('about.html')
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "build":
         freezer.freeze()
     else:
         # run on the local host so that anyone can see it
-        app.run(host='0.0.0.0', debug=True)
+        app.run(host='0.0.0.0', debug=False)
