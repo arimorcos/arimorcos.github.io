@@ -1,0 +1,86 @@
+@import 'animate-me.less';
+@lesscompiler: 'js';
+
+@highlightColor: #DE1B1B;
+
+
+// About Me
+//noinspection LessUnresolvedMixin
+.animate-me(flipY; 1s 150ms; '.navAbout > a:hover > img';
+  '50%, 100%'; '%stransform: rotateY(180deg)';
+  0%; '%stransform: rotateY(0deg)';
+);
+
+.navAbout > a:hover {
+    background-color: @highlightColor;
+}
+
+.animateAboutMe {
+    -moz-animation: flipY 2s 1s infinite;
+    -o-animation: flipY 2s 1s infinite;
+    -ms-animation: flipY 2s 1s infinite;
+    -webkit-animation: flipY 2s 1s infinite;
+    animation: flipY 2s 1s infinite;
+}
+
+.animateAboutMeColor {
+    background-color: @highlightColor;
+}
+
+// Research
+
+//noinspection LessUnresolvedMixin
+.animate-me(wiggle; 3s 150ms; '.navResearch > a:hover > img';
+  '0%, 60%, 100%'; '%stransform: rotate(0deg)';
+  15%; '%stransform: rotate(-30deg)';
+  45%; '%stransform: rotate(30deg)';
+);
+
+.navResearch > a:hover {
+    background-color: @highlightColor;
+}
+
+.animateResearch {
+    -moz-animation: wiggle 3s 1s infinite;
+    -o-animation: wiggle 3s 1s infinite;
+    -ms-animation: wiggle 3s 1s infinite;
+    -webkit-animation: wiggle 3s 1s infinite;
+    animation: wiggle 3s 1s infinite;
+}
+
+.animateResearchColor {
+    background-color: @highlightColor;
+}
+
+// Pencil
+
+//noinspection LessUnresolvedMixin
+.animate-me(pencil-write; 2s 150ms; '.navBlog > a:hover > img';
+  0%; '%stransform: rotate(-5deg) translate(0px,0px)';
+  8%; '%stransform: rotate(5deg) translate(2px,0px)';
+  16%; '%stransform: rotate(-5deg) translate(4px,0px)';
+  24%; '%stransform: rotate(5deg) translate(6px,0px)';
+  32%; '%stransform: rotate(-5deg) translate(8px,0px)';
+  40%; '%stransform: rotate(5deg) translate(10px,0px)';
+  48%; '%stransform: rotate(-5deg) translate(12px,0px)';
+  56%; '%stransform: rotate(5deg) translate(14px,0px)';
+  64%; '%stransform: rotate(5deg) translate(16px,0px)';
+);
+
+.navBlog > a:hover {
+    background-color: @highlightColor;
+}
+
+.animateBlog {
+    -moz-animation: pencil-write 2s 1s infinite;
+    -o-animation: pencil-write 2s 1s infinite;
+    -ms-animation: pencil-write 2s 1s infinite;
+    -webkit-animation: pencil-write 2s 1s infinite;
+    animation: pencil-write 2s 1s infinite;
+}
+
+.animateBlogColor {
+    background-color: @highlightColor;
+}
+
+

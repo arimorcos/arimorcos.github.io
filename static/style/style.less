@@ -1,101 +1,125 @@
+// Colors
+@mainBackground: #2B2B2B;
+@lightBackground: #F6F6F6;
+@highlightColor: #DE1B1B;
+
 /* Main page background */
-html,
-body {
-  background-color: #2b2b2b;
+html, body {
+  background-color: @mainBackground;
   font-family: "Abel", sans-serif;
-  color: #2b2b2b;
+  color: @mainBackground;
   height: 100%;
 }
+
 /* General classes */
-.container-fluid {
+.container-fluid{
   padding: 0;
 }
-.page-wrap {
+
+.page-wrap{
   min-height: 100%;
   margin-bottom: -5em;
 }
-.page-wrap:after {
+
+
+.page-wrap:after{
   content: "";
   display: block;
 }
+
 .contentCard {
-  background-color: #f6f6f6;
+  background-color: @lightBackground;
   padding: 2em;
   margin-bottom: 1em;
 }
+
 /* Name header */
 .nameHeader {
   text-align: center;
   padding-left: 2%;
 }
-.nameHeader h1 {
-  color: #f6f6f6;
+.nameHeader h1{
+  color: @lightBackground;
   font-size: 5em;
   font-weight: bolder;
   text-shadow: .03em .03em #505050;
 }
+
 /* Navigation bar */
+
 .navIcon {
   display: inline-flex;
+
+  a {
+    display: inline-block;
+    border-radius: 20%;
+    border: 5px solid @lightBackground;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    margin-left: 1em;
+    margin-right: 1em;
+    overflow: hidden;
+  }
+
+  img {
+    display: block;
+  }
 }
-.navIcon a {
-  display: inline-block;
-  border-radius: 20%;
-  border: 5px solid #f6f6f6;
-  padding: 10px;
-  width: 80px;
-  height: 80px;
-  margin-left: 1em;
-  margin-right: 1em;
-  overflow: hidden;
-}
-.navIcon img {
-  display: block;
-}
+
 .navBar {
   /*display: block;*/
   text-align: center;
 }
+
 /* Current Section */
 .currSection {
-  background-color: #de1b1b;
+  background-color: @highlightColor;
   margin-bottom: 1em;
+
+  h2 {
+    color: @lightBackground;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-left: 2%;
+  }
 }
-.currSection h2 {
-  color: #f6f6f6;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  padding-left: 2%;
-}
+
 *[role="heading"] {
   font-weight: bold;
   text-shadow: 0.05em 0.05em #505050;
   color: #303030;
   font-size: 3em;
 }
+
 /* Research */
 .neuronActivityImg {
   float: right;
   padding-left: 1em;
   padding-right: 1em;
 }
+
 .researchStatement p {
   text-align: justify;
   font-size: 1.3em;
   padding-left: 1em;
 }
+
 .cvLink a {
   font-size: 2em;
 }
+
 /* About */
 .aboutSummary {
   padding-top: 1em;
+
+  p {
+    color: #303030;
+    font-size: 1.3em;
+    text-align: justify;
+  }
 }
-.aboutSummary p {
-  color: #303030;
-  font-size: 1.3em;
-  text-align: justify;
-}
+
 .personalImg {
   float: right;
   box-shadow: -0.6em 0.4em 0.5em darkgray;
@@ -104,6 +128,7 @@ body {
   margin-bottom: 1em;
   margin-right: 1em;
 }
+
 /* Contact */
 .contactHeader h1 {
   color: #303030;
@@ -111,39 +136,49 @@ body {
   font-size: 5em;
   padding-bottom: 0.15em;
 }
+
 .emailLink img {
   width: 100%;
   padding-bottom: 0.5em;
 }
+
 .socialLinks a {
   font-family: "Abel", sans-serif;
   font-size: 2.5em;
   line-height: 2.5em;
   vertical-align: middle;
 }
+
+.socialLinks {
+}
+
 .twitterLink img {
   width: 100%;
   padding-bottom: 0.5em;
 }
+
 .githubLink img {
   width: 100%;
 }
+
 .socialLinks a:hover {
   font-weight: bolder;
   text-shadow: -0.1em 0.1em 0.5em darkgray;
   background-color: inherit;
   text-decoration: none;
 }
+
 /* Footer Text */
-.siteFooter,
-.page-wrap:after {
+.siteFooter, .page-wrap:after{
   height: 5em;
 }
+
 .siteFooter {
-  color: #f6f6f6;
-  background-color: #de1b1b;
+  color: @lightBackground;
+  background-color: @highlightColor;
   padding-top: 2em;
 }
+
 .copyrightText {
   margin-top: auto;
   margin-bottom: auto;
