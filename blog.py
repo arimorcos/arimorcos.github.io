@@ -9,7 +9,7 @@ DEBUG = False
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'content'
-POST_DIR = 'posts'
+POST_DIR = 'blogPosts'
 
 app = Flask(__name__)  # initialize app
 flatpages = FlatPages(app)  # initialize flatpages

@@ -20,7 +20,7 @@
 {% block content %}
 
     <div class="container contentCard">
-        {{ post.body | markdown }}
+        {{ post.html | safe }}
     </div>
 
     <div class=" container contentCard" id="disqus_thread"></div>

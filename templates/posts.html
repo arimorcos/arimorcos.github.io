@@ -16,7 +16,7 @@
 
     {% for post in posts %}
         <div class="container contentCard">
-            <a href="{{ url_for('blogPost', name=post.path.replace('posts/', '')) }}">
+            <a href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}">
                 {{ post.title }}
             </a>
             <small>{{ post.date }}</small>
