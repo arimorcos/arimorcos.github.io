@@ -28,7 +28,7 @@
 
     {#  Style  #}
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abel">
-{#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">#}
+    {#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">#}
     <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="/static/style/style.css"/>
     <link rel="stylesheet" type="text/css" href="/static/style/animations.css"/>
@@ -36,7 +36,7 @@
 
     {#  jQuery  #}
     <script type="text/javascript" src="/static/javascript/jquery-1.11.2.min.js"></script>
-{#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>#}
+    {#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>#}
     <script type="text/javascript" src="/static/javascript/jquery.tooltipster.min.js"></script>
     <script type="text/javascript" src="/static/javascript/main.js"></script>
 
@@ -46,39 +46,37 @@
 <div class="page-wrap">
 
     <div class="nameHeader">
-        <h1>Ari Morcos</h1>
+        <h1>{% block headerName %}{% endblock %}</h1>
     </div>
 
     <div class="container-fluid">
-        <div class="navBar" role="navigation">
-            <div class="row">
-                <ul class="navIcon">
-                    <li class="navAbout">
-                        <a href="/about/" class="showTooltip" title="About Me">
-                            <img src="/static/images/navigation-icons/about_me.png"
-                                 class="img-responsive">
-                        </a>
-                    </li>
-                    <li class="navResearch">
-                        <a href="/research/" class="showTooltip" title="Research">
-                            <img src="/static/images/navigation-icons/brain_icon.png"
-                                 class="img-responsive">
-                        </a>
-                    </li>
-                    <li class="navBlog">
-                        <a href="/posts/" class="showTooltip" title="Blog">
-                            <img src="/static/images/navigation-icons/pencil.png"
-                                 class="img-responsive">
-                        </a>
-                    </li>
-                    <li class="navContact">
-                        <a href="/contact/" class="showTooltip" title="Contact">
-                            <img src="/static/images/navigation-icons/paper_airplane.png"
-                                 class="img-responsive">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="row navBar">
+            <ul class="navIcon">
+                <li class="navAbout">
+                    <a href="/about/" class="showTooltip" title="About Me">
+                        <img src="/static/images/navigation-icons/about_me.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+                <li class="navResearch">
+                    <a href="/research/" class="showTooltip" title="Research">
+                        <img src="/static/images/navigation-icons/brain_icon.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+                <li class="navBlog">
+                    <a href="/posts/" class="showTooltip" title="Blog">
+                        <img src="/static/images/navigation-icons/pencil.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+                <li class="navContact">
+                    <a href="/contact/" class="showTooltip" title="Contact">
+                        <img src="/static/images/navigation-icons/paper_airplane.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 

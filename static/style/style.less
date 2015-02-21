@@ -13,8 +13,11 @@ html, body {
 }
 
 /* General classes */
-.container-fluid{
-  padding: 0;
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .page-wrap{
@@ -50,7 +53,9 @@ html, body {
 /* Navigation bar */
 
 .navIcon {
-  display: inline-flex;
+  li {
+    display: inline-block;
+  }
 
   a {
     display: inline-block;
@@ -63,14 +68,10 @@ html, body {
     margin-right: 1em;
     overflow: hidden;
   }
-
-  img {
-    display: block;
-  }
 }
 
 .navBar {
-  /*display: block;*/
+//  display: inline-block;
   text-align: center;
 }
 
@@ -192,3 +193,4 @@ html, body {
   margin-top: auto;
   margin-bottom: auto;
 }
+

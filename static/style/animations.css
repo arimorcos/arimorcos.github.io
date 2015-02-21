@@ -37,7 +37,10 @@ body {
 }
 /* General classes */
 .container-fluid {
-  padding: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .page-wrap {
   min-height: 100%;
@@ -64,8 +67,8 @@ body {
   text-shadow: 0.03em 0.03em #505050;
 }
 /* Navigation bar */
-.navIcon {
-  display: inline-flex;
+.navIcon li {
+  display: inline-block;
 }
 .navIcon a {
   display: inline-block;
@@ -78,11 +81,7 @@ body {
   margin-right: 1em;
   overflow: hidden;
 }
-.navIcon img {
-  display: block;
-}
 .navBar {
-  /*display: block;*/
   text-align: center;
 }
 /* Current Section */
