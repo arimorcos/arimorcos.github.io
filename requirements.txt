@@ -9,3 +9,4 @@ Pygments==1.6
 Werkzeug==0.9.3
 itsdangerous==0.22
 wsgiref==0.1.2
+gunicorn==18.0
