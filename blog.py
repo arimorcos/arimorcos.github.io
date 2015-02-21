@@ -1,7 +1,7 @@
 __author__ = 'arimorcos'
 
 import sys, os
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, redirect
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
 
@@ -45,6 +45,11 @@ def post(name):
 def webpage(page):
     return render_template('{}.html'.format(page))
 
+# route index to about page
+@app.route('/')
+def index():
+    return redirect('/about/')
+
 # Add url generator
 @freezer.register_generator
 def pages():
@@ -54,9 +59,9 @@ def pages():
         yield {"page": page}
 
 
-# if __name__ == "__main__":
-    # if len(sys.argv) > 1 and sys.argv[1] == "build":
-    #     freezer.freeze()
-    # else:
-    #     # run on the local host so that anyone can see it
-    #     app.run(host='0.0.0.0', debug=True)
+if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == "build":
+        freezer.freeze()
+    else:
+        # run on the local host so that anyone can see it
+        app.run(host='0.0.0.0', debug=True)
