@@ -17,8 +17,8 @@ freezer = Freezer(app)  # initialize frozen
 app.config.from_object(__name__)  # grab configuration file
 
 # create route for posts, which will grab all posts in the posts folder and render them in a template
-@app.route("/posts/")  # route to <webpage>/posts/
-def posts():
+@app.route("/blog/")  # route to <webpage>/posts/
+def blog():
     # get list of all pages which come from the post directory within the flatpages root
     postlist = [p for p in flatpages if p.path.startswith(POST_DIR)]
     # sort each post according to the date
@@ -28,8 +28,8 @@ def posts():
 
 
 # create a route for an individual post
-@app.route('/posts/<name>/')  # route with the post name
-def post(name):
+@app.route('/blog/<name>/')  # route with the post name
+def blogPost(name):
     # generate the path with the first argument inside the first brackets, and the second argument inside the second
     # set of brackets
     path = '{}/{}'.format(POST_DIR, name)

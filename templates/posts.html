@@ -1,24 +1,26 @@
 {% extends "site_redesign.html" %}
 
 {% block headerName %}
-    Fairly One Dimensional
+    Fairly One-Dimensional
 {% endblock %}
 
 {% block title %}
-    Posts
+    Fairly One-Dimensional
 {% endblock %}
 
 {% block sectionName %}
-    Posts
+    Fairly One-Dimensional
 {% endblock %}
 
 {% block content %}
 
-{% for post in posts %}
-    <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
-        {{ post.title }}
-    </a>
-    <small>{{ post.date }}</small>
-{% endfor %}
+    {% for post in posts %}
+        <div class="container contentCard">
+            <a href="{{ url_for('blogPost', name=post.path.replace('posts/', '')) }}">
+                {{ post.title }}
+            </a>
+            <small>{{ post.date }}</small>
+        </div>
+    {% endfor %}
 
 {% endblock %}
