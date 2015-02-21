@@ -1,1 +1,1 @@
-web: python blog.py --log-file -
+web: gunicorn blog:app --log-file -

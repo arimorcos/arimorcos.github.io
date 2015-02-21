@@ -5,7 +5,7 @@ from flask import Flask, render_template, url_for
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
 
-DEBUG = True
+DEBUG = False
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'content'
@@ -54,9 +54,9 @@ def pages():
         yield {"page": page}
 
 
-if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "build":
-        freezer.freeze()
-    else:
-        # run on the local host so that anyone can see it
-        app.run(host='0.0.0.0', debug=True)
+# if __name__ == "__main__":
+    # if len(sys.argv) > 1 and sys.argv[1] == "build":
+    #     freezer.freeze()
+    # else:
+    #     # run on the local host so that anyone can see it
+    #     app.run(host='0.0.0.0', debug=True)

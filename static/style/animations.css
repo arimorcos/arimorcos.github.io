@@ -332,3 +332,80 @@
 .animateBlogColor {
   background-color: #de1b1b;
 }
+@-webkit-keyframes fly_plane {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  50% {
+    -webkit-transform: translate(60px, -60px);
+    transform: translate(60px, -60px);
+  }
+  51% {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+}
+
+@-moz-keyframes fly-plane {
+ 0%, 51% {
+    -moz-transform: translate(0px,0px); /* {
+  /**/
+}
+  50% {
+    -moz-transform: translate(60px,-60px); /* {
+  /**/
+}
+} 
+@-webkit-keyframes fly-plane {
+ 0%, 51% {
+    -webkit-transform: translate(0px,0px); /* {
+  /**/
+}
+  50% {
+    -webkit-transform: translate(60px,-60px); /* {
+  /**/
+}
+} 
+@-o-keyframes fly-plane {
+ 0%, 51% {
+    -o-transform: translate(0px,0px); /* {
+  /**/
+}
+  50% {
+    -o-transform: translate(60px,-60px); /* {
+  /**/
+}
+} 
+@keyframes fly-plane {
+ 0%, 51% {
+    transform: translate(0px,0px); /* {
+  /**/
+}
+  50% {
+    transform: translate(60px,-60px); /* {
+  /**/
+}
+} .navContact > a:hover > img {
+  -moz-animation: fly-plane 2s 150ms;
+  -webkit-animation: fly-plane 2s 150ms;
+  -o-animation: fly-plane 2s 150ms;
+  animation: fly-plane 2s 150ms;
+}
+.navContact > a:hover {
+  background-color: #de1b1b;
+}
+.animateContact {
+  -moz-animation: fly-plane 2s 1s infinite;
+  -o-animation: fly-plane 2s 1s infinite;
+  -ms-animation: fly-plane 2s 1s infinite;
+  -webkit-animation: fly-plane 2s 1s infinite;
+  animation: fly-plane 2s 1s infinite;
+}
+.animateContactColor {
+  background-color: #de1b1b;
+}
