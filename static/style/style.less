@@ -2,6 +2,7 @@
 @mainBackground: #2B2B2B;
 @lightBackground: #F6F6F6;
 @highlightColor: #DE1B1B;
+@lightShadow: #505050;
 
 /* Main page background */
 html, body {
@@ -37,12 +38,13 @@ html, body {
 .nameHeader {
   text-align: center;
   padding-left: 2%;
-}
-.nameHeader h1{
-  color: @lightBackground;
-  font-size: 5em;
-  font-weight: bolder;
-  text-shadow: .03em .03em #505050;
+
+  h1{
+    color: @lightBackground;
+    font-size: 5em;
+    font-weight: bolder;
+    text-shadow: .03em .03em @lightShadow;
+  }
 }
 
 /* Navigation bar */
@@ -80,8 +82,15 @@ html, body {
   h2 {
     color: @lightBackground;
     margin-top: 1px;
-    margin-bottom: 1px;
     padding-left: 2%;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    color: @lightBackground;
+    padding-left: 2%;
+    margin-bottom: 4px;
+    margin-top: 0;
   }
 }
 

@@ -9,7 +9,6 @@ var main = function () {
         theme: 'tooltipster-default'
         });
 
-
     changeAnimation();
 
 };
@@ -21,17 +20,17 @@ function changeAnimation() {
 
     // Process which class
     if (url.search('about') > 0) {
-        $('.navAbout > a').toggleClass("animateAboutMeColor");
-        $('.navAbout > a > img').toggleClass("animateAboutMe");
+        $(".navAbout > a").toggleClass("animateAboutMeColor");
+        $(".navAbout > a > img").toggleClass("animateAboutMe");
     } else if (url.search('posts') > 0) {
-        $('.navBlog > a').toggleClass("animateBlogColor");
-        $('.navBlog > a > img').toggleClass("animateBlog");
+        $(".navBlog > a").toggleClass("animateBlogColor");
+        $(".navBlog > a > img").toggleClass("animateBlog");
     } else if (url.search('research') > 0 ) {
-        $('.navResearch > a').toggleClass("animateResearchColor");
-        $('.navResearch > a > img').toggleClass("animateResearch");
+        $(".navResearch > a").toggleClass("animateResearchColor");
+        $(".navResearch > a > img").toggleClass("animateResearch");
     } else if (url.search('contact') > 0 ) {
-        $('.navContact > a').toggleClass("animateContactColor");
-        $('.navContact > a > img').toggleClass("animateContact");
+        $(".navContact > a").toggleClass("animateContactColor");
+        $(".navContact > a > img").toggleClass("animateContact");
     }
 
 }

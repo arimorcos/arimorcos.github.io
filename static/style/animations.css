@@ -61,7 +61,7 @@ body {
   color: #f6f6f6;
   font-size: 5em;
   font-weight: bolder;
-  text-shadow: .03em .03em #505050;
+  text-shadow: 0.03em 0.03em #505050;
 }
 /* Navigation bar */
 .navIcon {
@@ -93,8 +93,14 @@ body {
 .currSection h2 {
   color: #f6f6f6;
   margin-top: 1px;
-  margin-bottom: 1px;
   padding-left: 2%;
+  margin-bottom: 0;
+}
+.currSection h3 {
+  color: #f6f6f6;
+  padding-left: 2%;
+  margin-bottom: 4px;
+  margin-top: 0;
 }
 *[role="heading"] {
   font-weight: bold;
