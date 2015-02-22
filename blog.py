@@ -40,6 +40,14 @@ def blog(pagenum):
     return post_view
 
 
+@app.route('/blog/all/')
+def blog_all():
+
+    postlist = get_post_list()
+    post_view = render_postlist(postlist)
+    return post_view
+
+
 # create a route for tags, which will grab all posts which match a tag and render
 @app.route("/blog/tag/<tagname>/page<pagenum>/")
 def blog_tag(tagname, pagenum):
@@ -52,41 +60,49 @@ def blog_tag(tagname, pagenum):
     return post_view
 
 
-def render_postlist(postlist, pagenum, tagname=False):
+def render_postlist(postlist, pagenum=False, tagname=False):
 
     # Number of posts per page
     nPostsPerPage = 2
-
-    # slice to the correct post subset
-    startPost = (int(pagenum)-1) * nPostsPerPage
-    stopPost = max(len(postlist) - 1, int(pagenum) * nPostsPerPage)
-    postSubset = postlist[startPost:stopPost]
 
     # get recent posts
     nRecent = 10
     allPosts = get_post_list()
     recentposts = allPosts[:nRecent-1]
 
-    # generate booleans for whether there should be a new or old posts button
-    if len(postlist) > nPostsPerPage and nPostsPerPage*int(pagenum) <= len(postlist):
-        shouldOlder = True
-        if tagname:
-            olderpage = '/blog/tag/' + tagname + '/page' + str(int(pagenum)+1)
-        else:
-            olderpage = '/blog/page' + str(int(pagenum)+1)
-    else:
-        shouldOlder = False
-        olderpage = False
+    if pagenum:
 
-    if int(pagenum) > 1:
-        shouldNewer = True
-        if tagname:
-            newerpage = '/blog/tag/' + tagname + '/page' + str(int(pagenum)-1)
+        # slice to the correct post subset
+        startPost = (int(pagenum)-1) * nPostsPerPage
+        stopPost = max(len(postlist) - 1, int(pagenum) * nPostsPerPage)
+        postSubset = postlist[startPost:stopPost]
+
+        # generate booleans for whether there should be a new or old posts button
+        if len(postlist) > nPostsPerPage and nPostsPerPage*int(pagenum) <= len(postlist):
+            shouldOlder = True
+            if tagname:
+                olderpage = '/blog/tag/' + tagname + '/page' + str(int(pagenum)+1)
+            else:
+                olderpage = '/blog/page' + str(int(pagenum)+1)
         else:
-            newerpage = '/blog/page' + str(int(pagenum)-1)
+            shouldOlder = False
+            olderpage = False
+
+        if int(pagenum) > 1:
+            shouldNewer = True
+            if tagname:
+                newerpage = '/blog/tag/' + tagname + '/page' + str(int(pagenum)-1)
+            else:
+                newerpage = '/blog/page' + str(int(pagenum)-1)
+        else:
+            shouldNewer = False
+            newerpage = False
     else:
         shouldNewer = False
+        shouldOlder = False
         newerpage = False
+        olderpage = False
+        postSubset = postlist
 
     tagFreq = get_tag_frequency(True)
     for tag in tagFreq:
