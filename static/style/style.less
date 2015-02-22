@@ -12,12 +12,16 @@ html, body {
   height: 100%;
 }
 
+.shadow() {
+  text-shadow: 0.03em 0.03em @lightShadow;
+}
+
 /* General classes */
 .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .page-wrap{
@@ -46,7 +50,7 @@ html, body {
     color: @lightBackground;
     font-size: 5em;
     font-weight: bolder;
-    text-shadow: .03em .03em @lightShadow;
+    .shadow;
   }
 }
 
@@ -71,7 +75,7 @@ html, body {
 }
 
 .navBar {
-//  display: inline-block;
+  //  display: inline-block;
   text-align: center;
 }
 
@@ -97,7 +101,7 @@ html, body {
 
 *[role="heading"] {
   font-weight: bold;
-  text-shadow: 0.05em 0.05em #505050;
+  .shadow;
   color: #303030;
   font-size: 3em;
 }
@@ -120,11 +124,53 @@ html, body {
 }
 
 // Blog
+
 .blogSummaryBottom {
   a {
     font-size: 1.5em;
   }
 
+  a:hover {
+    .shadow;
+    text-decoration: none;
+    color: steelblue;
+  }
+}
+
+.postTitle {
+  font-size: 3em;
+  font-weight: bold;
+
+  a:hover {
+    .shadow;
+    text-decoration: none;
+    color: steelblue;
+  }
+}
+
+.postDate {
+  font-size: 1.5em;
+}
+.postNav {
+  margin-bottom: 1em;
+
+  a {
+    font-size: 2em;
+  }
+
+  a:hover {
+    .shadow;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.olderPosts {
+  float: left;
+}
+
+.newerPosts {
+  float: right;
 }
 
 /* About */
@@ -201,4 +247,5 @@ html, body {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 

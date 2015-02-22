@@ -25,7 +25,7 @@
                         {{ post.title }}
                     </a>
                 </h2>
-                <h4 class="text-center">
+                <h4 class=" postDate text-center">
                     {{ post.date }}
                 </h4>
 
@@ -59,6 +59,22 @@
         </div>
 
     {% endfor %}
+
+    {#  Page navigation  #}
+    {% if shouldOlder or shouldNewer %}
+        <div class="postNav container">
+            {% if shouldOlder %}
+                <a href="/blog/page{{ olderpage }}" class="olderPosts">
+                    &#8701; Older Posts
+                </a>
+            {% endif %}
+            {% if shouldNewer %}
+                <a href="/blog/page{{ newerpage }}" class="newerPosts">
+                    &#8702; Newer Posts
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
 
     {#  Add disqus comment counts  #}
     <script type="text/javascript">

@@ -74,7 +74,7 @@ body {
 }
 *[role="heading"] {
   font-weight: bold;
-  text-shadow: 0.05em 0.05em #505050;
+  text-shadow: 0.03em 0.03em #505050;
   color: #303030;
   font-size: 3em;
 }
@@ -94,6 +94,40 @@ body {
 }
 .blogSummaryBottom a {
   font-size: 1.5em;
+}
+.blogSummaryBottom a:hover {
+  text-shadow: 0.03em 0.03em #505050;
+  text-decoration: none;
+  color: steelblue;
+}
+.postTitle {
+  font-size: 3em;
+  font-weight: bold;
+}
+.postTitle a:hover {
+  text-shadow: 0.03em 0.03em #505050;
+  text-decoration: none;
+  color: steelblue;
+}
+.postDate {
+  font-size: 1.5em;
+}
+.postNav {
+  margin-bottom: 1em;
+}
+.postNav a {
+  font-size: 2em;
+}
+.postNav a:hover {
+  text-shadow: 0.03em 0.03em #505050;
+  text-decoration: none;
+  color: white;
+}
+.olderPosts {
+  float: left;
+}
+.newerPosts {
+  float: right;
 }
 /* About */
 .aboutSummary {

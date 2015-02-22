@@ -44,11 +44,16 @@ function hideBelowFold() {
     // Get current url
     var url = window.location.href;
 
-    if (url.slice(url.length-1,url.length) == '/') {
-        url = url.slice(0,url.length-1);
-    }
+    //if (url.slice(url.length-1,url.length) == '/') {
+    //    url = url.slice(0,url.length-1);
+    //}
+    //
+    //if ('/blog' == url.slice(url.length-5,url.length) ) {
+    //    $('div#breakStart').nextUntil('div#breakEnd').css('display', 'none');
+    //    $('div#breakStart').nextUntil('div#breakEnd').hide();
+    //}
 
-    if ('/blog' == url.slice(url.length-5,url.length) ) {
+    if (url.search('blog') > 0 && url.search('page') > 0) {
         $('div#breakStart').nextUntil('div#breakEnd').css('display', 'none');
         $('div#breakStart').nextUntil('div#breakEnd').hide();
     }
