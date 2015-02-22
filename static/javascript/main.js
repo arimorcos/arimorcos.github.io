@@ -49,6 +49,7 @@ function hideBelowFold() {
     }
 
     if ('/blog' == url.slice(url.length-5,url.length) ) {
+        $('div#breakStart').nextUntil('div#breakEnd').css('display', 'none');
         $('div#breakStart').nextUntil('div#breakEnd').hide();
     }
 }
