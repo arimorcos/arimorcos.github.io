@@ -22,7 +22,7 @@ def blog():
     # get list of all pages which come from the post directory within the flatpages root
     postlist = [p for p in flatpages if p.path.startswith(POST_DIR)]
     # sort each post according to the date
-    postlist.sort(key=lambda item:item['date'], reverse=False)
+    postlist.sort(key=lambda item:item['date'], reverse=True)
     # return the posts rendered by the posts.html template
     return render_template('posts.html', posts=postlist)
 

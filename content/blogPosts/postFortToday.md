@@ -1,5 +1,6 @@
 title: Should it be YYYY-MM-DD or YYYY-DD-MM? My Thoughts
 date: 2013-08-27
+tags: a, b
 
 American-style dates, I know, I know. Here you can write markdown code, including *italics* and **bold**
 

@@ -1,5 +1,6 @@
 title: Markdown Guide
 date: 2014-01-01
+tags: b, c
 
 Markdown: Syntax
 ================

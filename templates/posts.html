@@ -1,7 +1,7 @@
 {% extends "site_redesign.html" %}
 
 {% block headerName %}
-    Fairly One-Dimensional
+    Ari Morcos
 {% endblock %}
 
 {% block title %}
@@ -15,12 +15,43 @@
 {% block content %}
 
     {% for post in posts %}
+
         <div class="container contentCard">
-            <a href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}">
-                {{ post.title }}
-            </a>
-            <small>{{ post.date }}</small>
+            <div class="recentPost">
+
+                {#  Title and date  #}
+                <h2 class="postTitle text-center">
+                    <a href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}">
+                        {{ post.title }}
+                    </a>
+                </h2>
+                <h4 class="text-center">
+                    {{ post.date }}
+                </h4>
+
+                {#  Blurb from blog post  #}
+
+                {#  Add comment count  #}
+                <a class="disqus-comment-count" data-disqus-identifier="{{ post.title }}"
+                        href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}#disqus_thread"></a>
+            </div>
         </div>
+
     {% endfor %}
+
+    {#  Add disqus comment counts  #}
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'arimorcos'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+
 
 {% endblock %}
