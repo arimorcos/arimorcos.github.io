@@ -50,13 +50,25 @@
                                 &#8702; Continue Reading
                             </a>
 
-                            <div class="shareButtons text-right">
+                            <div class="bottomTagList col-md-3">
+                                <p>
+                                    Tagged with:
+                                    {% for tag in post.tags.replace(' ','').split(',') %}
+                                        <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
+                                    {% endfor %}
+                                </p>
+                            </div>
+
+                            <div class="shareButtons
+                                        text-right">
                                 <span class='st_facebook_large' displayText='Facebook'></span>
                                 <span class='st_googleplus_large' displayText='Google +'></span>
                                 <span class='st_twitter_large' displayText='Tweet'></span>
                                 <span class='st_reddit_large' displayText='Reddit'></span>
                                 <span class='st_email_large' displayText='Email'></span>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
