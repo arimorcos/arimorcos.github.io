@@ -30,10 +30,13 @@
                 </h4>
 
                 {#  Blurb from blog post  #}
+                <p>
+                    {{ post.html | safe }}
+                </p>
 
                 {#  Add comment count  #}
                 <a class="disqus-comment-count" data-disqus-identifier="{{ post.title }}"
-                        href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}#disqus_thread"></a>
+                   href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}#disqus_thread"></a>
             </div>
         </div>
 

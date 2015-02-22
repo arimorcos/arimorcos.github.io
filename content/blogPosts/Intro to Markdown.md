@@ -1,6 +1,6 @@
 title: Welcome to MarkdownPad2
 date: 2013-10-04
-tags: c, d
+tags: c ,d
 
 
 ## Welcome to MarkdownPad 2 ##
@@ -19,6 +19,8 @@ Give them a try:
 - Headings 1, 2, 3 (`Ctrl+1`, `Ctrl+2`, `Ctrl+3`)
 - Lists (`Ctrl+U` and `Ctrl+Shift+O`)
 
+<div id="breakStart"></div>
+
 ### See your changes instantly with LivePreview ###
 
 Don't guess if your [hyperlink syntax](http://markdownpad.com) is correct; LivePreview will show you exactly what your document looks like every time you press a key.
@@ -32,3 +34,5 @@ Fonts, color schemes, layouts and stylesheets are all 100% customizable so you c
 MarkdownPad supports multiple Markdown processing engines, including standard Markdown, Markdown Extra (with Table support) and GitHub Flavored Markdown.
 
 With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there's no limit to what you can do with MarkdownPad.
+
+<div id="breakEnd"></div>

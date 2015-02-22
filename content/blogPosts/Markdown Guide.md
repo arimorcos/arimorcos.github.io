@@ -5,15 +5,6 @@ tags: b, c
 Markdown: Syntax
 ================
 
-<ul id="ProjectSubmenu">
-    <li><a href="/projects/markdown/" title="Markdown Project Page">Main</a></li>
-    <li><a href="/projects/markdown/basics" title="Markdown Basics">Basics</a></li>
-    <li><a class="selected" title="Markdown Syntax Documentation">Syntax</a></li>
-    <li><a href="/projects/markdown/license" title="Pricing and License Information">License</a></li>
-    <li><a href="/projects/markdown/dingus" title="Online Markdown Web Form">Dingus</a></li>
-</ul>
-
-
 *   [Overview](#overview)
     *   [Philosophy](#philosophy)
     *   [Inline HTML](#html)
@@ -68,9 +59,9 @@ characters, which punctuation characters have been carefully chosen so
 as to look like what they mean. E.g., asterisks around a word actually
 look like \*emphasis\*. Markdown lists look like, well, lists. Even
 blockquotes look like quoted passages of text, assuming you've ever
-used email.
+used email. 
 
-
+<div id="breakStart"></div>
 
 <h3 id="html">Inline HTML</h3>
 
@@ -898,3 +889,5 @@ Markdown provides backslash escapes for the following characters:
 	-	minus sign (hyphen)
     .   dot
     !   exclamation mark
+    
+<div id="breakEnd"></div>

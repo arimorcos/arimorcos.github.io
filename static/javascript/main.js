@@ -7,9 +7,11 @@ var main = function () {
         touchDevices: false,
         onlyOne: true,
         theme: 'tooltipster-default'
-        });
+    });
 
     changeAnimation();
+
+    hideBelowFold();
 
 };
 
@@ -36,6 +38,19 @@ function changeAnimation() {
         $(".navAbout > a > img").toggleClass("animateAboutMe");
     }
 
+}
+
+function hideBelowFold() {
+    // Get current url
+    var url = window.location.href;
+
+    if (url.slice(url.length-1,url.length) == '/') {
+        url = url.slice(0,url.length-1);
+    }
+
+    if ('/blog' == url.slice(url.length-5,url.length) ) {
+        $('div#breakStart').nextUntil('div#breakEnd').hide();
+    }
 }
 
 $(document).ready(main);
