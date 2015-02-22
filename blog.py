@@ -23,12 +23,9 @@ def blog(blogPage):
     # Number of posts per page
     nPostsPerPage = 4
 
-    # get list of all pages which come from the post directory within the flatpages root
-    postlist = [p for p in flatpages if p.path.startswith(POST_DIR)]
+    postlist = getPostList()
 
-    # sort each post according to the date
-    postlist.sort(key=lambda item:item['date'], reverse=True)
-
+    raise
     # slice to the correct post subset
     startPost = (int(blogPage)-1) * nPostsPerPage
     stopPost = int(blogPage) * nPostsPerPage
@@ -48,6 +45,34 @@ def blog(blogPage):
     # return the posts rendered by the posts.html template
     return render_template('posts.html', posts=postSubset, olderpage=str(int(blogPage)+1),
                            newerpage=str(int(blogPage)-1), shouldNewer=shouldNewer, shouldOlder=shouldOlder)
+
+def getPostList():
+    # get list of all pages which come from the post directory within the flatpages root
+    postlist = [p for p in flatpages if p.path.startswith(POST_DIR)]
+
+    # sort each post according to the date
+    postlist.sort(key=lambda item:item['date'], reverse=True)
+
+    #return
+    return postlist
+
+
+def findTagMatch(tagName):
+    """
+    Finds posts which match a given tag, case-insensitive
+    :param tagName: string containing tag to match
+    :return: postlist
+    """
+
+    postlist = getPostList()
+
+    matchTag = []
+    for p in postlist:
+        if any(tag.lower() == tagName for tag in p['tags']):
+            matchTag.append(p)
+
+    return matchTag
+
 
 
 # create a route for an individual post
