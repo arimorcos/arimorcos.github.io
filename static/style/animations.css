@@ -143,6 +143,9 @@ body {
 .rightBlogBrowser {
   margin-right: -1em;
 }
+.bottomTagList {
+  font-size: 1.5em;
+}
 .tagCloud a.tag1 {
   font-size: 1em;
   font-weight: 100;

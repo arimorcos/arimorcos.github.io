@@ -67,12 +67,12 @@
             {% if shouldOlder or shouldNewer %}
                 <div class="postNav">
                     {% if shouldOlder %}
-                        <a href="/blog/page{{ olderpage }}" class="olderPosts">
+                        <a href={{ olderpage }} class="olderPosts">
                             &#8701; Older Posts
                         </a>
                     {% endif %}
                     {% if shouldNewer %}
-                        <a href="/blog/page{{ newerpage }}" class="newerPosts">
+                        <a href={{ newerpage }} class="newerPosts">
                             &#8702; Newer Posts
                         </a>
                     {% endif %}

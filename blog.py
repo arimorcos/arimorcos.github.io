@@ -47,12 +47,12 @@ def blog_tag(tagname, pagenum):
     # find posts which match tag
     postlist = find_tag_match(tagname)
 
-    post_view = render_postlist(postlist, pagenum)
+    post_view = render_postlist(postlist, pagenum, tagname)
 
     return post_view
 
 
-def render_postlist(postlist, pagenum):
+def render_postlist(postlist, pagenum, tagname=False):
 
     # Number of posts per page
     nPostsPerPage = 2
@@ -70,21 +70,31 @@ def render_postlist(postlist, pagenum):
     # generate booleans for whether there should be a new or old posts button
     if len(postlist) > nPostsPerPage and nPostsPerPage*int(pagenum) <= len(postlist):
         shouldOlder = True
+        if tagname:
+            olderpage = '/blog/tag/' + tagname + '/page' + str(int(pagenum)+1)
+        else:
+            olderpage = '/blog/page' + str(int(pagenum)+1)
     else:
         shouldOlder = False
+        olderpage = False
 
     if int(pagenum) > 1:
         shouldNewer = True
+        if tagname:
+            newerpage = '/blog/tag/' + tagname + '/page' + str(int(pagenum)-1)
+        else:
+            newerpage = '/blog/page' + str(int(pagenum)-1)
     else:
         shouldNewer = False
+        newerpage = False
 
     tagFreq = get_tag_frequency(True)
     for tag in tagFreq:
         tagFreq[tag] = 'tag{0}'.format(tagFreq[tag])
 
     # return the posts rendered by the posts.html template
-    return render_template('posts.html', posts=postSubset, olderpage=str(int(pagenum)+1),
-                           newerpage=str(int(pagenum)-1), shouldNewer=shouldNewer, shouldOlder=shouldOlder,
+    return render_template('posts.html', posts=postSubset, olderpage=olderpage,
+                           newerpage=newerpage, shouldNewer=shouldNewer, shouldOlder=shouldOlder,
                            recentPosts=recentposts, tagfreq=tagFreq)
 
 
