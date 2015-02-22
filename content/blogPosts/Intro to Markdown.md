@@ -1,6 +1,6 @@
 title: Welcome to MarkdownPad2
 date: 2013-10-04
-tags: c ,d
+tags: c , d, all
 
 
 ## Welcome to MarkdownPad 2 ##
