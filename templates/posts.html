@@ -34,9 +34,27 @@
                     {{ post.html | safe }}
                 </p>
 
-                {#  Add comment count  #}
-                <a class="disqus-comment-count" data-disqus-identifier="{{ post.title }}"
-                   href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}#disqus_thread"></a>
+                <div class="row blogSummaryBottom">
+                    {#  Add comment count  #}
+                    <a class="disqus-comment-count col-md-2"
+                       data-disqus-identifier="{{ post.title }}"
+                       href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}#disqus_thread">
+                    </a>
+
+                    {#  Add continue reading  #}
+                    <a class="continueReading col-md-3"
+                       href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}">
+                        &#8702; Continue Reading
+                    </a>
+
+                    <div class="shareButtons text-right">
+                        <span class='st_facebook_large' displayText='Facebook'></span>
+                        <span class='st_googleplus_large' displayText='Google +'></span>
+                        <span class='st_twitter_large' displayText='Tweet'></span>
+                        <span class='st_reddit_large' displayText='Reddit'></span>
+                        <span class='st_email_large' displayText='Email'></span>
+                    </div>
+                </div>
             </div>
         </div>
 

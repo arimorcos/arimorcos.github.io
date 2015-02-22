@@ -121,6 +121,9 @@ body {
 .cvLink a {
   font-size: 2em;
 }
+.blogSummaryBottom a {
+  font-size: 1.5em;
+}
 /* About */
 .aboutSummary {
   padding-top: 1em;
