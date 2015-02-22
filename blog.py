@@ -62,6 +62,11 @@ def render_postlist(postlist, pagenum):
     stopPost = max(len(postlist) - 1, int(pagenum) * nPostsPerPage)
     postSubset = postlist[startPost:stopPost]
 
+    # get recent posts
+    nRecent = 10
+    allPosts = get_post_list()
+    recentposts = allPosts[:nRecent-1]
+
     # generate booleans for whether there should be a new or old posts button
     if len(postlist) > nPostsPerPage and nPostsPerPage*int(pagenum) <= len(postlist):
         shouldOlder = True
@@ -73,9 +78,14 @@ def render_postlist(postlist, pagenum):
     else:
         shouldNewer = False
 
+    tagFreq = get_tag_frequency(True)
+    for tag in tagFreq:
+        tagFreq[tag] = 'tag{0}'.format(tagFreq[tag])
+
     # return the posts rendered by the posts.html template
     return render_template('posts.html', posts=postSubset, olderpage=str(int(pagenum)+1),
-                           newerpage=str(int(pagenum)-1), shouldNewer=shouldNewer, shouldOlder=shouldOlder)
+                           newerpage=str(int(pagenum)-1), shouldNewer=shouldNewer, shouldOlder=shouldOlder,
+                           recentPosts=recentposts, tagfreq=tagFreq)
 
 
 def get_post_list():
@@ -105,6 +115,30 @@ def find_tag_match(tagName):
             matchTag.append(p)
 
     return matchTag
+
+
+def get_tag_frequency(normalizeRange):
+    """
+    Finds the frequency of each tag
+    normalizeRange: normalize the range of the tag frequencies
+    :return: dict with key as tag and value being number of occurences
+    """
+    postlist = get_post_list()
+
+    tagList = {}
+    for p in postlist:
+        for tag in p['tags'].replace(' ', '').split(','):
+            if tag in tagList:
+                tagList[tag] += 1
+            else:
+                tagList[tag] = 1
+
+    if normalizeRange:
+        maxFreq = float(max(list(tagList[i] for i in tagList)))
+        for tag in tagList:
+            tagList[tag] = int(round(maxFreq*(float(tagList[tag])/maxFreq)))
+
+    return tagList
 
 
 # create a route for an individual post

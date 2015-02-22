@@ -6,6 +6,12 @@ body {
   color: #2b2b2b;
   height: 100%;
 }
+.completeLeft {
+  padding-left: 0;
+}
+.completeRight {
+  padding-right: 0;
+}
 /* General classes */
 .container-fluid {
   padding-right: 15px;
@@ -16,6 +22,11 @@ body {
 .page-wrap {
   min-height: 100%;
   margin-bottom: -5em;
+}
+.line {
+  background-color: #f6f6f6;
+  height: 5px;
+  margin-bottom: 1em;
 }
 .page-wrap:after {
   content: "";
@@ -99,6 +110,52 @@ body {
   text-shadow: 0.03em 0.03em #505050;
   text-decoration: none;
   color: steelblue;
+}
+.rightBlogBrowser {
+  margin-right: -1em;
+}
+.tagCloud a.tag1 {
+  font-size: 1em;
+  font-weight: 100;
+}
+.tagCloud a.tag2 {
+  font-size: 1.3em;
+  font-weight: 200;
+}
+.tagCloud a.tag3 {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+.tagCloud a.tag4 {
+  font-size: 1.9em;
+  font-weight: 400;
+}
+.tagCloud a.tag5 {
+  font-size: 2.2em;
+  font-weight: 500;
+}
+.tagCloud a.tag6 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.tagCloud a.tag7 {
+  font-size: 2.8em;
+  font-weight: 700;
+}
+.tagCloud a.tag8 {
+  font-size: 3.1em;
+  font-weight: 800;
+}
+.tagCloud a.tag9 {
+  font-size: 3.4em;
+  font-weight: 900;
+}
+.tagCloud .tag10 {
+  font-size: 3.7em;
+  font-weight: 1000;
+}
+.recentPostText {
+  font-size: 1.2em;
 }
 .postTitle {
   font-size: 3em;

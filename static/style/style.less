@@ -12,6 +12,14 @@ html, body {
   height: 100%;
 }
 
+.completeLeft {
+  padding-left: 0;
+}
+
+.completeRight {
+  padding-right: 0;
+}
+
 .shadow() {
   text-shadow: 0.03em 0.03em @lightShadow;
 }
@@ -29,6 +37,12 @@ html, body {
   margin-bottom: -5em;
 }
 
+
+.line {
+  background-color: @lightBackground;
+  height: 5px;
+  margin-bottom: 1em;
+}
 
 .page-wrap:after{
   content: "";
@@ -135,6 +149,62 @@ html, body {
     text-decoration: none;
     color: steelblue;
   }
+}
+
+.rightBlogBrowser {
+  margin-right: -1em;
+}
+
+@baseTagSize: 1em;
+@tagSizeInc: 0.3em;
+@baseFontWeight: 100;
+@fontWeightInc: 100;
+
+.tagCloud {
+  a.tag1 {
+    font-size: @baseTagSize;
+    font-weight: @baseFontWeight;
+  }
+  a.tag2 {
+    font-size: @baseTagSize + @tagSizeInc;
+    font-weight: @baseFontWeight + @fontWeightInc;
+  }
+  a.tag3 {
+    font-size: @baseTagSize + 2*@tagSizeInc;
+    font-weight: @baseFontWeight + 2*@fontWeightInc;
+  }
+  a.tag4 {
+    font-size: @baseTagSize + 3*@tagSizeInc;
+    font-weight: @baseFontWeight + 3*@fontWeightInc;
+  }
+  a.tag5 {
+    font-size: @baseTagSize + 4*@tagSizeInc;
+    font-weight: @baseFontWeight + 4*@fontWeightInc;
+  }
+  a.tag6 {
+    font-size: @baseTagSize + 5*@tagSizeInc;
+    font-weight: @baseFontWeight + 5*@fontWeightInc;
+  }
+  a.tag7 {
+    font-size: @baseTagSize + 6*@tagSizeInc;
+    font-weight: @baseFontWeight + 6*@fontWeightInc;
+  }
+  a.tag8 {
+    font-size: @baseTagSize + 7*@tagSizeInc;
+    font-weight: @baseFontWeight + 7*@fontWeightInc;
+  }
+  a.tag9 {
+    font-size: @baseTagSize + 8*@tagSizeInc;
+    font-weight: @baseFontWeight + 8*@fontWeightInc;
+  }
+  .tag10 {
+    font-size: @baseTagSize + 9*@tagSizeInc;
+    font-weight: @baseFontWeight + 9*@fontWeightInc;
+  }
+}
+
+.recentPostText {
+  font-size: 1.2em;
 }
 
 .postTitle {

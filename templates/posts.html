@@ -14,67 +14,100 @@
 
 {% block content %}
 
-    {% for post in posts %}
+    <div class="container">
+        <div class="row completeLeft col-md-9">
 
-        <div class="container contentCard">
-            <div class="recentPost">
+            {% for post in posts %}
 
-                {#  Title and date  #}
-                <h2 class="postTitle text-center">
-                    <a href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}">
-                        {{ post.title }}
-                    </a>
-                </h2>
-                <h4 class=" postDate text-center">
-                    {{ post.date }}
-                </h4>
+                <div class="contentCard">
+                    <div class="recentPost">
 
-                {#  Blurb from blog post  #}
-                <p>
-                    {{ post.html | safe }}
-                </p>
+                        {#  Title and date  #}
+                        <h2 class="postTitle text-center">
+                            <a href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}">
+                                {{ post.title }}
+                            </a>
+                        </h2>
+                        <h4 class=" postDate text-center">
+                            {{ post.date }}
+                        </h4>
 
-                <div class="row blogSummaryBottom">
-                    {#  Add comment count  #}
-                    <a class="disqus-comment-count col-md-2"
-                       data-disqus-identifier="{{ post.title }}"
-                       href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}#disqus_thread">
-                    </a>
+                        {#  Blurb from blog post  #}
+                        <p>
+                            {{ post.html | safe }}
+                        </p>
 
-                    {#  Add continue reading  #}
-                    <a class="continueReading col-md-3"
-                       href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}">
-                        &#8702; Continue Reading
-                    </a>
+                        <div class="row blogSummaryBottom">
+                            {#  Add comment count  #}
+                            <a class="disqus-comment-count col-md-2"
+                               data-disqus-identifier="{{ post.title }}"
+                               href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}#disqus_thread">
+                            </a>
 
-                    <div class="shareButtons text-right">
-                        <span class='st_facebook_large' displayText='Facebook'></span>
-                        <span class='st_googleplus_large' displayText='Google +'></span>
-                        <span class='st_twitter_large' displayText='Tweet'></span>
-                        <span class='st_reddit_large' displayText='Reddit'></span>
-                        <span class='st_email_large' displayText='Email'></span>
+                            {#  Add continue reading  #}
+                            <a class="continueReading col-md-3"
+                               href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}">
+                                &#8702; Continue Reading
+                            </a>
+
+                            <div class="shareButtons text-right">
+                                <span class='st_facebook_large' displayText='Facebook'></span>
+                                <span class='st_googleplus_large' displayText='Google +'></span>
+                                <span class='st_twitter_large' displayText='Tweet'></span>
+                                <span class='st_reddit_large' displayText='Reddit'></span>
+                                <span class='st_email_large' displayText='Email'></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+            {% endfor %}
+
+            {#  Page navigation  #}
+            {% if shouldOlder or shouldNewer %}
+                <div class="postNav">
+                    {% if shouldOlder %}
+                        <a href="/blog/page{{ olderpage }}" class="olderPosts">
+                            &#8701; Older Posts
+                        </a>
+                    {% endif %}
+                    {% if shouldNewer %}
+                        <a href="/blog/page{{ newerpage }}" class="newerPosts">
+                            &#8702; Newer Posts
+                        </a>
+                    {% endif %}
+                </div>
+            {% endif %}
+
         </div>
 
-    {% endfor %}
+        {#  Recent Posts  #}
+        <div class="contentCard rightBlogBrowser pull-right
+                    col-md-3">
 
-    {#  Page navigation  #}
-    {% if shouldOlder or shouldNewer %}
-        <div class="postNav container">
-            {% if shouldOlder %}
-                <a href="/blog/page{{ olderpage }}" class="olderPosts">
-                    &#8701; Older Posts
-                </a>
-            {% endif %}
-            {% if shouldNewer %}
-                <a href="/blog/page{{ newerpage }}" class="newerPosts">
-                    &#8702; Newer Posts
-                </a>
-            {% endif %}
+            <h2 class="text-center">Recent Posts</h2>
+            {% for recpost in recentPosts %}
+                <p>
+                    <a href="{{ url_for('blogPost', name=recpost.path.replace('blogPosts/', '')) }}"
+                       class="recentPostText">
+                        {{ recpost.title }}
+                    </a>
+                </p>
+            {% endfor %}
         </div>
-    {% endif %}
+
+        {#  Tags  #}
+        <div class="contentCard rightBlogBrowser pull-right tagCloud
+                    col-md-3 ">
+            <h2 class="text-center">Common Topics</h2>
+            {% for tag in tagfreq %}
+                <a href="/blog/tag/{{ tag }}"
+                   class="{{ tagfreq[tag] }}">
+                    {{ tag }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
 
     {#  Add disqus comment counts  #}
     <script type="text/javascript">
