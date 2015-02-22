@@ -146,6 +146,13 @@ body {
 .bottomTagList {
   font-size: 0.75em;
 }
+.rssSubscribe > p a {
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+.rssSubscribe > p img {
+  width: 35px;
+}
 .tagCloud a.tag1 {
   font-size: 1em;
   font-weight: 100;
