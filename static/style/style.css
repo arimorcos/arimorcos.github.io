@@ -1,9 +1,9 @@
 /* Main page background */
 html,
 body {
-  background-color: #404040;
+  background-color: #2b2b2b;
   font-family: "Abel", sans-serif;
-  color: #404040;
+  color: #2b2b2b;
   height: 100%;
 }
 .completeLeft {
@@ -24,7 +24,7 @@ body {
   margin-bottom: -5em;
 }
 .line {
-  background-color: #f6f6e8;
+  background-color: #f6f6f6;
   height: 5px;
   margin-bottom: 1em;
 }
@@ -33,7 +33,7 @@ body {
   display: block;
 }
 .contentCard {
-  background-color: #f6f6e8;
+  background-color: #f6f6f6;
   padding: 2em;
   margin-bottom: 1em;
 }
@@ -43,7 +43,7 @@ body {
   padding-left: 2%;
 }
 .nameHeader h1 {
-  color: #f6f6e8;
+  color: #f6f6f6;
   font-size: 5em;
   font-weight: bolder;
   text-shadow: 0.03em 0.03em #505050;
@@ -55,40 +55,33 @@ body {
 .navIcon a {
   display: inline-block;
   border-radius: 20%;
-  border: 5px solid #f6f6e8;
+  border: 5px solid #f6f6f6;
   padding: 10px;
+  width: 80px;
+  height: 80px;
   margin-left: 1em;
   margin-right: 1em;
   overflow: hidden;
 }
-@media (min-width: 900px) {
-  .navIcon a {
-    width: 80px;
-    height: 80px;
-  }
-}
-@media (max-width: 900px) {
-  .navIcon a {
-    width: 160px;
-    height: 160px;
-  }
+.navIcon img {
+  margin: auto;
 }
 .navBar {
   text-align: center;
 }
 /* Current Section */
 .currSection {
-  background-color: #00ace9;
+  background-color: #de1b1b;
   margin-bottom: 1em;
 }
 .currSection h2 {
-  color: #f6f6e8;
+  color: #f6f6f6;
   margin-top: 1px;
   padding-left: 2%;
   margin-bottom: 0;
 }
 .currSection h3 {
-  color: #f6f6e8;
+  color: #f6f6f6;
   padding-left: 2%;
   margin-bottom: 4px;
   margin-top: 0;
@@ -109,6 +102,7 @@ body {
   text-align: justify;
   font-size: 1.3em;
   padding-left: 1em;
+  padding-right: 1em;
 }
 .cvLink a {
   font-size: 2em;
@@ -124,8 +118,11 @@ body {
 .rightBlogBrowser {
   margin-right: -1em;
 }
-.bottomTagList {
-  font-size: 0.75em;
+.bottomTagList p {
+  font-size: 1.5em;
+}
+.bottomTagList a {
+  font-size: 1em;
 }
 .rssSubscribe > p a {
   font-size: 1.5em;
@@ -208,7 +205,7 @@ body {
 }
 /* About */
 .aboutSummary {
-  padding-top: 1em;
+  padding: 1em;
 }
 .aboutSummary p {
   color: #303030;
@@ -259,9 +256,10 @@ body {
   height: 5em;
 }
 .siteFooter {
-  color: #f6f6e8;
-  background-color: #00ace9;
+  color: #f6f6f6;
+  background-color: #de1b1b;
   padding-top: 2em;
+  font-size: 1em;
 }
 .copyrightText {
   margin-top: auto;

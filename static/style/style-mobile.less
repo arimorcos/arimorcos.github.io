@@ -1,7 +1,35 @@
 @import 'style.less';
 
+@defaultFontSize: 2em;
+@defaultMargin: 1.5em;
+
+.container {
+  width: 90%;
+}
+
 .navIcon {
-  li {
-    line-height: 200px;
+
+  a {
+    width: 160px;
+    height: 160px;
+    position: relative;
   }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40% 0 0 -40%;
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.cvLink a {
+  font-size: 2em;
+}
+
+// Hide extra blog browser
+.rightBlogBrowser {
+  display: none;
 }
