@@ -33,9 +33,11 @@
                         </h4>
 
                         {#  Blurb from blog post  #}
-                        <p>
-                            {{ post.html | safe }}
-                        </p>
+                        <div class="postContent">
+                            <p>
+                                {{ post.html | safe }}
+                            </p>
+                        </div>
 
                         <div class="row blogSummaryBottom">
                             {#  Add comment count  #}

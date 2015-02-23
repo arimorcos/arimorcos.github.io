@@ -1,7 +1,9 @@
 @import 'style.less';
+@import 'animations.less';
 
 @defaultFontSize: 2em;
 @defaultMargin: 1.5em;
+@animate-min-pix: 4px;
 
 .container {
   width: 90%;
@@ -27,6 +29,10 @@
 
 .cvLink a {
   font-size: 2em;
+}
+
+.postTitle {
+  font-size: 2*@defaultFontSize;
 }
 
 // Hide extra blog browser

@@ -20,7 +20,9 @@
 {% block content %}
 
     <div class="container contentCard">
-        {{ post.html | safe }}
+        <div class="postContent">
+            {{ post.html | safe }}
+        </div>
 
         <div class="row">
             <div class="bottomTagList pull-left">

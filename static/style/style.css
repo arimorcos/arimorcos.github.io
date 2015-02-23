@@ -174,6 +174,10 @@ body {
 .recentPostText {
   font-size: 1.2em;
 }
+.postContent {
+  font-size: 1.2em !important;
+  margin-bottom: 1em;
+}
 .postTitle {
   font-size: 3em;
   font-weight: bold;
@@ -217,7 +221,6 @@ body {
   box-shadow: -0.6em 0.4em 0.5em darkgray;
   height: 600px;
   margin-left: 2em;
-  margin-bottom: 1em;
   margin-right: 1em;
 }
 /* Contact */

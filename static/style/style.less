@@ -40,7 +40,7 @@ html, body {
 }
 
 .shadow() {
-  text-shadow: 0.03em 0.03em @lightShadow;
+  text-shadow: 0.03*@defaultFontSize 0.03*@defaultFontSize @lightShadow;
 }
 
 /* General classes */
@@ -250,6 +250,11 @@ html, body {
   font-size: 1.2*@defaultFontSize;
 }
 
+.postContent {
+  font-size: 1.2*@defaultFontSize !important;
+  margin-bottom: 1*@defaultFontSize;
+}
+
 .postTitle {
   font-size: 3*@defaultFontSize;
   font-weight: bold;
@@ -298,10 +303,10 @@ html, body {
 
 .personalImg {
   float: right;
-  box-shadow: -0.6em 0.4em 0.5em darkgray;
+  box-shadow: -0.6*@defaultFontSize 0.4*@defaultFontSize 0.5*@defaultFontSize darkgray;
   height: 600px;
   margin-left: 2em;
-  margin-bottom: 1em;
+//  margin-bottom: 1em;
   margin-right: 1em;
 }
 
@@ -339,7 +344,7 @@ html, body {
 
 .socialLinks a:hover {
   font-weight: bolder;
-  text-shadow: -0.1em 0.1em 0.5em darkgray;
+  text-shadow: -0.1*@defaultFontSize 0.1*@defaultFontSize 0.5*@defaultFontSize darkgray;
   background-color: inherit;
   text-decoration: none;
 }
