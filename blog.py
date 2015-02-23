@@ -5,7 +5,7 @@ from flask import Flask, render_template, redirect
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 
-DEBUG = True
+DEBUG = False
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'content'
@@ -207,4 +207,4 @@ if __name__ == "__main__":
         freezer.freeze()
     else:
         # run on the local host so that anyone can see it
-        app.run(host='0.0.0.0', debug=True)
+        app.run(host='0.0.0.0', debug=False)
