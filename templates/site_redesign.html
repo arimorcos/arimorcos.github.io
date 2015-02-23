@@ -30,7 +30,8 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abel">
     {#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">#}
     <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/static/style/style.css"/>
+    <link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 1500px)' href='/static/style/style.css' />
+{#    <link rel='stylesheet' media='screen and (min-width: 100px) and (max-width: 700px)' href='/static/style/style-mobile.css' />#}
     <link rel="stylesheet" type="text/css" href="/static/style/animations.css"/>
     <link rel="stylesheet" type="text/css" href="/static/style/tooltipster.css" />
 
@@ -57,7 +58,8 @@
 
     <div class="container-fluid">
         <div class="row navBar">
-            <ul class="navIcon">
+            <ul class="navIcon col-md-offset-4 col-md-4
+                               col-xs-offset-2 col-xs-8">
                 <li class="navAbout">
                     <a href="/about/" class="showTooltip" title="About Me">
                         <img src="/static/images/navigation-icons/about_me.png"

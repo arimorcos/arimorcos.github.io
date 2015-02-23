@@ -30,9 +30,9 @@
 /* Main page background */
 html,
 body {
-  background-color: #2b2b2b;
+  background-color: #404040;
   font-family: "Abel", sans-serif;
-  color: #2b2b2b;
+  color: #404040;
   height: 100%;
 }
 .completeLeft {
@@ -53,7 +53,7 @@ body {
   margin-bottom: -5em;
 }
 .line {
-  background-color: #f6f6f6;
+  background-color: #f6f6e8;
   height: 5px;
   margin-bottom: 1em;
 }
@@ -62,7 +62,7 @@ body {
   display: block;
 }
 .contentCard {
-  background-color: #f6f6f6;
+  background-color: #f6f6e8;
   padding: 2em;
   margin-bottom: 1em;
 }
@@ -72,7 +72,7 @@ body {
   padding-left: 2%;
 }
 .nameHeader h1 {
-  color: #f6f6f6;
+  color: #f6f6e8;
   font-size: 5em;
   font-weight: bolder;
   text-shadow: 0.03em 0.03em #505050;
@@ -84,30 +84,40 @@ body {
 .navIcon a {
   display: inline-block;
   border-radius: 20%;
-  border: 5px solid #f6f6f6;
+  border: 5px solid #f6f6e8;
   padding: 10px;
-  width: 80px;
-  height: 80px;
   margin-left: 1em;
   margin-right: 1em;
   overflow: hidden;
+}
+@media (min-width: 900px) {
+  .navIcon a {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .navIcon a {
+    width: 160px;
+    height: 160px;
+  }
 }
 .navBar {
   text-align: center;
 }
 /* Current Section */
 .currSection {
-  background-color: #de1b1b;
+  background-color: #00ace9;
   margin-bottom: 1em;
 }
 .currSection h2 {
-  color: #f6f6f6;
+  color: #f6f6e8;
   margin-top: 1px;
   padding-left: 2%;
   margin-bottom: 0;
 }
 .currSection h3 {
-  color: #f6f6f6;
+  color: #f6f6e8;
   padding-left: 2%;
   margin-bottom: 4px;
   margin-top: 0;
@@ -278,8 +288,8 @@ body {
   height: 5em;
 }
 .siteFooter {
-  color: #f6f6f6;
-  background-color: #de1b1b;
+  color: #f6f6e8;
+  background-color: #00ace9;
   padding-top: 2em;
 }
 .copyrightText {
@@ -333,7 +343,7 @@ body {
   animation: flipY 1s 150ms;
 }
 .navAbout > a:hover {
-  background-color: #de1b1b;
+  background-color: #00ace9;
 }
 .animateAboutMe {
   -moz-animation: flipY 2s 1s infinite;
@@ -343,7 +353,7 @@ body {
   animation: flipY 2s 1s infinite;
 }
 .animateAboutMeColor {
-  background-color: #de1b1b;
+  background-color: #00ace9;
 }
 
 @-moz-keyframes wiggle {
@@ -408,7 +418,7 @@ body {
   animation: wiggle 3s 150ms;
 }
 .navResearch > a:hover {
-  background-color: #de1b1b;
+  background-color: #00ace9;
 }
 .animateResearch {
   -moz-animation: wiggle 3s 1s infinite;
@@ -418,7 +428,7 @@ body {
   animation: wiggle 3s 1s infinite;
 }
 .animateResearchColor {
-  background-color: #de1b1b;
+  background-color: #00ace9;
 }
 
 @-moz-keyframes pencil-write {
@@ -579,7 +589,7 @@ body {
   animation: pencil-write 2s 150ms;
 }
 .navBlog > a:hover {
-  background-color: #de1b1b;
+  background-color: #00ace9;
 }
 .animateBlog {
   -moz-animation: pencil-write 2s 1s infinite;
@@ -589,7 +599,7 @@ body {
   animation: pencil-write 2s 1s infinite;
 }
 .animateBlogColor {
-  background-color: #de1b1b;
+  background-color: #00ace9;
 }
 
 @-moz-keyframes fly-plane {
@@ -638,7 +648,7 @@ body {
   animation: fly-plane 2s 150ms;
 }
 .navContact > a:hover {
-  background-color: #de1b1b;
+  background-color: #00ace9;
 }
 .animateContact {
   -moz-animation: fly-plane 2s 1s infinite;
@@ -648,5 +658,5 @@ body {
   animation: fly-plane 2s 1s infinite;
 }
 .animateContactColor {
-  background-color: #de1b1b;
+  background-color: #00ace9;
 }

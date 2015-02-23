@@ -1,8 +1,17 @@
 // Colors
-@mainBackground: #2B2B2B;
-@lightBackground: #F6F6F6;
-@highlightColor: #DE1B1B;
+@mainBackground: #404040;
+@lightBackground: #F6F6E8;
+@highlightColor: #00ACE9;
 @lightShadow: #505050;
+
+//@mainBackground: #fffff7;
+//@lightBackground: #145885;
+//@highlightColor: #6C8CE6;
+//@lightShadow: #505050;
+//
+//.navIcon > a > img {
+//  filter: invert(0%);
+//}
 
 /* Main page background */
 html, body {
@@ -73,6 +82,9 @@ html, body {
 .navIcon {
   li {
     display: inline-block;
+//    @media (max-width:768px){
+//      line-height: 200px;
+//    }
   }
 
   a {
@@ -80,8 +92,14 @@ html, body {
     border-radius: 20%;
     border: 5px solid @lightBackground;
     padding: 10px;
-    width: 80px;
-    height: 80px;
+    @media (min-width:900px) {
+      width: 80px;
+      height: 80px;
+    }
+    @media (max-width:900px) {
+      width: 160px;
+      height: 160px;
+    }
     margin-left: 1em;
     margin-right: 1em;
     overflow: hidden;
