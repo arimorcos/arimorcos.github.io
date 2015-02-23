@@ -79,12 +79,12 @@
             {% if shouldOlder or shouldNewer %}
                 <div class="postNav">
                     {% if shouldOlder %}
-                        <a href={{ olderpage }} class="olderPosts">
+                        <a href={{ olderPage }} class="olderPosts">
                             &#8592; Older Posts
                         </a>
                     {% endif %}
                     {% if shouldNewer %}
-                        <a href={{ newerpage }} class="newerPosts">
+                        <a href={{ newerPage }} class="newerPosts">
                             &#8594; Newer Posts
                         </a>
                     {% endif %}
@@ -112,9 +112,9 @@
         <div class="contentCard rightBlogBrowser pull-right tagCloud
                     col-md-3 ">
             <h2 class="text-center">Common Topics</h2>
-            {% for tag in tagfreq %}
+            {% for tag in tagFreq %}
                 <a href="/blog/tag/{{ tag }}"
-                   class="{{ tagfreq[tag] }}">
+                   class="{{ tagFreq[tag] }}">
                     {{ tag }}
                 </a>
             {% endfor %}
