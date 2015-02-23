@@ -39,18 +39,18 @@
 
                         <div class="row blogSummaryBottom">
                             {#  Add comment count  #}
-                            <a class="disqus-comment-count col-md-2"
+                            <a class="disqus-comment-count commentCount col-md-2 col-xs-5"
                                data-disqus-identifier="{{ post.title }}"
                                href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}#disqus_thread">
                             </a>
 
                             {#  Add continue reading  #}
-                            <a class="continueReading col-md-3"
+                            <a class="continueReading col-md-3 col-xs-7"
                                href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}">
-                                &#8702; Continue Reading
+                                Continue Reading &#8594;
                             </a>
 
-                            <div class="bottomTagList col-md-3">
+                            <div class="bottomTagList col-md-3 col-xs-12">
                                 <p>
                                     Tagged with:
                                     {% for tag in post.tags.replace(' ','').split(',') %}
@@ -80,12 +80,12 @@
                 <div class="postNav">
                     {% if shouldOlder %}
                         <a href={{ olderpage }} class="olderPosts">
-                            &#8701; Older Posts
+                            &#8592; Older Posts
                         </a>
                     {% endif %}
                     {% if shouldNewer %}
                         <a href={{ newerpage }} class="newerPosts">
-                            &#8702; Newer Posts
+                            &#8594; Newer Posts
                         </a>
                     {% endif %}
                 </div>

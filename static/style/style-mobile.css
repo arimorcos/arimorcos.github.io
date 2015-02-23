@@ -26,7 +26,7 @@ body {
 .line {
   background-color: #f6f6f6;
   height: 5px;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 .page-wrap:after {
   content: "";
@@ -35,7 +35,7 @@ body {
 .contentCard {
   background-color: #f6f6f6;
   padding: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 /* Name header */
 .nameHeader {
@@ -44,7 +44,7 @@ body {
 }
 .nameHeader h1 {
   color: #f6f6f6;
-  font-size: 5em;
+  font-size: 10em;
   font-weight: bolder;
   text-shadow: 0.03em 0.03em #505050;
 }
@@ -72,7 +72,7 @@ body {
 /* Current Section */
 .currSection {
   background-color: #de1b1b;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 .currSection h2 {
   color: #f6f6f6;
@@ -90,7 +90,7 @@ body {
   font-weight: bold;
   text-shadow: 0.03em 0.03em #505050;
   color: #303030;
-  font-size: 3em;
+  font-size: 6em;
 }
 /* Research */
 .neuronActivityImg {
@@ -100,15 +100,15 @@ body {
 }
 .researchStatement p {
   text-align: justify;
-  font-size: 1.3em;
+  font-size: 2.6em;
   padding-left: 1em;
   padding-right: 1em;
 }
 .cvLink a {
-  font-size: 2em;
+  font-size: 4em;
 }
 .blogSummaryBottom a {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 .blogSummaryBottom a:hover {
   text-shadow: 0.03em 0.03em #505050;
@@ -119,63 +119,63 @@ body {
   margin-right: -1em;
 }
 .bottomTagList p {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 .bottomTagList a {
   font-size: 1em;
 }
 .rssSubscribe > p a {
-  font-size: 1.5em;
+  font-size: 3em;
   vertical-align: middle;
 }
 .rssSubscribe > p img {
   width: 35px;
 }
 .tagCloud a.tag1 {
-  font-size: 1em;
+  font-size: 2em;
   font-weight: 100;
 }
 .tagCloud a.tag2 {
-  font-size: 1.3em;
+  font-size: 2.6em;
   font-weight: 200;
 }
 .tagCloud a.tag3 {
-  font-size: 1.6em;
+  font-size: 3.2em;
   font-weight: 300;
 }
 .tagCloud a.tag4 {
-  font-size: 1.9em;
+  font-size: 3.8em;
   font-weight: 400;
 }
 .tagCloud a.tag5 {
-  font-size: 2.2em;
+  font-size: 4.4em;
   font-weight: 500;
 }
 .tagCloud a.tag6 {
-  font-size: 2.5em;
+  font-size: 5em;
   font-weight: 600;
 }
 .tagCloud a.tag7 {
-  font-size: 2.8em;
+  font-size: 5.6em;
   font-weight: 700;
 }
 .tagCloud a.tag8 {
-  font-size: 3.1em;
+  font-size: 6.2em;
   font-weight: 800;
 }
 .tagCloud a.tag9 {
-  font-size: 3.4em;
+  font-size: 6.8em;
   font-weight: 900;
 }
 .tagCloud .tag10 {
-  font-size: 3.7em;
+  font-size: 7.4em;
   font-weight: 1000;
 }
 .recentPostText {
-  font-size: 1.2em;
+  font-size: 2.4em;
 }
 .postTitle {
-  font-size: 3em;
+  font-size: 6em;
   font-weight: bold;
 }
 .postTitle a:hover {
@@ -184,13 +184,13 @@ body {
   color: steelblue;
 }
 .postDate {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 .postNav {
   margin-bottom: 1em;
 }
 .postNav a {
-  font-size: 2em;
+  font-size: 4em;
 }
 .postNav a:hover {
   text-shadow: 0.03em 0.03em #505050;
@@ -205,11 +205,11 @@ body {
 }
 /* About */
 .aboutSummary {
-  padding: 1em;
+  padding: 2em;
 }
 .aboutSummary p {
   color: #303030;
-  font-size: 1.3em;
+  font-size: 2.6em;
   text-align: justify;
 }
 .personalImg {
@@ -224,7 +224,7 @@ body {
 .contactHeader h1 {
   color: #303030;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 10em;
   padding-bottom: 0.15em;
 }
 .emailLink img {
@@ -233,7 +233,7 @@ body {
 }
 .socialLinks a {
   font-family: "Abel", sans-serif;
-  font-size: 2.5em;
+  font-size: 5em;
   line-height: 2.5em;
   vertical-align: middle;
 }
@@ -259,9 +259,31 @@ body {
   color: #f6f6f6;
   background-color: #de1b1b;
   padding-top: 2em;
-  font-size: 1em;
+  font-size: 2em;
 }
 .copyrightText {
   margin-top: auto;
   margin-bottom: auto;
+}
+.container {
+  width: 90%;
+}
+.navIcon a {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.navIcon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40% 0 0 -40%;
+  width: 80%;
+  height: 80%;
+}
+.cvLink a {
+  font-size: 2em;
+}
+.rightBlogBrowser {
+  display: none;
 }

@@ -13,7 +13,16 @@ var main = function () {
 
     hideBelowFold();
 
+    //var isMobile = getMobile();
+    //rearrangeForMobile(isMobile);
+
 };
+
+//function rearrangeForMobile(isMobile) {
+//    if (isMobile) {
+//
+//    }
+//}
 
 function changeAnimation() {
 
@@ -58,5 +67,14 @@ function hideBelowFold() {
         $('div#breakStart').nextUntil('div#breakEnd').hide();
     }
 }
+
+//function getMobile() {
+//    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+//        var mobile = true;
+//    } else {
+//        var mobile = false;
+//    }
+//    return mobile;
+//}
 
 $(document).ready(main);

@@ -92,6 +92,9 @@ body {
   margin-right: 1em;
   overflow: hidden;
 }
+.navIcon img {
+  margin: auto;
+}
 .navBar {
   text-align: center;
 }
@@ -128,6 +131,7 @@ body {
   text-align: justify;
   font-size: 1.3em;
   padding-left: 1em;
+  padding-right: 1em;
 }
 .cvLink a {
   font-size: 2em;
@@ -143,8 +147,11 @@ body {
 .rightBlogBrowser {
   margin-right: -1em;
 }
-.bottomTagList {
-  font-size: 0.75em;
+.bottomTagList p {
+  font-size: 1.5em;
+}
+.bottomTagList a {
+  font-size: 1em;
 }
 .rssSubscribe > p a {
   font-size: 1.5em;
@@ -227,7 +234,7 @@ body {
 }
 /* About */
 .aboutSummary {
-  padding-top: 1em;
+  padding: 1em;
 }
 .aboutSummary p {
   color: #303030;
@@ -281,6 +288,7 @@ body {
   color: #f6f6f6;
   background-color: #de1b1b;
   padding-top: 2em;
+  font-size: 1em;
 }
 .copyrightText {
   margin-top: auto;
