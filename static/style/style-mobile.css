@@ -465,7 +465,7 @@ body {
     -moz-transform: rotate(5deg) translate(32px,0px); /* {
   /**/
 }
-  64% {
+  90% {
     -moz-transform: rotate(5deg) translate(0px,0px); /* {
   /**/
 }
@@ -503,7 +503,7 @@ body {
     -webkit-transform: rotate(5deg) translate(32px,0px); /* {
   /**/
 }
-  64% {
+  90% {
     -webkit-transform: rotate(5deg) translate(0px,0px); /* {
   /**/
 }
@@ -541,7 +541,7 @@ body {
     -o-transform: rotate(5deg) translate(32px,0px); /* {
   /**/
 }
-  64% {
+  90% {
     -o-transform: rotate(5deg) translate(0px,0px); /* {
   /**/
 }
@@ -579,7 +579,7 @@ body {
     transform: rotate(5deg) translate(32px,0px); /* {
   /**/
 }
-  64% {
+  90% {
     transform: rotate(5deg) translate(0px,0px); /* {
   /**/
 }
