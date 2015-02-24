@@ -1,5 +1,3 @@
-from python.tags import findTagMatch, getPostList, renderPostList
-
 __author__ = 'arimorcos'
 
 import sys, os
