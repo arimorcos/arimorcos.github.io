@@ -114,7 +114,7 @@
         <div class="contentCard rightBlogBrowser pull-right tagCloud
                     col-md-3 col-sm-3">
             <h2 class="text-center">Common Topics</h2>
-            {% for tag in tagFreq %}
+            {% for tag in tagFreq|sort %}
                 <a href="/blog/tag/{{ tag }}"
                    class="{{ tagFreq[tag] }}">
                     {{ tag }}
