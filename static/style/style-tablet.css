@@ -26,8 +26,8 @@ body {
 .line {
   background-color: #f6f6f6;
   height: 5px;
-  margin-top: 0.75em;
-  margin-bottom: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 .page-wrap:after {
   content: "";
@@ -36,7 +36,7 @@ body {
 .contentCard {
   background-color: #f6f6f6;
   padding: 2em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 /* Name header */
 .nameHeader {
@@ -45,9 +45,9 @@ body {
 }
 .nameHeader h1 {
   color: #f6f6f6;
-  font-size: 10em;
+  font-size: 6em;
   font-weight: bolder;
-  text-shadow: 0.06em 0.06em #505050;
+  text-shadow: 0.036em 0.036em #505050;
 }
 /* Navigation bar */
 .navIcon li {
@@ -73,7 +73,7 @@ body {
 /* Current Section */
 .currSection {
   background-color: #de1b1b;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 .currSection h2 {
   color: #f6f6f6;
@@ -89,9 +89,9 @@ body {
 }
 *[role="heading"] {
   font-weight: bold;
-  text-shadow: 0.06em 0.06em #505050;
+  text-shadow: 0.036em 0.036em #505050;
   color: #303030;
-  font-size: 6em;
+  font-size: 3.6em;
 }
 /* Research */
 .neuronActivityImg {
@@ -101,18 +101,18 @@ body {
 }
 .researchStatement p {
   text-align: justify;
-  font-size: 2.6em;
+  font-size: 1.56em;
   padding-left: 1em;
   padding-right: 1em;
 }
 .cvLink a {
-  font-size: 4em;
+  font-size: 2.4em;
 }
 .blogSummaryBottom a {
-  font-size: 3em;
+  font-size: 1.8em;
 }
 .blogSummaryBottom a:hover {
-  text-shadow: 0.06em 0.06em #505050;
+  text-shadow: 0.036em 0.036em #505050;
   text-decoration: none;
   color: steelblue;
 }
@@ -120,85 +120,85 @@ body {
   margin-right: -1em;
 }
 .bottomTagList p {
-  font-size: 3em;
+  font-size: 1.8em;
 }
 .bottomTagList a {
   font-size: 1em;
 }
 .rssSubscribe > p a {
-  font-size: 3em;
+  font-size: 1.8em;
   vertical-align: middle;
 }
 .rssSubscribe > p img {
   width: 35px;
 }
 .tagCloud a.tag1 {
-  font-size: 2em;
+  font-size: 1.2em;
   font-weight: 100;
 }
 .tagCloud a.tag2 {
-  font-size: 2.6em;
+  font-size: 1.56em;
   font-weight: 200;
 }
 .tagCloud a.tag3 {
-  font-size: 3.2em;
+  font-size: 1.92em;
   font-weight: 300;
 }
 .tagCloud a.tag4 {
-  font-size: 3.8em;
+  font-size: 2.28em;
   font-weight: 400;
 }
 .tagCloud a.tag5 {
-  font-size: 4.4em;
+  font-size: 2.64em;
   font-weight: 500;
 }
 .tagCloud a.tag6 {
-  font-size: 5em;
+  font-size: 3em;
   font-weight: 600;
 }
 .tagCloud a.tag7 {
-  font-size: 5.6em;
+  font-size: 3.36em;
   font-weight: 700;
 }
 .tagCloud a.tag8 {
-  font-size: 6.2em;
+  font-size: 3.72em;
   font-weight: 800;
 }
 .tagCloud a.tag9 {
-  font-size: 6.8em;
+  font-size: 4.08em;
   font-weight: 900;
 }
 .tagCloud .tag10 {
-  font-size: 7.4em;
+  font-size: 4.44em;
   font-weight: 1000;
 }
 .recentPostText {
-  font-size: 2.4em;
+  font-size: 1.44em;
 }
 .postContent {
-  font-size: 2.4em !important;
-  margin-bottom: 2em;
+  font-size: 1.44em !important;
+  margin-bottom: 1.2em;
 }
 .postTitle {
-  font-size: 6em;
+  font-size: 3.6em;
   font-weight: bold;
 }
 .postTitle a:hover {
-  text-shadow: 0.06em 0.06em #505050;
+  text-shadow: 0.036em 0.036em #505050;
   text-decoration: none;
   color: steelblue;
 }
 .postDate {
-  font-size: 3em;
+  font-size: 1.8em;
 }
 .postNav {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 .postNav a {
-  font-size: 4em;
+  font-size: 2.4em;
 }
 .postNav a:hover {
-  text-shadow: 0.06em 0.06em #505050;
+  text-shadow: 0.036em 0.036em #505050;
   text-decoration: none;
   color: white;
 }
@@ -210,24 +210,24 @@ body {
 }
 /* About */
 .aboutSummary p {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
   color: #303030;
-  font-size: 2.6em;
+  font-size: 1.56em;
   text-align: justify;
 }
 .personalImg {
   float: right;
-  box-shadow: -1.2em 0.8em 1em darkgray;
+  box-shadow: -0.72em 0.48em 0.6em darkgray;
   height: 600px;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
 }
 /* Contact */
 .contactHeader h1 {
   color: #303030;
   font-weight: bold;
-  font-size: 10em;
+  font-size: 6em;
   padding-bottom: 0.15em;
 }
 .emailLink img {
@@ -236,7 +236,7 @@ body {
 }
 .socialLinks a {
   font-family: "Abel", sans-serif;
-  font-size: 5em;
+  font-size: 3em;
   line-height: 2.5em;
   vertical-align: middle;
 }
@@ -249,7 +249,7 @@ body {
 }
 .socialLinks a:hover {
   font-weight: bolder;
-  text-shadow: -0.2em 0.2em 1em darkgray;
+  text-shadow: -0.12em 0.12em 0.6em darkgray;
   background-color: inherit;
   text-decoration: none;
 }
@@ -262,7 +262,7 @@ body {
   color: #f6f6f6;
   background-color: #de1b1b;
   padding-top: 2em;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 .copyrightText {
   margin-top: auto;
@@ -438,31 +438,31 @@ body {
   /**/
 }
   8% {
-    -moz-transform: rotate(5deg) translate(8px,0px); /* {
+    -moz-transform: rotate(5deg) translate(4px,0px); /* {
   /**/
 }
   16% {
-    -moz-transform: rotate(-5deg) translate(12px,0px); /* {
+    -moz-transform: rotate(-5deg) translate(6px,0px); /* {
   /**/
 }
   24% {
-    -moz-transform: rotate(5deg) translate(16px,0px); /* {
+    -moz-transform: rotate(5deg) translate(8px,0px); /* {
   /**/
 }
   32% {
-    -moz-transform: rotate(-5deg) translate(20px,0px); /* {
+    -moz-transform: rotate(-5deg) translate(10px,0px); /* {
   /**/
 }
   40% {
-    -moz-transform: rotate(5deg) translate(24px,0px); /* {
+    -moz-transform: rotate(5deg) translate(12px,0px); /* {
   /**/
 }
   48% {
-    -moz-transform: rotate(-5deg) translate(28px,0px); /* {
+    -moz-transform: rotate(-5deg) translate(14px,0px); /* {
   /**/
 }
   56% {
-    -moz-transform: rotate(5deg) translate(32px,0px); /* {
+    -moz-transform: rotate(5deg) translate(16px,0px); /* {
   /**/
 }
   64% {
@@ -476,31 +476,31 @@ body {
   /**/
 }
   8% {
-    -webkit-transform: rotate(5deg) translate(8px,0px); /* {
+    -webkit-transform: rotate(5deg) translate(4px,0px); /* {
   /**/
 }
   16% {
-    -webkit-transform: rotate(-5deg) translate(12px,0px); /* {
+    -webkit-transform: rotate(-5deg) translate(6px,0px); /* {
   /**/
 }
   24% {
-    -webkit-transform: rotate(5deg) translate(16px,0px); /* {
+    -webkit-transform: rotate(5deg) translate(8px,0px); /* {
   /**/
 }
   32% {
-    -webkit-transform: rotate(-5deg) translate(20px,0px); /* {
+    -webkit-transform: rotate(-5deg) translate(10px,0px); /* {
   /**/
 }
   40% {
-    -webkit-transform: rotate(5deg) translate(24px,0px); /* {
+    -webkit-transform: rotate(5deg) translate(12px,0px); /* {
   /**/
 }
   48% {
-    -webkit-transform: rotate(-5deg) translate(28px,0px); /* {
+    -webkit-transform: rotate(-5deg) translate(14px,0px); /* {
   /**/
 }
   56% {
-    -webkit-transform: rotate(5deg) translate(32px,0px); /* {
+    -webkit-transform: rotate(5deg) translate(16px,0px); /* {
   /**/
 }
   64% {
@@ -514,31 +514,31 @@ body {
   /**/
 }
   8% {
-    -o-transform: rotate(5deg) translate(8px,0px); /* {
+    -o-transform: rotate(5deg) translate(4px,0px); /* {
   /**/
 }
   16% {
-    -o-transform: rotate(-5deg) translate(12px,0px); /* {
+    -o-transform: rotate(-5deg) translate(6px,0px); /* {
   /**/
 }
   24% {
-    -o-transform: rotate(5deg) translate(16px,0px); /* {
+    -o-transform: rotate(5deg) translate(8px,0px); /* {
   /**/
 }
   32% {
-    -o-transform: rotate(-5deg) translate(20px,0px); /* {
+    -o-transform: rotate(-5deg) translate(10px,0px); /* {
   /**/
 }
   40% {
-    -o-transform: rotate(5deg) translate(24px,0px); /* {
+    -o-transform: rotate(5deg) translate(12px,0px); /* {
   /**/
 }
   48% {
-    -o-transform: rotate(-5deg) translate(28px,0px); /* {
+    -o-transform: rotate(-5deg) translate(14px,0px); /* {
   /**/
 }
   56% {
-    -o-transform: rotate(5deg) translate(32px,0px); /* {
+    -o-transform: rotate(5deg) translate(16px,0px); /* {
   /**/
 }
   64% {
@@ -552,31 +552,31 @@ body {
   /**/
 }
   8% {
-    transform: rotate(5deg) translate(8px,0px); /* {
+    transform: rotate(5deg) translate(4px,0px); /* {
   /**/
 }
   16% {
-    transform: rotate(-5deg) translate(12px,0px); /* {
+    transform: rotate(-5deg) translate(6px,0px); /* {
   /**/
 }
   24% {
-    transform: rotate(5deg) translate(16px,0px); /* {
+    transform: rotate(5deg) translate(8px,0px); /* {
   /**/
 }
   32% {
-    transform: rotate(-5deg) translate(20px,0px); /* {
+    transform: rotate(-5deg) translate(10px,0px); /* {
   /**/
 }
   40% {
-    transform: rotate(5deg) translate(24px,0px); /* {
+    transform: rotate(5deg) translate(12px,0px); /* {
   /**/
 }
   48% {
-    transform: rotate(-5deg) translate(28px,0px); /* {
+    transform: rotate(-5deg) translate(14px,0px); /* {
   /**/
 }
   56% {
-    transform: rotate(5deg) translate(32px,0px); /* {
+    transform: rotate(5deg) translate(16px,0px); /* {
   /**/
 }
   64% {
@@ -609,7 +609,7 @@ body {
   /**/
 }
   50% {
-    -moz-transform: translate(120px,-120px); /* {
+    -moz-transform: translate(60px,-60px); /* {
   /**/
 }
 } 
@@ -619,7 +619,7 @@ body {
   /**/
 }
   50% {
-    -webkit-transform: translate(120px,-120px); /* {
+    -webkit-transform: translate(60px,-60px); /* {
   /**/
 }
 } 
@@ -629,7 +629,7 @@ body {
   /**/
 }
   50% {
-    -o-transform: translate(120px,-120px); /* {
+    -o-transform: translate(60px,-60px); /* {
   /**/
 }
 } 
@@ -639,7 +639,7 @@ body {
   /**/
 }
   50% {
-    transform: translate(120px,-120px); /* {
+    transform: translate(60px,-60px); /* {
   /**/
 }
 } .navContact > a:hover > img {
@@ -660,50 +660,4 @@ body {
 }
 .animateContactColor {
   background-color: #de1b1b;
-}
-.container {
-  width: 90%;
-}
-.fixBoldIOSBug {
-  font-weight: normal;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #f6f6f6;
-}
-.nameHeader h1 {
-  font-weight: normal;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #f6f6f6;
-}
-.currSection h2 {
-  font-weight: normal;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #f6f6f6;
-}
-.postTitle a {
-  font-weight: normal;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #f6f6f6;
-  -webkit-text-stroke-color: #6b9dc9;
-}
-.navIcon a {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-.navIcon img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -40% 0 0 -40%;
-  width: 80%;
-  height: 80%;
-}
-.cvLink a {
-  font-size: 2em;
-}
-.postTitle {
-  font-size: 4em;
-}
-.rightBlogBrowser {
-  display: none;
 }

@@ -60,6 +60,7 @@ html, body {
 .line {
   background-color: @lightBackgroundAndText;
   height: 5px;
+  margin-top: 0.5*@defaultMargin;
   margin-bottom: 1*@defaultMargin;
 }
 
@@ -293,8 +294,9 @@ html, body {
 
 /* About */
 .aboutSummary {
-  padding: 1*@defaultFontSize;
   p {
+    padding-left: 1*@defaultFontSize;
+    padding-right: 1*@defaultFontSize;
     color: #303030;
     font-size: 1.3*@defaultFontSize;
     text-align: justify;
@@ -305,9 +307,9 @@ html, body {
   float: right;
   box-shadow: -0.6*@defaultFontSize 0.4*@defaultFontSize 0.5*@defaultFontSize darkgray;
   height: 600px;
-  margin-left: 2em;
-//  margin-bottom: 1em;
-  margin-right: 1em;
+  margin-left: 1*@defaultFontSize;
+  //  margin-bottom: 1em;
+  margin-right: 1*@defaultFontSize;
 }
 
 /* Contact */

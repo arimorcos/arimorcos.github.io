@@ -26,6 +26,7 @@ body {
 .line {
   background-color: #f6f6f6;
   height: 5px;
+  margin-top: 0.5em;
   margin-bottom: 1em;
 }
 .page-wrap:after {
@@ -208,10 +209,9 @@ body {
   float: right;
 }
 /* About */
-.aboutSummary {
-  padding: 1em;
-}
 .aboutSummary p {
+  padding-left: 1em;
+  padding-right: 1em;
   color: #303030;
   font-size: 1.3em;
   text-align: justify;
@@ -220,7 +220,7 @@ body {
   float: right;
   box-shadow: -0.6em 0.4em 0.5em darkgray;
   height: 600px;
-  margin-left: 2em;
+  margin-left: 1em;
   margin-right: 1em;
 }
 /* Contact */

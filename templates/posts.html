@@ -15,7 +15,7 @@
 {% block content %}
 
     <div class="container">
-        <div class="row completeLeft col-md-9">
+        <div class="row completeLeft col-md-9 col-sm-9">
 
             {% for post in posts %}
 
@@ -112,7 +112,7 @@
 
         {#  Tags  #}
         <div class="contentCard rightBlogBrowser pull-right tagCloud
-                    col-md-3 ">
+                    col-md-3 col-sm-3">
             <h2 class="text-center">Common Topics</h2>
             {% for tag in tagFreq %}
                 <a href="/blog/tag/{{ tag }}"
@@ -124,7 +124,7 @@
 
         {#  RSS Feed  #}
         <div class="contentCard rightBlogBrowser pull-right rssSubscribe
-                    col-md-3 ">
+                    col-md-3 col-sm-3">
             <p>
                 <img src="/static/images/navigation-icons/rss_icon.png"
                      href="http://createfeed.fivefilters.org/extract.php?url=www.arimorcos.com/blog/all&in_id_or_class=postTitle&url_contains=/blog">
