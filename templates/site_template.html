@@ -28,52 +28,97 @@
 
     {#  Style  #}
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abel">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/static/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/animations.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/tooltipster.css" />
+    <link rel='stylesheet' type='text/css' media='screen and (min-device-width: 1101px)' href='/static/style/style.css' />
+    <link rel='stylesheet' type='text/css' media='screen and (min-device-width: 701px) and (max-device-width: 1100px)' href='/static/style/style-tablet.css' />
+    <link rel='stylesheet' type='text/css' media='screen and (max-device-width: 700px)' href='/static/style/style-mobile.css' />
+
 
     {#  jQuery  #}
     <script type="text/javascript" src="/static/javascript/jquery-1.11.2.min.js"></script>
-    {#    <script type="text/javascript" src="/static/javascript/main.js"></script>#}
+    {#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>#}
+    <script type="text/javascript" src="/static/javascript/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="/static/javascript/main.js"></script>
+
+    {#  Share buttons  #}
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "5da51cd4-4e57-428f-9aa9-8b6165d05b3f",
+        doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="navBar" role="navigation">
-        <div class="row">
-            <ul class="nav">
-                <li class="text-center col-md-offset-1 col-md-1 col-xs-3 col-sm-3 monogramImg">
-                    <a href="/index">
-                        <img src="/static/images/Personal Logo Brain Small.png" class="monogramImg img-responsive">
+<div class="page-wrap">
+
+    <div class="nameHeader">
+        <h1>{% block headerName %}{% endblock %}</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row navBar">
+            <ul class="navIcon">
+                <li class="navAbout">
+                    <a href="/about/" class="showTooltip" title="About Me">
+                        <img src="/static/images/navigation-icons/about_me.png"
+                             class="img-responsive">
                     </a>
                 </li>
-                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
-                    <a href="/research">Research</a>
+                <li class="navResearch">
+                    <a href="/research/" class="showTooltip" title="Research">
+                        <img src="/static/images/navigation-icons/brain_icon.png"
+                             class="img-responsive">
+                    </a>
                 </li>
-                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
-                    <a href="#">Blog</a>
+                <li class="navBlog">
+                    <a href="/blog/page1/" class="showTooltip" title="Blog">
+                        <img src="/static/images/navigation-icons/pencil.png"
+                             class="img-responsive">
+                    </a>
                 </li>
-                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
-                    <a href="/about">About</a>
-                </li>
-                <li class="text-center col-md-2 col-xs-2 col-sm-2 navText">
-                    <a href="/contact">Contact</a>
+                <li class="navContact">
+                    <a href="/contact/" class="showTooltip" title="Contact">
+                        <img src="/static/images/navigation-icons/paper_airplane.png"
+                             class="img-responsive">
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
+
+    <div class="container-fluid line"></div>
+    <div class="container">
+        <div class="row currSection">
+            <h2 class="text-center" role="heading"> {% block sectionName %}{% endblock %} </h2>
+            <h3 class="text-center blogDate">{% block blogDate %}{% endblock %}</h3>
+        </div>
+    </div>
+
+    {# Page Content #}
+    {% block content %}{% endblock %}
+
 </div>
 
-{# Page Content #}
-{% block content %}{% endblock %}
-
-
 {# Footer #}
-<footer class="footerText">
-    <p class="copyrightText">
-        &copy 2015 Ari Morcos All rights reserved
+<footer class="siteFooter container">
+    <p class="copyrightText text-center">
+        &copy; 2015 Ari Morcos All rights reserved
     </p>
 </footer>
+
+{#  Google Analytics  #}
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-60029364-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>
