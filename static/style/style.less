@@ -20,6 +20,18 @@
 //@highlightColor: #517398;
 //@lightShadow: #505050;
 
+//@mainBackground: #2B2B2B;
+//@lightBackgroundAndText: #F6F6F6;
+//@highlightColor: #1253a4;
+//@lightShadow: #505050;
+
+//@mainBackground: #32313B;
+//@lightBackgroundAndText: #39B1C6;
+//@highlightColor: #A6D8DE;
+//@lightShadow: #505050;
+
+@textColor: #303030;
+
 @defaultFontSize: 1em;
 @defaultMargin: 1em;
 
@@ -29,7 +41,11 @@ html, body {
   font-family: "Abel", sans-serif;
   color: @mainBackground;
   height: 100%;
+  p {
+    color: @textColor;
+  }
 }
+
 
 .completeLeft {
   padding-left: 0;
@@ -145,7 +161,7 @@ html, body {
 *[role="heading"] {
   font-weight: bold;
   .shadow;
-  color: #303030;
+  color: @textColor;
   font-size: 3*@defaultFontSize;
 }
 
@@ -302,7 +318,7 @@ html, body {
   p {
     padding-left: 1*@defaultFontSize;
     padding-right: 1*@defaultFontSize;
-    color: #303030;
+    color: @textColor;
     font-size: 1.3*@defaultFontSize;
     text-align: justify;
   }
@@ -319,7 +335,7 @@ html, body {
 
 /* Contact */
 .contactHeader h1 {
-  color: #303030;
+  color: @textColor;
   font-weight: bold;
   font-size: 5*@defaultFontSize;
   padding-bottom: 0.15em;
