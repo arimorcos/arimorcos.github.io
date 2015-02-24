@@ -9,6 +9,10 @@ body {
 .completeLeft {
   padding-left: 0;
 }
+.center-element {
+  padding-left: auto;
+  padding-right: auto;
+}
 .completeRight {
   padding-right: 0;
 }

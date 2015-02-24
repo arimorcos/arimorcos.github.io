@@ -18,11 +18,12 @@ var main = function () {
 
 };
 
-//function rearrangeForMobile(isMobile) {
-//    if (isMobile) {
-//
-//    }
-//}
+function rearrangeForMobile(isMobile) {
+    if (isMobile) {
+        //$('.postList').removeClass('.completeLeft');
+        //$('.postList').addClass('.center-element');
+    }
+}
 
 function changeAnimation() {
 
@@ -68,13 +69,13 @@ function hideBelowFold() {
     }
 }
 
-//function getMobile() {
-//    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-//        var mobile = true;
-//    } else {
-//        var mobile = false;
-//    }
-//    return mobile;
-//}
+function getMobile() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        var mobile = true;
+    } else {
+        var mobile = false;
+    }
+    return mobile;
+}
 
 $(document).ready(main);

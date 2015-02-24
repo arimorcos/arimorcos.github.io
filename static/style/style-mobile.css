@@ -9,6 +9,10 @@ body {
 .completeLeft {
   padding-left: 0;
 }
+.center-element {
+  padding-left: auto;
+  padding-right: auto;
+}
 .completeRight {
   padding-right: 0;
 }
@@ -697,6 +701,10 @@ body {
   margin: -40% 0 0 -40%;
   width: 80%;
   height: 80%;
+}
+.completeLeft {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .cvLink a {
   font-size: 2em;
