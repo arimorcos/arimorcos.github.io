@@ -9,6 +9,25 @@
   width: 90%;
 }
 
+.fixBoldIOSBug {
+  font-weight: normal;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: @lightBackgroundAndText;
+}
+
+.nameHeader h1 {
+  .fixBoldIOSBug;
+}
+
+.currSection h2 {
+  .fixBoldIOSBug;
+}
+
+.postTitle a {
+  .fixBoldIOSBug;
+  -webkit-text-stroke-color: #6b9dc9;
+}
+
 .navIcon {
 
   a {
