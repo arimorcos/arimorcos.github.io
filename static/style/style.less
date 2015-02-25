@@ -1,9 +1,9 @@
 // Colors
 // Original color scheme
-@mainBackground: #2B2B2B;
-@lightBackgroundAndText: #F6F6F6;
-@highlightColor: #DE1B1B;
-@lightShadow: #505050;
+//@mainBackground: #2B2B2B;
+//@lightBackgroundAndText: #F6F6F6;
+//@highlightColor: #DE1B1B;
+//@lightShadow: #505050;
 
 //@mainBackground: #404040;
 //@lightBackgroundAndText: #F6F6E8;
@@ -15,10 +15,10 @@
 //@highlightColor: #639bf1;
 //@lightShadow: #3b5998;
 
-//@mainBackground: #2B2B2B;
-//@lightBackgroundAndText: #F6F6F6;
-//@highlightColor: #517398;
-//@lightShadow: #505050;
+@mainBackground: #4B4B4B;
+@lightBackgroundAndText: #F6F6F6;
+@highlightColor: #517398;
+@lightShadow: #505050;
 
 //@mainBackground: #2B2B2B;
 //@lightBackgroundAndText: #F6F6F6;
@@ -77,6 +77,11 @@ html, body {
   margin-bottom: -5em;
 }
 
+.sectionHeading {
+  font-weight: bold;
+  margin-bottom: 0.75*@defaultMargin;
+  font-size: 3*@defaultFontSize;
+}
 
 .line {
   background-color: @lightBackgroundAndText;
@@ -184,6 +189,16 @@ html, body {
 }
 
 // Blog
+
+.blogPostTitle {
+  margin-bottom: 0;
+}
+
+.blogDate {
+  margin-top: 0;
+  margin-bottom: 1*@defaultMargin;
+  font-size: 1.5*@defaultFontSize;
+}
 
 .blogSummaryBottom {
   a {

@@ -1,9 +1,9 @@
 /* Main page background */
 html,
 body {
-  background-color: #2b2b2b;
+  background-color: #4b4b4b;
   font-family: "Abel", sans-serif;
-  color: #2b2b2b;
+  color: #4b4b4b;
   height: 100%;
 }
 html p,
@@ -30,6 +30,11 @@ body p {
 .page-wrap {
   min-height: 100%;
   margin-bottom: -5em;
+}
+.sectionHeading {
+  font-weight: bold;
+  margin-bottom: 0.75em;
+  font-size: 3em;
 }
 .line {
   background-color: #f6f6f6;
@@ -80,7 +85,7 @@ body p {
 }
 /* Current Section */
 .currSection {
-  background-color: #de1b1b;
+  background-color: #517398;
   margin-bottom: 1em;
 }
 .currSection h2 {
@@ -115,6 +120,14 @@ body p {
 }
 .cvLink a {
   font-size: 2em;
+}
+.blogPostTitle {
+  margin-bottom: 0;
+}
+.blogDate {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1.5em;
 }
 .blogSummaryBottom a {
   font-size: 1.5em;
@@ -268,7 +281,7 @@ body p {
 }
 .siteFooter {
   color: #f6f6f6;
-  background-color: #de1b1b;
+  background-color: #517398;
   padding-top: 2em;
   font-size: 1em;
 }

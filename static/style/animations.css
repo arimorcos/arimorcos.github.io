@@ -74,7 +74,7 @@
   animation: flipY 1s 150ms;
 }
 .navAbout > a:hover {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 .animateAboutMe {
   -moz-animation: flipY 2s 1s infinite;
@@ -84,7 +84,7 @@
   animation: flipY 2s 1s infinite;
 }
 .animateAboutMeColor {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 
 @-moz-keyframes wiggle {
@@ -149,7 +149,7 @@
   animation: wiggle 3s 150ms;
 }
 .navResearch > a:hover {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 .animateResearch {
   -moz-animation: wiggle 3s 1s infinite;
@@ -159,7 +159,7 @@
   animation: wiggle 3s 1s infinite;
 }
 .animateResearchColor {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 
 @-moz-keyframes pencil-write {
@@ -320,7 +320,7 @@
   animation: pencil-write 2s 150ms;
 }
 .navBlog > a:hover {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 .animateBlog {
   -moz-animation: pencil-write 2s 1s infinite;
@@ -330,7 +330,7 @@
   animation: pencil-write 2s 1s infinite;
 }
 .animateBlogColor {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 
 @-moz-keyframes fly-plane {
@@ -379,7 +379,7 @@
   animation: fly-plane 2s 150ms;
 }
 .navContact > a:hover {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 .animateContact {
   -moz-animation: fly-plane 2s 1s infinite;
@@ -389,5 +389,5 @@
   animation: fly-plane 2s 1s infinite;
 }
 .animateContactColor {
-  background-color: #de1b1b;
+  background-color: #517398;
 }

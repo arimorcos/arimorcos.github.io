@@ -1,9 +1,9 @@
 /* Main page background */
 html,
 body {
-  background-color: #2b2b2b;
+  background-color: #4b4b4b;
   font-family: "Abel", sans-serif;
-  color: #2b2b2b;
+  color: #4b4b4b;
   height: 100%;
 }
 html p,
@@ -30,6 +30,11 @@ body p {
 .page-wrap {
   min-height: 100%;
   margin-bottom: -5em;
+}
+.sectionHeading {
+  font-weight: bold;
+  margin-bottom: 1.125em;
+  font-size: 6em;
 }
 .line {
   background-color: #f6f6f6;
@@ -80,7 +85,7 @@ body p {
 }
 /* Current Section */
 .currSection {
-  background-color: #de1b1b;
+  background-color: #517398;
   margin-bottom: 1.5em;
 }
 .currSection h2 {
@@ -115,6 +120,14 @@ body p {
 }
 .cvLink a {
   font-size: 4em;
+}
+.blogPostTitle {
+  margin-bottom: 0;
+}
+.blogDate {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  font-size: 3em;
 }
 .blogSummaryBottom a {
   font-size: 3em;
@@ -268,7 +281,7 @@ body p {
 }
 .siteFooter {
   color: #f6f6f6;
-  background-color: #de1b1b;
+  background-color: #517398;
   padding-top: 2em;
   font-size: 2em;
 }
@@ -352,7 +365,7 @@ body p {
   animation: flipY 1s 150ms;
 }
 .navAbout > a:hover {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 .animateAboutMe {
   -moz-animation: flipY 2s 1s infinite;
@@ -362,7 +375,7 @@ body p {
   animation: flipY 2s 1s infinite;
 }
 .animateAboutMeColor {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 
 @-moz-keyframes wiggle {
@@ -427,7 +440,7 @@ body p {
   animation: wiggle 3s 150ms;
 }
 .navResearch > a:hover {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 .animateResearch {
   -moz-animation: wiggle 3s 1s infinite;
@@ -437,7 +450,7 @@ body p {
   animation: wiggle 3s 1s infinite;
 }
 .animateResearchColor {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 
 @-moz-keyframes pencil-write {
@@ -598,7 +611,7 @@ body p {
   animation: pencil-write 2s 150ms;
 }
 .navBlog > a:hover {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 .animateBlog {
   -moz-animation: pencil-write 2s 1s infinite;
@@ -608,7 +621,7 @@ body p {
   animation: pencil-write 2s 1s infinite;
 }
 .animateBlogColor {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 
 @-moz-keyframes fly-plane {
@@ -657,7 +670,7 @@ body p {
   animation: fly-plane 2s 150ms;
 }
 .navContact > a:hover {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 .animateContact {
   -moz-animation: fly-plane 2s 1s infinite;
@@ -667,7 +680,7 @@ body p {
   animation: fly-plane 2s 1s infinite;
 }
 .animateContactColor {
-  background-color: #de1b1b;
+  background-color: #517398;
 }
 .container {
   width: 90%;

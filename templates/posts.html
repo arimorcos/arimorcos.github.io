@@ -1,7 +1,7 @@
 {% extends "site_template.html" %}
 
 {% block headerName %}
-    Ari Morcos
+    Fairly One-Dimensional
 {% endblock %}
 
 {% block title %}
@@ -23,12 +23,12 @@
                     <div class="recentPost">
 
                         {#  Title and date  #}
-                        <h2 class="postTitle text-center">
+                        <h2 class="blogPostTitle sectionHeading text-center">
                             <a href="{{ url_for('blogPost', name=post.path.replace('blogPosts/', '')) }}">
                                 {{ post.title }}
                             </a>
                         </h2>
-                        <h4 class=" postDate text-center">
+                        <h4 class=" blogDate text-center">
                             {{ post.date }}
                         </h4>
 
