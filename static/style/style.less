@@ -15,7 +15,7 @@
 //@highlightColor: #639bf1;
 //@lightShadow: #3b5998;
 
-@mainBackground: #4B4B4B;
+@mainBackground: #2B2B2B;
 @lightBackgroundAndText: #F6F6F6;
 @highlightColor: #517398;
 @lightShadow: #505050;
@@ -289,7 +289,12 @@ html, body {
 
 .postContent {
   font-size: 1.2*@defaultFontSize !important;
-  margin-bottom: 1*@defaultFontSize;
+  margin-bottom: 0.5*@defaultMargin;
+}
+
+.continueReading {
+  margin-bottom: 0.5*@defaultMargin;
+  font-size: 1.75*@defaultFontSize !important;
 }
 
 .postTitle {
@@ -303,9 +308,14 @@ html, body {
   }
 }
 
+.shareButtons {
+
+}
+
 .postDate {
   font-size: 1.5*@defaultFontSize;
 }
+
 .postNav {
   margin-bottom: 1*@defaultMargin;
 

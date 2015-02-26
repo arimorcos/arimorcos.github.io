@@ -1,9 +1,9 @@
 /* Main page background */
 html,
 body {
-  background-color: #4b4b4b;
+  background-color: #2b2b2b;
   font-family: "Abel", sans-serif;
-  color: #4b4b4b;
+  color: #2b2b2b;
   height: 100%;
 }
 html p,
@@ -198,7 +198,11 @@ body p {
 }
 .postContent {
   font-size: 1.2em !important;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+}
+.continueReading {
+  margin-bottom: 0.5em;
+  font-size: 1.75em !important;
 }
 .postTitle {
   font-size: 3em;
