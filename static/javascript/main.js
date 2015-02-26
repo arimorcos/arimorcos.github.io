@@ -16,7 +16,7 @@ var main = function () {
     //var isMobile = getMobile();
     //rearrangeForMobile(isMobile);
 
-    $('a').attr("target","_blank");
+    //$('.contentCard a').attr("target","_blank");
 
 };
 
