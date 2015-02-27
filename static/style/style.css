@@ -2,7 +2,7 @@
 html,
 body {
   background-color: #2b2b2b;
-  font-family: "Abel", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #2b2b2b;
   height: 100%;
 }
@@ -85,7 +85,7 @@ body p {
 }
 /* Current Section */
 .currSection {
-  background-color: #517398;
+  background-color: #4f78d1;
   margin-bottom: 1em;
 }
 .currSection h2 {
@@ -147,7 +147,7 @@ body p {
   font-size: 1em;
 }
 .rssSubscribe > p a {
-  font-size: 1.5em;
+  font-size: 1.2em;
   vertical-align: middle;
 }
 .rssSubscribe > p img {
@@ -285,7 +285,7 @@ body p {
 }
 .siteFooter {
   color: #f6f6f6;
-  background-color: #517398;
+  background-color: #4f78d1;
   padding-top: 2em;
   font-size: 1em;
 }
