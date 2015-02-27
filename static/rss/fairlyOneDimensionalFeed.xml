@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <generator>RSS Builder by B!Soft</generator>
+        <title>Fairly One-Dimensional</title>
+        <link>www.fairlyonedimensional.com</link>
+        <description>Blog about all things data </description>
+        <language>en-us</language>
+        <webMaster>Ari Morcos</webMaster>
+        <copyright>Ari Morcos</copyright>
+        <item>
+            <title>
+                Hello World!
+            </title>
+            <pubDate>
+                Tue, 24 Feb 2015 12:17:33 -0500
+            </pubDate>
+            <link>
+                http://www.arimorcos.com/blog/Hello%20World%21/
+            </link>
+            <author>
+                Ari Morcos
+            </author>
+            <description>
+                Hello internet! Welcome to Fairly One-Dimensional, my blog about finding patterns in complex datasets. My goal is to post a new analysis of some freely available dataset every week or two (assuming my research allows me the time).
+            </description>
+        </item>
+    </channel>
+</rss>
