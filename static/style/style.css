@@ -20,6 +20,10 @@ body p {
 .completeRight {
   padding-right: 0;
 }
+.navIcon {
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+}
 /* General classes */
 .container-fluid {
   padding-right: 15px;
@@ -54,7 +58,6 @@ body p {
 /* Name header */
 .nameHeader {
   text-align: center;
-  padding-left: 2%;
 }
 .nameHeader h1 {
   color: #f6f6f6;
@@ -91,12 +94,10 @@ body p {
 .currSection h2 {
   color: #f6f6f6;
   margin-top: 1px;
-  padding-left: 2%;
   margin-bottom: 0;
 }
 .currSection h3 {
   color: #f6f6f6;
-  padding-left: 2%;
   margin-bottom: 4px;
   margin-top: 0;
 }
@@ -246,10 +247,10 @@ body p {
 }
 .personalImg {
   float: right;
-  box-shadow: -0.6em 0.4em 0.5em darkgray;
+  box-shadow: 0.6em 0.4em 0.5em darkgray;
   height: 600px;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 /* Contact */
 .contactHeader h1 {
