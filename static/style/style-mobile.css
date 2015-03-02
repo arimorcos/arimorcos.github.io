@@ -248,9 +248,9 @@ body p {
 .personalImg {
   float: right;
   box-shadow: 1.2em 0.8em 1em darkgray;
-  height: 600px;
-  margin-left: 2.25em;
-  margin-right: 2.25em;
+  height: 550px;
+  margin-left: 1.5em;
+  border-radius: 1%;
 }
 /* Contact */
 .contactHeader h1 {
