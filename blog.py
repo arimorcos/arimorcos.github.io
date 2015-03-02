@@ -1,7 +1,7 @@
 __author__ = 'arimorcos'
 
-import sys, os
-from flask import Flask, render_template, redirect
+import sys, math
+from flask import Flask, render_template, redirect, url_for
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 
@@ -24,9 +24,16 @@ def blogNoPage():
 
 
 # redirect empty tag to page 1
-@app.route('/blog/tag/<tagname>/')
-def tagNoPage(tagname):
-    return redirect('/blog/tag/' + tagname + '/page1/')
+@app.route('/blog/tag/<tagName>/', strict_slashes=False)
+def tagNoPage(tagName):
+    return redirect(url_for('blogTag', tagName=tagName, pageNum=1))
+
+
+@freezer.register_generator
+def tagNoPage():
+    tagList = getTagFrequency(False)
+    for tag in tagList:
+        yield {'tagName': tag}
 
 
 # create route for posts, which will grab all posts in the posts folder and render them in a template
@@ -63,7 +70,7 @@ def blogTag(tagName, pageNum):
 def renderPostList(postList, pageNum=False, tagName=False):
 
     # Number of posts per page
-    nPostsPerPage = 2
+    nPostsPerPage = 5
 
     # get recent posts
     nRecent = 10
@@ -207,4 +214,5 @@ if __name__ == "__main__":
         freezer.freeze()
     else:
         # run on the local host so that anyone can see it
-        app.run(host='0.0.0.0', debug=False)
+        # app.run(host='0.0.0.0', debug=True)
+        freezer.run(debug=True)

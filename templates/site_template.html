@@ -62,25 +62,25 @@
         <div class="row navBar">
             <ul class="navIcon">
                 <li class="navAbout">
-                    <a href="/about/" class="showTooltip" title="About Me">
+                    <a href="{{ url_for('about') }}" class="showTooltip" title="About Me">
                         <img src="/static/images/navigation-icons/about_me.png"
                              class="img-responsive">
                     </a>
                 </li>
                 <li class="navResearch">
-                    <a href="/research/" class="showTooltip" title="Research">
+                    <a href="{{ url_for('research') }}" class="showTooltip" title="Research">
                         <img src="/static/images/navigation-icons/brain_icon.png"
                              class="img-responsive">
                     </a>
                 </li>
                 <li class="navBlog">
-                    <a href="/blog/page1/" class="showTooltip" title="Blog">
+                    <a href="{{ url_for('blog', pageNum=1) }}" class="showTooltip" title="Blog">
                         <img src="/static/images/navigation-icons/pencil.png"
                              class="img-responsive">
                     </a>
                 </li>
                 <li class="navContact">
-                    <a href="/contact/" class="showTooltip" title="Contact">
+                    <a href="{{ url_for('contact') }}" class="showTooltip" title="Contact">
                         <img src="/static/images/navigation-icons/paper_airplane.png"
                              class="img-responsive">
                     </a>
