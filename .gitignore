@@ -1,20 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
-### WordPress template
-*.log
-.htaccess
-sitemap.xml
-sitemap.xml.gz
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-
-
 ### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
