@@ -7,7 +7,7 @@ from helperFunctions import *
 # redirect empty blog page to page 1
 @app.route('/blog/')
 def blogNoPage():
-    return redirect('/blog/page1/')
+    return redirect('/blog/page/1/')
 
 
 # redirect empty tag to page 1
@@ -24,7 +24,7 @@ def tagNoPage():
 
 
 # create route for posts, which will grab all posts in the posts folder and render them in a template
-@app.route("/blog/page<pageNum>/")  # route to <webpage>/posts/
+@app.route("/blog/page/<pageNum>/")  # route to <webpage>/posts/
 def blog(pageNum):
 
     postList = getPostList()
@@ -43,7 +43,7 @@ def blogAll():
 
 
 # create a route for tags, which will grab all posts which match a tag and render
-@app.route("/blog/tag/<tagName>/page<pageNum>/")
+@app.route("/blog/tag/<tagName>/page/<pageNum>/")
 def blogTag(tagName, pageNum):
 
     # find posts which match tag
