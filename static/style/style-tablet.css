@@ -199,10 +199,14 @@ body p {
 }
 .postContent {
   font-size: 1.44em !important;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 .postContent p {
   text-align: justify;
+}
+.postUpdated {
+  font-style: italic;
+  margin-top: 2em;
 }
 .continueReading {
   margin-bottom: 1em;

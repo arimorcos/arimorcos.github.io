@@ -26,6 +26,12 @@
 
         <div class="postContent">
             {{ post.html | safe }}
+
+            {% if post.updated is defined %}
+                <p class="postUpdated">
+                    Updated: {{ post.updated }}
+                </p>
+            {% endif %}
         </div>
 
         <div class="row">
