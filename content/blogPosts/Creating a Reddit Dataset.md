@@ -1,5 +1,5 @@
 title: Creating a reddit data set 
-date: 2015-03-10
+date: 2015-03-13
 tags: reddit, praw, data set, sql, python, api
 
 <img src='/static/blogImages/redditToDatabase.png' alt='Reddit To Database' width='100%'>
@@ -44,7 +44,7 @@ Let's grab all the posts from the funny subreddit from March 1, 2015:
 
 	funnySubreddit = redditDataset.getSubreddits(redditObject, ['funny'])
     redditDataset.createDataset(redditObject, funnySubreddit, startDate='150301000000'
-								endDate='150301115959', dbName='March_01_2015_funny_posts'
+								endDate='150301235959', dbName='March_01_2015_funny_posts'
 								fineScale=4)
 
 Basically, you give `createDataset` the reddit object, the subreddits (in list or generator form), a start and end date, a base name for the database, and a fine scale (which I'll get to in a moment). 
@@ -71,7 +71,7 @@ I eventually figured out that the reddit search engine accepts timestamp queries
 
 ## Summary
 
-You can check out the code for this project [here](http://github.com). I've also collected a data set of almost all the posts along with their top 100 comments from the top 200 subreddits from March 2-8, 2015. You can get this database [here](). 
+You can check out the code for this project [here](https://github.com/arimorcos/getRedditDataset). I've also collected a data set of almost all the posts along with their top 100 comments from the top 200 subreddits from March 2-8, 2015. You can get this database [here](ftp://209.6.60.59/March2-8_Top200.db). 
 
 Now that I have the data, it's time to start asking questions!  
 
