@@ -25,5 +25,22 @@
                 Hello internet! Welcome to Fairly One-Dimensional, my blog about finding patterns in complex datasets. My goal is to post a new analysis of some freely available dataset every week or two (assuming my research allows me the time).
             </description>
         </item>
+        <item>
+            <title>
+                Creating a reddit dataset
+            </title>
+            <pubDate>
+                Fri, 13 Mar 2015 12:17:33 -0500
+            </pubDate>
+            <link>
+                http://www.arimorcos.com/blog/Creating%20a%20Reddit%20Dataset/
+            </link>
+            <author>
+                Ari Morcos
+            </author>
+            <description>
+                In preparation for the first set of analyses I'm planning for this blog, I spent some time over the last week preparing a package to create data sets from reddit. The package will collect comments and posts from specified subreddits within a custom date range and save it to a sqlite3 database for later analysis.
+            </description>
+        </item>
     </channel>
 </rss>
