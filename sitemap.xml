@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.arimorcos.com/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/about/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/research/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/page/1/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/contact/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/static/pdfs/Curriculum%20Vitae%20-%20Ari%20Morcos.pdf</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/Creating%20a%20Reddit%20Dataset/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/reddit/page/1/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/praw/page/1/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/dataset/page/1/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/sql/page/1/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/python/page/1/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/api/page/1/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/Hello%20World%21/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/flask/page/1/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/sabermetrics/page/1/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/reddit/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/praw/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/dataset/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/sql/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/python/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/api/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/flask/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.arimorcos.com/blog/tag/sabermetrics/</loc>
+  <lastmod>2015-03-14T17:00:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+</urlset>

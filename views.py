@@ -1,6 +1,6 @@
 __author__ = 'arimorcos'
 
-from flask import redirect, url_for
+from flask import redirect, url_for, send_from_directory
 from initialize import freezer, app
 from helperFunctions import *
 
@@ -88,4 +88,9 @@ def contact():
 @app.route('/')
 def index():
     return render_template('about.html')
+
+# route to sitemap
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('', 'sitemap.xml')
 
