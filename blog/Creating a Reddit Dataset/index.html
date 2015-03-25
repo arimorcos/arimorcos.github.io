@@ -111,10 +111,14 @@
         <h1 class="sectionHeading blogPostTitle text-center"> Creating a reddit data set </h1>
         <h3 class="text-center blogDate">2015-03-13</h3>
 
+       
+           <div class="postImage">
+               <img src=/static/blogImages/redditToDatabase.png width=100%></img>
+           </div>
+       
+
         <div class="postContent">
-            <p><img src='/static/blogImages/redditToDatabase.png' alt='Reddit To Database' width='100%'>
-</img></p>
-<p>In preparation for the first set of analyses I'm planning for this blog, I spent some time over the last week preparing a package to create data sets from reddit. The package will collect comments and posts from specified subreddits within a custom date range and save it to a sqlite3 database for later analysis. </p>
+            <p>In preparation for the first set of analyses I'm planning for this blog, I spent some time over the last week preparing a package to create data sets from reddit. The package will collect comments and posts from specified subreddits within a custom date range and save it to a sqlite3 database for later analysis. </p>
 <p>To do this, I've used <a href="https://github.com/praw-dev/praw">PRAW</a>, a python wrapper for the Reddit API. PRAW allows you to easily retrieve comments and posts from specific subreddits and users and gracefully handles Reddit's API usage limits. However, finding posts within a specific time range is much trickier.  </p>
 <div id="breakStart"></div>
 

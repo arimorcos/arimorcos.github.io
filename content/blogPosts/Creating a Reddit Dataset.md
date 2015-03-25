@@ -1,9 +1,7 @@
 title: Creating a reddit data set 
 date: 2015-03-13
 tags: reddit, praw, data set, sql, python, api
-
-<img src='/static/blogImages/redditToDatabase.png' alt='Reddit To Database' width='100%'>
-</img>
+image: '/static/blogImages/redditToDatabase.png'
 
 In preparation for the first set of analyses I'm planning for this blog, I spent some time over the last week preparing a package to create data sets from reddit. The package will collect comments and posts from specified subreddits within a custom date range and save it to a sqlite3 database for later analysis. 
 
