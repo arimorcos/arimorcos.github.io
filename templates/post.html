@@ -26,6 +26,12 @@
         <h1 class="sectionHeading blogPostTitle text-center"> {{ post.title }} </h1>
         <h3 class="text-center blogDate">{{ post.date }}</h3>
 
+       {% if post.image is defined %}
+           <div class="postImage">
+               <img src={{ post.image }} width=100%></img>
+           </div>
+       {% endif %}
+
         <div class="postContent">
             {{ post.html | safe }}
 

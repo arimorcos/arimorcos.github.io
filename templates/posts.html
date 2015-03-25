@@ -34,6 +34,12 @@
                             {{ post.date }}
                         </h4>
 
+                        {% if post.image is defined %}
+                            <div class="postImage">
+                                <img src={{ post.image }} width=100%></img>
+                            </div>
+                        {% endif %}
+
                         {#  Blurb from blog post  #}
                         <div class="postContent">
                             <p>
