@@ -36,7 +36,7 @@ Instead of plotting a distance matrix, it would be substantially more intuitive 
 I then used [affinity propagation](http://en.wikipedia.org/wiki/Affinity_propagation), a clustering algorithm based on message passing, to cluster the data in the first 3 principal components. One really nice feature of affinity propagation is that, as opposed to k-means clustering, it doesn't require you to estimate the number of clusters beforehand. The algorithm clustered the data into 7 nicely separated clusters, as displayed in images below.
 
 <img src='/static/blogImages/201503/pca3d.gif' width=60% class="centeredImage"></img>
-<img src='/static/blogImages/201503/cluster2d.png' width=80% class="centeredImage"></img>
+<img src='/static/blogImages/201503/cluster2D.png' width=80% class="centeredImage"></img>
 
 From this image, we can see that, not only does the data cluster cleanly, the clusters make sense. The orange cluster contains all the sports subreddits, the navy blue cluster contains the content subreddits discussed above, the royal blue cluster contains the video game subreddits, the green cluster contains an odd assortment of subreddits with no clear pattern, and the teal cluster contains the more intellectual subreddits. 
 
