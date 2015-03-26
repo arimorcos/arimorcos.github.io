@@ -10,19 +10,19 @@
         <copyright>Ari Morcos</copyright>
         <item>
             <title>
-                Hello World!
+                Clustering subreddits by common word usage
             </title>
             <pubDate>
-                Tue, 24 Feb 2015 12:17:33 -0500
+                Fri, 26 Mar 2015 12:17:33 -0500
             </pubDate>
             <link>
-                http://www.arimorcos.com/blog/Hello%20World%21/
+                http://www.arimorcos.com/blog/Clustering%20subreddits%20by%20common%20word%20usage/
             </link>
             <author>
                 Ari Morcos
             </author>
             <description>
-                Hello internet! Welcome to Fairly One-Dimensional, my blog about finding patterns in complex datasets. My goal is to post a new analysis of some freely available dataset every week or two (assuming my research allows me the time).
+                What defines a subreddit? There are some obvious answers: topic, content type (images, videos, self-posts, or all of the above), and user population. For example, by topic, one might expect subreddits related to video games to be more similar to one another than any of them are to [/r/politics](http://www.reddit.com/r/politics). By content type, it seems reasonable to assume that self-post only subreddits like [/r/AskHistorians](http://reddit.com/r/askhistorians) and /r/[AskScience](http://www.reddit.com/r/askscience) are more similar to one another than either is [/r/AdviceAnimals](http://www.reddit.com/r/adviceanimals). But are there more subtle differences between subreddits that can be used to group them in meaningful ways as well? Do users of the different subreddits write in distinct, predictable fashion? Let's find out.
             </description>
         </item>
         <item>
@@ -40,6 +40,23 @@
             </author>
             <description>
                 In preparation for the first set of analyses I'm planning for this blog, I spent some time over the last week preparing a package to create data sets from reddit. The package will collect comments and posts from specified subreddits within a custom date range and save it to a sqlite3 database for later analysis.
+            </description>
+        </item>
+        <item>
+            <title>
+                Hello World!
+            </title>
+            <pubDate>
+                Tue, 24 Feb 2015 12:17:33 -0500
+            </pubDate>
+            <link>
+                http://www.arimorcos.com/blog/Hello%20World%21/
+            </link>
+            <author>
+                Ari Morcos
+            </author>
+            <description>
+                Hello internet! Welcome to Fairly One-Dimensional, my blog about finding patterns in complex datasets. My goal is to post a new analysis of some freely available dataset every week or two (assuming my research allows me the time).
             </description>
         </item>
     </channel>
