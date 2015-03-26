@@ -4,6 +4,15 @@
     <a href="/blog/page/1" class="headerLink">
         Fairly One-Dimensional
     </a>
+
+{% endblock %}
+
+{% block meta %}
+    {% if post.image is defined %}
+        <meta property="og:image" content={{ post.image }}/>
+    {% endif %}
+    <meta property="og:title" content={{ post.title }}/>
+    <meta property="og:site_name" content='Fairly One-Dimensional'/>
 {% endblock %}
 
 {% block title %}
