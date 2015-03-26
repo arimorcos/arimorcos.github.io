@@ -116,6 +116,96 @@
 
                         
                         <h2 class="blogPostTitle sectionHeading text-center">
+                            <a href="/blog/Clustering%20subreddits%20by%20common%20word%20usage/">
+                                Clustering subreddits by common word usage
+                            </a>
+                        </h2>
+                        <h4 class=" blogDate text-center">
+                            2015-03-26
+                        </h4>
+
+                        
+                            <div class="postImage">
+                                <img src=/static/blogImages/201503/static3dClusters.png width=100%></img>
+                            </div>
+                        
+
+                        
+                        <div class="postContent">
+                            <p>
+                                <p>What defines a subreddit? There are some obvious answers: topic, content type (images, videos, self-posts, or all of the above), and user population. For example, by topic, one might expect subreddits related to video games to be more similar to one another than any of them are to <a href="http://www.reddit.com/r/politics">/r/politics</a>. By content type, it seems reasonable to assume that self-post only subreddits like <a href="http://reddit.com/r/askhistorians">/r/AskHistorians</a> and /r/<a href="http://www.reddit.com/r/askscience">AskScience</a> are more similar to one another than either is <a href="http://www.reddit.com/r/adviceanimals">/r/AdviceAnimals</a>. But are there more subtle differences between subreddits that can be used to group them in meaningful ways as well? Do users of the different subreddits write in distinct, predictable fashion? Let's find out. </p>
+<div id="breakStart"></div>
+
+<h2>Creating subreddit-specific word frequency distributions</h2>
+<p>To answer the question of whether users in different subreddits write in distinguishable ways, I wanted to analyze the frequency of words used in the comments of each subreddit. Choosing the right number of words to analyze is a bit of a balance. Choose too few words (the, a(n), etc.), and the subreddits will be entirely indistinguishable. Choose too many, and you'll quickly start getting subreddit specific words, such as names, which will trivialize the problem (e.g. "Clinton" is much more likely to appear in a politics related subreddits, while "Bioshock" is much more likely to appear in video game subreddits). For these analyses, I chose to use the 100 words most frequently used across the comments of the top 50 subreddits. This list includes common articles, a lot of pronouns, and a lot of basic verbs. However, there are no words which should be definitely linked to a given subreddit. For example, the 98th, 99th, and 100th words are "going," "want," and "didn't," respectively. You can see a complete list of the words <a href="/static/blogImages/201503/100_MostFreqWords.png">here</a>. Thus, the distribution of these words should provide an intuition into how users write while remaining agnostic to the "jargon" of each subreddit.  </p>
+<p>With these words in hand, I analyzed the comments submitted to the 50 most popular subreddits between March 2 and March 8, 2015. If you're interested in how I acquired this dataset, check out this <a href="http://www.arimorcos.com/blog/Creating%20a%20Reddit%20Dataset/">post</a>. To create word frequency distributions for each subreddit, I simply counted the number of occurrences (case-insensitive) of each of the 100 words, and normalized by the total number of words in each subreddit. This normalization step is key, because otherwise, subreddits with longer comments (such as <a href="http://reddit.com/r/askreddit">/r/AskReddit</a>) will clearly separate from all the other subreddits). </p>
+<h2>A subreddit distance matrix</h2>
+<p>As a first pass analysis on these data, I calculated the euclidean distance between the 100-dimensional normalized word distributions for each pair of subreddits, resulting in the following matrix: </p>
+<p><img src='/static/blogImages/201503/distMat.png' width=80% class="centeredImage"></img></p>
+<p>Each point in the matrix represents the comparison between two subreddits. Cooler colors signify more similar subreddits, hotter colors subreddits that are more different. Elements along the diagonal represent a comparison of a subreddit to itself, so the distance is 0. Also note that there's no directionality to these comparisons so the matrix is symmetric. </p>
+<p>A few observations pop out immediately. First, there are a few bastions of blue off the diagonal. In a lot of ways, these make intuitive sense. <a href="http://www.reddit.com/r/funny">/r/funny</a>, <a href="http://www.reddit.com/r/pics">/r/pics</a>, <a href="http://www.reddit.com/r/gifs">/r/gifs</a>, <a href="http://www.reddit.com/r/WTF">/r/WTF</a>, and <a href="http://www.reddit.com/r/videos">/r/videos</a> are all pretty similar to one another. All of these subreddits link to content as opposed to self-posts, they all are or once were default subreddits, and none of them are known for "serious" conversation. </p>
+<p>Second, <a href="http://www.reddit.com/r/circlejerk">/r/circlejerk</a> is different from every other subreddit. Third, the sports subreddits (<a href="http://www.reddit.com/r/nba">/r/nba</a>, <a href="http://www.reddit.com/r/nfl">/r/nfl</a>, <a href="http://www.reddit.com/r/SquaredCircle">/r/SquaredCircle</a>, and <a href="http://www.reddit.com/r/soccer">/r/soccer</a>) are all pretty similar as are the variety of video game subreddits. </p>
+<h2>Clustering subreddits</h2>
+<p>While quite informative, the distance matrix is a little hard to quickly grasp some of the effects. It would be substantially more intuitive to plot the subreddits such that there location described their similarity. Unfortunately, we've yet to find a great way to visualize a 100-dimensional space, so I used <a href="http://en.wikipedia.org/wiki/Principal_component_analysis">principal components analysis (PCA)</a>, one of the most basic forms of dimensionality reduction, to allow us to better visualize the data. There's quite a bit of structure in the data, as the first three principal components explain more than 50% of the total variance, and the first 15 explain more than 90%.</p>
+<p><img src='/static/blogImages/201503/pcVarExp.png' width=50% class="centeredImage"></img></p>
+<p>I then used <a href="http://en.wikipedia.org/wiki/Affinity_propagation">affinity propagation</a>, a clustering algorithm based on message passing, to cluster the data in the first 3 principal components. One really nice feature of affinity propagation is that, as opposed to k-means clustering, it doesn't require you to estimate the number of clusters beforehand. The algorithm clustered the data into 7 clusters, as displayed in three dimensions below.</p>
+<p><img src='/static/blogImages/201503/pca3d.gif' width=60% class="centeredImage"></img></p>
+<div id="breakEnd"></div>
+                            </p>
+                        </div>
+
+                        <div class="row blogSummaryBottom">
+
+                            
+                            <a class="continueReading col-md-12 col-xs-12"
+                               href="/blog/Clustering%20subreddits%20by%20common%20word%20usage/">
+                                Continue Reading &#8594;
+                            </a>
+
+                            
+                            <a class="disqus-comment-count commentCount col-md-3 col-xs-5"
+                               data-disqus-identifier="Clustering subreddits by common word usage"
+                               href="/blog/Clustering%20subreddits%20by%20common%20word%20usage/#disqus_thread">
+                            </a>
+
+                            <div class="bottomTagList col-md-5 col-xs-12">
+                                <p>
+                                    Tagged with:
+                                    
+                                        <a href="/blog/tag/reddit/page/1/">reddit</a>
+                                    
+                                        <a href="/blog/tag/pca/page/1/">pca</a>
+                                    
+                                        <a href="/blog/tag/clustering/page/1/">clustering</a>
+                                    
+                                        <a href="/blog/tag/affinitypropagation/page/1/">affinitypropagation</a>
+                                    
+                                        <a href="/blog/tag/euclideandistance/page/1/">euclideandistance</a>
+                                    
+                                </p>
+                            </div>
+
+                            <span class="shareButtons pull-right col-md-4 col-xs-12">
+                                <span class='st_twitter_large' displayText='Tweet'></span>
+                                <span class='st_reddit_large' displayText='Reddit'></span>
+                                <span class='st_facebook_large' displayText='Facebook'></span>
+                                <span class='st_googleplus_large' displayText='Google +'></span>
+                                <span class='st_email_large' displayText='Email'></span>
+                            </span>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            
+
+                <div class="contentCard">
+                    <div class="recentPost">
+
+                        
+                        <h2 class="blogPostTitle sectionHeading text-center">
                             <a href="/blog/Creating%20a%20Reddit%20Dataset/">
                                 Creating a reddit data set
                             </a>
@@ -126,7 +216,7 @@
 
                         
                             <div class="postImage">
-                                <img src=/static/blogImages/redditToDatabase.png width=100%></img>
+                                <img src=/static/blogImages/201503/redditToDatabase.png width=100%></img>
                             </div>
                         
 
@@ -320,6 +410,13 @@
             <h2 class="text-center">Recent Posts</h2>
             
                 <p>
+                    <a href="/blog/Clustering%20subreddits%20by%20common%20word%20usage/"
+                       class="recentPostText">
+                        Clustering subreddits by common word usage
+                    </a>
+                </p>
+            
+                <p>
                     <a href="/blog/Creating%20a%20Reddit%20Dataset/"
                        class="recentPostText">
                         Creating a reddit data set
@@ -340,9 +437,19 @@
                     col-md-3 col-sm-3">
             <h2 class="text-center">Common Topics</h2>
             
+                <a href="/blog/tag/affinitypropagation/page/1/"
+                   class="tag1">
+                    affinitypropagation
+                </a>
+            
                 <a href="/blog/tag/api/page/1/"
                    class="tag1">
                     api
+                </a>
+            
+                <a href="/blog/tag/clustering/page/1/"
+                   class="tag1">
+                    clustering
                 </a>
             
                 <a href="/blog/tag/dataset/page/1/"
@@ -350,9 +457,19 @@
                     dataset
                 </a>
             
+                <a href="/blog/tag/euclideandistance/page/1/"
+                   class="tag1">
+                    euclideandistance
+                </a>
+            
                 <a href="/blog/tag/flask/page/1/"
                    class="tag1">
                     flask
+                </a>
+            
+                <a href="/blog/tag/pca/page/1/"
+                   class="tag1">
+                    pca
                 </a>
             
                 <a href="/blog/tag/praw/page/1/"
@@ -366,7 +483,7 @@
                 </a>
             
                 <a href="/blog/tag/reddit/page/1/"
-                   class="tag1">
+                   class="tag2">
                     reddit
                 </a>
             
