@@ -2,8 +2,11 @@ title: Clustering subreddits by common word usage
 date: 2015-03-26
 tags: reddit, pca, clustering, affinity propagation, euclidean distance
 image: '/static/blogImages/201503/static3dClusters.png'
+updated: 2015-03-27
 
-What defines a subreddit? There are some obvious answers: topic, content type (images, videos, self-posts, or all of the above), and user population. For example, by topic, one might expect subreddits related to video games to be more similar to one another than any of them are to [/r/politics](http://www.reddit.com/r/politics). By content type, it seems reasonable to assume that self-post only subreddits like [/r/AskHistorians](http://reddit.com/r/askhistorians) and /r/[AskScience](http://www.reddit.com/r/askscience) are more similar to one another than either is to [/r/AdviceAnimals](http://www.reddit.com/r/adviceanimals). But are there more subtle differences between subreddits that can be used to group them in meaningful ways as well? Do users of the different subreddits write in distinct, predictable fashion? Let's find out. 
+One of reddit's best features, along with its voting system, is the ability for users to create their own subreddits, forums dedicated to specific topics. There are subreddits for any and every topic one can think of, and redditors know that subreddits quickly take on dynamic personalities. Some subreddits are known for vigorous discussion, while others simply represent a constantly updated collection of entertaining content. Some serve as learning resources for those new to a field, while others are places for debates among experts. Some are incredibly supportive, while others quickly become havens for trolls. 
+
+But what defines a subreddit? There are some obvious answers: topic, content type (images, videos, self-posts, or all of the above), and user population. For example, by topic, one might expect subreddits related to video games to be more similar to one another than any of them are to [/r/politics](http://www.reddit.com/r/politics). By content type, it seems reasonable to assume that self-post only subreddits like [/r/AskHistorians](http://reddit.com/r/askhistorians) and /r/[AskScience](http://www.reddit.com/r/askscience) are more similar to one another than either is to [/r/AdviceAnimals](http://www.reddit.com/r/adviceanimals). But are there more subtle differences between subreddits that can be used to group them in meaningful ways as well? Do users of the different subreddits write in distinct, predictable fashion? How much information does it take to categorize a subreddit? As it turns out, not nearly as much as one might think. 
 
 <div id="breakStart"></div>
 
@@ -29,7 +32,7 @@ There are many more observations to be made from this matrix, but it's a little 
 
 ## Clustering subreddits ##
 
-Instead of plotting a distance matrix, it would be substantially more intuitive to plot the subreddits such that there location described their similarity. Unfortunately, we've yet to find a great way to visualize a 100-dimensional space, so I used [principal components analysis (PCA)](http://en.wikipedia.org/wiki/Principal_component_analysis), one of the most basic forms of dimensionality reduction, to allow us to better visualize the data. There's quite a bit of structure in the data, as the first three principal components explain more than 50% of the total variance, and the first 15 explain more than 90%.
+Instead of plotting a distance matrix, it would be substantially more intuitive to plot the subreddits such that there location described their similarity. Unfortunately, we've yet to find a great way to visualize a 100-dimensional space, so I used [principal components analysis (PCA)](http://en.wikipedia.org/wiki/Principal_component_analysis), one of the most basic forms of dimensionality reduction, to allow us to better visualize the data. Briefly, PCA is a method which allows us to reveal the underlying structure in the data. While the data may occupy 100 dimensions, if dimensions are strongly correlated, we might only need a few dimensions to describe the majority of the variability. PCA attempts to do this by remapping or "projecting" the data onto these dimensions. There's quite a bit of structure in the data, as the first three principal components explain more than 50% of the total variance, and the first 15 explain more than 90%.
 
 <img src='/static/blogImages/201503/pcVarExp.png' width=50% class="centeredImage"></img>
 
@@ -72,7 +75,7 @@ Again, some pronouns, but perhaps reflecting the collective spirit of science, t
 
 ## Conclusions ##
 
-Overall, I'm quite pleased with how this analysis turned out. Not only did subreddits cluster in a reasonable fashion according to topics, many of the clusters can be defined by differences in just a few individual words, with pronouns having a disproportionate influence. How we write says a lot about us. 
+Overall, I'm quite pleased with how this analysis turned out. Not only did subreddits cluster in a reasonable fashion according to topics, many of the clusters can be defined by differences in just a few individual words, with pronouns having a disproportionate influence. Perhaps most surprisingly, one can categorize subreddits based on just a small subset of words and comparatively little processing. I suppose how we write says a lot about us. 
 
 You can check out the iPython notebook used to perform these analyses [here](http://nbviewer.ipython.org/github/arimorcos/reddit_analyses/blob/master/Cluster%20comments.ipynb#).
 
