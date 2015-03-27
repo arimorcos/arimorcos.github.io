@@ -731,6 +731,11 @@ body p {
   -webkit-text-stroke-color: #f6f6f6;
   -webkit-text-stroke-color: #6b9dc9;
 }
+.postContent h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
 .navIcon a {
   width: 160px;
   height: 160px;
