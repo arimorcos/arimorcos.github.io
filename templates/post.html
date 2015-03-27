@@ -9,12 +9,14 @@
 
 {% block meta %}
     {% if post.image is defined %}
-        <meta property="og:image" content={{ post.image }}/>
-        <link rel="image_src" href={{ post.image }} />
+        <meta property="og:image" content="{{ post.image }}"/>
+        <link rel="image_src" href="{{ post.image }}" />
     {% endif %}
-    <meta property="og:title" content={{ post.title }}/>
+    <meta property="og:url" content="http://www.fairlyonedimensional.com"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="{{ post.title }}"/>
     <meta property="og:site_name" content='Fairly One-Dimensional'/>
-    <meta name="title" content={{ post.title }} />
+    <meta name="title" content="{{ post.title }}" />
 
 {% endblock %}
 
