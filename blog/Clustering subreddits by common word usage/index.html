@@ -9,6 +9,7 @@
     
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Clustering subreddits by common word usage"/>
+    <meta property="og:url" content="http://www.fairlyonedimensional.com"/>
     <meta property="og:site_name" content='Fairly One-Dimensional'/>
     <meta name="title" content="Clustering subreddits by common word usage" />
 
@@ -130,7 +131,8 @@
        
 
         <div class="postContent">
-            <p>What defines a subreddit? There are some obvious answers: topic, content type (images, videos, self-posts, or all of the above), and user population. For example, by topic, one might expect subreddits related to video games to be more similar to one another than any of them are to <a href="http://www.reddit.com/r/politics">/r/politics</a>. By content type, it seems reasonable to assume that self-post only subreddits like <a href="http://reddit.com/r/askhistorians">/r/AskHistorians</a> and /r/<a href="http://www.reddit.com/r/askscience">AskScience</a> are more similar to one another than either is to <a href="http://www.reddit.com/r/adviceanimals">/r/AdviceAnimals</a>. But are there more subtle differences between subreddits that can be used to group them in meaningful ways as well? Do users of the different subreddits write in distinct, predictable fashion? Let's find out. </p>
+            <p>One of reddit's best features, along with its voting system, is the ability for users to create their own subreddits, forums dedicated to specific topics. There are subreddits for any and every topic one can think of, and redditors know that subreddits quickly take on dynamic personalities. Some subreddits are known for vigorous discussion, while others simply represent a constantly updated collection of entertaining content. Some serve as learning resources for those new to a field, while others are places for debates among experts. Some are incredibly supportive, while others quickly become havens for trolls. </p>
+<p>But what defines a subreddit? There are some obvious answers: topic, content type (images, videos, self-posts, or all of the above), and user population. For example, by topic, one might expect subreddits related to video games to be more similar to one another than any of them are to <a href="http://www.reddit.com/r/politics">/r/politics</a>. By content type, it seems reasonable to assume that self-post only subreddits like <a href="http://reddit.com/r/askhistorians">/r/AskHistorians</a> and /r/<a href="http://www.reddit.com/r/askscience">AskScience</a> are more similar to one another than either is to <a href="http://www.reddit.com/r/adviceanimals">/r/AdviceAnimals</a>. But are there more subtle differences between subreddits that can be used to group them in meaningful ways as well? Do users of the different subreddits write in distinct, predictable fashion? How much information does it take to categorize a subreddit? As it turns out, not nearly as much as one might think. </p>
 <div id="breakStart"></div>
 
 <h2>Creating subreddit-specific word frequency distributions</h2>
@@ -144,7 +146,7 @@
 <p>Second, <a href="http://www.reddit.com/r/circlejerk">/r/circlejerk</a> is different from every other subreddit. Third, the sports subreddits (<a href="http://www.reddit.com/r/nba">/r/nba</a>, <a href="http://www.reddit.com/r/nfl">/r/nfl</a>, <a href="http://www.reddit.com/r/SquaredCircle">/r/SquaredCircle</a>, and <a href="http://www.reddit.com/r/soccer">/r/soccer</a>) are all pretty similar as are the variety of video game subreddits. </p>
 <p>There are many more observations to be made from this matrix, but it's a little challenging to quickly grasp the clusters using this technique. Let's try a different method which might make this easier.</p>
 <h2>Clustering subreddits</h2>
-<p>Instead of plotting a distance matrix, it would be substantially more intuitive to plot the subreddits such that there location described their similarity. Unfortunately, we've yet to find a great way to visualize a 100-dimensional space, so I used <a href="http://en.wikipedia.org/wiki/Principal_component_analysis">principal components analysis (PCA)</a>, one of the most basic forms of dimensionality reduction, to allow us to better visualize the data. There's quite a bit of structure in the data, as the first three principal components explain more than 50% of the total variance, and the first 15 explain more than 90%.</p>
+<p>Instead of plotting a distance matrix, it would be substantially more intuitive to plot the subreddits such that there location described their similarity. Unfortunately, we've yet to find a great way to visualize a 100-dimensional space, so I used <a href="http://en.wikipedia.org/wiki/Principal_component_analysis">principal components analysis (PCA)</a>, one of the most basic forms of dimensionality reduction, to allow us to better visualize the data. Briefly, PCA is a method which allows us to reveal the underlying structure in the data. While the data may occupy 100 dimensions, if dimensions are strongly correlated, we might only need a few dimensions to describe the majority of the variability. PCA attempts to do this by remapping or "projecting" the data onto these dimensions. There's quite a bit of structure in the data, as the first three principal components explain more than 50% of the total variance, and the first 15 explain more than 90%.</p>
 <p><img src='/static/blogImages/201503/pcVarExp.png' width=50% class="centeredImage"></img></p>
 <p>I then used <a href="http://en.wikipedia.org/wiki/Affinity_propagation">affinity propagation</a>, a clustering algorithm based on message passing, to cluster the data in the first 3 principal components. One really nice feature of affinity propagation is that, as opposed to k-means clustering, it doesn't require you to estimate the number of clusters beforehand. The algorithm clustered the data into 7 nicely separated clusters, as displayed in images below.</p>
 <p><img src='/static/blogImages/201503/pca3d.gif' width=60% class="centeredImage"></img>
@@ -166,10 +168,14 @@
 <p><img src='/static/blogImages/201503/science.png' width=80% class="centeredImage"></img></p>
 <p>Again, some pronouns, but perhaps reflecting the collective spirit of science, the singular pronouns are all underrepresented while the only overrepresented pronoun is "we."</p>
 <h2>Conclusions</h2>
-<p>Overall, I'm quite pleased with how this analysis turned out. Not only did subreddits cluster in a reasonable fashion according to topics, many of the clusters can be defined by differences in just a few individual words, with pronouns having a disproportionate influence. How we write says a lot about us. </p>
+<p>Overall, I'm quite pleased with how this analysis turned out. Not only did subreddits cluster in a reasonable fashion according to topics, many of the clusters can be defined by differences in just a few individual words, with pronouns having a disproportionate influence. Perhaps most surprisingly, one can categorize subreddits based on just a small subset of words and comparatively little processing. I suppose how we write says a lot about us. </p>
 <p>You can check out the iPython notebook used to perform these analyses <a href="http://nbviewer.ipython.org/github/arimorcos/reddit_analyses/blob/master/Cluster%20comments.ipynb#">here</a>.</p>
 <div id="breakEnd"></div>
 
+            
+                <p class="postUpdated">
+                    Updated: 2015-03-27
+                </p>
             
         </div>
 
