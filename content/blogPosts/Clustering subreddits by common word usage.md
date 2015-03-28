@@ -77,6 +77,6 @@ Again, some pronouns, but perhaps reflecting the collective spirit of science, t
 
 Overall, I'm quite pleased with how this analysis turned out. Not only did subreddits cluster in a reasonable fashion according to topics, many of the clusters can be defined by differences in just a few individual words, with pronouns having a disproportionate influence. Perhaps most surprisingly, one can categorize subreddits based on just a small subset of words and comparatively little processing. I suppose how we write says a lot about us. 
 
-You can check out the iPython notebook used to perform these analyses [here](http://nbviewer.ipython.org/github/arimorcos/reddit_analyses/blob/master/Cluster%20comments.ipynb#).
+You can check out the iPython notebook used to perform these analyses [here](http://nbviewer.ipython.org/github/arimorcos/blog_analyses/blob/master/reddit/Cluster%20comments.ipynb).
 
 <div id="breakEnd"></div>
