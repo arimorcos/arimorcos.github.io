@@ -3,6 +3,8 @@ __author__ = 'arimorcos'
 from flask import redirect, url_for, send_from_directory
 from initialize import freezer, app
 from helperFunctions import *
+import os
+from settings import FLATPAGES_ROOT, TEST_DIR
 
 # redirect empty blog page to page 1
 @app.route('/blog/')
@@ -67,6 +69,20 @@ def blogPost(name):
     # return the requested post rendered through the post template
     return render_template('post.html', post=post)
 
+# create a route for an individual test post
+@app.route('/testPost/')  # route with the post name
+def testPost():
+    # generate the path with the first argument inside the first brackets, and the second argument inside the second
+    # set of brackets
+    path = '{}/{}'.format(TEST_DIR, os.path.splitext(
+                                    os.listdir(
+                                    os.path.join(FLATPAGES_ROOT,TEST_DIR))[0])[0])
+
+    # return the page object that exists at that path, or return 404 if it doesn't exist
+    post = flatpages.get_or_404(path)
+
+    # return the requested post rendered through the post template
+    return render_template('post.html', post=post)
 
 # Routing
 @app.route('/about/')

@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     
     
+        <meta property="og:image" content="http://www.arimorcos.com/static/blogImages/201506/genreScores.png"/>
+        <link rel="image_src" href="http://www.arimorcos.com/static/blogImages/201506/genreScores.png" />
+    
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Hello World!"/>
+    <meta property="og:title" content="Sentiment analysis of movie taglines"/>
     <meta property="og:url" content="http://www.fairlyonedimensional.com"/>
     <meta property="og:site_name" content='Fairly One-Dimensional'/>
-    <meta name="title" content="Hello World!" />
+    <meta name="title" content="Sentiment analysis of movie taglines" />
 
 
     
     <title>
-    Fairly One-Dimensional - Hello World!
+    Fairly One-Dimensional - Sentiment analysis of movie taglines
 </title>
 
     
@@ -118,20 +121,36 @@
 
     <div class="container contentCard">
 
-        <h1 class="sectionHeading blogPostTitle text-center"> Hello World! </h1>
-        <h3 class="text-center blogDate">2015-02-24</h3>
+        <h1 class="sectionHeading blogPostTitle text-center"> Sentiment analysis of movie taglines </h1>
+        <h3 class="text-center blogDate">2015-06-16</h3>
 
-       
-           <div class="postImage">
-               <img src= width=100%></img>
-           </div>
        
 
         <div class="postContent">
-            <p>Hello internet! Welcome to Fairly One-Dimensional, my blog about finding patterns in complex datasets. My goal is to post a new analysis of some freely available dataset every week or two (assuming my <a href="http://www.arimorcos.com/research/">research</a> allows me the time). These posts will usually be motivated by questions about the data itself, but I'll probably also post analyses intentionally constructed to make use of various techniques in machine learning I want to try out. As I'm a huge baseball fan, I imagine a fair number of posts will focus on sabermetrics as well. In making this blog, I was inspired by a bunch of people doing awesome analyses, especially <a href="http://fivethirtyeight.com/">FiveThirtyEight</a>, <a href="http://www.randalolson.com/blog/">Randal Olson</a>,  <a href="http://www.baseballprospectus.com">Baseball Prospectus</a>, and <a href="http://www.fangraphs.com">Fangraphs</a>.</p>
+            <p>I recently came across Randal Olson's excellent <a href="http://www.randalolson.com/2014/01/12/a-look-at-sex-drugs-violence-and-cursing-in-film-over-time-through-mpaa-ratings/">post</a> on how the usage of sex, drugs, violence, and cursing in movies have changed over time. This article led me to start thinking: how else have movies changed over time? Has the content of movie taglines (such as "The park is open." for <em>Jurassic World</em> or "Some men dream the future. He built it." for <em>The Aviator</em> ) changed over time? In particular, have movie taglines gotten more negative? </p>
 <div id="breakStart"></div>
 
-<p>As for the website itself, it's built with a <a href="http://flask.pocoo.org/">Flask</a> back end and <a href="http://getbootstrap.com/">Twitter Bootstrap 3</a> for the front end. I had never built a website before, and it's been a lot of fun learning about the amazing resources people have come up with. The <a href="https://github.com/arimorcos/arimorcos.com">source</a> is available on Github. </p>
+<h2>Getting a "sentiment score"</h2>
+<h3>Tools and Data</h3>
+<p>The data for this analysis is freely available via <a href="http://www.imdb.com/interfaces">IMDb's interfaces</a>. I extracted all of the taglines along with each film's genre (using the <code>taglines.list</code> and <code>genres.list</code> files) into a pandas data frame. I used the excellent <a href="http://www.nltk.org/">Natural Language Toolkit (NLTK) </a> as a scaffolding for all of these analyses. To limit the analysis to only those movies with taglines in English, I used <a href="https://pypi.python.org/pypi/langdetect/1.0.1">langdetect</a>. Finally, I used the <a href="http://sentiwordnet.isti.cnr.it/">SentiWordNet 3.0 (SWN)</a> database to get the actual scores for each word. The final analysis was performed on 7,381 taglines. </p>
+<h3>The problem of multiple meanings</h3>
+<p>One of the challenges of extracting sentiment I had underestimated before attempting this analysis is that words can have dramatically different connotations depending on their context. For example, "killing" might generally have a strong negative valence, but in the context of "killing it," might be positive. Moreover, each word is represented in the SWN database separately for each of its unique contextual meanings. </p>
+<p>While I made rudimentary attempts to deal with this problem, I mostly ignored it because the absolute sentiment score of a given tagline is irrelevant in these analyses. All that matters here is the relative sentiment scores across years/genres, so, hopefully, noise due to multiple meanings should average out. That said, the multiple meanings problem is absolutely a confound in these analyses.  </p>
+<h3>Putting it together</h3>
+<p>First, I tokenized each tagline and extracted the parts of speech of each word. I then compared nouns, verbs, adjectives, and adverbs to the SWN database to extract each word's net sentiment score (a word's positive score minus its negative score) for matches in the database with the same part of speech. To get a final sentiment score for a tagline, I simply summed each word's sentiment scores.</p>
+<p>Because sentiment scores are represented as the difference between positive and negative, a value of 0 indicates a neutral connotation, and positive/negative values represent positive/negative valence.  </p>
+<h2>Results</h2>
+<p>So, what happened? Have taglines gotten more negative over the last 50 years? </p>
+<p><img src='/static/blogImages/201506/meanSentimentScoreOverTime.png' width=100% class="centeredImage"></img></p>
+<p>Unfortunately, it seems the answer is no. In fact, it seems they've remained mostly unchanged. The extreme variation between 1950 and 1975 is mostly due to a smaller sample of movies with taglines in the IMDb database for those years. My first thought upon seeing this result was that the multiple meanings problem completely obscured any effect that might be present. As a control for this, I asked how the mean (+/- SEM) sentiment score differs across different film genres. </p>
+<p><img src='/static/blogImages/201506/genreScores.png' width=100% class="centeredImage"></img></p>
+<p>In general, I think this looks pretty reasonable. Horror, action, thriller, and crime movies are all negative, while family movies are the most positive, and the few genres that seem out of place, like musicals, had few samples. This seems to suggest that the general analysis pipeline works to pull apart the differences between taglines, leading me to believe that the null result above is, in fact, genuine. </p>
+<p>On average, movie taglines are neutral or ever so slightly positive and have been that way for the last half-century. </p>
+<h2>Publication bias</h2>
+<p>Once I had convinced myself that this analysis produced a negative result, I struggled immensely with whether or not to write about it. The bias against negative results is ubiquitous throughout academia, perhaps especially in the life sciences, and as a product of academia, it's been ingrained in me. I think most would agree, however, that this bias is harmful to the entire scientific endeavor.</p>
+<p>On this blog, I intend to publish all my results, whether or not they agree with the most interesting interpretation of the data. </p>
+<p>&nbsp;</p>
+<p>You can check out the iPython notebook used to perform these analyses <a href="http://nbviewer.ipython.org/github/arimorcos/blog_analyses/blob/master/imdb/Tagline%20sentiment%20over%20time.ipynb">here</a>.</p>
 <div id="breakEnd"></div>
 
             
@@ -142,11 +161,11 @@
                 <p>
                     Tagged with:
                     
-                        <a href="/blog/tag/python">python</a>
+                        <a href="/blog/tag/imdb">imdb</a>
                     
-                        <a href="/blog/tag/flask">flask</a>
+                        <a href="/blog/tag/sentimentanalysis">sentimentanalysis</a>
                     
-                        <a href="/blog/tag/sabermetrics">sabermetrics</a>
+                        <a href="/blog/tag/movies">movies</a>
                     
                 </p>
             </div>
@@ -166,7 +185,7 @@
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'arimorcos'; // required: replace example with your forum shortname
-        var disqus_identifier = "Hello World!";
+        var disqus_identifier = "Sentiment analysis of movie taglines";
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {

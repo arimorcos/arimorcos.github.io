@@ -9,11 +9,11 @@ def renderPostList(postList, pageNum=False, tagName=False):
 
     # Number of posts per page
     nPostsPerPage = 5
+    nRecent = 5
 
     # get recent posts
-    nRecent = 10
     allPosts = getPostList()
-    recentPosts = allPosts[:nRecent-1]
+    recentPosts = allPosts[:nRecent]
 
     if pageNum:
 

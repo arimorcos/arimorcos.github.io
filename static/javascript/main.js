@@ -65,7 +65,7 @@ function hideBelowFold() {
     //    $('div#breakStart').nextUntil('div#breakEnd').hide();
     //}
 
-    if (url.search('blog') > 0 && (url.search('page') > 0 || url.search('tag') > 0) ) {
+    if ((url.search('blog') > 0 || url.search('tag') > 0) && (url.search('page') > 0 ) ) {
         $('div#breakStart').nextUntil('div#breakEnd').css('display', 'none');
         $('div#breakStart').nextUntil('div#breakEnd').hide();
     }
