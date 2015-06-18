@@ -6,7 +6,6 @@ import os
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 FREEZER_DESTINATION = APP_DIR
 FREEZER_REMOVE_EXTRA_FILES = False
-FREEZER_IGNORE_404_NOT_FOUND = True
 
 DEBUG = False
 FLATPAGES_AUTO_RELOAD = DEBUG

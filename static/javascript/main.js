@@ -65,9 +65,13 @@ function hideBelowFold() {
     //    $('div#breakStart').nextUntil('div#breakEnd').hide();
     //}
 
-    var cropURL = url.substring(0, url.lastIndexOf('/'));
+    //var cropURL = url.substring(0, url.lastIndexOf('/'));
 
-    if ((cropURL.search('blog') > 0 || cropURL.search('tag') > 0) && cropURL.search('post') == -1) {
+    //if ((cropURL.search('blog') > 0 || cropURL.search('tag') > 0) && cropURL.search('post') == -1) {
+    //    $('div#breakStart').nextUntil('div#breakEnd').css('display', 'none');
+    //    $('div#breakStart').nextUntil('div#breakEnd').hide();
+    //}
+    if ($('#postList').length > 0) { // If meta data postList exists
         $('div#breakStart').nextUntil('div#breakEnd').css('display', 'none');
         $('div#breakStart').nextUntil('div#breakEnd').hide();
     }
