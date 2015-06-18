@@ -69,6 +69,17 @@ def blogPost(name):
     # return the requested post rendered through the post template
     return render_template('post.html', post=post)
 
+# redirect old format
+@app.route('/blog/<name>/')
+def blogPostRedirect(name):
+    return redirect(url_for('blogPost', name=name))
+
+@freezer.register_generator
+def blogPostRedirect():
+    postList = getPostList()
+    for post in postList:
+        yield {'name': post.path.split('/')[1]}
+
 # create a route for an individual test post
 @app.route('/testPost/')  # route with the post name
 def testPost():
