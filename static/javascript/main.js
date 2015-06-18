@@ -67,7 +67,7 @@ function hideBelowFold() {
 
     var cropURL = url.substring(0, url.lastIndexOf('/'));
 
-    if (cropURL.search('blog') > 0 || cropURL.search('tag') > 0) {
+    if ((cropURL.search('blog') > 0 || cropURL.search('tag') > 0) && cropURL.search('post') == -1) {
         $('div#breakStart').nextUntil('div#breakEnd').css('display', 'none');
         $('div#breakStart').nextUntil('div#breakEnd').hide();
     }

@@ -57,7 +57,7 @@ def blogTag(tagName, pageNum):
 
 
 # create a route for an individual post
-@app.route('/blog/<name>/')  # route with the post name
+@app.route('/blog/post/<name>/')  # route with the post name
 def blogPost(name):
     # generate the path with the first argument inside the first brackets, and the second argument inside the second
     # set of brackets
