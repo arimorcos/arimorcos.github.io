@@ -74,9 +74,12 @@ def blogPost(name):
 def testPost():
     # generate the path with the first argument inside the first brackets, and the second argument inside the second
     # set of brackets
+
     path = '{}/{}'.format(TEST_DIR, os.path.splitext(
                                     os.listdir(
                                     os.path.join(FLATPAGES_ROOT,TEST_DIR))[0])[0])
+
+    # raise
 
     # return the page object that exists at that path, or return 404 if it doesn't exist
     post = flatpages.get_or_404(path)

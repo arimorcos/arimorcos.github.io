@@ -61,7 +61,11 @@
                 <p>
                     Tagged with:
                     {% for tag in post.tags.replace(' ','').split(',') %}
-                        <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
+                        {% if not loop.last %}
+                            <a href="/blog/tag/{{ tag }}">{{ tag }},</a>
+                        {% else %}
+                            <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
+                        {% endif %}
                     {% endfor %}
                 </p>
             </div>
