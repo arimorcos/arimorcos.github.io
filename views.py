@@ -72,7 +72,8 @@ def blogPost(name):
 # redirect old format
 @app.route('/blog/<name>/')
 def blogPostRedirect(name):
-    return redirect(url_for('blogPost', name=name))
+    # print "redirect to: " + url_for('blogPost', name=name)
+    return redirect(url_for('blogPost', name=name), code=301)
 
 @freezer.register_generator
 def blogPostRedirect():
