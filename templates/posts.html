@@ -65,7 +65,11 @@
                                 <p>
                                     Tagged with:
                                     {% for tag in post.tags.replace(' ','').split(',') %}
-                                        <a href="{{ url_for('blogTag', tagName=tag, pageNum=1) }}">{{ tag }}</a>
+                                        {% if not loop.last %}
+                                            <a href="{{ url_for('blogTag', tagName=tag, pageNum=1) }}">{{ tag }},</a>
+                                        {% else %}
+                                            <a href="{{ url_for('blogTag', tagName=tag, pageNum=1) }}">{{ tag }}</a>
+                                        {% endif %}
                                     {% endfor %}
                                 </p>
                             </div>

@@ -1,10 +1,10 @@
 title: Sentiment analysis of movie taglines
-date: 2015-06-16
-tags: imdb, sentiment analysis, movies
+date: 2015-06-17
+tags: imdb, sentiment analysis, movies, taglines, nltk
 image: '/static/blogImages/201506/genreScores.png'
 showImage: False
 
-I recently came across Randal Olson's excellent [post](http://www.randalolson.com/2014/01/12/a-look-at-sex-drugs-violence-and-cursing-in-film-over-time-through-mpaa-ratings/) on how the usage of sex, drugs, violence, and cursing in movies have changed over time. This article led me to start thinking: how else have movies changed over time? Has the content of movie taglines (such as "The park is open." for *Jurassic World* or "Some men dream the future. He built it." for *The Aviator* ) changed over time? In particular, have movie taglines gotten more negative? 
+I recently came across Randal Olson's excellent [post](http://www.randalolson.com/2014/01/12/a-look-at-sex-drugs-violence-and-cursing-in-film-over-time-through-mpaa-ratings/) on how the usage of sex, drugs, violence, and cursing in movies have changed over time. This article led me to start thinking: how else have movies changed over time? Has the content of movie taglines (such as "The park is open." for *Jurassic World* or "Some men dream the future. He built it." for *The Aviator*) changed over time? In particular, have movie taglines gotten more negative? 
 
 <div id="breakStart"></div>
 
@@ -22,7 +22,7 @@ While I made rudimentary attempts to deal with this problem, I mostly ignored it
 
 ### Putting it together 
 
-First, I tokenized each tagline and extracted the parts of speech of each word. I then compared nouns, verbs, adjectives, and adverbs to the SWN database to extract each word's net sentiment score (a word's positive score minus its negative score) for matches in the database with the same part of speech. To get a final sentiment score for a tagline, I simply summed each word's sentiment scores.
+The first step in my sentiment analysis pipeline was to tokenize each tagline into individual words and punctuation marks. I tagged each token with its part of speech, and excluded punctuation marks, articles, etc., keeping only nouns, verbs, adjectives, and adverbs. Each remaining word in a tagline was then compared to the SWN database to extract each word's net sentiment score. Because each word returns multiple results in the database (due to different parts of speech and different definitions), I filtered the matches to only include database entries with the same part of speech as my requested word, and took the difference between the average positive score and the average negative score as each word's net sentiment score. To get a final sentiment score for a tagline, I simply summed each component word's net sentiment score.  
 
 Because sentiment scores are represented as the difference between positive and negative, a value of 0 indicates a neutral connotation, and positive/negative values represent positive/negative valence.  
 
@@ -39,6 +39,10 @@ Unfortunately, it seems the answer is no. In fact, it seems they've remained mos
 In general, I think this looks pretty reasonable. Horror, action, thriller, and crime movies are all negative, while family movies are the most positive, and the few genres that seem out of place, like musicals, had few samples. This seems to suggest that the general analysis pipeline works to pull apart the differences between taglines, leading me to believe that the null result above is, in fact, genuine. 
 
 On average, movie taglines are neutral or ever so slightly positive and have been that way for the last half-century. 
+
+## The challenges of sentiment analysis
+
+When I first decided to take on this analysis, I assumed that the sentiment analysis component would be relatively straightforward. While it seems that the results of this analysis are in the right ballpark, the manner in which I dealt with the multiple meanings problem here would be drastically insufficient for say, mining sentiment on Twitter to predict future stock price movements. One way I could have better handled the multiple meanings problem would have been to use n-grams (i.e. groupings of words. A bigram is a pair of words, a trigram a word triplet, etc.). These might have allowed me to better extract the precise meaning of a given word in a tagline given its context. Another, substantially more complex approach, is to use Recurrent Neural Networks (RNNs) to approach sentiment analysis. RNNs [are](http://deeplearning.net/tutorial/lstm.html) [actively](http://nlp.stanford.edu/sentiment/) [being used](https://www.youtube.com/watch?v=VINCQghQRuM) for sentiment analysis, often with extremely good results. If I were to continue this analysis, I think this is the approach I would take. 
 
 ## Publication bias 
 
