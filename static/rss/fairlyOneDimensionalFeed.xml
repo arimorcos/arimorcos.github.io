@@ -10,6 +10,23 @@
         <copyright>Ari Morcos</copyright>
         <item>
             <title>
+                Sentiment analysis of movie taglines
+            </title>
+            <pubDate>
+                Tue, 16 Jun 2015 20:17:33 -0500
+            </pubDate>
+            <link>
+                http://www.arimorcos.com/blog/Sentiment%analysis%20of%20movie%taglines/
+            </link>
+            <author>
+                Ari Morcos
+            </author>
+            <description>
+                I recently came across Randal Olson's excellent post on how the usage of sex, drugs, violence, and cursing in movies have changed over time. This article led me to start thinking: how else have movies changed over time? Has the content of movie taglines (such as "The park is open." for *Jurassic World* or "Some men dream the future. He built it." for *The Aviator* ) changed over time? In particular, have movie taglines gotten more negative?
+            </description>
+        </item>
+        <item>
+            <title>
                 Clustering subreddits by common word usage
             </title>
             <pubDate>
@@ -22,7 +39,7 @@
                 Ari Morcos
             </author>
             <description>
-                What defines a subreddit? There are some obvious answers: topic, content type (images, videos, self-posts, or all of the above), and user population. For example, by topic, one might expect subreddits related to video games to be more similar to one another than any of them are to [/r/politics](http://www.reddit.com/r/politics). By content type, it seems reasonable to assume that self-post only subreddits like [/r/AskHistorians](http://reddit.com/r/askhistorians) and /r/[AskScience](http://www.reddit.com/r/askscience) are more similar to one another than either is [/r/AdviceAnimals](http://www.reddit.com/r/adviceanimals). But are there more subtle differences between subreddits that can be used to group them in meaningful ways as well? Do users of the different subreddits write in distinct, predictable fashion? Let's find out.
+                What defines a subreddit? There are some obvious answers: topic, content type (images, videos, self-posts, or all of the above), and user population. For example, by topic, one might expect subreddits related to video games to be more similar to one another than any of them are to /r/politics. By content type, it seems reasonable to assume that self-post only subreddits like /r/AskHistorians and /r/AskScience are more similar to one another than either is /r/AdviceAnimals. But are there more subtle differences between subreddits that can be used to group them in meaningful ways as well? Do users of the different subreddits write in distinct, predictable fashion? Let's find out.
             </description>
         </item>
         <item>
