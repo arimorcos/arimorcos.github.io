@@ -16,13 +16,13 @@
                 Tue, 16 Jun 2015 20:17:33 -0500
             </pubDate>
             <link>
-                http://www.arimorcos.com/blog/Sentiment%analysis%20of%20movie%taglines/
+                http://www.arimorcos.com/blog/post/Sentiment%20analysis%20of%20movie%20taglines/
             </link>
             <author>
                 Ari Morcos
             </author>
             <description>
-                I recently came across Randal Olson's excellent post on how the usage of sex, drugs, violence, and cursing in movies have changed over time. This article led me to start thinking: how else have movies changed over time? Has the content of movie taglines (such as "The park is open." for *Jurassic World* or "Some men dream the future. He built it." for *The Aviator* ) changed over time? In particular, have movie taglines gotten more negative?
+                I recently came across Randal Olson's excellent post on how the usage of sex, drugs, violence, and cursing in movies have changed over time. This article led me to start thinking: how else have movies changed over time? Has the content of movie taglines (such as "The park is open." for Jurassic World or "Some men dream the future. He built it." for The Aviator) changed over time? In particular, have movie taglines gotten more negative?
             </description>
         </item>
         <item>
@@ -33,7 +33,7 @@
                 Fri, 26 Mar 2015 12:17:33 -0500
             </pubDate>
             <link>
-                http://www.arimorcos.com/blog/Clustering%20subreddits%20by%20common%20word%20usage/
+                http://www.arimorcos.com/blog/post/Clustering%20subreddits%20by%20common%20word%20usage/
             </link>
             <author>
                 Ari Morcos
@@ -50,7 +50,7 @@
                 Fri, 13 Mar 2015 12:17:33 -0500
             </pubDate>
             <link>
-                http://www.arimorcos.com/blog/Creating%20a%20Reddit%20Dataset/
+                http://www.arimorcos.com/blog/post/Creating%20a%20Reddit%20Dataset/
             </link>
             <author>
                 Ari Morcos
@@ -67,7 +67,7 @@
                 Tue, 24 Feb 2015 12:17:33 -0500
             </pubDate>
             <link>
-                http://www.arimorcos.com/blog/Hello%20World%21/
+                http://www.arimorcos.com/blog/post/Hello%20World%21/
             </link>
             <author>
                 Ari Morcos
