@@ -15,9 +15,23 @@
     <meta id="indPost">
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{ post.title }}"/>
-    <meta property="og:url" content="http://www.fairlyonedimensional.com"/>
+    <meta property="og:url" content="{{ post.url }}"/>
     <meta property="og:site_name" content='Fairly One-Dimensional'/>
+    <meta property="og:locale" content='en_US'/>
+    <meta property="fb:app_id" content="1607445152878511">
+    <meta property="og:description" content="{{ post.description }}" />
     <meta name="title" content="{{ post.title }}" />
+
+    <meta name="twitter:site" content="@arimorcos"/>
+    <meta name="twitter:creator" content="@arimorcos"/>
+    <meta name="twitter:title" content="{{ post.title }}"/>
+    <meta name="twitter:description" content="{{ post.description }}"/>
+    {% if post.image is defined %}
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="{{ post.image }}"/>
+    {% else %}
+        <meta name="twitter:card" content="summary"/>
+    {% endif %}
 
 {% endblock %}
 
