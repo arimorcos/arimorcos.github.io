@@ -69,7 +69,7 @@ def blogPost(name):
 
     # get description
     post.description = ''.join(BeautifulSoup(post.html[0:400]).findAll(text=True)) + '...'
-    post.url = 'www.arimorcos.com' + url_for('blogPost',name=name)
+    post.url = 'http://www.arimorcos.com' + url_for('blogPost',name=name)
 
     # return the requested post rendered through the post template
     return render_template('post.html', post=post)
