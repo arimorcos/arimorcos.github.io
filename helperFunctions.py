@@ -98,7 +98,8 @@ def getTagFrequency(normalizeRange):
 
     tagList = {}
     for p in postList:
-        for tag in p['tags'].replace(' ', '').split(','):
+        for tag in p['tags'].replace(', ', ',').split(','):
+            tag = convertToCamelCase(tag)
             if tag in tagList:
                 tagList[tag] += 1
             else:
@@ -110,3 +111,25 @@ def getTagFrequency(normalizeRange):
             tagList[tag] = int(round(maxFreq*(float(tagList[tag])/maxFreq)))
 
     return tagList
+
+
+def convertToCamelCase(input):
+    """
+    Converts a string into camel case
+    :param input: string to be converted
+    :return: camelCase version of string
+    """
+
+    # split input
+    splitWords = input.split(' ')
+
+    # check if only one word, and if so, just return the input as is
+    if len(splitWords) == 1:
+        return input
+
+    # convert words after first word to title
+    titleCaseWords = [word.title() for word in splitWords[1:]]
+
+    # combine all words together
+    output = ''.join([splitWords[0]] + titleCaseWords)
+    return output
