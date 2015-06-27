@@ -132,10 +132,18 @@
                     col-md-3 col-sm-3">
             <h2 class="text-center">Common Topics</h2>
             {% for tag in tagFreq|sort %}
-                <a href="{{ url_for('blogTag', tagName=tag, pageNum=1) }}"
-                   class="{{ tagFreq[tag] }}">
-                    {{ tag }}
-                </a>
+
+                {% if not loop.last %}
+                    <a href="{{ url_for('blogTag', tagName=tag.lower(), pageNum=1) }}"
+                       class="{{ tagFreq[tag] }}">
+                        {{ tag }},
+                    </a>
+                {% else %}
+                    <a href="{{ url_for('blogTag', tagName=tag.lower(), pageNum=1) }}"
+                       class="{{ tagFreq[tag] }}">
+                        {{ tag }}
+                    </a>
+                {% endif %}
             {% endfor %}
         </div>
 

@@ -10,9 +10,21 @@
     <meta id="indPost">
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Sentiment analysis of movie taglines"/>
-    <meta property="og:url" content="http://www.fairlyonedimensional.com"/>
+    <meta property="og:url" content="http://www.arimorcos.com/blog/post/Sentiment%20analysis%20of%20movie%20taglines/"/>
     <meta property="og:site_name" content='Fairly One-Dimensional'/>
+    <meta property="og:locale" content='en_US'/>
+    <meta property="fb:app_id" content="1607445152878511">
+    <meta property="og:description" content="I recently came across Randal Olson&#39;s excellent post on how the usage of sex, drugs, violence, and cursing in movies have changed over time. This article led me to start thinking: how else have movies changed over time? Has the content of movie taglines (such as &#34;..." />
     <meta name="title" content="Sentiment analysis of movie taglines" />
+
+    <meta name="twitter:site" content="@arimorcos"/>
+    <meta name="twitter:creator" content="@arimorcos"/>
+    <meta name="twitter:title" content="Sentiment analysis of movie taglines"/>
+    <meta name="twitter:description" content="I recently came across Randal Olson&#39;s excellent post on how the usage of sex, drugs, violence, and cursing in movies have changed over time. This article led me to start thinking: how else have movies changed over time? Has the content of movie taglines (such as &#34;..."/>
+    
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="/static/blogImages/201506/genreScores.png"/>
+    
 
 
     
@@ -142,9 +154,9 @@
 <p>Because sentiment scores are represented as the difference between positive and negative, a value of 0 indicates a neutral connotation, and positive/negative values represent positive/negative valence.  </p>
 <h2>Results</h2>
 <p>So, what happened? Have taglines gotten more negative over the last 50 years? </p>
-<p><img src='/static/blogImages/201506/sentTag/meanSentimentScoreOverTime.png' width=100% class="centeredImage"></img></p>
+<p><img src='/static/blogImages/201506/meanSentimentScoreOverTime.png' width=100% class="centeredImage"></img></p>
 <p>Unfortunately, it seems the answer is no. In fact, it seems they've remained mostly unchanged. The extreme variation between 1950 and 1975 is mostly due to a smaller sample of movies with taglines in the IMDb database for those years. My first thought upon seeing this result was that the multiple meanings problem completely obscured any effect that might be present. As a control for this, I asked how the mean (+/- SEM) sentiment score differs across different film genres. </p>
-<p><img src='/static/blogImages/201506/sentTag/genreScores.png' width=100% class="centeredImage"></img></p>
+<p><img src='/static/blogImages/201506/genreScores.png' width=100% class="centeredImage"></img></p>
 <p>In general, I think this looks pretty reasonable. Horror, action, thriller, and crime movies are all negative, while family movies are the most positive, and the few genres that seem out of place, like musicals, had few samples. This seems to suggest that the general analysis pipeline works to pull apart the differences between taglines, leading me to believe that the null result above is, in fact, genuine. </p>
 <p>On average, movie taglines are neutral or ever so slightly positive and have been that way for the last half-century. </p>
 <h2>The challenges of sentiment analysis</h2>
