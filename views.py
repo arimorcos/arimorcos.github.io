@@ -97,6 +97,7 @@ def testPost():
                                     os.path.join(FLATPAGES_ROOT,TEST_DIR))[0])[0])
 
     # raise
+    flatpages.reload()
 
     # return the page object that exists at that path, or return 404 if it doesn't exist
     post = flatpages.get_or_404(path)
