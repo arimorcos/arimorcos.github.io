@@ -5,6 +5,7 @@ from initialize import freezer, app
 from helperFunctions import *
 import os
 from settings import FLATPAGES_ROOT, TEST_DIR
+from bs4 import BeautifulSoup
 
 # redirect empty blog page to page 1
 @app.route('/blog/')
@@ -65,6 +66,10 @@ def blogPost(name):
 
     # return the page object that exists at that path, or return 404 if it doesn't exist
     post = flatpages.get_or_404(path)
+
+    # get description
+    post.description = ''.join(BeautifulSoup(post.html[0:400]).findAll(text=True)) + '...'
+    post.url = 'http://www.arimorcos.com' + url_for('blogPost',name=name)
 
     # return the requested post rendered through the post template
     return render_template('post.html', post=post)

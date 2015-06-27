@@ -114,128 +114,6 @@
 
             
 
-                <div class="contentCard">
-                    <div class="recentPost">
-
-                        
-                        <h2 class="blogPostTitle sectionHeading text-center">
-                            <a href="/blog/post/Clustering%20subreddits%20by%20common%20word%20usage/">
-                                Clustering subreddits by common word usage
-                            </a>
-                        </h2>
-                        <h4 class=" blogDate text-center">
-                            2015-03-26
-                        </h4>
-
-                        
-                            <div class="postImage">
-                                <img src=/static/blogImages/201503/static3dClusters.png width=100%></img>
-                            </div>
-                        
-
-                        
-                        <div class="postContent">
-                            <p>
-                                <p>One of reddit's best features, along with its voting system, is the ability for users to create their own subreddits, forums dedicated to specific topics. There are subreddits for any and every topic one can think of, and redditors know that subreddits quickly take on dynamic personalities. Some subreddits are known for vigorous discussion, while others simply represent a constantly updated collection of entertaining content. Some serve as learning resources for those new to a field, while others are places for debates among experts. Some are incredibly supportive, while others quickly become havens for trolls. </p>
-<p>But what defines a subreddit? There are some obvious answers: topic, content type (images, videos, self-posts, or all of the above), and user population. For example, by topic, one might expect subreddits related to video games to be more similar to one another than any of them are to <a href="http://www.reddit.com/r/politics">/r/politics</a>. By content type, it seems reasonable to assume that self-post only subreddits like <a href="http://reddit.com/r/askhistorians">/r/AskHistorians</a> and /r/<a href="http://www.reddit.com/r/askscience">AskScience</a> are more similar to one another than either is to <a href="http://www.reddit.com/r/adviceanimals">/r/AdviceAnimals</a>. But are there more subtle differences between subreddits that can be used to group them in meaningful ways as well? Do users of the different subreddits write in distinct, predictable fashion? How much information does it take to categorize a subreddit? As it turns out, not nearly as much as one might think. </p>
-<div id="breakStart"></div>
-
-<h2>Creating subreddit-specific word frequency distributions</h2>
-<p>To answer the question of whether users in different subreddits write in distinguishable ways, I analyzed the frequency of words used in the comments of each subreddit. Choosing the right number of words to analyze is a bit of a balance. Choose too few words (the, a(n), etc.), and the subreddits will be entirely indistinguishable. Choose too many, and you'll quickly start getting subreddit specific words, such as names, which will trivialize the problem (e.g. "Clinton" is much more likely to appear in a politics related subreddits, while "Bioshock" is much more likely to appear in video game subreddits). For these analyses, I chose to use the 100 words most frequently used across the comments of the top 50 subreddits. This list includes common articles, a lot of pronouns, and a lot of basic verbs. However, there are no words which should be definitively linked to a given subreddit. For example, the 98<sup>the</sup>, 99<sup>th</sup>, and 100<sup>th</sup> words are "going," "want," and "didn't," respectively. You can see a complete list of the words <a href="/static/blogImages/201503/100_MostFreqWords.png">here</a>. Thus, the distribution of these words should provide an intuition into how users write while remaining agnostic to the "jargon" of each subreddit.  </p>
-<p>With these words in hand, I analyzed the comments submitted to the 50 most popular subreddits between March 2 and March 8, 2015. If you're interested in how I acquired this dataset, check out this <a href="http://www.arimorcos.com/blog/Creating%20a%20Reddit%20Dataset/">post</a>. To create word frequency distributions for each subreddit, I simply counted the number of occurrences (case-insensitive) of each of the 100 words, and normalized by the total number of words in each subreddit. This normalization step is key, because if one simply uses the absolute counts, subreddits with longer comments (such as <a href="http://reddit.com/r/askreddit">/r/AskReddit</a>) will clearly separate from all the other subreddits). </p>
-<h2>A subreddit distance matrix</h2>
-<p>As a first pass analysis on these data, I calculated the euclidean distance between the 100-dimensional normalized word distributions for each pair of subreddits, resulting in the following matrix: </p>
-<p><img src='/static/blogImages/201503/distMat.png' width=80% class="centeredImage"></img></p>
-<p>Each point in the matrix represents the comparison between two subreddits. Cooler colors signify more similar subreddits, hotter colors subreddits that are more different. Elements along the diagonal represent a comparison of a subreddit to itself, so the distance is 0. Also note that there's no directionality to these comparisons so the matrix is symmetric. </p>
-<p>A few observations pop out immediately. First, there are a few bastions of blue off the diagonal. In a lot of ways, these make intuitive sense. <a href="http://www.reddit.com/r/funny">/r/funny</a>, <a href="http://www.reddit.com/r/pics">/r/pics</a>, <a href="http://www.reddit.com/r/gifs">/r/gifs</a>, <a href="http://www.reddit.com/r/WTF">/r/WTF</a>, and <a href="http://www.reddit.com/r/videos">/r/videos</a> are all pretty similar to one another. All of these subreddits link to content as opposed to self-posts, they all are or once were default subreddits, and none of them are known for "serious" conversation. </p>
-<p>Second, <a href="http://www.reddit.com/r/circlejerk">/r/circlejerk</a> is different from every other subreddit. Third, the sports subreddits (<a href="http://www.reddit.com/r/nba">/r/nba</a>, <a href="http://www.reddit.com/r/nfl">/r/nfl</a>, <a href="http://www.reddit.com/r/SquaredCircle">/r/SquaredCircle</a>, and <a href="http://www.reddit.com/r/soccer">/r/soccer</a>) are all pretty similar as are the variety of video game subreddits. </p>
-<p>There are many more observations to be made from this matrix, but it's a little challenging to quickly grasp the clusters using this technique. Let's try a different method which might make this easier.</p>
-<h2>Clustering subreddits</h2>
-<p>Instead of plotting a distance matrix, it would be substantially more intuitive to plot the subreddits such that there location described their similarity. Unfortunately, we've yet to find a great way to visualize a 100-dimensional space, so I used <a href="http://en.wikipedia.org/wiki/Principal_component_analysis">principal components analysis (PCA)</a>, one of the most basic forms of dimensionality reduction, to allow us to better visualize the data. Briefly, PCA is a method which allows us to reveal the underlying structure in the data. While the data may occupy 100 dimensions, if dimensions are strongly correlated, we might only need a few dimensions to describe the majority of the variability. PCA attempts to do this by remapping or "projecting" the data onto these dimensions. As it turns out, in these data, there's quite a bit of structure, as the first three principal components explain more than 50% of the total variance, and the first 15 explain more than 90%.</p>
-<p><img src='/static/blogImages/201503/pcVarExp.png' width=50% class="centeredImage"></img></p>
-<p>I then used <a href="http://en.wikipedia.org/wiki/Affinity_propagation">affinity propagation</a>, a clustering algorithm based on message passing, to cluster the data in the first 3 principal components. One really nice feature of affinity propagation is that, as opposed to k-means clustering, it doesn't require you to estimate the number of clusters beforehand. The algorithm clustered the data into 7 nicely separated clusters, as displayed in images below.</p>
-<p><img src='/static/blogImages/201503/pca3d.gif' width=60% class="centeredImage"></img>
-<img src='/static/blogImages/201503/cluster2D.png' width=80% class="centeredImage"></img></p>
-<p>From this image, we can see that, not only does the data cluster cleanly, the clusters make sense. The orange cluster contains all the sports subreddits, the navy blue cluster contains the content subreddits discussed above, the royal blue cluster contains the video game subreddits, the green cluster contains an odd assortment of subreddits with no clear pattern, and the teal cluster contains the more intellectual subreddits. </p>
-<p>Interestingly, the most similar pair of subreddits, <a href="http://www.reddit.com/r/gentlemanboners">/r/gentlemanboners</a> and <a href="http://www.reddit.com/r/Celebs">/r/Celebs</a>, define a cluster all on their own, as does <a href="http://www.reddit.com/r/circlejerk">/r/circlejerk</a>. </p>
-<h2>What defines the subreddit clusters?</h2>
-<p>So we can cluster the subreddits cleanly, but what defines these clusters? As a general overview, we can look at the contribution of each word to each of the principal components. </p>
-<p><img src='/static/blogImages/201503/pcContributions.png' width=80% class="centeredImage"></img></p>
-<p>The above plot shows the sum of the absolute values of the contributions to each of the first three principal components. If we look at the words which have the largest contribution, they tend to be pronouns and possessive pronouns (my, I, you, she, her, etc.), along with a few other miscellaneous words like "looks."</p>
-<p>But what about individual clusters? To analyze the words that define individual subreddits, I calculated the mean frequency for each word across all the subreddits and then divided each subreddit's distribution by the mean distribution. A value of 1 indicates that the word has the same frequency as the mean frequency for that word. Values above/below 1 indicate that the word is over/underrepresented. So, what does this look like for the gentlemanboners/Celebs cluster? </p>
-<p><img src='/static/blogImages/201503/gentlemanBonersCelebs.png' width=80% class="centeredImage"></img></p>
-<p>Comically, the cluster is defined by a nine-fold overrepresentation of "she," an eight-fold overrepresentation of "her," and a five-fold overrepresentation of "looks," along with an underrepresentation of "he," "his," and "people." The sports subreddits, on the other hand, are defined by pretty much the opposite phenomenon. Take <a href="http://www.reddit.com/r/nfl">/r/nfl</a> for example:</p>
-<p><img src='/static/blogImages/201503/nfl.png' width=80% class="centeredImage"></img></p>
-<p>Sports subreddits: overrepresentation of male pronouns, along with an underrepresentation of female pronouns along with "looks." What about the subreddits in the green cluster such as <a href="http://www.reddit.com/r/trollxchromosomes">/r/trollXChromosomes</a>? </p>
-<p><img src='/static/blogImages/201503/trollXChromosomes.png' width=80% class="centeredImage"></img></p>
-<p>Again, the subreddits in this cluster are defined by pronouns, but this time by pronouns associated with oneself such as "I," "my," "me," and "I'm."</p>
-<p>The other clusters are defined by more subtle patterns, and are less dominated by individual words. However, I want to point out one more which I find personally gratifying. What defines <a href="http://www.reddit.com/r/science">/r/science</a>?</p>
-<p><img src='/static/blogImages/201503/science.png' width=80% class="centeredImage"></img></p>
-<p>Again, some pronouns, but perhaps reflecting the collective spirit of science, the singular pronouns are all underrepresented while the only overrepresented pronoun is "we."</p>
-<h2>Conclusions</h2>
-<p>Overall, I'm quite pleased with how this analysis turned out. Not only did subreddits cluster in a reasonable fashion according to topics, many of the clusters can be defined by differences in just a few individual words, with pronouns having a disproportionate influence. Perhaps most surprisingly, one can categorize subreddits based on just a small subset of words and comparatively little processing. I suppose how we write says a lot about us. </p>
-<p>You can check out the iPython notebook used to perform these analyses <a href="http://nbviewer.ipython.org/github/arimorcos/blog_analyses/blob/master/reddit/Cluster%20comments.ipynb">here</a>.</p>
-<div id="breakEnd"></div>
-                            </p>
-                        </div>
-
-                        <div class="row blogSummaryBottom">
-
-                            
-                            <a class="continueReading col-md-12 col-xs-12"
-                               href="/blog/post/Clustering%20subreddits%20by%20common%20word%20usage/">
-                                Continue Reading &#8594;
-                            </a>
-
-                            
-                            <a class="disqus-comment-count commentCount col-md-3 col-xs-5"
-                               data-disqus-identifier="Clustering subreddits by common word usage"
-                               href="/blog/post/Clustering%20subreddits%20by%20common%20word%20usage/#disqus_thread">
-                            </a>
-
-                            <div class="bottomTagList col-md-5 col-xs-12">
-                                <p>
-                                    Tagged with:
-                                    
-                                        
-                                            <a href="/blog/tag/reddit/page/1/">reddit,</a>
-                                        
-                                    
-                                        
-                                            <a href="/blog/tag/pca/page/1/">pca,</a>
-                                        
-                                    
-                                        
-                                            <a href="/blog/tag/clustering/page/1/">clustering,</a>
-                                        
-                                    
-                                        
-                                            <a href="/blog/tag/affinitypropagation/page/1/">affinitypropagation,</a>
-                                        
-                                    
-                                        
-                                            <a href="/blog/tag/euclideandistance/page/1/">euclideandistance</a>
-                                        
-                                    
-                                </p>
-                            </div>
-
-                            <span class="shareButtons pull-right col-md-4 col-xs-12">
-                                <span class='st_twitter_large' displayText='Tweet'></span>
-                                <span class='st_reddit_large' displayText='Reddit'></span>
-                                <span class='st_facebook_large' displayText='Facebook'></span>
-                                <span class='st_googleplus_large' displayText='Google +'></span>
-                                <span class='st_email_large' displayText='Email'></span>
-                            </span>
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-            
-
             
             
 
@@ -282,90 +160,141 @@
                     col-md-3 col-sm-3">
             <h2 class="text-center">Common Topics</h2>
             
-                <a href="/blog/tag/affinitypropagation/page/1/"
-                   class="tag1">
-                    affinitypropagation
-                </a>
+
+                
+                    <a href="/blog/tag/affinitypropagation/page/1/"
+                       class="tag1">
+                        affinityPropagation,
+                    </a>
+                
             
-                <a href="/blog/tag/api/page/1/"
-                   class="tag1">
-                    api
-                </a>
+
+                
+                    <a href="/blog/tag/api/page/1/"
+                       class="tag1">
+                        api,
+                    </a>
+                
             
-                <a href="/blog/tag/clustering/page/1/"
-                   class="tag1">
-                    clustering
-                </a>
+
+                
+                    <a href="/blog/tag/clustering/page/1/"
+                       class="tag1">
+                        clustering,
+                    </a>
+                
             
-                <a href="/blog/tag/dataset/page/1/"
-                   class="tag1">
-                    dataset
-                </a>
+
+                
+                    <a href="/blog/tag/dataset/page/1/"
+                       class="tag1">
+                        dataSet,
+                    </a>
+                
             
-                <a href="/blog/tag/euclideandistance/page/1/"
-                   class="tag1">
-                    euclideandistance
-                </a>
+
+                
+                    <a href="/blog/tag/euclideandistance/page/1/"
+                       class="tag1">
+                        euclideanDistance,
+                    </a>
+                
             
-                <a href="/blog/tag/flask/page/1/"
-                   class="tag1">
-                    flask
-                </a>
+
+                
+                    <a href="/blog/tag/flask/page/1/"
+                       class="tag1">
+                        flask,
+                    </a>
+                
             
-                <a href="/blog/tag/imdb/page/1/"
-                   class="tag1">
-                    imdb
-                </a>
+
+                
+                    <a href="/blog/tag/imdb/page/1/"
+                       class="tag1">
+                        imdb,
+                    </a>
+                
             
-                <a href="/blog/tag/movies/page/1/"
-                   class="tag1">
-                    movies
-                </a>
+
+                
+                    <a href="/blog/tag/movies/page/1/"
+                       class="tag1">
+                        movies,
+                    </a>
+                
             
-                <a href="/blog/tag/nltk/page/1/"
-                   class="tag1">
-                    nltk
-                </a>
+
+                
+                    <a href="/blog/tag/nltk/page/1/"
+                       class="tag1">
+                        nltk,
+                    </a>
+                
             
-                <a href="/blog/tag/pca/page/1/"
-                   class="tag1">
-                    pca
-                </a>
+
+                
+                    <a href="/blog/tag/pca/page/1/"
+                       class="tag1">
+                        pca,
+                    </a>
+                
             
-                <a href="/blog/tag/praw/page/1/"
-                   class="tag1">
-                    praw
-                </a>
+
+                
+                    <a href="/blog/tag/praw/page/1/"
+                       class="tag1">
+                        praw,
+                    </a>
+                
             
-                <a href="/blog/tag/python/page/1/"
-                   class="tag2">
-                    python
-                </a>
+
+                
+                    <a href="/blog/tag/python/page/1/"
+                       class="tag2">
+                        python,
+                    </a>
+                
             
-                <a href="/blog/tag/reddit/page/1/"
-                   class="tag2">
-                    reddit
-                </a>
+
+                
+                    <a href="/blog/tag/reddit/page/1/"
+                       class="tag2">
+                        reddit,
+                    </a>
+                
             
-                <a href="/blog/tag/sabermetrics/page/1/"
-                   class="tag1">
-                    sabermetrics
-                </a>
+
+                
+                    <a href="/blog/tag/sabermetrics/page/1/"
+                       class="tag1">
+                        sabermetrics,
+                    </a>
+                
             
-                <a href="/blog/tag/sentimentanalysis/page/1/"
-                   class="tag1">
-                    sentimentanalysis
-                </a>
+
+                
+                    <a href="/blog/tag/sentimentanalysis/page/1/"
+                       class="tag1">
+                        sentimentAnalysis,
+                    </a>
+                
             
-                <a href="/blog/tag/sql/page/1/"
-                   class="tag1">
-                    sql
-                </a>
+
+                
+                    <a href="/blog/tag/sql/page/1/"
+                       class="tag1">
+                        sql,
+                    </a>
+                
             
-                <a href="/blog/tag/taglines/page/1/"
-                   class="tag1">
-                    taglines
-                </a>
+
+                
+                    <a href="/blog/tag/taglines/page/1/"
+                       class="tag1">
+                        taglines
+                    </a>
+                
             
         </div>
 
