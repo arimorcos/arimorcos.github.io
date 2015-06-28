@@ -1,10 +1,10 @@
 title: Mining my google search history for clues, Part I
-date: 2015-06-29
+date: 2015-06-28
 tags: google, search history, queries
 image: '/static/blogImages/201506/googlePart1/allWordsHeatmapSmall.png'
 showImage: False
 
-We all have intensely personal relationships with Google. The questions we ask of it can, in many ways, tell the story of our lives. Ranging from questions about our work to our hobbies to our fears, many people are honest with Google in a way they are with a select few. I recently found out that Google allows users to download a record of the search queries in easily digestible JSON, and I immediately knew that this would be the topic of my next blog post. Pretending that I know nothing about myself, what can I learn about my life by looking through my search history? In part I of this two-part post, I'll explore the general themes present in my queries. What words appear the most often in my searches? How have my searches changed over the past two years? How about over the course of a week? Let's find out. 
+We all have intensely personal relationships with Google. The questions we ask of it can, in many ways, tell the story of our lives. Ranging from questions about our work to our hobbies to our fears, many people are honest with Google in a way they are with a select few. I recently found out that Google allows users to download a record of the search queries in easily digestible JSON, and I immediately knew that this would be the topic of my next blog post. Pretending that I know nothing about myself, what can I learn about my life by looking through my search history? In part one of this two-part post, I'll explore the general themes present in my queries. What words appear the most often in my searches? How have my searches changed over the past two years? How about over the course of a week? Let's find out. 
 
 <div id="breakStart"></div>
 
@@ -12,13 +12,13 @@ We all have intensely personal relationships with Google. The questions we ask o
 
 I was able to download a little less than two years worth of my search queries by following the guide [here](https://support.google.com/websearch/answer/6068625?hl=en). Google provides individual JSON files for each financial quarter containing the timestamp and content of each query. Map queries are included as well. Unfortunately, they are not clearly labeled, so I was unable to exclude them. Direction queries, however, all contained '->', so I removed all queries containing that arrow. 
 
-The first query in my database was performed on July 28, 2013, and these data were collected on June 22, 2015. I'm not sure why Google only has two years worth of data available on me. Presumably, I deleted my entire history in July, 2013, though I don't remember doing so. While all the other datasets used on this blog have been publicly available or been made available by me, I am going to keep this dataset to myself for obvious privacy reasons. In total, this dataset comprises 22,339 search queries.  
+The first query in my database was performed on July 28, 2013, and these data were collected on June 22, 2015. I'm not sure why Google only has two years worth of data available on me. Presumably, I deleted my entire history in July, 2013, though I don't remember doing so. While all the other datasets used on this blog have been publicly available or been made available by me, I am going to keep this dataset to myself for privacy reasons. In total, this dataset comprises 22,339 search queries.  
 
 ## Results
 
 ### What words appear the most often in my searches? 
 
-For this exercise, I'm going to take a naive approach to the data. In other words, I'm going to pretend that I know nothing about myself. To start with, what words appear in my queries most often? As a pre-processing step for this question (and the questions below), I tokenized each query into individual words, removing punctuation. I also converted all words into lowercase to remove case conflicts. To calculate the frequency of each word, I simply used the [Natural Language Toolkit (NLTK) ](http://www.nltk.org/) object, [FreqDist](http://www.nltk.org/api/nltk.html?highlight=freqdist#nltk.probability.FreqDist). For this analysis, I also removed common, uninformative, words, such as conjunctions and articles. Let's take a look at the fifty words which appear most often in my search queries. 
+For this exercise, I'm going to take a naive approach to the data. In other words, I'm going to pretend that I know nothing about myself. To start with, what words appear in my queries most often? As a pre-processing step for this question (and the questions below), I tokenized each query into individual words, removing punctuation. I also converted all words into lowercase to remove case conflicts. To calculate the frequency of each word, I simply used the [Natural Language Toolkit (NLTK) ](http://www.nltk.org/) object, [FreqDist](http://www.nltk.org/api/nltk.html?highlight=freqdist#nltk.probability.FreqDist). For this analysis, I also removed common, uninformative, words, such as conjunctions and articles. Let's take a look at the fifty words that appear most often in my search queries. 
 
 <img src='/static/blogImages/201506/googlePart1/googleFreqDist.png' width=80% class="centeredImage"></img>
 
@@ -28,7 +28,7 @@ It is also obvious that I live in Boston and attend Harvard, as "boston" and "ma
 
 ### How have my searches changed over time? 
 
-From looking at the frequency distribution, we were able to tease out several obvious themes in my searches. Are searches for these themes constant throughout time, or has their frequency changed over the past two years? To find out, I binned the data into individual months, and counted the number of queries in each bucket containing words related to the theme of interest. As an example, for the "Web Development" theme, I included "html" and "css" as relevant search terms. Note that each query can only be counted once, so a query containing both of these words would not be double-counted. Below, I've plotted the number of matching queries over time for several of the above categories. 
+From looking at the frequency distribution, I was able to tease out several obvious themes in my searches. Are searches for these themes constant throughout time, or has their frequency changed over the past two years? To find out, I binned the data into individual months, and counted the number of queries in each bucket containing words related to the theme of interest. As an example, for the "Web Development" theme, I included "html" and "css" as relevant search terms. Note that each query can only be counted once, so a query containing both of these words would not be double-counted. Below, I've plotted the number of matching queries over time for several of the above categories. 
 
 <img src='/static/blogImages/201506/googlePart1/projectsCode.png' width=80% class="centeredImage"></img>
 
@@ -38,15 +38,15 @@ We can perform this same analysis for several other themes as well:
 
 <img src='/static/blogImages/201506/googlePart1/projectsCyclical.png' width=80% class="centeredImage"></img>
 
-We can see that I searched a lot for "dog" in late summer, 2014. This is the time leading up to my rescuing Dash, who's prominently featured in my [about me](http://www.arimorcos.com/about/) page. We can also see two search themes with interesting cyclical patterns. First, my searches for baseball ebb and flow with the season, falling off after the World Series in October, picking up again during the Winter Meetings in December, and then finally coming back to life in anticipation of the season starting in April. You can also see that the long season takes a toll on me, as my interest wanes some in early summer before picking back up during the pennant races. My searches related to video games are also cyclical, peaking around E3 in June and the major releases in the fall.
+We can see that I searched a lot for "dog" in late summer, 2014, just before I rescued by dog, Dash, who's prominently featured in my [about me](http://www.arimorcos.com/about/) page. We can also see two search themes with interesting cyclical patterns. First, my searches for baseball ebb and flow with the season, falling off after the World Series in October, picking up again during the Winter Meetings in December, and then finally coming back to life in anticipation of the season starting in April. You can also see that the long season takes a toll on me, as my interest wanes some in early summer before picking back up during the pennant races. My searches related to video games are also cyclical, peaking around E3 in June and the major releases in the fall.
 
 ### How do my searches change over the course of a week? 
 
-Next, let's look at when in the week I most often search. We can visualize this as heat map, in which each row represents a day of the week, and each column represents an hour of the day. The color of each pixel corresponds to the number of matching queries. First, we can look all of my searches to get a general idea of when I search the most: 
+Next, let's look at when in the week I most often search. We can visualize this as heat map, in which each row represents a day of the week, and each column represents an hour of the day. The color of each pixel corresponds to the number of matching queries. First, we can look at all of my searches to get a general idea of when I search the most: 
 
 <img src='/static/blogImages/201506/googlePart1/allWordsHeatmap.png' width=80% class="centeredImage"></img> 
 
-As might be expected, we can see that I search most often during the work day and quite often in the evening, but very infrequently between the hours of 1AM and 8AM, when I'm usually asleep. On average, I search more frequently during the week, but not by a tremendous margin. There is also a single pocket on Tuesdays at 4PM. This lack of searches corresponds to my lab's weekly meeting. Now that we have an idea of what my general search patterns look like, what about specific themes? Let's look at my searches for the word, "matlab": 
+As might be expected, we can see that I search most often during the work day and quite often in the evening, but very infrequently between the hours of 1AM and 8AM, when I'm usually asleep. On average, I search more frequently during the week, but not by a tremendous margin. There is also a single pocket on Tuesdays at 4PM. This lack of searches corresponds to my lab's weekly meeting. Now that we have an idea of what my general search patterns look like, let's look at specific themes. For example: the word, "matlab": 
 
 <img src='/static/blogImages/201506/googlePart1/matlabHeatmap.png' width=80% class="centeredImage"></img>
 

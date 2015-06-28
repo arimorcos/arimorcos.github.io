@@ -10,6 +10,23 @@
         <copyright>Ari Morcos</copyright>
         <item>
             <title>
+                Mining my google search history for clues, Part I
+            </title>
+            <pubDate>
+                Sun, 29 Jun 2015 20:17:33 -0500
+            </pubDate>
+            <link>
+                http://www.arimorcos.com/blog/post/Mining%20my%20google%20search%20history%20for%20clues%2C%20Part%20I/
+            </link>
+            <author>
+                Ari Morcos
+            </author>
+            <description>
+                We all have intensely personal relationships with Google. The questions we ask of it can, in many ways, tell the story of our lives. Ranging from questions about our work to our hobbies to our fears, many people are honest with Google in a way they are with a select few. I recently found out that Google allows users to download a record of the search queries in easily digestible JSON, and I immediately knew that this would be the topic of my next blog post. Pretending that I know nothing about myself, what can I learn about my life by looking through my search history? In part one of this two-part post, I'll explore the general themes present in my queries. What words appear the most often in my searches? How have my searches changed over the past two years? How about over the course of a week? Let's find out.
+            </description>
+        </item>
+        <item>
+            <title>
                 Sentiment analysis of movie taglines
             </title>
             <pubDate>
