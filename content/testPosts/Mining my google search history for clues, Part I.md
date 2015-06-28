@@ -4,7 +4,7 @@ tags: google, search history, queries
 image: '/static/blogImages/201506/googlePart1/allWordsHeatmapSmall.png'
 showImage: False
 
-We all have intensely personal relationships with Google. The questions we ask of it can, in many ways, tell the story of our lives. Ranging from questions about our work to our hobbies to our fears, many people are honest with Google in a way they are with a select few. I recently found out that Google allows users to download a record of the search queries in easily digestible JSON, and I immediately knew that this would be the topic of my next blog post. Pretending that I know nothing about myself, what can I learn about my life by looking through my search history? Let's find out. 
+We all have intensely personal relationships with Google. The questions we ask of it can, in many ways, tell the story of our lives. Ranging from questions about our work to our hobbies to our fears, many people are honest with Google in a way they are with a select few. I recently found out that Google allows users to download a record of the search queries in easily digestible JSON, and I immediately knew that this would be the topic of my next blog post. Pretending that I know nothing about myself, what can I learn about my life by looking through my search history? In part I of this two-part post, I'll explore the general themes present in my queries. What words appear the most often in my searches? How have my searches changed over the past two years? How about over the course of a week? Let's find out. 
 
 <div id="breakStart"></div>
 
@@ -12,7 +12,7 @@ We all have intensely personal relationships with Google. The questions we ask o
 
 I was able to download a little less than two years worth of my search queries by following the guide [here](https://support.google.com/websearch/answer/6068625?hl=en). Google provides individual JSON files for each financial quarter containing the timestamp and content of each query. Map queries are included as well. Unfortunately, they are not clearly labeled, so I was unable to exclude them. Direction queries, however, all contained '->', so I removed all queries containing that arrow. 
 
-The first query in my database was performed on July 28, 2013, and these data were collected on June 22, 2015. I'm not sure why Google only has two years worth of data available on me. Presumably, I deleted my entire history in July, 2013, though I don't remember doing so. While all the other datasets used on this blog have been publicly available or been made available by me, I am going to keep this dataset to myself for obvious privacy reasons. In total, this dataset comprises 22,339 search queries. 
+The first query in my database was performed on July 28, 2013, and these data were collected on June 22, 2015. I'm not sure why Google only has two years worth of data available on me. Presumably, I deleted my entire history in July, 2013, though I don't remember doing so. While all the other datasets used on this blog have been publicly available or been made available by me, I am going to keep this dataset to myself for obvious privacy reasons. In total, this dataset comprises 22,339 search queries.  
 
 ## Results
 
@@ -71,7 +71,7 @@ While perhaps not surprising, it's a little scary how much I could learn about m
 
 Furthermore, these analyses don't even get into the really interesting stuff one can do with search data given the histories of large quantities of users. Applying machine learning tools to these data to make inferences about users must have incredible power, and perhaps justifies the [growing](http://www.computerweekly.com/news/2240228286/The-Digital-CIO-Fear-of-Google-and-the-ethics-of-digital-business) [tide of](http://www.cnet.com/news/people-trust-nsa-more-than-google-survey-says/) [Google-phobia](http://www.imore.com/anticipation-google-worse-google-itself). That said, these data also have tremendous power to make our lives easier. I appreciate that my searches are more likely to return what I'm looking for because Google "knows" me. Ultimately, it's up to each of us individually to decide how much we're willing to give away in exchange for convenience. 
 
-You may have noticed that this post is titled Part I. That's because I have several more ideas for analyses on this dataset. Expect a Part II shortly! 
+You may have noticed that this post is titled Part I. That's because I have several more ideas for analyses on this dataset. How often do I search for the same thing more than once and how much time passes in between? How do my queries evolve when I'm having trouble finding what I want? Expect a Part II with these analyses shortly! 
 
 &nbsp;
 
