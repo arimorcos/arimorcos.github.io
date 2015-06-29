@@ -1,7 +1,7 @@
 title: Sentiment analysis of movie taglines
 date: 2015-06-17
 tags: imdb, sentiment analysis, movies, taglines, nltk
-image: '/static/blogImages/201506/genreScores.png'
+image: '/static/blogImages/201506/sentTag/genreScores.png'
 showImage: False
 
 I recently came across Randal Olson's excellent [post](http://www.randalolson.com/2014/01/12/a-look-at-sex-drugs-violence-and-cursing-in-film-over-time-through-mpaa-ratings/) on how the usage of sex, drugs, violence, and cursing in movies have changed over time. This article led me to start thinking: how else have movies changed over time? Has the content of movie taglines (such as "The park is open." for *Jurassic World* or "Some men dream the future. He built it." for *The Aviator*) changed over time? In particular, have movie taglines gotten more negative? 
@@ -30,11 +30,11 @@ Because sentiment scores are represented as the difference between positive and 
 
 So, what happened? Have taglines gotten more negative over the last 50 years? 
 
-<img src='/static/blogImages/201506/meanSentimentScoreOverTime.png' width=100% class="centeredImage"></img>
+<img src='/static/blogImages/201506/sentTag/meanSentimentScoreOverTime.png' width=100% class="centeredImage"></img>
 
 Unfortunately, it seems the answer is no. In fact, it seems they've remained mostly unchanged. The extreme variation between 1950 and 1975 is mostly due to a smaller sample of movies with taglines in the IMDb database for those years. My first thought upon seeing this result was that the multiple meanings problem completely obscured any effect that might be present. As a control for this, I asked how the mean (+/- SEM) sentiment score differs across different film genres. 
 
-<img src='/static/blogImages/201506/genreScores.png' width=100% class="centeredImage"></img>
+<img src='/static/blogImages/201506/sentTag/genreScores.png' width=100% class="centeredImage"></img>
 
 In general, I think this looks pretty reasonable. Horror, action, thriller, and crime movies are all negative, while family movies are the most positive, and the few genres that seem out of place, like musicals, had few samples. This seems to suggest that the general analysis pipeline works to pull apart the differences between taglines, leading me to believe that the null result above is, in fact, genuine. 
 
