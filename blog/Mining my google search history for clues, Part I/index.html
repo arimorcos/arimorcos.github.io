@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    
+    
+        <meta property="og:image" content="http://www.arimorcos.com/static/blogImages/201506/googlePart1/allWordsHeatmapSmall.png"/>
+        <link rel="image_src" href="http://www.arimorcos.com/static/blogImages/201506/googlePart1/allWordsHeatmapSmall.png" />
+    
+    <meta id="indPost">
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Mining my google search history for clues, Part I"/>
+    <meta property="og:url" content="http://www.arimorcos.com/blog/post/Mining%20my%20google%20search%20history%20for%20clues%2C%20Part%20I/"/>
+    <meta property="og:site_name" content='Fairly One-Dimensional'/>
+    <meta property="og:locale" content='en_US'/>
+    <meta property="fb:app_id" content="1607445152878511">
+    <meta property="og:description" content="We all have intensely personal relationships with Google. The questions we ask of it can, in many ways, tell the story of our lives. Ranging from questions about our work to our hobbies to our fears, many people are honest with Google in a way they are with a select few. I recently found out that Google allows users to download a record of the search queries in easily digestible JSON, and I imm..." />
+    <meta name="title" content="Mining my google search history for clues, Part I" />
+
+    <meta name="twitter:site" content="@arimorcos"/>
+    <meta name="twitter:creator" content="@arimorcos"/>
+    <meta name="twitter:title" content="Mining my google search history for clues, Part I"/>
+    <meta name="twitter:description" content="We all have intensely personal relationships with Google. The questions we ask of it can, in many ways, tell the story of our lives. Ranging from questions about our work to our hobbies to our fears, many people are honest with Google in a way they are with a select few. I recently found out that Google allows users to download a record of the search queries in easily digestible JSON, and I imm..."/>
+    
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="/static/blogImages/201506/googlePart1/allWordsHeatmapSmall.png"/>
+    
+
+
+    
+    <title>
+    Fairly One-Dimensional - Mining my google search history for clues, Part I
+</title>
+
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/static/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/icons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/static/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/static/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/static/icons/manifest.json">
+    <link rel="shortcut icon" href="/static/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/static/icons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/static/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/animations.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/tooltipster.css" />
+    <link rel='stylesheet' type='text/css' media='screen and (min-device-width: 1101px)' href='/static/style/style.css' />
+    <link rel='stylesheet' type='text/css' media='screen and (min-device-width: 701px) and (max-device-width: 1100px)' href='/static/style/style-tablet.css' />
+    <link rel='stylesheet' type='text/css' media='screen and (max-device-width: 700px)' href='/static/style/style-mobile.css' />
+
+
+    
+    <script type="text/javascript" src="/static/javascript/jquery-1.11.2.min.js"></script>
+    
+    <script type="text/javascript" src="/static/javascript/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="/static/javascript/main.js"></script>
+
+    
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src='http://w.sharethis.com/button/buttons.js'></script>
+    <script type="text/javascript">stLight.options({publisher: "5da51cd4-4e57-428f-9aa9-8b6165d05b3f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+</head>
+<body>
+
+<div class="page-wrap">
+
+    <div class="nameHeader">
+        <h1>
+    <a href="/blog/page/1" class="headerLink">
+        Fairly One-Dimensional
+    </a>
+
+</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row navBar">
+            <ul class="navIcon">
+                <li class="navAbout">
+                    <a href="/about/" class="showTooltip" title="About Me">
+                        <img src="/static/images/navigation-icons/about_me.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+                <li class="navResearch">
+                    <a href="/research/" class="showTooltip" title="Research">
+                        <img src="/static/images/navigation-icons/brain_icon.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+                <li class="navBlog">
+                    <a href="/blog/page/1/" class="showTooltip" title="Blog">
+                        <img src="/static/images/navigation-icons/pencil.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+                <li class="navContact">
+                    <a href="/contact/" class="showTooltip" title="Contact">
+                        <img src="/static/images/navigation-icons/paper_airplane.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    <div class="container contentCard">
+
+        <h1 class="sectionHeading blogPostTitle text-center"> Mining my google search history for clues, Part I </h1>
+        <h3 class="text-center blogDate">2015-06-28</h3>
+
+       
+
+        <div class="postContent">
+            <p>We all have intensely personal relationships with Google. The questions we ask of it can, in many ways, tell the story of our lives. Ranging from questions about our work to our hobbies to our fears, many people are honest with Google in a way they are with a select few. I recently found out that Google allows users to download a record of the search queries in easily digestible JSON, and I immediately knew that this would be the topic of my next blog post. Pretending that I know nothing about myself, what can I learn about my life by looking through my search history? In part one of this two-part post, I'll explore the general themes present in my queries. What words appear the most often in my searches? How have my searches changed over the past two years? How about over the course of a week? Let's find out. </p>
+<div id="breakStart"></div>
+
+<h2>Data</h2>
+<p>I was able to download a little less than two years worth of my search queries by following the guide <a href="https://support.google.com/websearch/answer/6068625?hl=en">here</a>. Google provides individual JSON files for each financial quarter containing the timestamp and content of each query. Map queries are included as well. Unfortunately, they are not clearly labeled, so I was unable to exclude them. Direction queries, however, all contained '-&gt;', so I removed all queries containing that arrow. </p>
+<p>The first query in my database was performed on July 28, 2013, and these data were collected on June 22, 2015. I'm not sure why Google only has two years worth of data available on me. Presumably, I deleted my entire history in July, 2013, though I don't remember doing so. While all the other datasets used on this blog have been publicly available or been made available by me, I am going to keep this dataset to myself for privacy reasons. In total, this dataset comprises 22,339 search queries.  </p>
+<h2>Results</h2>
+<h3>What words appear the most often in my searches?</h3>
+<p>For this exercise, I'm going to take a naive approach to the data. In other words, I'm going to pretend that I know nothing about myself. To start with, what words appear in my queries most often? As a pre-processing step for this question (and the questions below), I tokenized each query into individual words, removing punctuation. I also converted all words into lowercase to remove case conflicts. To calculate the frequency of each word, I simply used the <a href="http://www.nltk.org/">Natural Language Toolkit (NLTK) </a> object, <a href="http://www.nltk.org/api/nltk.html?highlight=freqdist#nltk.probability.FreqDist">FreqDist</a>. For this analysis, I also removed common, uninformative, words, such as conjunctions and articles. Let's take a look at the fifty words that appear most often in my search queries. </p>
+<p><img src='/static/blogImages/201506/googlePart1/googleFreqDist.png' width=80% class="centeredImage"></img></p>
+<p>A few themes immediately jump out. First and foremost, my most searched for word, by a large margin, is "matlab." As a neuroscientist working in academia, I spend the majority of my day coding in Matlab, so this makes sense. You can also see several other programming related words pop up with high frequency, including "python," "bash," "array," "html," and "list." We also see another theme: finance. Financial words abound, including "nasdaq," "nysearca," and "nyse." There are also words relating to video games (e.g., "xbox"), operating systems (e.g., "windows"), and baseball (e.g., "mlb"). </p>
+<p>It is also obvious that I live in Boston and attend Harvard, as "boston" and "ma" are two of the four most frequently used words, and "harvard" comes in at #16.  </p>
+<h3>How have my searches changed over time?</h3>
+<p>From looking at the frequency distribution, I was able to tease out several obvious themes in my searches. Are searches for these themes constant throughout time, or has their frequency changed over the past two years? To find out, I binned the data into individual months, and counted the number of queries in each bucket containing words related to the theme of interest. As an example, for the "Web Development" theme, I included "html" and "css" as relevant search terms. Note that each query can only be counted once, so a query containing both of these words would not be double-counted. Below, I've plotted the number of matching queries over time for several of the above categories. </p>
+<p><img src='/static/blogImages/201506/googlePart1/projectsCode.png' width=80% class="centeredImage"></img></p>
+<p>We can immediately see that all of these terms were searched for over short time periods, and not so much outside of that narrow window. I searched for "bash" a lot in late 2013 while I was learning how to use Orchestra, Harvard Medical School's high performance computing cluster for my research. Shortly thereafter, I developed an intense interest in finance and investing, which lasted through the early summer of 2014. I built this website in early February of this year, and therefore spent a lot of time searching for terms related to web development. Finally, I started learning python at the end of last year, and my searches related to that have continued, with a big peak when I undertook my first big project with python on <a href="http://www.arimorcos.com/blog/post/Clustering%20subreddits%20by%20common%20word%20usage/">clustering subreddits based on common word usage</a> in March. </p>
+<p>We can perform this same analysis for several other themes as well:  </p>
+<p><img src='/static/blogImages/201506/googlePart1/projectsCyclical.png' width=80% class="centeredImage"></img></p>
+<p>We can see that I searched a lot for "dog" in late summer, 2014, just before I rescued by dog, Dash, who's prominently featured in my <a href="http://www.arimorcos.com/about/">about me</a> page. We can also see two search themes with interesting cyclical patterns. First, my searches for baseball ebb and flow with the season, falling off after the World Series in October, picking up again during the Winter Meetings in December, and then finally coming back to life in anticipation of the season starting in April. You can also see that the long season takes a toll on me, as my interest wanes some in early summer before picking back up during the pennant races. My searches related to video games are also cyclical, peaking around E3 in June and the major releases in the fall.</p>
+<h3>How do my searches change over the course of a week?</h3>
+<p>Next, let's look at when in the week I most often search. We can visualize this as heat map, in which each row represents a day of the week, and each column represents an hour of the day. The color of each pixel corresponds to the number of matching queries. First, we can look at all of my searches to get a general idea of when I search the most: </p>
+<p><img src='/static/blogImages/201506/googlePart1/allWordsHeatmap.png' width=80% class="centeredImage"></img> </p>
+<p>As might be expected, we can see that I search most often during the work day and quite often in the evening, but very infrequently between the hours of 1AM and 8AM, when I'm usually asleep. On average, I search more frequently during the week, but not by a tremendous margin. There is also a single pocket on Tuesdays at 4PM. This lack of searches corresponds to my lab's weekly meeting. Now that we have an idea of what my general search patterns look like, let's look at specific themes. For example: the word, "matlab": </p>
+<p><img src='/static/blogImages/201506/googlePart1/matlabHeatmap.png' width=80% class="centeredImage"></img></p>
+<p>Because I use Matlab primarily for my research, I search for it most often during the day on weekdays. Apparently, I'm also substantially less productive on Fridays. Whoops. On the flip side, I use python primarily for this blog, and my side projects:</p>
+<p><img src='/static/blogImages/201506/googlePart1/pythonHeatmap.png' width=80% class="centeredImage"></img></p>
+<p>Here, we see an approximately inverted graph, with most of my searches relating to python occurring in the evenings during the week and during the day on weekends. A similar trend exists for operating systems, as I use a Windows 7 PC at lab, and a Mac at home. </p>
+<p><img src='/static/blogImages/201506/googlePart1/windowsHeatmap.png' width=80% class="centeredImage"></img>
+<img src='/static/blogImages/201506/googlePart1/macHeatmap.png' width=80% class="centeredImage"></img></p>
+<p>Finally, let me leave you with my favorite plot from this analysis. When do I search for terms relating to video games? </p>
+<p><img src='/static/blogImages/201506/googlePart1/videoGamesHeatmap.png' width=80% class="centeredImage"></img></p>
+<p>Apparently, late afternoons during the week are tough for me, as I seem to usually take a break and search for video games, seemingly looking ahead to playing something when I get home. </p>
+<h2>Closing thoughts</h2>
+<p>While perhaps not surprising, it's a little scary how much I could learn about my habits through even a cursory analysis of my search history. Moreover, I tend to be careful about my searches. If I don't want it to be recorded, I use incognito mode in chrome or a privacy-first search engine such as <a href="https://duckduckgo.com/">DuckDuckGo</a>. If I didn't have these habits, I might have had to filter a lot more of the results for this post. </p>
+<p>Furthermore, these analyses don't even get into the really interesting stuff one can do with search data given the histories of large quantities of users. Applying machine learning tools to these data to make inferences about users must have incredible power, and perhaps justifies the <a href="http://www.computerweekly.com/news/2240228286/The-Digital-CIO-Fear-of-Google-and-the-ethics-of-digital-business">growing</a> <a href="http://www.cnet.com/news/people-trust-nsa-more-than-google-survey-says/">tide of</a> <a href="http://www.imore.com/anticipation-google-worse-google-itself">Google-phobia</a>. That said, these data also have tremendous power to make our lives easier. I appreciate that my searches are more likely to return what I'm looking for because Google "knows" me. Ultimately, it's up to each of us individually to decide how much we're willing to give away in exchange for convenience. </p>
+<p>You may have noticed that this post is titled Part I. That's because I have several more ideas for analyses on this dataset. How often do I search for the same thing more than once and how much time passes in between? How do my queries evolve when I'm having trouble finding what I want? Expect a Part II with these analyses shortly! </p>
+<p>&nbsp;</p>
+<p>You can check out the iPython notebook used to perform these analyses <a href="http://nbviewer.ipython.org/github/arimorcos/blog_analyses/blob/master/Google%20Searches/Mining%20google%20searches.ipynb">here</a>.
+<div id="breakEnd"></div></p>
+
+            
+        </div>
+
+        <div class="row">
+            <div class="bottomTagList">
+                <p>
+                    Tagged with:
+                    
+                        
+                            <a href="/blog/tag/google">google,</a>
+                        
+                    
+                        
+                            <a href="/blog/tag/searchhistory">searchhistory,</a>
+                        
+                    
+                        
+                            <a href="/blog/tag/queries">queries</a>
+                        
+                    
+                </p>
+            </div>
+
+            <span class="shareButtons pull-right">
+                <span class='st_facebook_large' displayText='Facebook'></span>
+                <span class='st_googleplus_large' displayText='Google +'></span>
+                <span class='st_twitter_large' displayText='Tweet'></span>
+                <span class='st_reddit_large' displayText='Reddit'></span>
+                <span class='st_email_large' displayText='Email'></span>
+            </span>
+        </div>
+    </div>
+
+    <div class=" container contentCard" id="disqus_thread"></div>
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'arimorcos'; // required: replace example with your forum shortname
+        var disqus_identifier = "Mining my google search history for clues, Part I";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+</div>
+
+
+<footer class="siteFooter container">
+    <p class="copyrightText text-center">
+        &copy; 2015 Ari Morcos All rights reserved
+    </p>
+</footer>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-60029364-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
