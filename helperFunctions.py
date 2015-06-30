@@ -82,7 +82,7 @@ def findTagMatch(tagName):
     matchTag = []
     for p in postList:
 
-        if any(tag.lower() == tagName for tag in p['tags'].replace(' ', '').split(',')):
+        if any(convertToCamelCase(tag) == tagName for tag in p['tags'].replace(', ', ',').split(',')):
             matchTag.append(p)
 
     return matchTag
