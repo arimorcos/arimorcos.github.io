@@ -82,7 +82,7 @@ def findTagMatch(tagName):
     matchTag = []
     for p in postList:
 
-        if any(convertToCamelCase(tag) == tagName for tag in p['tags'].replace(', ', ',').split(',')):
+        if any(tag.lower() == tagName for tag in p['tags'].replace(' ', '').split(',')):
             matchTag.append(p)
 
     return matchTag
@@ -98,8 +98,8 @@ def getTagFrequency(normalizeRange):
 
     tagList = {}
     for p in postList:
-        for tag in p['tags'].replace(', ', ',').split(','):
-            tag = convertToCamelCase(tag)
+        for tag in p['tags'].replace(' ', '').split(','):
+            # tag = convertToCamelCase(tag)
             if tag in tagList:
                 tagList[tag] += 1
             else:
