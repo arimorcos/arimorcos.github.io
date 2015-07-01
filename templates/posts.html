@@ -134,12 +134,12 @@
             {% for tag in tagFreq|sort %}
 
                 {% if not loop.last %}
-                    <a href="{{ url_for('blogTag', tagName=tag.lower(), pageNum=1) }}"
+                    <a href="{{ url_for('blogTag', tagName=tag, pageNum=1) }}"
                        class="{{ tagFreq[tag] }}">
                         {{ tag }},
                     </a>
                 {% else %}
-                    <a href="{{ url_for('blogTag', tagName=tag.lower(), pageNum=1) }}"
+                    <a href="{{ url_for('blogTag', tagName=tag, pageNum=1) }}"
                        class="{{ tagFreq[tag] }}">
                         {{ tag }}
                     </a>
