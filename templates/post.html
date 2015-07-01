@@ -75,7 +75,7 @@
             <div class="bottomTagList">
                 <p>
                     Tagged with:
-                    {% for tag in post.tags.replace(' ','').split(',') %}
+                    {% for tag in post.tagList %}
                         {% if not loop.last %}
                             <a href="/blog/tag/{{ tag }}">{{ tag }},</a>
                         {% else %}
