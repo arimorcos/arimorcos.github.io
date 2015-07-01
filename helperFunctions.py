@@ -53,6 +53,9 @@ def renderPostList(postList, pageNum=False, tagName=False):
     for tag in tagFreq:
         tagFreq[tag] = 'tag{0}'.format(tagFreq[tag])
 
+    for num, p in enumerate(postSubset):
+        postSubset[num].tagList = [convertToCamelCase(tag) for tag in p.meta['tags'].replace(', ',',').split(',')]
+
     # return the posts rendered by the posts.html template
     return render_template('posts.html', posts=postSubset, olderPage=olderPage,
                            newerPage=newerPage, shouldNewer=shouldNewer, shouldOlder=shouldOlder,

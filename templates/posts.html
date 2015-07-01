@@ -68,7 +68,7 @@
                             <div class="bottomTagList col-md-5 col-xs-12">
                                 <p>
                                     Tagged with:
-                                    {% for tag in post.tags.replace(' ','').split(',') %}
+                                    {% for tag in post.tagList %}
                                         {% if not loop.last %}
                                             <a href="{{ url_for('blogTag', tagName=tag, pageNum=1) }}">{{ tag }},</a>
                                         {% else %}

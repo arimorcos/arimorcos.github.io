@@ -71,6 +71,9 @@ def blogPost(name):
     post.description = ''.join(BeautifulSoup(post.html[0:400]).findAll(text=True)) + '...'
     post.url = 'http://www.arimorcos.com' + url_for('blogPost',name=name)
 
+    # get tags
+    post.tagList = [convertToCamelCase(tag) for tag in post.meta['tags'].replace(', ',',').split(',')]
+
     # return the requested post rendered through the post template
     return render_template('post.html', post=post)
 
