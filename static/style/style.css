@@ -126,12 +126,48 @@ body p {
   padding-left: 1em;
   padding-right: 1em;
 }
+
+.paper_object span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.paper_object img{
+  width: 25vw;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.paper_object {
+  /*height: 500px;*/
+  /*line-height: 200px;*/
+  display: table;
+  margin-bottom: 2em;
+}
 .researchStatement p {
   text-align: justify;
   font-size: 1.3em;
-  padding-left: 1em;
+  padding-left: 1vw;
   padding-right: 1em;
 }
+
+.researchStatement h2 {
+  padding-left: 1vw;
+  text-shadow: 0.01em 0.01em #505050;
+  color: #303030;
+}
+
+.publications h2 {
+  padding-left: 1vw;
+  text-shadow: 0.01em 0.01em #505050;
+  color: #303030;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 .cvLink a {
   font-size: 2em;
 }
