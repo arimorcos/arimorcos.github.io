@@ -299,12 +299,21 @@ body p {
   text-align: justify;
 }
 .personalImg {
+  float: left;
+  box-shadow: 0.6em 0.4em 0.5em darkgray;
+  height: 300px;
+  margin-right: 1em;
+  border-radius: 1%;
+}
+
+.personalImgApplePicking {
   float: right;
   box-shadow: 0.6em 0.4em 0.5em darkgray;
-  height: 550px;
+  height: 300px;
   margin-left: 1em;
   border-radius: 1%;
 }
+
 /* Contact */
 .contactHeader h1 {
   color: #303030;
