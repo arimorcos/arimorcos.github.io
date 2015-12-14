@@ -111,16 +111,16 @@
 <div class="container researchStatement contentCard">
     <div class="row">
         <h1 class="sectionHeading text-center"> Research </h1>
+        <h2 class=""> Neuroscience </h2>
         <p>
             <img src="/static/images/AM144_activity_example.gif" alt="Sample neuronal activity in the PPC"
                  class="neuronActivityImg">
-            My research focuses on how neuronal circuits in the brain allow us to accumulate evidence for decision-making.
-            We make important decisions every day, and the vast majority of them require us to accumulate multiple,
-            discrete, pieces of evidence on both short and long timescales to arrive at an accurate decision. For example,
-            on a short timescale, when deciding which way to turn while driving, we might combine our position, street
-            signs, information from maps, and landmarks to make a correct turn. On a long timescale, when deciding which
-            political candidate to vote for, we might combine information from the news, debates, and other sources to
-            ultimately arrive at our chosen candidate. The accumulation of evidence for decision-making is an essential
+            I am interested in how neuronal populations in cortex perform the computations relevant for complex behavior.
+            In particular, I've focused on evidence accumulation for decision-making. We make important decisions every day,
+            and the vast majority of them require us to accumulate multiple, discrete, pieces of evidence on both short
+            and long timescales to arrive at an accurate decision. For example, on a short timescale, when deciding which
+            way to turn while driving, we might combine our position, streetsigns, information from maps, and landmarks
+            to make a correct turn. The accumulation of evidence for decision-making is an essential
             component of our daily lives, and yet, the neuronal circuit mechanisms which perform the computations necessary
             for this complex task remain unknown.
         </p>
@@ -130,12 +130,79 @@
             evidence while simultaneously using two-photon microscopy to simultaneously image the activity of hundreds
             of neurons in layers 2/3 of the Posterior Parietal Cortex (PPC). With these datasets in hand, we leverage
             a variety of data analytics, ranging from the classic techniques of reverse correlation to recent
-            breakthroughs in machine learning to uncover the inner workings of these incredibly complex circuits.
+            breakthroughs in machine learning to uncover the inner workings of these circuits.
         </p>
-        <p class="cvLink">
-            <a href="/static/pdfs/Curriculum%20Vitae%20-%20Ari%20Morcos.pdf" target="_blank">Download my CV here</a>
+        <p>
+            The neural dynamics underlying these tasks are incredibly complex and developing better methods to analyze
+            these data is essential to our understanding. In particular, I've focused on developing methods to analyze
+            neuronal popualation dynamics on single trials. Using such analyses, we were able to identify multiple
+            major features of the population activity, including a distributed code among heterogeneous individual
+            neurons, history signals for past events lasting seconds, and structured trial-trial variability that was
+            predictive of past and future activity patterns. Together our results provide data that contradict the
+            long-standing models of evidence accumulation and that propose a novel model of computation based on
+            large-scale neuronal population dynamics.
+        </p>
+
+        <h2 class=""> Deep learning </h2>
+        <p>
+            Manipulating neural circuits <i>in vivo</i> is incredibly challenging. Moreover, the measures of neuronal
+            activity we record are noisy, with noise being added by both the microscope and the calcium
+            indicator. If we can replicate the circuit <i>in silico</i>, we would be able to overcome both of these
+            obstacles as we would have complete control of the circuit and perfect measures of its activity. Using
+            recurrent neural networks, we are working on replicating the dynamics of neural circuits in
+            cortex in this manner. Hopefully, interrogation of these <i>in silico</i> circuits will allow us to generate
+            new predictions about the neural dynamics which we can then test experimentally <i>in vivo</i>.
         </p>
     </div>
+</div>
+
+<div class="container publications contentCard">
+    <div class="row">
+        <h2 class="text-left">
+            Publications
+        </h2>
+    </div>
+
+    <div class="paper_object">
+
+        <span class="nopadding">
+            <h4 class="text-left">
+                <b>
+                    History-dependent variability in population dynamics during evidence accumulation in cortex
+                </b>
+            </h4>
+            <h5 class="text-left">
+                <b>Ari S. Morcos</b> and Christopher D. Harvey. Manuscript under review.
+            </h5>
+        </span>
+        <img src="/static/images/publication_images/history_dependent.png" class="pull-right">
+    </div>
+
+    <div class="paper_object">
+        <span class="nopadding">
+            <h4 class="text-left">
+                <b>
+                    <a href="http://www.jneurosci.org/content/35/44/14872.short" target="_blank">
+                        REST regulates non-cell-autonomous neuronal differentiation and maturation of neural progenitor
+                        cells via Secretogranin II
+                    </a>
+                </b>
+            </h4>
+            <h5 class="text-left">
+                Kim HJ, Denli AM, Wright R, Baul TD, Clemenson GD, <b>Morcos AS</b>,
+                Zhao C, Schafer ST, Gage FH, and Kagalwala MN, <i>J. Neurosci.</i>,
+                vol. 35, no. 44, pp. 14872–14884, 2015.
+            </h5>
+        </span>
+        <img src="/static/images/publication_images/REST%20image.png" class="pull-right">
+    </div>
+
+</div>
+
+<div class="container contentCard">
+    <p class="cvLink">
+        <a href="/static/pdfs/Curriculum%20Vitae%20-%20Ari%20Morcos.pdf" target="_blank">Download my CV here</a>
+    </p>
 </div>
 
 
