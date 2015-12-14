@@ -262,13 +262,19 @@ body p {
   font-size: 2.6em;
   text-align: justify;
 }
-.personalImg {
-  float: right;
-  box-shadow: 1.2em 0.8em 1em darkgray;
-  height: 550px;
-  margin-left: 1.5em;
+
+.personalImg,
+.personalImgApplePicking {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 0.6em 0.4em 0.5em darkgray;
+  width: 62vw;
+  /*height: 300px;*/
+  /*margin-left: 1.5em;*/
   border-radius: 1%;
 }
+
 /* Contact */
 .contactHeader h1 {
   color: #303030;
