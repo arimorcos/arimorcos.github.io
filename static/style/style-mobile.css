@@ -769,3 +769,32 @@ body p {
 .rightBlogBrowser {
   display: none;
 }
+
+.publications h2 {
+  padding-left: 1vw;
+  text-shadow: 0.01em 0.01em #505050;
+  color: #303030;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.paper_object span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.paper_object img{
+  width: 25vw;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.paper_object {
+  /*height: 500px;*/
+  /*line-height: 200px;*/
+  display: table;
+  margin-bottom: 2em;
+}
