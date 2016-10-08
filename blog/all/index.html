@@ -487,23 +487,23 @@
 <h2>PRAW/Reddit API Basics</h2>
 <p>This isn't intended as a tutorial for PRAW. If you want that, I recommend visiting their <a href="https://praw.readthedocs.org/en/v2.1.20/" title="PRAW documentation">docs</a>. This section will only go through the fundamentals of PRAW necessary to create a data set from reddit. </p>
 <p>First, let's import praw and the redditDataset module</p>
-<div class="codehilite"><pre><span class="n">import</span> <span class="n">praw</span>
-<span class="n">import</span> <span class="n">redditDataset</span>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">praw</span>
+<span class="kn">import</span> <span class="nn">redditDataset</span>
 </pre></div>
 
 
 <p>Next, let's initialize a connection with PRAW as follows: </p>
-<div class="codehilite"><pre><span class="n">redditObject</span> <span class="o">=</span> <span class="n">praw</span><span class="p">.</span><span class="n">Reddit</span><span class="p">(</span><span class="n">user_agent</span><span class="o">=</span><span class="err">&#39;</span><span class="n">get_reddit_dataset</span><span class="err">&#39;</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span>redditObject = praw.Reddit(user_agent=&#39;get_reddit_dataset&#39;)
 </pre></div>
 
 
 <p>We can grab subreddits using <code>getSubreddits</code>. Here, we'll grab /r/funny and /r/gaming</p>
-<div class="codehilite"><pre><span class="n">subreddits</span> <span class="o">=</span> <span class="n">redditDataset</span><span class="p">.</span><span class="n">getSubreddits</span><span class="p">(</span><span class="n">redditObject</span><span class="p">,</span> <span class="p">[</span><span class="err">&#39;</span><span class="n">funny</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">gaming</span><span class="err">&#39;</span><span class="p">])</span>
+<div class="codehilite"><pre><span></span>subreddits = redditDataset.getSubreddits(redditObject, [&#39;funny&#39;, &#39;gaming&#39;])
 </pre></div>
 
 
 <p>PRAW also has a variety of functions to grab subreddits. One of the most useful is the method <code>get_popular_subreddits</code>.</p>
-<div class="codehilite"><pre><span class="n">popularSubreddits</span> <span class="o">=</span> <span class="n">redditObject</span><span class="p">.</span><span class="n">get_popular_subreddits</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span>popularSubreddits = redditObject.get_popular_subreddits(limit=200)
 </pre></div>
 
 
@@ -512,10 +512,10 @@
 <h2>Grabbing a data set from a set of subreddits</h2>
 <p>Once you have a generator or list of subreddit objects and your praw object, call <code>createDataset</code> to start downloading comments and posts into a sqlite3 database. The database will be saved in <code>~\Databases\&lt;dbName&gt;db</code>.</p>
 <p>Let's grab all the posts from the funny subreddit from March 1, 2015: </p>
-<div class="codehilite"><pre><span class="n">funnySubreddit</span> <span class="o">=</span> <span class="n">redditDataset</span><span class="p">.</span><span class="n">getSubreddits</span><span class="p">(</span><span class="n">redditObject</span><span class="p">,</span> <span class="p">[</span><span class="err">&#39;</span><span class="n">funny</span><span class="err">&#39;</span><span class="p">])</span>
-<span class="n">redditDataset</span><span class="p">.</span><span class="n">createDataset</span><span class="p">(</span><span class="n">redditObject</span><span class="p">,</span> <span class="n">funnySubreddit</span><span class="p">,</span> <span class="n">startDate</span><span class="o">=</span><span class="err">&#39;</span><span class="mi">150301000000</span><span class="err">&#39;</span>
-                            <span class="n">endDate</span><span class="o">=</span><span class="err">&#39;</span><span class="mi">150301235959</span><span class="err">&#39;</span><span class="p">,</span> <span class="n">dbName</span><span class="o">=</span><span class="err">&#39;</span><span class="n">March_01_2015_funny_posts</span><span class="err">&#39;</span>
-                            <span class="n">fineScale</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span>funnySubreddit = redditDataset.getSubreddits(redditObject, [&#39;funny&#39;])
+redditDataset.createDataset(redditObject, funnySubreddit, startDate=&#39;150301000000&#39;
+                            endDate=&#39;150301235959&#39;, dbName=&#39;March_01_2015_funny_posts&#39;
+                            fineScale=4)
 </pre></div>
 
 
