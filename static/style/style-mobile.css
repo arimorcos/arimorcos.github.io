@@ -792,7 +792,8 @@ body p {
   vertical-align: middle;
 }
 
-.paper_object img{
+.paper_object div img{
+  object-fit: contain;
   width: 25vw;
   vertical-align: middle;
   display: table-cell;
@@ -801,6 +802,8 @@ body p {
 .paper_object {
   /*height: 500px;*/
   /*line-height: 200px;*/
-  display: table;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
   margin-bottom: 2em;
 }
