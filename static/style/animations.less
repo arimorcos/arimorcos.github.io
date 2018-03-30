@@ -8,7 +8,7 @@
 // About Me
 //noinspection LessUnresolvedMixin
 .animate-me(flipY; 1s 150ms; '.navAbout > a:hover > img';
-  '50%, 100%'; '%stransform: rotateY(180deg)';
+  '50%, 100%'; 'transform: rotateY(180deg)';
   0%; '%stransform: rotateY(0deg)';
 );
 
@@ -28,20 +28,20 @@
     background-color: @highlightColor;
 }
 
-// Research
+// Neuro Research
 
 //noinspection LessUnresolvedMixin
-.animate-me(wiggle; 3s 150ms; '.navResearch > a:hover > img';
+.animate-me(wiggle; 3s 150ms; '.navNeuroResearch > a:hover > img';
   '0%, 70%, 100%'; '%stransform: rotate(0deg)';
   15%; '%stransform: rotate(-30deg)';
   45%; '%stransform: rotate(20deg)';
 );
 
-.navResearch > a:hover {
+.navNeuroResearch > a:hover {
     background-color: @highlightColor;
 }
 
-.animateResearch {
+.animateNeuroResearch {
     -moz-animation: wiggle 3s 1s infinite;
     -o-animation: wiggle 3s 1s infinite;
     -ms-animation: wiggle 3s 1s infinite;
@@ -49,7 +49,31 @@
     animation: wiggle 3s 1s infinite;
 }
 
-.animateResearchColor {
+.animateNeuroResearchColor {
+    background-color: @highlightColor;
+}
+
+// ML Research
+
+//noinspection LessUnresolvedMixin
+.animate-me(fade_in_out; 3s infinite; '.navMLResearch > a:hover > .dnn_im_container > img'; 
+  '0%, 32.9%, 100%'; '%sopacity: 1';
+  '33%, 99.9%'; '%sopacity: 0';
+);
+
+.navMLResearch > a:hover {
+    background-color: @highlightColor;
+}
+
+.animateMLResearch {
+    -moz-animation: fade_in_out 3s infinite;
+    -o-animation: fade_in_out 3s infinite;
+    -ms-animation: fade_in_out 3s infinite;
+    -webkit-animation: fade_in_out 3s infinite;
+    animation: fade_in_out 3s infinite;
+}
+
+.animateMLResearchColor {
     background-color: @highlightColor;
 }
 

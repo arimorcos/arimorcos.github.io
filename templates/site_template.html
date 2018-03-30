@@ -68,8 +68,20 @@
                              class="img-responsive">
                     </a>
                 </li>
-                <li class="navResearch">
-                    <a href="{{ url_for('research') }}" class="showTooltip" title="Research">
+                <li class="navMLResearch">
+                    <a href="{{ url_for('mlResearch') }}" class="showTooltip" title="Deep Learning Research">
+                        <div class="dnn_im_container">
+                            <img src="/static/images/navigation-icons/dnn_icon-01.png"
+                                 class="img-responsive dnn_im dnn_im_1" >
+                             <img src="/static/images/navigation-icons/dnn_icon-02.png"
+                                class="img-responsive dnn_im dnn_im_2">
+                            <img src="/static/images/navigation-icons/dnn_icon-03.png"
+                                class="img-responsive dnn_im dnn_im_3">    
+                        </div>
+                    </a>
+                </li>
+                <li class="navNeuroResearch">
+                    <a href="{{ url_for('neuroResearch') }}" class="showTooltip" title="Neuroscience Research">
                         <img src="/static/images/navigation-icons/brain_icon.png"
                              class="img-responsive">
                     </a>
@@ -89,14 +101,6 @@
             </ul>
         </div>
     </div>
-
-    {#    <div class="container-fluid line"></div>#}
-    {#    <div class="container">#}
-    {#        <div class="row currSection">#}
-    {#            <h2 class="text-center" role="heading"> {% block sectionName %}{% endblock %} </h2>#}
-    {#            <h3 class="text-center blogDate">{% block blogDate %}{% endblock %}</h3>#}
-    {#        </div>#}
-    {#    </div>#}
 
     {# Page Content #}
     {% block content %}{% endblock %}

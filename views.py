@@ -114,9 +114,19 @@ def about():
     return render_template('about.html')
 
 
-@app.route('/research/')
-def research():
-    return render_template('research.html')
+@app.route('/neuro_research/')
+def neuroResearch():
+    return render_template('neuro_research.html')
+
+
+@app.route('/ml_research/')
+def mlResearch():
+    return render_template('ml_research.html')
+
+
+@app.route('/publications/')
+def publications():
+    return render_template('publications.html')
 
 
 @app.route('/contact/')
