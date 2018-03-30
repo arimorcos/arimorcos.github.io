@@ -130,6 +130,15 @@ body p {
   display: table-cell;
   vertical-align: middle;
 }
+a.multi-link {
+  padding-right: 0.75em;
+}
+.small-offset {
+  padding-top: 0.5em;
+}
+.medium-offset {
+  padding-top: 1em;
+}
 .paper_object div img {
   object-fit: contain;
   width: 25vw;

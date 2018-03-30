@@ -130,6 +130,9 @@ body p {
   display: table-cell;
   vertical-align: middle;
 }
+.multi-link {
+  padding-right: 1.5em;
+}
 .paper_object div img {
   object-fit: contain;
   width: 25vw;
