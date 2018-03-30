@@ -68,7 +68,7 @@ def blogPost(name):
     post = flatpages.get_or_404(path)
 
     # get description
-    post.description = ''.join(BeautifulSoup(post.html[0:400]).findAll(text=True)) + '...'
+    post.description = ''.join(BeautifulSoup(post.html[0:400], 'lxml').findAll(text=True)) + '...'
     post.url = 'http://www.arimorcos.com' + url_for('blogPost',name=name)
 
     # get tags
