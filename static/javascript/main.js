@@ -45,6 +45,11 @@ function changeAnimation() {
     } else if (url.search('neuro_research') > 0 ) {
         $(".navNeuroResearch > a").toggleClass("animateNeuroResearchColor");
         $(".navNeuroResearch > a > img").toggleClass("animateNeuroResearch");
+    } else if (url.search('publications') > 0 ) {
+        $(".navPubs > a").toggleClass("animatePubsColor");
+        $(".navPubs > a > .pub_im_container > .scroll_container").toggleClass("animatePubsExpand");
+        $(".navPubs > a > .pub_im_container > .scroll_container > img").toggleClass("animatePubsFlyUp");
+        $(".navPubs > a > .pub_im_container > .scroll_short").toggleClass("animatePubsVanish");
     } else if (url.search('contact') > 0 ) {
         $(".navContact > a").toggleClass("animateContactColor");
         $(".navContact > a > img").toggleClass("animateContact");
