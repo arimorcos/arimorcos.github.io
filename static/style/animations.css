@@ -168,6 +168,219 @@
 .animateMLResearchColor {
   background-color: #4F78D1;
 }
+@-moz-keyframes fly-up { 0% {    -moz-transform: translate(0px, 0px); /* {
+  /**/
+}
+  10% {    -moz-transform: translate(0px, 0px); /* {
+  /**/
+}
+  99.5% {    -moz-transform: translate(0px, -200px); /* {
+  /**/
+}
+  99.9% {    -moz-transform: translate(0px, 0px); /* {
+  /**/
+}
+} @-webkit-keyframes fly-up { 0% {    -webkit-transform: translate(0px, 0px); /* {
+  /**/
+}
+  10% {    -webkit-transform: translate(0px, 0px); /* {
+  /**/
+}
+  99.5% {    -webkit-transform: translate(0px, -200px); /* {
+  /**/
+}
+  99.9% {    -webkit-transform: translate(0px, 0px); /* {
+  /**/
+}
+} @-o-keyframes fly-up { 0% {    -o-transform: translate(0px, 0px); /* {
+  /**/
+}
+  10% {    -o-transform: translate(0px, 0px); /* {
+  /**/
+}
+  99.5% {    -o-transform: translate(0px, -200px); /* {
+  /**/
+}
+  99.9% {    -o-transform: translate(0px, 0px); /* {
+  /**/
+}
+} @keyframes fly-up { 0% {    transform: translate(0px, 0px); /* {
+  /**/
+}
+  10% {    transform: translate(0px, 0px); /* {
+  /**/
+}
+  99.5% {    transform: translate(0px, -200px); /* {
+  /**/
+}
+  99.9% {    transform: translate(0px, 0px); /* {
+  /**/
+}
+} .navPubs > a:hover > .pub_im_container > .scroll_container > img {
+  -moz-animation: fly-up 6s 200ms linear;
+  -webkit-animation: fly-up 6s 200ms linear;
+  -o-animation: fly-up 6s 200ms linear;
+  animation: fly-up 6s 200ms linear;
+}
+@-moz-keyframes expand-container { 0% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50.01% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99.5% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+} @-webkit-keyframes expand-container { 0% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50.01% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99.5% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+} @-o-keyframes expand-container { 0% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50.01% {    -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99% {    -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99.5% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+} @keyframes expand-container { 0% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50.01% {    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99% {    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99.5% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+} .navPubs > a:hover > .pub_im_container > .scroll_container {
+  -moz-animation: expand-container 6s 200ms linear;
+  -webkit-animation: expand-container 6s 200ms linear;
+  -o-animation: expand-container 6s 200ms linear;
+  animation: expand-container 6s 200ms linear;
+}
+@-moz-keyframes vanish { 0% {    -moz-opacity: 1; /* {
+  /**/
+}
+  50% {    -moz-opacity: 1; /* {
+  /**/
+}
+  50.01% {    -moz-opacity: 0; /* {
+  /**/
+}
+  99.9% {    -moz-opacity: 0; /* {
+  /**/
+}
+  100% {    -moz-opacity: 1; /* {
+  /**/
+}
+} @-webkit-keyframes vanish { 0% {    -webkit-opacity: 1; /* {
+  /**/
+}
+  50% {    -webkit-opacity: 1; /* {
+  /**/
+}
+  50.01% {    -webkit-opacity: 0; /* {
+  /**/
+}
+  99.9% {    -webkit-opacity: 0; /* {
+  /**/
+}
+  100% {    -webkit-opacity: 1; /* {
+  /**/
+}
+} @-o-keyframes vanish { 0% {    -o-opacity: 1; /* {
+  /**/
+}
+  50% {    -o-opacity: 1; /* {
+  /**/
+}
+  50.01% {    -o-opacity: 0; /* {
+  /**/
+}
+  99.9% {    -o-opacity: 0; /* {
+  /**/
+}
+  100% {    -o-opacity: 1; /* {
+  /**/
+}
+} @keyframes vanish { 0% {    opacity: 1; /* {
+  /**/
+}
+  50% {    opacity: 1; /* {
+  /**/
+}
+  50.01% {    opacity: 0; /* {
+  /**/
+}
+  99.9% {    opacity: 0; /* {
+  /**/
+}
+  100% {    opacity: 1; /* {
+  /**/
+}
+} .navPubs > a:hover > .pub_im_container > .scroll_short {
+  -moz-animation: vanish 6s 200ms;
+  -webkit-animation: vanish 6s 200ms;
+  -o-animation: vanish 6s 200ms;
+  animation: vanish 6s 200ms;
+}
+.navPubs > a:hover {
+  background-color: #4F78D1;
+}
+.animatePubsFlyUp {
+  -moz-animation: fly-up 6s 200ms linear infinite;
+  -o-animation: fly-up 6s 200ms linear infinite;
+  -ms-animation: fly-up 6s 200ms linear infinite;
+  -webkit-animation: fly-up 6s 200ms linear infinite;
+  animation: fly-up 6s 200ms linear infinite;
+}
+.animatePubsVanish {
+  -moz-animation: vanish 6s 200ms linear infinite;
+  -o-animation: vanish 6s 200ms linear infinite;
+  -ms-animation: vanish 6s 200ms linear infinite;
+  -webkit-animation: vanish 6s 200ms linear infinite;
+  animation: vanish 6s 200ms linear infinite;
+}
+.animatePubsExpand {
+  -moz-animation: expand-container 6s 200ms linear infinite;
+  -o-animation: expand-container 6s 200ms linear infinite;
+  -ms-animation: expand-container 6s 200ms linear infinite;
+  -webkit-animation: expand-container 6s 200ms linear infinite;
+  animation: expand-container 6s 200ms linear infinite;
+}
+.animatePubsColor {
+  background-color: #4F78D1;
+}
 @-moz-keyframes pencil-write { 0% {    -moz-transform: rotate(-5deg) translate(0px,0px); /* {
   /**/
 }

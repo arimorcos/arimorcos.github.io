@@ -86,6 +86,18 @@
                              class="img-responsive">
                     </a>
                 </li>
+                <li class="navPubs">
+                    <a href="{{ url_for('publications') }}" class="showTooltip" title="CV and Publications">
+                        <div class="pub_im_container">
+                            <div class="scroll_container">
+                                <img src="/static/images/navigation-icons/scroll-02.png"
+                                     class="img-responsive scroll_long">
+                            </div>
+                            <img src="/static/images/navigation-icons/scroll-01.png"
+                                 class="img-responsive scroll_short">
+                        </div>
+                    </a>
+                </li>
                 <li class="navBlog">
                     <a href="{{ url_for('blog', pageNum=1) }}" class="showTooltip" title="Blog">
                         <img src="/static/images/navigation-icons/pencil.png"

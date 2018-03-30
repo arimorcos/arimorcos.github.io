@@ -201,6 +201,26 @@ html, body {
 }
 
 
+.pub_im_container {
+  position: relative;
+}
+
+.scroll_short, .navPubs > a:hover > .pub_im_container > .scroll_short {
+  position: absolute; 
+  z-index: 1;
+  // opacity: 0.5
+}
+
+.scroll_container {
+  position:absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%);
+}
+
+.scroll_long {
+  position: relative;
+  z-index: 2;
+}
+
 
 .navBar {
   //  display: inline-block;
