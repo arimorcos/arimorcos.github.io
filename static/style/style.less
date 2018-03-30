@@ -197,15 +197,53 @@ html, body {
 /* Research */
 .neuronActivityImg {
   float: right;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: @defaultMargin;
+  padding-right: @defaultMargin;
+}
+
+.paper_object span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.paper_object div img{
+  object-fit: contain;
+  width: 25vw;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.paper_object {
+  /*height: 500px;*/
+  /*line-height: 200px;*/
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 2*@defaultMargin;
 }
 
 .researchStatement p {
   text-align: justify;
   font-size: 1.3*@defaultFontSize;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: @defaultMargin;
+  padding-right: @defaultMargin;
+}
+
+.researchStatement h2 {
+  padding-left: 1vw;
+  text-shadow: 0.01*@defaultMargin 0.01*@defaultMargin #505050;
+  color: #303030;
+}
+
+.publications h2 {
+  padding-left: 1vw;
+  text-shadow: 0.01*@defaultMargin 0.01*@defaultMargin #505050;
+  color: #303030;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
 
 .cvLink a {
@@ -219,7 +257,7 @@ html, body {
 }
 
 .blogDate {
-  margin-top: 0;
+  margin-top: 0.5*@defaultMargin;
   margin-bottom: 1*@defaultMargin;
   font-size: 1.5*@defaultFontSize;
 }
@@ -383,10 +421,18 @@ html, body {
 }
 
 .personalImg {
+  float: left;
+  box-shadow: 0.6em 0.4em 0.5em darkgray;
+  height: 300px;
+  margin-right: 1*@defaultMargin;
+  border-radius: 1%;
+}
+
+.personalImgApplePicking {
   float: right;
-  box-shadow: 0.6*@defaultFontSize 0.4*@defaultFontSize 0.5*@defaultFontSize darkgray;
-  height: 550px;
-  margin-left: 1*@defaultMargin;
+  box-shadow: 0.6em 0.4em 0.5em darkgray;
+  height: 300px;
+  margin-left: 1em;
   border-radius: 1%;
 }
 

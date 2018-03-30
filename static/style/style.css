@@ -1,9 +1,9 @@
 /* Main page background */
 html,
 body {
-  background-color: #2b2b2b;
+  background-color: #2B2B2B;
   font-family: "Open Sans", sans-serif;
-  color: #2b2b2b;
+  color: #2B2B2B;
   height: 100%;
 }
 html p,
@@ -47,7 +47,7 @@ body p {
   font-size: 3em;
 }
 .line {
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   height: 5px;
   margin-top: 0.5em;
   margin-bottom: 1em;
@@ -57,7 +57,7 @@ body p {
   display: block;
 }
 .contentCard {
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding: 2em;
   margin-bottom: 1em;
 }
@@ -66,7 +66,7 @@ body p {
   text-align: center;
 }
 .nameHeader h1 {
-  color: #f6f6f6;
+  color: #F6F6F6;
   font-size: 5em;
   font-weight: bolder;
   text-shadow: 0.03em 0.03em #505050;
@@ -85,7 +85,7 @@ body p {
 .navIcon a {
   display: inline-block;
   border-radius: 20%;
-  border: 5px solid #f6f6f6;
+  border: 5px solid #F6F6F6;
   padding: 10px;
   width: 80px;
   height: 80px;
@@ -101,16 +101,16 @@ body p {
 }
 /* Current Section */
 .currSection {
-  background-color: #4f78d1;
+  background-color: #4F78D1;
   margin-bottom: 1em;
 }
 .currSection h2 {
-  color: #f6f6f6;
+  color: #F6F6F6;
   margin-top: 1px;
   margin-bottom: 0;
 }
 .currSection h3 {
-  color: #f6f6f6;
+  color: #F6F6F6;
   margin-bottom: 4px;
   margin-top: 0;
 }
@@ -126,19 +126,16 @@ body p {
   padding-left: 1em;
   padding-right: 1em;
 }
-
 .paper_object span {
   display: table-cell;
   vertical-align: middle;
 }
-
-.paper_object div img{
+.paper_object div img {
   object-fit: contain;
   width: 25vw;
   vertical-align: middle;
   display: table-cell;
 }
-
 .paper_object {
   /*height: 500px;*/
   /*line-height: 200px;*/
@@ -150,27 +147,23 @@ body p {
 .researchStatement p {
   text-align: justify;
   font-size: 1.3em;
-  padding-left: 1vw;
+  padding-left: 1em;
   padding-right: 1em;
 }
-
 .researchStatement h2 {
   padding-left: 1vw;
   text-shadow: 0.01em 0.01em #505050;
   color: #303030;
 }
-
 .publications h2 {
   padding-left: 1vw;
   text-shadow: 0.01em 0.01em #505050;
   color: #303030;
 }
-
 .nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
-
 .cvLink a {
   font-size: 2em;
 }
@@ -308,7 +301,6 @@ body p {
   margin-right: 1em;
   border-radius: 1%;
 }
-
 .personalImgApplePicking {
   float: right;
   box-shadow: 0.6em 0.4em 0.5em darkgray;
@@ -316,7 +308,6 @@ body p {
   margin-left: 1em;
   border-radius: 1%;
 }
-
 /* Contact */
 .contactHeader h1 {
   color: #303030;
@@ -353,8 +344,8 @@ body p {
   height: 5em;
 }
 .siteFooter {
-  color: #f6f6f6;
-  background-color: #4f78d1;
+  color: #F6F6F6;
+  background-color: #4F78D1;
   padding-top: 2em;
   font-size: 1em;
 }
