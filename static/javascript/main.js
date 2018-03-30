@@ -39,9 +39,12 @@ function changeAnimation() {
     } else if (url.search('blog') > 0) {
         $(".navBlog > a").toggleClass("animateBlogColor");
         $(".navBlog > a > img").toggleClass("animateBlog");
-    } else if (url.search('research') > 0 ) {
-        $(".navResearch > a").toggleClass("animateResearchColor");
-        $(".navResearch > a > img").toggleClass("animateResearch");
+    } else if (url.search('ml_research') > 0 ) {
+        $(".navMLResearch > a").toggleClass("animateMLResearchColor");
+        $(".navMLResearch > a > .dnn_im_container > img").toggleClass("animateMLResearch");
+    } else if (url.search('neuro_research') > 0 ) {
+        $(".navNeuroResearch > a").toggleClass("animateNeuroResearchColor");
+        $(".navNeuroResearch > a > img").toggleClass("animateNeuroResearch");
     } else if (url.search('contact') > 0 ) {
         $(".navContact > a").toggleClass("animateContactColor");
         $(".navContact > a > img").toggleClass("animateContact");

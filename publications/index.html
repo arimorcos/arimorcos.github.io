@@ -1,25 +1,122 @@
-{% extends "site_template.html" %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    
+    
+    <title>
+    Ari Morcos - Publications
+</title>
 
-{% block headerName %}
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/static/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/icons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/static/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/static/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/static/icons/manifest.json">
+    <link rel="shortcut icon" href="/static/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/static/icons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/static/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/animations.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/style/tooltipster.css" />
+    <link rel='stylesheet' type='text/css' media='screen and (min-device-width: 1101px)' href='/static/style/style.css' />
+    <link rel='stylesheet' type='text/css' media='screen and (min-device-width: 701px) and (max-device-width: 1100px)' href='/static/style/style-tablet.css' />
+    <link rel='stylesheet' type='text/css' media='screen and (max-device-width: 700px)' href='/static/style/style-mobile.css' />
+
+
+    
+    <script type="text/javascript" src="/static/javascript/jquery-1.11.2.min.js"></script>
+    
+    <script type="text/javascript" src="/static/javascript/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="/static/javascript/main.js"></script>
+
+    
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src='http://w.sharethis.com/button/buttons.js'></script>
+    <script type="text/javascript">stLight.options({publisher: "5da51cd4-4e57-428f-9aa9-8b6165d05b3f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+</head>
+<body>
+
+<div class="page-wrap">
+
+    <div class="nameHeader">
+        <h1>
     <a href="/about" class="headerLink">
         Ari Morcos
     </a>
-{% endblock %}
+</h1>
+    </div>
 
-{% block title %}
-    Ari Morcos - Research
-{% endblock %}
+    <div class="container-fluid">
+        <div class="row navBar">
+            <ul class="navIcon">
+                <li class="navAbout">
+                    <a href="/about/" class="showTooltip" title="About Me">
+                        <img src="/static/images/navigation-icons/about_me.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+                <li class="navMLResearch">
+                    <a href="/ml_research/" class="showTooltip" title="Deep Learning Research">
+                        <div class="dnn_im_container">
+                            <img src="/static/images/navigation-icons/dnn_icon-01.png"
+                                 class="img-responsive dnn_im dnn_im_1" >
+                             <img src="/static/images/navigation-icons/dnn_icon-02.png"
+                                class="img-responsive dnn_im dnn_im_2">
+                            <img src="/static/images/navigation-icons/dnn_icon-03.png"
+                                class="img-responsive dnn_im dnn_im_3">    
+                        </div>
+                    </a>
+                </li>
+                <li class="navNeuroResearch">
+                    <a href="/neuro_research/" class="showTooltip" title="Neuroscience Research">
+                        <img src="/static/images/navigation-icons/brain_icon.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+                <li class="navBlog">
+                    <a href="/blog/page/1/" class="showTooltip" title="Blog">
+                        <img src="/static/images/navigation-icons/pencil.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+                <li class="navContact">
+                    <a href="/contact/" class="showTooltip" title="Contact">
+                        <img src="/static/images/navigation-icons/paper_airplane.png"
+                             class="img-responsive">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-{% block sectionName %}
-    Research
-{% endblock %}
-
-{% block content %}
+    
+    
 
 <!-- Research statement -->
 <div class="container researchStatement contentCard">
     <div class="row">
-        <h1 class="sectionHeading text-center"> Research </h1>
+        <h1 class="sectionHeading text-center"> 
+    Publications
+ </h1>
         <h2 class=""> Deep learning </h2>
         <p>
             Manipulating neural circuits <i>in vivo</i> is incredibly challenging. Moreover, the measures of neuronal
@@ -192,4 +289,32 @@
     </p>
 </div>
 
-{% endblock %}
+
+
+</div>
+
+
+<footer class="siteFooter container">
+    <p class="copyrightText text-center">
+        &copy; <script language="javascript" type="text/javascript">
+        var today = new Date()
+        var year = today.getFullYear()
+        document.write(year)
+    </script> Ari Morcos All rights reserved
+    </p>
+</footer>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-60029364-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

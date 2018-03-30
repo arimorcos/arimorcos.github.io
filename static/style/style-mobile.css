@@ -464,13 +464,13 @@ body p {
   45% {`'\n'`    transform: rotate(20deg); /* {
   /**/
 }
-} .navResearch > a:hover > img {
+} .navNeuroResearch > a:hover > img {
   -moz-animation: wiggle 3s 150ms;
   -webkit-animation: wiggle 3s 150ms;
   -o-animation: wiggle 3s 150ms;
   animation: wiggle 3s 150ms;
 }
-.navResearch > a:hover {
+.navNeuroResearch > a:hover {
   background-color: #4F78D1;
 }
 .animateResearch {

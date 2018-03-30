@@ -96,6 +96,41 @@ body p {
 .navIcon img {
   margin: auto;
 }
+.dnn_im_container {
+  position: relative;
+}
+.dnn_im {
+  position: absolute;
+}
+.dnn_im_1 {
+  z-index: 3;
+  opacity: 1;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+}
+.dnn_im_2,
+.navMLResearch > a:hover > .dnn_im_container > .dnn_im_2 {
+  z-index: 2;
+  opacity: 0;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+.dnn_im_3,
+.navMLResearch > a:hover > .dnn_im_container > .dnn_im_3 {
+  z-index: 1;
+  opacity: 0;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+}
 .navBar {
   text-align: center;
 }
