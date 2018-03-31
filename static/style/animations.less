@@ -81,26 +81,30 @@
 
 //noinspection LessUnresolvedMixin
 .animate-me(fly-up; 6s 200ms linear; '.navPubs > a:hover > .pub_im_container > .scroll_container > img';
-  0%; '%stransform: translate(0px, 0px)';
-  10%; '%stransform: translate(0px, 0px)';
-  99.5%; '%stransform: translate(0px, -200px)';
-  99.9%; '%stransform: translate(0px, 0px)';
+  0%; '%stransform: translateY(0%)';
+  10%; '%stransform: translateY(0%)';
+  94.9%; '%sopacity: 1';
+  94.95%; '%sopacity: 0';
+  95%; '%stransform: translateY(-120%)';
+  95.01%; '%stransform: translateY(0%)';
+  95.02%; '%sopacity: 0';
+  99.9%; '%sopacity: 1';
 );
 
 .animate-me(expand-container; 6s 200ms linear; '.navPubs > a:hover > .pub_im_container > .scroll_container';
   0%; '%sclip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%)';
-  50%; '%sclip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%)';
-  50.01%; '%sclip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)';
-  99%; '%sclip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)';
-  99.5%; '%sclip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%)';
+  55.5%; '%sclip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%)';
+  55.51%; '%sclip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)';
+  95%; '%sclip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)';
+  95.01%; '%sclip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%)';
 );
 
 .animate-me(vanish; 6s 200ms; '.navPubs > a:hover > .pub_im_container > .scroll_short';
   0%; '%sopacity: 1';
-  50%; '%sopacity: 1';
-  50.01%; '%sopacity: 0';
-  99.9%; '%sopacity: 0';
-  100%; '%sopacity: 1';
+  55.5%; '%sopacity: 1';
+  55.51%; '%sopacity: 0';
+  95.01%; '%sopacity: 0';
+  99.9%; '%sopacity: 1';
 );
 
 

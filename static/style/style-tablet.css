@@ -168,52 +168,100 @@
 .animateMLResearchColor {
   background-color: #4F78D1;
 }
-@-moz-keyframes fly-up { 0% {    -moz-transform: translate(0px, 0px); /* {
+@-moz-keyframes fly-up { 0% {    -moz-transform: translateY(0%); /* {
   /**/
 }
-  10% {    -moz-transform: translate(0px, 0px); /* {
+  10% {    -moz-transform: translateY(0%); /* {
   /**/
 }
-  99.5% {    -moz-transform: translate(0px, -200px); /* {
+  94.9% {    -moz-opacity: 1; /* {
   /**/
 }
-  99.9% {    -moz-transform: translate(0px, 0px); /* {
+  94.95% {    -moz-opacity: 0; /* {
   /**/
 }
-} @-webkit-keyframes fly-up { 0% {    -webkit-transform: translate(0px, 0px); /* {
+  95% {    -moz-transform: translateY(-120%); /* {
   /**/
 }
-  10% {    -webkit-transform: translate(0px, 0px); /* {
+  95.01% {    -moz-transform: translateY(0%); /* {
   /**/
 }
-  99.5% {    -webkit-transform: translate(0px, -200px); /* {
+  95.02% {    -moz-opacity: 0; /* {
   /**/
 }
-  99.9% {    -webkit-transform: translate(0px, 0px); /* {
+  99.9% {    -moz-opacity: 1; /* {
   /**/
 }
-} @-o-keyframes fly-up { 0% {    -o-transform: translate(0px, 0px); /* {
+} @-webkit-keyframes fly-up { 0% {    -webkit-transform: translateY(0%); /* {
   /**/
 }
-  10% {    -o-transform: translate(0px, 0px); /* {
+  10% {    -webkit-transform: translateY(0%); /* {
   /**/
 }
-  99.5% {    -o-transform: translate(0px, -200px); /* {
+  94.9% {    -webkit-opacity: 1; /* {
   /**/
 }
-  99.9% {    -o-transform: translate(0px, 0px); /* {
+  94.95% {    -webkit-opacity: 0; /* {
   /**/
 }
-} @keyframes fly-up { 0% {    transform: translate(0px, 0px); /* {
+  95% {    -webkit-transform: translateY(-120%); /* {
   /**/
 }
-  10% {    transform: translate(0px, 0px); /* {
+  95.01% {    -webkit-transform: translateY(0%); /* {
   /**/
 }
-  99.5% {    transform: translate(0px, -200px); /* {
+  95.02% {    -webkit-opacity: 0; /* {
   /**/
 }
-  99.9% {    transform: translate(0px, 0px); /* {
+  99.9% {    -webkit-opacity: 1; /* {
+  /**/
+}
+} @-o-keyframes fly-up { 0% {    -o-transform: translateY(0%); /* {
+  /**/
+}
+  10% {    -o-transform: translateY(0%); /* {
+  /**/
+}
+  94.9% {    -o-opacity: 1; /* {
+  /**/
+}
+  94.95% {    -o-opacity: 0; /* {
+  /**/
+}
+  95% {    -o-transform: translateY(-120%); /* {
+  /**/
+}
+  95.01% {    -o-transform: translateY(0%); /* {
+  /**/
+}
+  95.02% {    -o-opacity: 0; /* {
+  /**/
+}
+  99.9% {    -o-opacity: 1; /* {
+  /**/
+}
+} @keyframes fly-up { 0% {    transform: translateY(0%); /* {
+  /**/
+}
+  10% {    transform: translateY(0%); /* {
+  /**/
+}
+  94.9% {    opacity: 1; /* {
+  /**/
+}
+  94.95% {    opacity: 0; /* {
+  /**/
+}
+  95% {    transform: translateY(-120%); /* {
+  /**/
+}
+  95.01% {    transform: translateY(0%); /* {
+  /**/
+}
+  95.02% {    opacity: 0; /* {
+  /**/
+}
+  99.9% {    opacity: 1; /* {
   /**/
 }
 } .navPubs > a:hover > .pub_im_container > .scroll_container > img {
@@ -225,61 +273,61 @@
 @-moz-keyframes expand-container { 0% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
-  50% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  55.5% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
-  50.01% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  55.51% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
   /**/
 }
-  99% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  95% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
   /**/
 }
-  99.5% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  95.01% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
 } @-webkit-keyframes expand-container { 0% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
-  50% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  55.5% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
-  50.01% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  55.51% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
   /**/
 }
-  99% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  95% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
   /**/
 }
-  99.5% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  95.01% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
 } @-o-keyframes expand-container { 0% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
-  50% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  55.5% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
-  50.01% {    -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  55.51% {    -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
   /**/
 }
-  99% {    -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  95% {    -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
   /**/
 }
-  99.5% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  95.01% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
 } @keyframes expand-container { 0% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
-  50% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  55.5% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
-  50.01% {    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  55.51% {    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
   /**/
 }
-  99% {    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  95% {    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
   /**/
 }
-  99.5% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  95.01% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
   /**/
 }
 } .navPubs > a:hover > .pub_im_container > .scroll_container {
@@ -291,61 +339,61 @@
 @-moz-keyframes vanish { 0% {    -moz-opacity: 1; /* {
   /**/
 }
-  50% {    -moz-opacity: 1; /* {
+  55.5% {    -moz-opacity: 1; /* {
   /**/
 }
-  50.01% {    -moz-opacity: 0; /* {
+  55.51% {    -moz-opacity: 0; /* {
   /**/
 }
-  99.9% {    -moz-opacity: 0; /* {
+  95.01% {    -moz-opacity: 0; /* {
   /**/
 }
-  100% {    -moz-opacity: 1; /* {
+  99.9% {    -moz-opacity: 1; /* {
   /**/
 }
 } @-webkit-keyframes vanish { 0% {    -webkit-opacity: 1; /* {
   /**/
 }
-  50% {    -webkit-opacity: 1; /* {
+  55.5% {    -webkit-opacity: 1; /* {
   /**/
 }
-  50.01% {    -webkit-opacity: 0; /* {
+  55.51% {    -webkit-opacity: 0; /* {
   /**/
 }
-  99.9% {    -webkit-opacity: 0; /* {
+  95.01% {    -webkit-opacity: 0; /* {
   /**/
 }
-  100% {    -webkit-opacity: 1; /* {
+  99.9% {    -webkit-opacity: 1; /* {
   /**/
 }
 } @-o-keyframes vanish { 0% {    -o-opacity: 1; /* {
   /**/
 }
-  50% {    -o-opacity: 1; /* {
+  55.5% {    -o-opacity: 1; /* {
   /**/
 }
-  50.01% {    -o-opacity: 0; /* {
+  55.51% {    -o-opacity: 0; /* {
   /**/
 }
-  99.9% {    -o-opacity: 0; /* {
+  95.01% {    -o-opacity: 0; /* {
   /**/
 }
-  100% {    -o-opacity: 1; /* {
+  99.9% {    -o-opacity: 1; /* {
   /**/
 }
 } @keyframes vanish { 0% {    opacity: 1; /* {
   /**/
 }
-  50% {    opacity: 1; /* {
+  55.5% {    opacity: 1; /* {
   /**/
 }
-  50.01% {    opacity: 0; /* {
+  55.51% {    opacity: 0; /* {
   /**/
 }
-  99.9% {    opacity: 0; /* {
+  95.01% {    opacity: 0; /* {
   /**/
 }
-  100% {    opacity: 1; /* {
+  99.9% {    opacity: 1; /* {
   /**/
 }
 } .navPubs > a:hover > .pub_im_container > .scroll_short {
