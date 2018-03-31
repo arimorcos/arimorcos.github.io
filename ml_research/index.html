@@ -5,7 +5,7 @@
     
     
     <title>
-    Ari Morcos - Deep Learning Research
+    Ari Morcos - Deep Learning
 </title>
 
     
@@ -92,6 +92,18 @@
                              class="img-responsive">
                     </a>
                 </li>
+                <li class="navPubs">
+                    <a href="/publications/" class="showTooltip" title="CV and Publications">
+                        <div class="pub_im_container">
+                            <div class="scroll_container">
+                                <img src="/static/images/navigation-icons/scroll-02.png"
+                                     class="img-responsive scroll_long">
+                            </div>
+                            <img src="/static/images/navigation-icons/scroll-01.png"
+                                 class="img-responsive scroll_short">
+                        </div>
+                    </a>
+                </li>
                 <li class="navBlog">
                     <a href="/blog/page/1/" class="showTooltip" title="Blog">
                         <img src="/static/images/navigation-icons/pencil.png"
@@ -115,9 +127,8 @@
 <div class="container researchStatement contentCard">
     <div class="row">
         <h1 class="sectionHeading text-center"> 
-    Deep Learning Research
+    Deep Learning
  </h1>
-        <h2 class=""> Deep learning </h2>
         <p>
             Manipulating neural circuits <i>in vivo</i> is incredibly challenging. Moreover, the measures of neuronal
             activity we record are noisy, with noise being added by both the microscope and the calcium
@@ -127,166 +138,7 @@
             cortex in this manner. Hopefully, interrogation of these <i>in silico</i> circuits will allow us to generate
             new predictions about the neural dynamics which we can then test experimentally <i>in vivo</i>.
         </p>
-        <h2 class=""> Neuroscience </h2>
-        <p>
-            <img src="/static/images/AM144_activity_example.gif" alt="Sample neuronal activity in the PPC"
-                 class="neuronActivityImg">
-            I am interested in how neuronal populations in cortex perform the computations relevant for complex behavior.
-            In particular, I've focused on evidence accumulation for decision-making. We make important decisions every day,
-            and the vast majority of them require us to accumulate multiple, discrete, pieces of evidence on both short
-            and long timescales to arrive at an accurate decision. For example, on a short timescale, when deciding which
-            way to turn while driving, we might combine our position, streetsigns, information from maps, and landmarks
-            to make a correct turn. The accumulation of evidence for decision-making is an essential
-            component of our daily lives, and yet, the neuronal circuit mechanisms which perform the computations necessary
-            for this complex task remain unknown.
-        </p>
-        <p>
-            To uncover the inner workings of these circuits, we use a recently developed behavioral paradigm to train
-            mice to perform complex decision-making tasks requiring the accumulation of multiple, discrete pieces of
-            evidence while using two-photon microscopy to simultaneously image the activity of hundreds
-            of neurons in layers 2/3 of the Posterior Parietal Cortex (PPC). With these datasets in hand, we leverage
-            a variety of data analytics, ranging from the classic techniques of reverse correlation to recent
-            breakthroughs in machine learning to uncover the inner workings of these circuits.
-        </p>
-        <p>
-            The neural dynamics underlying these tasks are incredibly complex and developing better methods to analyze
-            these data is essential to our understanding. In particular, I've focused on developing methods to analyze
-            neuronal popualation dynamics on single trials. Using such analyses, we were able to identify multiple
-            major features of the population activity, including a distributed code among heterogeneous individual
-            neurons, history signals for past events lasting seconds, and structured trial-trial variability that was
-            predictive of past and future activity patterns. Together our results provide data that contradict the
-            long-standing models of evidence accumulation and that propose a novel model of computation based on
-            large-scale neuronal population dynamics.
-        </p>
     </div>
-</div>
-
-<div class="container publications contentCard">
-    <div class="row">
-        <h2 class="text-left">
-            Publications
-        </h2>
-    </div>
-
-    <div class="paper_object">
-
-        <span class="nopadding">
-            <h4 class="text-left">
-                <b>
-                    <a href="https://arxiv.org/abs/1803.06959" target="_blank">
-                        On the importance of single directions for generalization 
-                    </a>
-                </b>
-            </h4>
-            <h5 class="text-left">
-                <b>Morcos AS</b>, Barrett DGT, Rabinowitz NC, and Botvinick M. <i>ICLR 2018.</i>
-            </h5>
-            <h5 class="text-left">
-                <a class="multi-link" href="/static/pdfs/morcos_single_directions_iclr_2018.pdf" target="_blank">
-                    Download PDF
-                </a>
-                <a class="multi-link" href="https://arxiv.org/abs/1803.06959" target="_blank">
-                    ArXiv
-                </a>
-                <a class="multi-link" href="http://openreview.net/forum?id=r1iuQjxCZ" target="_blank">
-                    OpenReview
-                </a>
-            </h5>
-            <h5 class="text-left medium-offset">
-                <a href="https://deepmind.com/blog/understanding-deep-learning-through-neuron-deletion/" target="_blank">
-                    DeepMind Blog: Understanding deep learning through neuron deletion
-                </a>
-            </h5>
-            <h5 class="text-left">
-                <a class="multi-link" href="http://www.bbc.co.uk/news/technology-43514566" target="_blank">
-                    BBC
-                </a>
-                <a class="multi-link" href="https://www.theregister.co.uk/2018/03/23/deepmind/" target="_blank">
-                    The Register
-                </a>
-                <a class="multi-link" href="siliconangle.com/blog/2018/03/23/new-deepmind-research-applies-neuron-deletion-improving-ai-models/" target="_blank">
-                    Silicon Angle
-                </a>
-            </h5>
-        </span>
-        <div>
-            <img src="/static/images/publication_images/single_directions_fig_1.png" class="pull-right">
-        </div>
-        
-    </div>
-
-    <div class="paper_object">
-
-        <span class="nopadding">
-            <h4 class="text-left">
-                <b>
-                    <a href="http://www.nature.com/neuro/journal/v19/n12/full/nn.4403.html" target="_blank">
-                        History-dependent variability in population dynamics during evidence accumulation in cortex
-                    </a>
-                </b>
-            </h4>
-            <h5 class="text-left">
-                <b>Morcos AS</b> and Harvey CD. <i>Nat. Neurosci.</i> vol. 19,
-                no. 12, pp. 1672–1681, 2016. doi: 10.1038/nn.4403.
-            </h5>
-            <h5 class="text-left">
-                <a href="/static/pdfs/morcos_harvey_2016.pdf" target="_blank">
-                    Download PDF
-                </a>
-            </h5>
-            <br/>
-            <h5 class="text-left">
-                <a href="http://www.nature.com/neuro/journal/v19/n12/full/nn.4440.html" target="_blank">
-                    News and Views: Many paths from state to state
-                </a>
-            </h5>
-            <h5 class="text-left">
-                Kaufman MT and Churchland AK. <i>Nat. Neurosci.</i> vol. 19,
-                no.12, pp. 1541–1542, 2016. doi:10.1038/nn.4440
-            </h5>
-            <h5 class="text-left">
-                <a href="/static/pdfs/kaufman_churchland_news_views.pdf" target="_blank">
-                    Download PDF
-                </a>
-            </h5>
-        </span>
-        <div>
-            <img src="/static/images/publication_images/history_dependent.png" class="pull-right">
-        </div>
-    </div>
-
-    <div class="paper_object">
-        <span class="nopadding">
-            <h4 class="text-left">
-                <b>
-                    <a href="http://www.jneurosci.org/content/35/44/14872.short" target="_blank">
-                        REST regulates non-cell-autonomous neuronal differentiation and maturation of neural progenitor
-                        cells via Secretogranin II
-                    </a>
-                </b>
-            </h4>
-            <h5 class="text-left">
-                Kim HJ, Denli AM, Wright R, Baul TD, Clemenson GD, <b>Morcos AS</b>,
-                Zhao C, Schafer ST, Gage FH, and Kagalwala MN, <i>J. Neurosci.</i>,
-                vol. 35, no. 44, pp. 14872–14884, 2015. doi: 10.1523/JNEUROSCI.4286-14.2015.
-            </h5>
-            <h5 class="text-left">
-                <a href="/static/pdfs/kim_2015_j_neuro.pdf" target="_blank">
-                    Download PDF
-                </a>
-            </h5>
-        </span>
-        <div>
-            <img src="/static/images/publication_images/REST%20image.png" class="pull-right">
-        </div>
-    </div>
-
-</div>
-
-<div class="container contentCard">
-    <p class="cvLink">
-        <a href="/static/pdfs/Curriculum%20Vitae%20-%20Ari%20Morcos.pdf" target="_blank">Download my CV here</a>
-    </p>
 </div>
 
 

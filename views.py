@@ -56,10 +56,32 @@ def blogTag(tagName, pageNum):
 
     return postView
 
+# @app.route('/blog/post/Mining%20my%20google%20search%20history%20for%20clues%2C%20Part%20I/')
+# def mining_redirect():
+#     return redirect(url_for('blogPost', name='mining_google_search_part_1'), code=301)
+
+@app.errorhandler(404)
+def not_found(error):
+
+    return render_template('error.html')
 
 # create a route for an individual post
 @app.route('/blog/post/<name>/')  # route with the post name
 def blogPost(name):
+
+    # Redirect for backwards compatibility
+    redirect_dict = {
+        'Mining my google search history for clues, Part I': 'mining_google_search_part_1',
+        'Clustering subreddits by common word usage': 'clustering_reddit_common_word',
+        'Hello World!': 'hello_world',
+        'Sentiment analysis of movie taglines': 'sentiment_movie_taglines',
+        'Creating a Reddit Dataset': 'reddit_dataset',
+    }
+    if name in redirect_dict.keys():
+        name = redirect_dict[name]
+
+    # import pdb; pdb.set_trace()
+
     # generate the path with the first argument inside the first brackets, and the second argument inside the second
     # set of brackets
     path = '{}/{}'.format(POST_DIR, name)
