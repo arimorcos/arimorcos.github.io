@@ -556,45 +556,69 @@
 .animateBlogColor {
   background-color: #4F78D1;
 }
-@-moz-keyframes fly-plane { 0%, 51% {    -moz-transform: translate(0px,0px); /* {
+@-moz-keyframes fly-plane { 0%, 71% {    -moz-transform: translate(0px,0px); /* {
   /**/
 }
-  50% {    -moz-transform: translate(60px,-60px); /* {
+  70% {    -moz-transform: translate(60px,-60px); /* {
   /**/
 }
-} @-webkit-keyframes fly-plane { 0%, 51% {    -webkit-transform: translate(0px,0px); /* {
+  0%, 70.4%, 100% {    -moz-opacity: 1; /* {
   /**/
 }
-  50% {    -webkit-transform: translate(60px,-60px); /* {
+  70.5%, 72% {    -moz-opacity: 0; /* {
   /**/
 }
-} @-o-keyframes fly-plane { 0%, 51% {    -o-transform: translate(0px,0px); /* {
+} @-webkit-keyframes fly-plane { 0%, 71% {    -webkit-transform: translate(0px,0px); /* {
   /**/
 }
-  50% {    -o-transform: translate(60px,-60px); /* {
+  70% {    -webkit-transform: translate(60px,-60px); /* {
   /**/
 }
-} @keyframes fly-plane { 0%, 51% {    transform: translate(0px,0px); /* {
+  0%, 70.4%, 100% {    -webkit-opacity: 1; /* {
   /**/
 }
-  50% {    transform: translate(60px,-60px); /* {
+  70.5%, 72% {    -webkit-opacity: 0; /* {
+  /**/
+}
+} @-o-keyframes fly-plane { 0%, 71% {    -o-transform: translate(0px,0px); /* {
+  /**/
+}
+  70% {    -o-transform: translate(60px,-60px); /* {
+  /**/
+}
+  0%, 70.4%, 100% {    -o-opacity: 1; /* {
+  /**/
+}
+  70.5%, 72% {    -o-opacity: 0; /* {
+  /**/
+}
+} @keyframes fly-plane { 0%, 71% {    transform: translate(0px,0px); /* {
+  /**/
+}
+  70% {    transform: translate(60px,-60px); /* {
+  /**/
+}
+  0%, 70.4%, 100% {    opacity: 1; /* {
+  /**/
+}
+  70.5%, 72% {    opacity: 0; /* {
   /**/
 }
 } .navContact > a:hover > img {
-  -moz-animation: fly-plane 2s 150ms;
-  -webkit-animation: fly-plane 2s 150ms;
-  -o-animation: fly-plane 2s 150ms;
-  animation: fly-plane 2s 150ms;
+  -moz-animation: fly-plane 2s 150ms cubic-bezier(0.74, 0.18, 0.24, 0.87);
+  -webkit-animation: fly-plane 2s 150ms cubic-bezier(0.74, 0.18, 0.24, 0.87);
+  -o-animation: fly-plane 2s 150ms cubic-bezier(0.74, 0.18, 0.24, 0.87);
+  animation: fly-plane 2s 150ms cubic-bezier(0.74, 0.18, 0.24, 0.87);
 }
 .navContact > a:hover {
   background-color: #4F78D1;
 }
 .animateContact {
-  -moz-animation: fly-plane 2s 1s infinite;
-  -o-animation: fly-plane 2s 1s infinite;
-  -ms-animation: fly-plane 2s 1s infinite;
-  -webkit-animation: fly-plane 2s 1s infinite;
-  animation: fly-plane 2s 1s infinite;
+  -moz-animation: fly-plane 2s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87) infinite;
+  -o-animation: fly-plane 2s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87) infinite;
+  -ms-animation: fly-plane 2s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87) infinite;
+  -webkit-animation: fly-plane 2s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87) infinite;
+  animation: fly-plane 2s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87) infinite;
 }
 .animateContactColor {
   background-color: #4F78D1;

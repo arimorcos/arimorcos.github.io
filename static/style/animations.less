@@ -179,10 +179,14 @@
 
 // Contact
 @animate-30-pix: 30*@animate-min-pix;
+@contact-timing: cubic-bezier(0.74, 0.18, 0.24, 0.87);
 //noinspection LessUnresolvedMixin
-.animate-me(fly-plane; 2s 150ms; '.navContact > a:hover > img';
-  "0%, 51%"; '%stransform: translate(0px,0px)';
-  50%; '%stransform: translate(@{animate-30-pix},-@{animate-30-pix})';
+.animate-me(fly-plane; 2s 150ms @contact-timing; '.navContact > a:hover > img';
+  "0%, 71%"; '%stransform: translate(0px,0px)';
+  70%; '%stransform: translate(@{animate-30-pix},-@{animate-30-pix})';
+  "0%, 70.4%, 100%"; '%sopacity: 1';
+  "70.5%, 72%"; '%sopacity: 0';
+
 );
 
 .navContact > a:hover {
@@ -190,11 +194,11 @@
 }
 
 .animateContact {
-    -moz-animation: fly-plane 2s 1s infinite;
-    -o-animation: fly-plane 2s 1s infinite;
-    -ms-animation: fly-plane 2s 1s infinite;
-    -webkit-animation: fly-plane 2s 1s infinite;
-    animation: fly-plane 2s 1s infinite;
+    -moz-animation: fly-plane 2s 1s @contact-timing infinite;
+    -o-animation: fly-plane 2s 1s @contact-timing infinite;
+    -ms-animation: fly-plane 2s 1s @contact-timing infinite;
+    -webkit-animation: fly-plane 2s 1s @contact-timing infinite;
+    animation: fly-plane 2s 1s @contact-timing infinite;
 }
 
 .animateContactColor {
