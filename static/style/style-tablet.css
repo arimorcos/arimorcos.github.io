@@ -1,3 +1,556 @@
+/*
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2013 Alessandro Sansottera (@kuus), http://kunderikuus.net/
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of
+ * this software and associated documentation files (the "Software"), to deal in
+ * the Software without restriction, including without limitation the rights to
+ * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ * the Software, and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+/*
+*******************************************************************
+**                                                               **
+**                      LESS ANIMATIONS                          **
+**                                                               **
+*******************************************************************
+*/
+@-moz-keyframes flipY { 50%, 100% {    transform: rotateY(180deg); /* {
+  /**/
+}
+  0% {    -moz-transform: rotateY(0deg); /* {
+  /**/
+}
+} @-webkit-keyframes flipY { 50%, 100% {    transform: rotateY(180deg); /* {
+  /**/
+}
+  0% {    -webkit-transform: rotateY(0deg); /* {
+  /**/
+}
+} @-o-keyframes flipY { 50%, 100% {    transform: rotateY(180deg); /* {
+  /**/
+}
+  0% {    -o-transform: rotateY(0deg); /* {
+  /**/
+}
+} @keyframes flipY { 50%, 100% {    transform: rotateY(180deg); /* {
+  /**/
+}
+  0% {    transform: rotateY(0deg); /* {
+  /**/
+}
+} .navAbout > a:hover > img {
+  -moz-animation: flipY 1s 150ms;
+  -webkit-animation: flipY 1s 150ms;
+  -o-animation: flipY 1s 150ms;
+  animation: flipY 1s 150ms;
+}
+.navAbout > a:hover {
+  background-color: #4F78D1;
+}
+.animateAboutMe {
+  -moz-animation: flipY 2s 1s infinite;
+  -o-animation: flipY 2s 1s infinite;
+  -ms-animation: flipY 2s 1s infinite;
+  -webkit-animation: flipY 2s 1s infinite;
+  animation: flipY 2s 1s infinite;
+}
+.animateAboutMeColor {
+  background-color: #4F78D1;
+}
+@-moz-keyframes wiggle { 0%, 70%, 100% {    -moz-transform: rotate(0deg); /* {
+  /**/
+}
+  15% {    -moz-transform: rotate(-30deg); /* {
+  /**/
+}
+  45% {    -moz-transform: rotate(20deg); /* {
+  /**/
+}
+} @-webkit-keyframes wiggle { 0%, 70%, 100% {    -webkit-transform: rotate(0deg); /* {
+  /**/
+}
+  15% {    -webkit-transform: rotate(-30deg); /* {
+  /**/
+}
+  45% {    -webkit-transform: rotate(20deg); /* {
+  /**/
+}
+} @-o-keyframes wiggle { 0%, 70%, 100% {    -o-transform: rotate(0deg); /* {
+  /**/
+}
+  15% {    -o-transform: rotate(-30deg); /* {
+  /**/
+}
+  45% {    -o-transform: rotate(20deg); /* {
+  /**/
+}
+} @keyframes wiggle { 0%, 70%, 100% {    transform: rotate(0deg); /* {
+  /**/
+}
+  15% {    transform: rotate(-30deg); /* {
+  /**/
+}
+  45% {    transform: rotate(20deg); /* {
+  /**/
+}
+} .navNeuroResearch > a:hover > img {
+  -moz-animation: wiggle 3s 150ms;
+  -webkit-animation: wiggle 3s 150ms;
+  -o-animation: wiggle 3s 150ms;
+  animation: wiggle 3s 150ms;
+}
+.navNeuroResearch > a:hover {
+  background-color: #4F78D1;
+}
+.animateNeuroResearch {
+  -moz-animation: wiggle 3s 1s infinite;
+  -o-animation: wiggle 3s 1s infinite;
+  -ms-animation: wiggle 3s 1s infinite;
+  -webkit-animation: wiggle 3s 1s infinite;
+  animation: wiggle 3s 1s infinite;
+}
+.animateNeuroResearchColor {
+  background-color: #4F78D1;
+}
+@-moz-keyframes fade_in_out { 0%, 32.9%, 100% {    -moz-opacity: 1; /* {
+  /**/
+}
+  33%, 99.9% {    -moz-opacity: 0; /* {
+  /**/
+}
+} @-webkit-keyframes fade_in_out { 0%, 32.9%, 100% {    -webkit-opacity: 1; /* {
+  /**/
+}
+  33%, 99.9% {    -webkit-opacity: 0; /* {
+  /**/
+}
+} @-o-keyframes fade_in_out { 0%, 32.9%, 100% {    -o-opacity: 1; /* {
+  /**/
+}
+  33%, 99.9% {    -o-opacity: 0; /* {
+  /**/
+}
+} @keyframes fade_in_out { 0%, 32.9%, 100% {    opacity: 1; /* {
+  /**/
+}
+  33%, 99.9% {    opacity: 0; /* {
+  /**/
+}
+} .navMLResearch > a:hover > .dnn_im_container > img {
+  -moz-animation: fade_in_out 3s infinite;
+  -webkit-animation: fade_in_out 3s infinite;
+  -o-animation: fade_in_out 3s infinite;
+  animation: fade_in_out 3s infinite;
+}
+.navMLResearch > a:hover {
+  background-color: #4F78D1;
+}
+.animateMLResearch {
+  -moz-animation: fade_in_out 3s infinite;
+  -o-animation: fade_in_out 3s infinite;
+  -ms-animation: fade_in_out 3s infinite;
+  -webkit-animation: fade_in_out 3s infinite;
+  animation: fade_in_out 3s infinite;
+}
+.animateMLResearchColor {
+  background-color: #4F78D1;
+}
+@-moz-keyframes fly-up { 0% {    -moz-transform: translate(0px, 0px); /* {
+  /**/
+}
+  10% {    -moz-transform: translate(0px, 0px); /* {
+  /**/
+}
+  99.5% {    -moz-transform: translate(0px, -200px); /* {
+  /**/
+}
+  99.9% {    -moz-transform: translate(0px, 0px); /* {
+  /**/
+}
+} @-webkit-keyframes fly-up { 0% {    -webkit-transform: translate(0px, 0px); /* {
+  /**/
+}
+  10% {    -webkit-transform: translate(0px, 0px); /* {
+  /**/
+}
+  99.5% {    -webkit-transform: translate(0px, -200px); /* {
+  /**/
+}
+  99.9% {    -webkit-transform: translate(0px, 0px); /* {
+  /**/
+}
+} @-o-keyframes fly-up { 0% {    -o-transform: translate(0px, 0px); /* {
+  /**/
+}
+  10% {    -o-transform: translate(0px, 0px); /* {
+  /**/
+}
+  99.5% {    -o-transform: translate(0px, -200px); /* {
+  /**/
+}
+  99.9% {    -o-transform: translate(0px, 0px); /* {
+  /**/
+}
+} @keyframes fly-up { 0% {    transform: translate(0px, 0px); /* {
+  /**/
+}
+  10% {    transform: translate(0px, 0px); /* {
+  /**/
+}
+  99.5% {    transform: translate(0px, -200px); /* {
+  /**/
+}
+  99.9% {    transform: translate(0px, 0px); /* {
+  /**/
+}
+} .navPubs > a:hover > .pub_im_container > .scroll_container > img {
+  -moz-animation: fly-up 6s 200ms linear;
+  -webkit-animation: fly-up 6s 200ms linear;
+  -o-animation: fly-up 6s 200ms linear;
+  animation: fly-up 6s 200ms linear;
+}
+@-moz-keyframes expand-container { 0% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50.01% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99.5% {    -moz-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+} @-webkit-keyframes expand-container { 0% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50.01% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99.5% {    -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+} @-o-keyframes expand-container { 0% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50.01% {    -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99% {    -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99.5% {    -o-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+} @keyframes expand-container { 0% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+  50.01% {    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99% {    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* {
+  /**/
+}
+  99.5% {    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%); /* {
+  /**/
+}
+} .navPubs > a:hover > .pub_im_container > .scroll_container {
+  -moz-animation: expand-container 6s 200ms linear;
+  -webkit-animation: expand-container 6s 200ms linear;
+  -o-animation: expand-container 6s 200ms linear;
+  animation: expand-container 6s 200ms linear;
+}
+@-moz-keyframes vanish { 0% {    -moz-opacity: 1; /* {
+  /**/
+}
+  50% {    -moz-opacity: 1; /* {
+  /**/
+}
+  50.01% {    -moz-opacity: 0; /* {
+  /**/
+}
+  99.9% {    -moz-opacity: 0; /* {
+  /**/
+}
+  100% {    -moz-opacity: 1; /* {
+  /**/
+}
+} @-webkit-keyframes vanish { 0% {    -webkit-opacity: 1; /* {
+  /**/
+}
+  50% {    -webkit-opacity: 1; /* {
+  /**/
+}
+  50.01% {    -webkit-opacity: 0; /* {
+  /**/
+}
+  99.9% {    -webkit-opacity: 0; /* {
+  /**/
+}
+  100% {    -webkit-opacity: 1; /* {
+  /**/
+}
+} @-o-keyframes vanish { 0% {    -o-opacity: 1; /* {
+  /**/
+}
+  50% {    -o-opacity: 1; /* {
+  /**/
+}
+  50.01% {    -o-opacity: 0; /* {
+  /**/
+}
+  99.9% {    -o-opacity: 0; /* {
+  /**/
+}
+  100% {    -o-opacity: 1; /* {
+  /**/
+}
+} @keyframes vanish { 0% {    opacity: 1; /* {
+  /**/
+}
+  50% {    opacity: 1; /* {
+  /**/
+}
+  50.01% {    opacity: 0; /* {
+  /**/
+}
+  99.9% {    opacity: 0; /* {
+  /**/
+}
+  100% {    opacity: 1; /* {
+  /**/
+}
+} .navPubs > a:hover > .pub_im_container > .scroll_short {
+  -moz-animation: vanish 6s 200ms;
+  -webkit-animation: vanish 6s 200ms;
+  -o-animation: vanish 6s 200ms;
+  animation: vanish 6s 200ms;
+}
+.navPubs > a:hover {
+  background-color: #4F78D1;
+}
+.animatePubsFlyUp {
+  -moz-animation: fly-up 6s 200ms linear infinite;
+  -o-animation: fly-up 6s 200ms linear infinite;
+  -ms-animation: fly-up 6s 200ms linear infinite;
+  -webkit-animation: fly-up 6s 200ms linear infinite;
+  animation: fly-up 6s 200ms linear infinite;
+}
+.animatePubsVanish {
+  -moz-animation: vanish 6s 200ms linear infinite;
+  -o-animation: vanish 6s 200ms linear infinite;
+  -ms-animation: vanish 6s 200ms linear infinite;
+  -webkit-animation: vanish 6s 200ms linear infinite;
+  animation: vanish 6s 200ms linear infinite;
+}
+.animatePubsExpand {
+  -moz-animation: expand-container 6s 200ms linear infinite;
+  -o-animation: expand-container 6s 200ms linear infinite;
+  -ms-animation: expand-container 6s 200ms linear infinite;
+  -webkit-animation: expand-container 6s 200ms linear infinite;
+  animation: expand-container 6s 200ms linear infinite;
+}
+.animatePubsColor {
+  background-color: #4F78D1;
+}
+@-moz-keyframes pencil-write { 0% {    -moz-transform: rotate(-5deg) translate(0px,0px); /* {
+  /**/
+}
+  8% {    -moz-transform: rotate(5deg) translate(4px,0px); /* {
+  /**/
+}
+  16% {    -moz-transform: rotate(-5deg) translate(6px,0px); /* {
+  /**/
+}
+  24% {    -moz-transform: rotate(5deg) translate(8px,0px); /* {
+  /**/
+}
+  32% {    -moz-transform: rotate(-5deg) translate(10px,0px); /* {
+  /**/
+}
+  40% {    -moz-transform: rotate(5deg) translate(12px,0px); /* {
+  /**/
+}
+  48% {    -moz-transform: rotate(-5deg) translate(14px,0px); /* {
+  /**/
+}
+  56% {    -moz-transform: rotate(5deg) translate(16px,0px); /* {
+  /**/
+}
+  90% {    -moz-transform: rotate(5deg) translate(0px,0px); /* {
+  /**/
+}
+} @-webkit-keyframes pencil-write { 0% {    -webkit-transform: rotate(-5deg) translate(0px,0px); /* {
+  /**/
+}
+  8% {    -webkit-transform: rotate(5deg) translate(4px,0px); /* {
+  /**/
+}
+  16% {    -webkit-transform: rotate(-5deg) translate(6px,0px); /* {
+  /**/
+}
+  24% {    -webkit-transform: rotate(5deg) translate(8px,0px); /* {
+  /**/
+}
+  32% {    -webkit-transform: rotate(-5deg) translate(10px,0px); /* {
+  /**/
+}
+  40% {    -webkit-transform: rotate(5deg) translate(12px,0px); /* {
+  /**/
+}
+  48% {    -webkit-transform: rotate(-5deg) translate(14px,0px); /* {
+  /**/
+}
+  56% {    -webkit-transform: rotate(5deg) translate(16px,0px); /* {
+  /**/
+}
+  90% {    -webkit-transform: rotate(5deg) translate(0px,0px); /* {
+  /**/
+}
+} @-o-keyframes pencil-write { 0% {    -o-transform: rotate(-5deg) translate(0px,0px); /* {
+  /**/
+}
+  8% {    -o-transform: rotate(5deg) translate(4px,0px); /* {
+  /**/
+}
+  16% {    -o-transform: rotate(-5deg) translate(6px,0px); /* {
+  /**/
+}
+  24% {    -o-transform: rotate(5deg) translate(8px,0px); /* {
+  /**/
+}
+  32% {    -o-transform: rotate(-5deg) translate(10px,0px); /* {
+  /**/
+}
+  40% {    -o-transform: rotate(5deg) translate(12px,0px); /* {
+  /**/
+}
+  48% {    -o-transform: rotate(-5deg) translate(14px,0px); /* {
+  /**/
+}
+  56% {    -o-transform: rotate(5deg) translate(16px,0px); /* {
+  /**/
+}
+  90% {    -o-transform: rotate(5deg) translate(0px,0px); /* {
+  /**/
+}
+} @keyframes pencil-write { 0% {    transform: rotate(-5deg) translate(0px,0px); /* {
+  /**/
+}
+  8% {    transform: rotate(5deg) translate(4px,0px); /* {
+  /**/
+}
+  16% {    transform: rotate(-5deg) translate(6px,0px); /* {
+  /**/
+}
+  24% {    transform: rotate(5deg) translate(8px,0px); /* {
+  /**/
+}
+  32% {    transform: rotate(-5deg) translate(10px,0px); /* {
+  /**/
+}
+  40% {    transform: rotate(5deg) translate(12px,0px); /* {
+  /**/
+}
+  48% {    transform: rotate(-5deg) translate(14px,0px); /* {
+  /**/
+}
+  56% {    transform: rotate(5deg) translate(16px,0px); /* {
+  /**/
+}
+  90% {    transform: rotate(5deg) translate(0px,0px); /* {
+  /**/
+}
+} .navBlog > a:hover > img {
+  -moz-animation: pencil-write 2s 150ms;
+  -webkit-animation: pencil-write 2s 150ms;
+  -o-animation: pencil-write 2s 150ms;
+  animation: pencil-write 2s 150ms;
+}
+.navBlog > a:hover {
+  background-color: #4F78D1;
+}
+.animateBlog {
+  -moz-animation: pencil-write 2s 1s infinite;
+  -o-animation: pencil-write 2s 1s infinite;
+  -ms-animation: pencil-write 2s 1s infinite;
+  -webkit-animation: pencil-write 2s 1s infinite;
+  animation: pencil-write 2s 1s infinite;
+}
+.animateBlogColor {
+  background-color: #4F78D1;
+}
+@-moz-keyframes fly-plane { 0%, 51% {    -moz-transform: translate(0px,0px); /* {
+  /**/
+}
+  50% {    -moz-transform: translate(60px,-60px); /* {
+  /**/
+}
+} @-webkit-keyframes fly-plane { 0%, 51% {    -webkit-transform: translate(0px,0px); /* {
+  /**/
+}
+  50% {    -webkit-transform: translate(60px,-60px); /* {
+  /**/
+}
+} @-o-keyframes fly-plane { 0%, 51% {    -o-transform: translate(0px,0px); /* {
+  /**/
+}
+  50% {    -o-transform: translate(60px,-60px); /* {
+  /**/
+}
+} @keyframes fly-plane { 0%, 51% {    transform: translate(0px,0px); /* {
+  /**/
+}
+  50% {    transform: translate(60px,-60px); /* {
+  /**/
+}
+} .navContact > a:hover > img {
+  -moz-animation: fly-plane 2s 150ms;
+  -webkit-animation: fly-plane 2s 150ms;
+  -o-animation: fly-plane 2s 150ms;
+  animation: fly-plane 2s 150ms;
+}
+.navContact > a:hover {
+  background-color: #4F78D1;
+}
+.animateContact {
+  -moz-animation: fly-plane 2s 1s infinite;
+  -o-animation: fly-plane 2s 1s infinite;
+  -ms-animation: fly-plane 2s 1s infinite;
+  -webkit-animation: fly-plane 2s 1s infinite;
+  animation: fly-plane 2s 1s infinite;
+}
+.animateContactColor {
+  background-color: #4F78D1;
+}
 /* Main page background */
 html,
 body {
@@ -96,6 +649,57 @@ body p {
 .navIcon img {
   margin: auto;
 }
+.dnn_im_container {
+  position: relative;
+}
+.dnn_im {
+  position: absolute;
+}
+.dnn_im_1 {
+  z-index: 3;
+  opacity: 1;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+}
+.dnn_im_2,
+.navMLResearch > a:hover > .dnn_im_container > .dnn_im_2 {
+  z-index: 2;
+  opacity: 0;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+.dnn_im_3,
+.navMLResearch > a:hover > .dnn_im_container > .dnn_im_3 {
+  z-index: 1;
+  opacity: 0;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+}
+.pub_im_container {
+  position: relative;
+}
+.scroll_short,
+.navPubs > a:hover > .pub_im_container > .scroll_short {
+  position: absolute;
+  z-index: 1;
+}
+.scroll_container {
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%);
+}
+.scroll_long {
+  position: relative;
+  z-index: 2;
+}
 .navBar {
   text-align: center;
 }
@@ -130,8 +734,14 @@ body p {
   display: table-cell;
   vertical-align: middle;
 }
-.multi-link {
-  padding-right: 2em;
+a.multi-link {
+  padding-right: 1.5em;
+}
+.small-offset {
+  padding-top: 1em;
+}
+.medium-offset {
+  padding-top: 2em;
 }
 .paper_object div img {
   object-fit: contain;
@@ -355,301 +965,4 @@ body p {
 .copyrightText {
   margin-top: auto;
   margin-bottom: auto;
-}
-/*
- * The MIT License (MIT)
- *
- * Copyright (c) 2013 Alessandro Sansottera (@kuus), http://kunderikuus.net/
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of
- * this software and associated documentation files (the "Software"), to deal in
- * the Software without restriction, including without limitation the rights to
- * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
- * the Software, and to permit persons to whom the Software is furnished to do so,
- * subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
- * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
- * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
- * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */
-/*
-*******************************************************************
-**                                                               **
-**                      LESS ANIMATIONS                          **
-**                                                               **
-*******************************************************************
-*/
-`'\n'`@-moz-keyframes flipY {`'\n'` 50%, 100% {`'\n'`    -moz-transform: rotateY(180deg); /* {
-  /**/
-}
-  0% {`'\n'`    -moz-transform: rotateY(0deg); /* {
-  /**/
-}
-} `'\n'`@-webkit-keyframes flipY {`'\n'` 50%, 100% {`'\n'`    -webkit-transform: rotateY(180deg); /* {
-  /**/
-}
-  0% {`'\n'`    -webkit-transform: rotateY(0deg); /* {
-  /**/
-}
-} `'\n'`@-o-keyframes flipY {`'\n'` 50%, 100% {`'\n'`    -o-transform: rotateY(180deg); /* {
-  /**/
-}
-  0% {`'\n'`    -o-transform: rotateY(0deg); /* {
-  /**/
-}
-} `'\n'`@keyframes flipY {`'\n'` 50%, 100% {`'\n'`    transform: rotateY(180deg); /* {
-  /**/
-}
-  0% {`'\n'`    transform: rotateY(0deg); /* {
-  /**/
-}
-} .navAbout > a:hover > img {
-  -moz-animation: flipY 1s 150ms;
-  -webkit-animation: flipY 1s 150ms;
-  -o-animation: flipY 1s 150ms;
-  animation: flipY 1s 150ms;
-}
-.navAbout > a:hover {
-  background-color: #4F78D1;
-}
-.animateAboutMe {
-  -moz-animation: flipY 2s 1s infinite;
-  -o-animation: flipY 2s 1s infinite;
-  -ms-animation: flipY 2s 1s infinite;
-  -webkit-animation: flipY 2s 1s infinite;
-  animation: flipY 2s 1s infinite;
-}
-.animateAboutMeColor {
-  background-color: #4F78D1;
-}
-`'\n'`@-moz-keyframes wiggle {`'\n'` 0%, 70%, 100% {`'\n'`    -moz-transform: rotate(0deg); /* {
-  /**/
-}
-  15% {`'\n'`    -moz-transform: rotate(-30deg); /* {
-  /**/
-}
-  45% {`'\n'`    -moz-transform: rotate(20deg); /* {
-  /**/
-}
-} `'\n'`@-webkit-keyframes wiggle {`'\n'` 0%, 70%, 100% {`'\n'`    -webkit-transform: rotate(0deg); /* {
-  /**/
-}
-  15% {`'\n'`    -webkit-transform: rotate(-30deg); /* {
-  /**/
-}
-  45% {`'\n'`    -webkit-transform: rotate(20deg); /* {
-  /**/
-}
-} `'\n'`@-o-keyframes wiggle {`'\n'` 0%, 70%, 100% {`'\n'`    -o-transform: rotate(0deg); /* {
-  /**/
-}
-  15% {`'\n'`    -o-transform: rotate(-30deg); /* {
-  /**/
-}
-  45% {`'\n'`    -o-transform: rotate(20deg); /* {
-  /**/
-}
-} `'\n'`@keyframes wiggle {`'\n'` 0%, 70%, 100% {`'\n'`    transform: rotate(0deg); /* {
-  /**/
-}
-  15% {`'\n'`    transform: rotate(-30deg); /* {
-  /**/
-}
-  45% {`'\n'`    transform: rotate(20deg); /* {
-  /**/
-}
-} .navNeuroResearch > a:hover > img {
-  -moz-animation: wiggle 3s 150ms;
-  -webkit-animation: wiggle 3s 150ms;
-  -o-animation: wiggle 3s 150ms;
-  animation: wiggle 3s 150ms;
-}
-.navNeuroResearch > a:hover {
-  background-color: #4F78D1;
-}
-.animateResearch {
-  -moz-animation: wiggle 3s 1s infinite;
-  -o-animation: wiggle 3s 1s infinite;
-  -ms-animation: wiggle 3s 1s infinite;
-  -webkit-animation: wiggle 3s 1s infinite;
-  animation: wiggle 3s 1s infinite;
-}
-.animateResearchColor {
-  background-color: #4F78D1;
-}
-`'\n'`@-moz-keyframes pencil-write {`'\n'` 0% {`'\n'`    -moz-transform: rotate(-5deg) translate(0px,0px); /* {
-  /**/
-}
-  8% {`'\n'`    -moz-transform: rotate(5deg) translate(4px,0px); /* {
-  /**/
-}
-  16% {`'\n'`    -moz-transform: rotate(-5deg) translate(6px,0px); /* {
-  /**/
-}
-  24% {`'\n'`    -moz-transform: rotate(5deg) translate(8px,0px); /* {
-  /**/
-}
-  32% {`'\n'`    -moz-transform: rotate(-5deg) translate(10px,0px); /* {
-  /**/
-}
-  40% {`'\n'`    -moz-transform: rotate(5deg) translate(12px,0px); /* {
-  /**/
-}
-  48% {`'\n'`    -moz-transform: rotate(-5deg) translate(14px,0px); /* {
-  /**/
-}
-  56% {`'\n'`    -moz-transform: rotate(5deg) translate(16px,0px); /* {
-  /**/
-}
-  90% {`'\n'`    -moz-transform: rotate(5deg) translate(0px,0px); /* {
-  /**/
-}
-} `'\n'`@-webkit-keyframes pencil-write {`'\n'` 0% {`'\n'`    -webkit-transform: rotate(-5deg) translate(0px,0px); /* {
-  /**/
-}
-  8% {`'\n'`    -webkit-transform: rotate(5deg) translate(4px,0px); /* {
-  /**/
-}
-  16% {`'\n'`    -webkit-transform: rotate(-5deg) translate(6px,0px); /* {
-  /**/
-}
-  24% {`'\n'`    -webkit-transform: rotate(5deg) translate(8px,0px); /* {
-  /**/
-}
-  32% {`'\n'`    -webkit-transform: rotate(-5deg) translate(10px,0px); /* {
-  /**/
-}
-  40% {`'\n'`    -webkit-transform: rotate(5deg) translate(12px,0px); /* {
-  /**/
-}
-  48% {`'\n'`    -webkit-transform: rotate(-5deg) translate(14px,0px); /* {
-  /**/
-}
-  56% {`'\n'`    -webkit-transform: rotate(5deg) translate(16px,0px); /* {
-  /**/
-}
-  90% {`'\n'`    -webkit-transform: rotate(5deg) translate(0px,0px); /* {
-  /**/
-}
-} `'\n'`@-o-keyframes pencil-write {`'\n'` 0% {`'\n'`    -o-transform: rotate(-5deg) translate(0px,0px); /* {
-  /**/
-}
-  8% {`'\n'`    -o-transform: rotate(5deg) translate(4px,0px); /* {
-  /**/
-}
-  16% {`'\n'`    -o-transform: rotate(-5deg) translate(6px,0px); /* {
-  /**/
-}
-  24% {`'\n'`    -o-transform: rotate(5deg) translate(8px,0px); /* {
-  /**/
-}
-  32% {`'\n'`    -o-transform: rotate(-5deg) translate(10px,0px); /* {
-  /**/
-}
-  40% {`'\n'`    -o-transform: rotate(5deg) translate(12px,0px); /* {
-  /**/
-}
-  48% {`'\n'`    -o-transform: rotate(-5deg) translate(14px,0px); /* {
-  /**/
-}
-  56% {`'\n'`    -o-transform: rotate(5deg) translate(16px,0px); /* {
-  /**/
-}
-  90% {`'\n'`    -o-transform: rotate(5deg) translate(0px,0px); /* {
-  /**/
-}
-} `'\n'`@keyframes pencil-write {`'\n'` 0% {`'\n'`    transform: rotate(-5deg) translate(0px,0px); /* {
-  /**/
-}
-  8% {`'\n'`    transform: rotate(5deg) translate(4px,0px); /* {
-  /**/
-}
-  16% {`'\n'`    transform: rotate(-5deg) translate(6px,0px); /* {
-  /**/
-}
-  24% {`'\n'`    transform: rotate(5deg) translate(8px,0px); /* {
-  /**/
-}
-  32% {`'\n'`    transform: rotate(-5deg) translate(10px,0px); /* {
-  /**/
-}
-  40% {`'\n'`    transform: rotate(5deg) translate(12px,0px); /* {
-  /**/
-}
-  48% {`'\n'`    transform: rotate(-5deg) translate(14px,0px); /* {
-  /**/
-}
-  56% {`'\n'`    transform: rotate(5deg) translate(16px,0px); /* {
-  /**/
-}
-  90% {`'\n'`    transform: rotate(5deg) translate(0px,0px); /* {
-  /**/
-}
-} .navBlog > a:hover > img {
-  -moz-animation: pencil-write 2s 150ms;
-  -webkit-animation: pencil-write 2s 150ms;
-  -o-animation: pencil-write 2s 150ms;
-  animation: pencil-write 2s 150ms;
-}
-.navBlog > a:hover {
-  background-color: #4F78D1;
-}
-.animateBlog {
-  -moz-animation: pencil-write 2s 1s infinite;
-  -o-animation: pencil-write 2s 1s infinite;
-  -ms-animation: pencil-write 2s 1s infinite;
-  -webkit-animation: pencil-write 2s 1s infinite;
-  animation: pencil-write 2s 1s infinite;
-}
-.animateBlogColor {
-  background-color: #4F78D1;
-}
-`'\n'`@-moz-keyframes fly-plane {`'\n'` 0%, 51% {`'\n'`    -moz-transform: translate(0px,0px); /* {
-  /**/
-}
-  50% {`'\n'`    -moz-transform: translate(60px,-60px); /* {
-  /**/
-}
-} `'\n'`@-webkit-keyframes fly-plane {`'\n'` 0%, 51% {`'\n'`    -webkit-transform: translate(0px,0px); /* {
-  /**/
-}
-  50% {`'\n'`    -webkit-transform: translate(60px,-60px); /* {
-  /**/
-}
-} `'\n'`@-o-keyframes fly-plane {`'\n'` 0%, 51% {`'\n'`    -o-transform: translate(0px,0px); /* {
-  /**/
-}
-  50% {`'\n'`    -o-transform: translate(60px,-60px); /* {
-  /**/
-}
-} `'\n'`@keyframes fly-plane {`'\n'` 0%, 51% {`'\n'`    transform: translate(0px,0px); /* {
-  /**/
-}
-  50% {`'\n'`    transform: translate(60px,-60px); /* {
-  /**/
-}
-} .navContact > a:hover > img {
-  -moz-animation: fly-plane 2s 150ms;
-  -webkit-animation: fly-plane 2s 150ms;
-  -o-animation: fly-plane 2s 150ms;
-  animation: fly-plane 2s 150ms;
-}
-.navContact > a:hover {
-  background-color: #4F78D1;
-}
-.animateContact {
-  -moz-animation: fly-plane 2s 1s infinite;
-  -o-animation: fly-plane 2s 1s infinite;
-  -ms-animation: fly-plane 2s 1s infinite;
-  -webkit-animation: fly-plane 2s 1s infinite;
-  animation: fly-plane 2s 1s infinite;
-}
-.animateContactColor {
-  background-color: #4F78D1;
 }

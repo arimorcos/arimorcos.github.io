@@ -1,5 +1,5 @@
-@import 'style.less';
 @import 'animations.less';
+@import 'style.less';
 
 @defaultFontSize: 2em;
 @defaultMargin: 1.5em;
@@ -28,6 +28,21 @@
   .fixBoldIOSBug;
 }
 
+.pub-image {
+  width: 80% !important;
+  margin: auto;
+  float: none !important;
+  padding-bottom: 1.5*@defaultMargin;
+}
+
+.paper_object{
+  flex-direction: column;
+}
+
+.paper_object * {
+  text-align: center;
+}
+
 .postTitle a {
   .fixBoldIOSBug;
   -webkit-text-stroke-color: #6b9dc9;
@@ -39,6 +54,11 @@
   margin-bottom: 0.5em;
 }
 
+.navBar {
+  width: 70%;
+  margin: auto;
+}
+
 .navIcon {
 
   a {
@@ -47,7 +67,7 @@
     position: relative;
   }
 
-  img {
+  li > a > img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,6 +97,18 @@
 .postTitle {
   font-size: 2*@defaultFontSize;
 }
+
+h4 {
+  font-size: 1.25*@defaultFontSize;
+  margin-bottom: 0.75*@defaultMargin;
+}
+
+h5 {
+  font-size: 0.8*@defaultFontSize;
+  margin-bottom: 0.5*@defaultMargin;
+}
+
+
 
 // Hide extra blog browser
 .rightBlogBrowser {
