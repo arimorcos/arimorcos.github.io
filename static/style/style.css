@@ -373,11 +373,7 @@ a.multi-link {
   color: #303030;
   font-weight: bold;
   font-size: 5em;
-  padding-bottom: 0.15em;
-}
-.emailLink img {
-  width: 100%;
-  padding-bottom: 0.5em;
+  margin-bottom: 0.15em;
 }
 .socialLinks a {
   font-family: "Abel", sans-serif;
@@ -385,11 +381,12 @@ a.multi-link {
   line-height: 2.5em;
   vertical-align: middle;
 }
-.twitterLink img {
-  width: 100%;
-  padding-bottom: 0.5em;
+.contactLink {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
 }
-.githubLink img {
+.contactLink img {
   width: 100%;
 }
 .socialLinks a:hover {
