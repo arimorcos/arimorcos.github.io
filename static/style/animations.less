@@ -181,11 +181,11 @@
 @animate-30-pix: 30*@animate-min-pix;
 @contact-timing: cubic-bezier(0.74, 0.18, 0.24, 0.87);
 //noinspection LessUnresolvedMixin
-.animate-me(fly-plane; 2s 150ms @contact-timing; '.navContact > a:hover > img';
-  "0%, 71%"; '%stransform: translate(0px,0px)';
-  70%; '%stransform: translate(@{animate-30-pix},-@{animate-30-pix})';
-  "0%, 70.4%, 100%"; '%sopacity: 1';
-  "70.5%, 72%"; '%sopacity: 0';
+.animate-me(fly-plane; 3s 1s @contact-timing; '.navContact > a:hover > img';
+  "0%, 41%"; '%stransform: translate(0px,0px)';
+  40%; '%stransform: translate(@{animate-30-pix},-@{animate-30-pix})';
+  "0%, 40.4%, 60%"; '%sopacity: 1';
+  "40.5%, 42%"; '%sopacity: 0';
 
 );
 
@@ -194,11 +194,11 @@
 }
 
 .animateContact {
-    -moz-animation: fly-plane 2s 1s @contact-timing infinite;
-    -o-animation: fly-plane 2s 1s @contact-timing infinite;
-    -ms-animation: fly-plane 2s 1s @contact-timing infinite;
-    -webkit-animation: fly-plane 2s 1s @contact-timing infinite;
-    animation: fly-plane 2s 1s @contact-timing infinite;
+    -moz-animation: fly-plane 3s 1s @contact-timing infinite;
+    -o-animation: fly-plane 3s 1s @contact-timing infinite;
+    -ms-animation: fly-plane 3s 1s @contact-timing infinite;
+    -webkit-animation: fly-plane 3s 1s @contact-timing infinite;
+    animation: fly-plane 3s 1s @contact-timing infinite;
 }
 
 .animateContactColor {
