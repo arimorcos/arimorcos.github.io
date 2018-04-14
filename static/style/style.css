@@ -190,11 +190,15 @@ a.multi-link {
 .medium-offset {
   margin-top: 1em;
 }
-.paper_object div img {
+.paper_object div img,
+.paper_object div video {
   object-fit: contain;
   width: 25vw;
   vertical-align: middle;
   display: table-cell;
+}
+.mini-top-padding {
+  margin-top: -0.5em;
 }
 .paper_object {
   /*height: 500px;*/
