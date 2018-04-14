@@ -290,6 +290,69 @@ a.multi-link {
   margin-top: -0.5em;
 }
 
+.no-underline-hover:hover {
+  text-decoration: none;
+}
+
+@linkBorder: 1px solid;
+@linkPadding: 3px 6px 2px 6px;
+
+.boxed-link {
+  border: @linkBorder;
+  padding: @linkPadding; 
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+@pdfLinkColor: #7316AA;
+@openReviewLinkColor: #198A28;
+@arxivLinkColor: #B11E22;
+@natureNeuroColor: #187D7B;
+@jNeuroColor: #154C7B;
+@posterColor: #E63E8F;
+
+.pdf-link {
+  .boxed-link;
+  border-color: @pdfLinkColor;
+  color: @pdfLinkColor;
+}
+
+.natureneuro-link {
+  .boxed-link;
+  color: @natureNeuroColor;
+  border-color: @natureNeuroColor;
+}
+
+.poster-link {
+  .boxed-link;
+  color: @posterColor;
+  border-color: @posterColor;
+}
+
+.jneuro-link {
+  .boxed-link;
+  color: @jNeuroColor;
+  border-color: @jNeuroColor;
+}
+
+.openreview-link {
+  .boxed-link;
+  color: @openReviewLinkColor;
+  border-color: @openReviewLinkColor;
+}
+
+.arxiv-link {
+  .boxed-link;
+  color: @arxivLinkColor;
+  border-color: @arxivLinkColor;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
 .paper_object {
   /*height: 500px;*/
   /*line-height: 200px;*/
