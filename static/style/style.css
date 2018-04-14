@@ -200,6 +200,74 @@ a.multi-link {
 .mini-top-padding {
   margin-top: -0.5em;
 }
+.no-underline-hover:hover {
+  text-decoration: none;
+}
+.boxed-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+.pdf-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-color: #7316AA;
+  color: #7316AA;
+}
+.natureneuro-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #187D7B;
+  border-color: #187D7B;
+}
+.poster-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #E63E8F;
+  border-color: #E63E8F;
+}
+.jneuro-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #154C7B;
+  border-color: #154C7B;
+}
+.openreview-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #198A28;
+  border-color: #198A28;
+}
+.arxiv-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #B11E22;
+  border-color: #B11E22;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
 .paper_object {
   /*height: 500px;*/
   /*line-height: 200px;*/
