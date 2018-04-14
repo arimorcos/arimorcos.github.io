@@ -556,45 +556,69 @@
 .animateBlogColor {
   background-color: #4F78D1;
 }
-@-moz-keyframes fly-plane { 0%, 51% {    -moz-transform: translate(0px,0px); /* {
+@-moz-keyframes fly-plane { 0%, 41% {    -moz-transform: translate(0px,0px); /* {
   /**/
 }
-  50% {    -moz-transform: translate(60px,-60px); /* {
+  40% {    -moz-transform: translate(60px,-60px); /* {
   /**/
 }
-} @-webkit-keyframes fly-plane { 0%, 51% {    -webkit-transform: translate(0px,0px); /* {
+  0%, 40.4%, 60% {    -moz-opacity: 1; /* {
   /**/
 }
-  50% {    -webkit-transform: translate(60px,-60px); /* {
+  40.5%, 42% {    -moz-opacity: 0; /* {
   /**/
 }
-} @-o-keyframes fly-plane { 0%, 51% {    -o-transform: translate(0px,0px); /* {
+} @-webkit-keyframes fly-plane { 0%, 41% {    -webkit-transform: translate(0px,0px); /* {
   /**/
 }
-  50% {    -o-transform: translate(60px,-60px); /* {
+  40% {    -webkit-transform: translate(60px,-60px); /* {
   /**/
 }
-} @keyframes fly-plane { 0%, 51% {    transform: translate(0px,0px); /* {
+  0%, 40.4%, 60% {    -webkit-opacity: 1; /* {
   /**/
 }
-  50% {    transform: translate(60px,-60px); /* {
+  40.5%, 42% {    -webkit-opacity: 0; /* {
+  /**/
+}
+} @-o-keyframes fly-plane { 0%, 41% {    -o-transform: translate(0px,0px); /* {
+  /**/
+}
+  40% {    -o-transform: translate(60px,-60px); /* {
+  /**/
+}
+  0%, 40.4%, 60% {    -o-opacity: 1; /* {
+  /**/
+}
+  40.5%, 42% {    -o-opacity: 0; /* {
+  /**/
+}
+} @keyframes fly-plane { 0%, 41% {    transform: translate(0px,0px); /* {
+  /**/
+}
+  40% {    transform: translate(60px,-60px); /* {
+  /**/
+}
+  0%, 40.4%, 60% {    opacity: 1; /* {
+  /**/
+}
+  40.5%, 42% {    opacity: 0; /* {
   /**/
 }
 } .navContact > a:hover > img {
-  -moz-animation: fly-plane 2s 150ms;
-  -webkit-animation: fly-plane 2s 150ms;
-  -o-animation: fly-plane 2s 150ms;
-  animation: fly-plane 2s 150ms;
+  -moz-animation: fly-plane 3s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87);
+  -webkit-animation: fly-plane 3s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87);
+  -o-animation: fly-plane 3s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87);
+  animation: fly-plane 3s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87);
 }
 .navContact > a:hover {
   background-color: #4F78D1;
 }
 .animateContact {
-  -moz-animation: fly-plane 2s 1s infinite;
-  -o-animation: fly-plane 2s 1s infinite;
-  -ms-animation: fly-plane 2s 1s infinite;
-  -webkit-animation: fly-plane 2s 1s infinite;
-  animation: fly-plane 2s 1s infinite;
+  -moz-animation: fly-plane 3s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87) infinite;
+  -o-animation: fly-plane 3s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87) infinite;
+  -ms-animation: fly-plane 3s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87) infinite;
+  -webkit-animation: fly-plane 3s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87) infinite;
+  animation: fly-plane 3s 1s cubic-bezier(0.74, 0.18, 0.24, 0.87) infinite;
 }
 .animateContactColor {
   background-color: #4F78D1;
@@ -786,16 +810,20 @@ a.multi-link {
   padding-right: 1.5em;
 }
 .small-offset {
-  padding-top: 1em;
+  margin-top: 1em;
 }
 .medium-offset {
-  padding-top: 2em;
+  margin-top: 2em;
 }
-.paper_object div img {
+.paper_object div img,
+.paper_object div video {
   object-fit: contain;
   width: 25vw;
   vertical-align: middle;
   display: table-cell;
+}
+.mini-top-padding {
+  margin-top: -0.5em;
 }
 .paper_object {
   /*height: 500px;*/
@@ -974,11 +1002,7 @@ a.multi-link {
   color: #303030;
   font-weight: bold;
   font-size: 6em;
-  padding-bottom: 0.15em;
-}
-.emailLink img {
-  width: 100%;
-  padding-bottom: 0.5em;
+  margin-bottom: 0.15em;
 }
 .socialLinks a {
   font-family: "Abel", sans-serif;
@@ -986,11 +1010,12 @@ a.multi-link {
   line-height: 2.5em;
   vertical-align: middle;
 }
-.twitterLink img {
-  width: 100%;
-  padding-bottom: 0.5em;
+.contactLink {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
 }
-.githubLink img {
+.contactLink img {
   width: 100%;
 }
 .socialLinks a:hover {

@@ -1,5 +1,9 @@
 var main = function () {
 
+    changeAnimation();
+
+    hideBelowFold();
+
     $('.showTooltip').tooltipster( {
         animation: 'fall',
         offsetX: 0,
@@ -8,10 +12,6 @@ var main = function () {
         onlyOne: true,
         theme: 'tooltipster-default'
     });
-
-    changeAnimation();
-
-    hideBelowFold();
 
     //var isMobile = getMobile();
     //rearrangeForMobile(isMobile);
