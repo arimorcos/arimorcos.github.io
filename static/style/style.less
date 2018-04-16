@@ -262,11 +262,6 @@ html, body {
   padding-right: @defaultMargin;
 }
 
-.paper_object span {
-  display: table-cell;
-  vertical-align: middle;
-}
-
 a.multi-link {
   padding-right: 0.75*@defaultMargin;
 }
@@ -279,18 +274,11 @@ a.multi-link {
   margin-top: 1*@defaultMargin;
 }
 
-.paper_object div img, .paper_object div video{
-  object-fit: contain;
-  width: 25vw;
-  vertical-align: middle;
-  display: table-cell;
-}
-
 .mini-top-padding {
   margin-top: -0.5em;
 }
 
-.no-underline-hover:hover {
+.no-underline-hover:hover, .no-underline-hover:focus  {
   text-decoration: none;
 }
 
@@ -311,6 +299,13 @@ a.multi-link {
 @natureNeuroColor: #187D7B;
 @jNeuroColor: #154C7B;
 @posterColor: #E63E8F;
+@scienceColor: #D20921;
+
+.science-link {
+  .boxed-link;
+  border-color: @scienceColor;
+  color: @scienceColor;
+}
 
 .pdf-link {
   .boxed-link;
@@ -361,7 +356,20 @@ a.multi-link {
   display: flex;
   margin-bottom: 2*@defaultMargin;
   // border-bottom: 1px solid @borderColor;
+
+  div img, div video {
+    object-fit: contain;
+    width: 25vw;
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
+
 
 .researchStatement p {
   text-align: justify;
