@@ -802,10 +802,6 @@ body p {
   padding-left: 2em;
   padding-right: 2em;
 }
-.paper_object span {
-  display: table-cell;
-  vertical-align: middle;
-}
 a.multi-link {
   padding-right: 1.5em;
 }
@@ -815,17 +811,11 @@ a.multi-link {
 .medium-offset {
   margin-top: 2em;
 }
-.paper_object div img,
-.paper_object div video {
-  object-fit: contain;
-  width: 25vw;
-  vertical-align: middle;
-  display: table-cell;
-}
 .mini-top-padding {
   margin-top: -0.5em;
 }
-.no-underline-hover:hover {
+.no-underline-hover:hover,
+.no-underline-hover:focus {
   text-decoration: none;
 }
 .boxed-link {
@@ -834,6 +824,15 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
+}
+.science-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-color: #D20921;
+  color: #D20921;
 }
 .pdf-link {
   border: 1px solid;
@@ -852,6 +851,24 @@ a.multi-link {
   text-decoration: none;
   color: #187D7B;
   border-color: #187D7B;
+}
+.cosyne-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #8B0E49;
+  border-color: #8B0E49;
+}
+.abstract-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #3959A1;
+  border-color: #3959A1;
 }
 .poster-link {
   border: 1px solid;
@@ -900,6 +917,17 @@ a.multi-link {
   justify-content: space-between;
   display: flex;
   margin-bottom: 4em;
+}
+.paper_object div img,
+.paper_object div video {
+  object-fit: contain;
+  width: 25vw;
+  vertical-align: middle;
+  display: table-cell;
+}
+.paper_object span {
+  display: table-cell;
+  vertical-align: middle;
 }
 .researchStatement p {
   text-align: justify;
@@ -1061,8 +1089,8 @@ a.multi-link {
 .personalImgApplePicking {
   float: right;
   box-shadow: 0.6em 0.4em 0.5em darkgray;
-  height: 300px;
-  margin-left: 2em;
+  height: 450px;
+  margin-left: 3em;
   border-radius: 1%;
 }
 /* Contact */
