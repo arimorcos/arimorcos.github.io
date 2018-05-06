@@ -575,7 +575,6 @@ a.multi-link {
 /* About */
 .aboutSummary {
   p {
-    padding-left: 1*@defaultFontSize;
     padding-right: 1*@defaultFontSize;
     color: @textColor;
     font-size: 1.3*@defaultFontSize;
@@ -597,6 +596,23 @@ a.multi-link {
   height: 400px;
   margin-left: 1.5*@defaultMargin;
   border-radius: 1%;
+}
+
+.newsHeading {
+  // float: left;
+  font-weight: bold;
+}
+
+.newsBullets {
+  li {
+    color: @textColor;
+    padding-right: 1*@defaultFontSize;
+    font-size: 1.3*@defaultFontSize;
+    padding-left: 1.5em;
+    text-indent:-1.5em;
+    text-align: justify;
+    margin-bottom: 0.2*@defaultMargin;
+  }
 }
 
 /* Contact */

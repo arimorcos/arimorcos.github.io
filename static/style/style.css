@@ -448,7 +448,6 @@ a.multi-link {
 }
 /* About */
 .aboutSummary p {
-  padding-left: 1em;
   padding-right: 1em;
   color: #303030;
   font-size: 1.3em;
@@ -467,6 +466,18 @@ a.multi-link {
   height: 400px;
   margin-left: 1.5em;
   border-radius: 1%;
+}
+.newsHeading {
+  font-weight: bold;
+}
+.newsBullets li {
+  color: #303030;
+  padding-right: 1em;
+  font-size: 1.3em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  text-align: justify;
+  margin-bottom: 0.2em;
 }
 /* Contact */
 .contactHeader h1 {

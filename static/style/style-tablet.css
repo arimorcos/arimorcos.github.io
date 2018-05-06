@@ -1073,7 +1073,6 @@ a.multi-link {
 }
 /* About */
 .aboutSummary p {
-  padding-left: 1.2em;
   padding-right: 1.2em;
   color: #303030;
   font-size: 1.56em;
@@ -1092,6 +1091,18 @@ a.multi-link {
   height: 400px;
   margin-left: 3em;
   border-radius: 1%;
+}
+.newsHeading {
+  font-weight: bold;
+}
+.newsBullets li {
+  color: #303030;
+  padding-right: 1.2em;
+  font-size: 1.56em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  text-align: justify;
+  margin-bottom: 0.4em;
 }
 /* Contact */
 .contactHeader h1 {

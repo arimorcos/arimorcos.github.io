@@ -1073,7 +1073,6 @@ a.multi-link {
 }
 /* About */
 .aboutSummary p {
-  padding-left: 2em;
   padding-right: 2em;
   color: #303030;
   font-size: 2.6em;
@@ -1092,6 +1091,18 @@ a.multi-link {
   height: 400px;
   margin-left: 2.25em;
   border-radius: 1%;
+}
+.newsHeading {
+  font-weight: bold;
+}
+.newsBullets li {
+  color: #303030;
+  padding-right: 2em;
+  font-size: 2.6em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  text-align: justify;
+  margin-bottom: 0.3em;
 }
 /* Contact */
 .contactHeader h1 {
@@ -1137,6 +1148,11 @@ a.multi-link {
 }
 .container {
   width: 90%;
+}
+.newsHeading {
+  padding-top: 1.05em;
+  margin-bottom: 0.6em;
+  font-size: 4em;
 }
 .fixBoldIOSBug {
   font-weight: normal;
