@@ -910,6 +910,13 @@ a.multi-link {
   display: flex;
   align-items: center;
 }
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.cvHeadingInvisible {
+  visibility: hidden;
+}
 .paper_object {
   /*height: 500px;*/
   /*line-height: 200px;*/
@@ -950,7 +957,10 @@ a.multi-link {
   margin: 0 !important;
 }
 .cvLink a {
-  font-size: 4em;
+  font-weight: bold;
+}
+.cvHeading a {
+  font-weight: bold;
 }
 .blogPostTitle {
   margin-bottom: 0;
@@ -1153,6 +1163,17 @@ a.multi-link {
   padding-top: 1.05em;
   margin-bottom: 0.6em;
   font-size: 4em;
+}
+.flex-container {
+  display: block;
+  text-align: center;
+}
+body > div.page-wrap > div.container.publications.contentCard > div.flex-container > h1.sectionHeading {
+  margin-bottom: 0.45em;
+}
+.cvHeading {
+  margin-bottom: 0.75em;
+  font-size: 5em;
 }
 .fixBoldIOSBug {
   font-weight: normal;

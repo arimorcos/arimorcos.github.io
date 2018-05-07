@@ -285,6 +285,13 @@ a.multi-link {
   display: flex;
   align-items: center;
 }
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.cvHeadingInvisible {
+  visibility: hidden;
+}
 .paper_object {
   /*height: 500px;*/
   /*line-height: 200px;*/
@@ -325,7 +332,10 @@ a.multi-link {
   margin: 0 !important;
 }
 .cvLink a {
-  font-size: 2em;
+  font-weight: bold;
+}
+.cvHeading a {
+  font-weight: bold;
 }
 .blogPostTitle {
   margin-bottom: 0;
