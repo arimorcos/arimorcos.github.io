@@ -1164,6 +1164,12 @@ a.multi-link {
   margin-bottom: 0.6em;
   font-size: 4em;
 }
+.paper_object span h5.flex-center {
+  display: block;
+}
+.workshopHeading {
+  font-size: 5em;
+}
 .flex-container {
   display: block;
   text-align: center;
