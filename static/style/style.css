@@ -287,6 +287,7 @@ a.multi-link {
 }
 .flex-container {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
 }
 .cvHeadingInvisible {
@@ -333,6 +334,9 @@ a.multi-link {
 }
 .cvLink a {
   font-weight: bold;
+}
+.cvHeading {
+  font-size: 3em;
 }
 .cvHeading a {
   font-weight: bold;
