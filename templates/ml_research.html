@@ -29,13 +29,41 @@
                 Using rigorous, scientific methods (often inspired by neuroscience), my goal is to better understand the solutions used by DNNs and, perhaps most critically, their bottlenecks, so that we can build intelligent systems intelligently.
             </p>
         <h2 class="text-left">
-            Generic understanding
+            Generalization
         </h2>
-            <p></p>
+            <p>
+                Ultimately, our networks are only useful if they make accurate predictions in situations they've never seen before. As such, training networks which generalize is absolutely critical. However, the properties of learned network solutions which lead networks to generalize remain poorly understood. 
+            </p>
+            <p>
+                In one recent study, we used <b><a href="../publications/#single_directions" target="_blank">neuron ablation</a></b> to demonstrate that networks which <b>generalize well are much more robust to perturbation</b> of their hidden state than those which generalize poorly in a variety of contexts. We also showed that, though it may seem counterintuitive, dropout does not in fact regularize for this, yet batch normalization does. 
+            </p>
+            <p>
+                We recently extended this work, using <b><a href="../publications/#representational_similarity" target="_blank">Canonical Correlation Analysis (CCA)</a></b> to measure the similarity of networks with different random initializations. We found that <b>networks which generalize converge to more similar solutions than those which memorize</b>, and that wider networks converge to more similar solutions than norrow networks. Moreover, we found that across these contexts, <b>the similarity of converged solutions was a strong predictor of test accuracy</b>, despite the fact that it was computed based only on the training set.
+            </p>
         <h2 class="text-left">
             Representation learning and abstraction
         </h2>
-            <p></p>
+            <p>
+                Building intelligent systems will likely require teaching our models to build abstract representations of their environment. Systems which are capable of abstract reasoning will likely generalize better, not only to unseen similar situations, but to situations which overlap only in subtle, high-level ways. However, in order to optimize for abstract reasoning ability, we have to be able to measure it, both behaviorally and representationally.
+            </p>
+            <p>
+                To <b><a href="../publications/#abstract_reasoning" target="_blank">measure abstract reasoning behaviorally</a></b>, we developed a task inspired by Raven's Progressive Matrices which allows for <b>precisely controlled overlap between the train and test distributions</b>. This enables us to measure which concepts in the task neural networks have abstracted and which concepts they haven't. While neural networks can currently perform some abstraction tasks well (like interpolation), the majority still remain well beyond their current capabilities.
+            </p>
+            <p>
+                To <b><a href="../publications/#gqn" target="_blank">measure abstract reasoning representationally</a></b>, we developed several new approaches in an investigation of Generative Query Networks (GQNs) to show that GQN representations were factorized with respect to various primitives, such as color and shape. As a clear example of analysis informing model design, we initially found that the GQN's representation was highly context-dependent, and <b>used insights from this analysis to inform an intelligent design change which improved model performance</b>. 
+            </p>
+        <h2 class="text-left">
+            Generic understanding
+        </h2>
+            <p>
+                The field of deep learning is full of assumptions and intuitions which have never been empirically tested. This has likely led to substantial research debt, as researchers attempt to build on reasoning which is often flawed. Testing these intuitions should enable faster iteration and progress, allowing us to iterate based on concepts we <b><i>know</i></b> are true, rather than concepts we just <b><i>think are probably</i></b> true.
+            </p>
+            <p>
+                Much of the focus on understanding neural networks, both in deep learning and in neuroscience has focused on the role of single units, based on the assumption that single units which are selective for task features are more important to the computation than those which exhibit more confusing response patterns. However, this assumption had remained largely untested until we recently evaluated the <b><a href="../publications/#single_directions" target="_blank">relationship between selectivity and unit importance</a></b>. Surprisingly, we found that, for image classification tasks, <b>selective units were no more important than non-selective units</b>.
+            </p>
+            <p>
+                For years, much of the success of convolutional neural networks (CNNs), especially with respect to deformation stability, had largely been attributed to interleaved pooling layers. However, recent CNNs have nearly abandoned pooling altogether. By <b><a href="../publications/#deformation_stability" target="_blank">measuring deformation stability in CNNs</a></b> with and without pooling, we found that the deformation stability conferred by pooling is actually <i><b>too strong</b></i>, and that networks converge to the same layerwise pattern of deformation stability regardless of whether or not pooling is present. Finally, we demonstrated that <b>deformation stability is largely determined by filter smoothness</b> rather than pooling.
+            </p>
     </div>
 </div>
 
