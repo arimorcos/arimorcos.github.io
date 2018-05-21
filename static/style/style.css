@@ -312,6 +312,16 @@ a.multi-link {
   display: table-cell;
   vertical-align: middle;
 }
+.research_container {
+  display: flex;
+  align-items: center;
+}
+.generalization_image {
+  object-fit: contain;
+  width: 30vw;
+  vertical-align: middle;
+  display: table-cell;
+}
 .researchStatement p {
   text-align: justify;
   font-size: 1.3em;
