@@ -1184,3 +1184,30 @@ body > div.page-wrap > div.container.publications.contentCard > div.flex-contain
   margin-bottom: 1em;
   font-size: 3em;
 }
+.research_container {
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.research_container h2 {
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: none;
+}
+.research_container p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.image_div {
+  display: flex;
+  justify-content: center;
+}
+.abstract_research_container {
+  flex-direction: column;
+  justify-content: center;
+}
+.generalization_image {
+  width: 80%;
+  height: 100%;
+  padding-bottom: 6em;
+  padding-top: 2em;
+}
