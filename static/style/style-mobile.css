@@ -912,6 +912,7 @@ a.multi-link {
 }
 .flex-container {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
 }
 .cvHeadingInvisible {
@@ -928,13 +929,23 @@ a.multi-link {
 .paper_object div img,
 .paper_object div video {
   object-fit: contain;
-  width: 25vw;
+  width: 30vw;
   vertical-align: middle;
   display: table-cell;
 }
 .paper_object span {
   display: table-cell;
   vertical-align: middle;
+}
+.research_container {
+  display: flex;
+  align-items: center;
+}
+.generalization_image {
+  object-fit: contain;
+  width: 30vw;
+  vertical-align: middle;
+  display: table-cell;
 }
 .researchStatement p {
   text-align: justify;
@@ -958,6 +969,9 @@ a.multi-link {
 }
 .cvLink a {
   font-weight: bold;
+}
+.cvHeading {
+  font-size: 6em;
 }
 .cvHeading a {
   font-weight: bold;
@@ -1173,6 +1187,33 @@ a.multi-link {
 .flex-container {
   display: block;
   text-align: center;
+}
+.research_container {
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.research_container h2 {
+  font-size: 5em;
+  font-weight: bold;
+  text-shadow: none;
+}
+.research_container p {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+.image_div {
+  display: flex;
+  justify-content: center;
+}
+.abstract_research_container {
+  flex-direction: column;
+  justify-content: center;
+}
+.generalization_image {
+  width: 80%;
+  height: 100%;
+  padding-bottom: 4.5em;
+  padding-top: 1.5em;
 }
 body > div.page-wrap > div.container.publications.contentCard > div.flex-container > h1.sectionHeading {
   margin-bottom: 0.45em;

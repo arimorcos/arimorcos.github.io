@@ -912,6 +912,7 @@ a.multi-link {
 }
 .flex-container {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
 }
 .cvHeadingInvisible {
@@ -928,13 +929,23 @@ a.multi-link {
 .paper_object div img,
 .paper_object div video {
   object-fit: contain;
-  width: 25vw;
+  width: 30vw;
   vertical-align: middle;
   display: table-cell;
 }
 .paper_object span {
   display: table-cell;
   vertical-align: middle;
+}
+.research_container {
+  display: flex;
+  align-items: center;
+}
+.generalization_image {
+  object-fit: contain;
+  width: 30vw;
+  vertical-align: middle;
+  display: table-cell;
 }
 .researchStatement p {
   text-align: justify;
@@ -958,6 +969,9 @@ a.multi-link {
 }
 .cvLink a {
   font-weight: bold;
+}
+.cvHeading {
+  font-size: 3.6em;
 }
 .cvHeading a {
   font-weight: bold;
