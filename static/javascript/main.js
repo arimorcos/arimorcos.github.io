@@ -8,6 +8,8 @@ var main = function () {
         animation: 'fall',
         offsetX: 0,
         offsetY: 0,
+        delay: 100,
+        animationDuration: 200,
         // touchDevices: false,
         // onlyOne: true,
         theme: 'tooltipster-default'
