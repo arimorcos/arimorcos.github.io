@@ -8,11 +8,13 @@ var main = function () {
         animation: 'fall',
         offsetX: 0,
         offsetY: 0,
-        touchDevices: false,
-        onlyOne: true,
+        // touchDevices: false,
+        // onlyOne: true,
         theme: 'tooltipster-default'
     });
 
+    $('.showTooltip').tooltipster('open')
+    $('.showTooltip').tooltipster('close')
     //var isMobile = getMobile();
     //rearrangeForMobile(isMobile);
 
