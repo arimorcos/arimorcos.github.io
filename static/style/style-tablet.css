@@ -635,6 +635,26 @@ html p,
 body p {
   color: #303030;
 }
+.tooltipster-sidetip.tooltipster-default .tooltipster-box {
+  border-radius: 5px;
+  border: 6px solid #4F78D1;
+  background: #F6F6F6;
+}
+.tooltipster-sidetip.tooltipster-default .tooltipster-arrow-border {
+  border-top-color: #4F78D1;
+}
+.tooltipster-sidetip.tooltipster-default .tooltipster-arrow-background {
+  border-top-color: #4F78D1;
+}
+/* Use this next selector to style things like font-size and line-height: */
+.tooltipster-sidetip.tooltipster-default .tooltipster-content {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  color: #2B2B2B;
+  line-height: 20px;
+  padding: 8px 10px;
+  overflow: hidden;
+}
 .completeLeft {
   padding-left: 0;
 }
