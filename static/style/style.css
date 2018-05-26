@@ -209,6 +209,18 @@ a.multi-link {
 .mini-top-padding {
   margin-top: -0.5em;
 }
+.pub_year {
+  font-size: 2.1em;
+  padding-left: 0 !important;
+}
+.year_link {
+  font-size: 2.1em;
+  padding-left: 0 !important;
+  margin-left: 1em;
+}
+.mid_pub_year {
+  margin-top: 2.4em;
+}
 .no-underline-hover:hover,
 .no-underline-hover:focus {
   text-decoration: none;
@@ -309,6 +321,12 @@ a.multi-link {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+.date_link_container {
+  margin-top: -2em;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
 }
 .cvHeadingInvisible {
   visibility: hidden;

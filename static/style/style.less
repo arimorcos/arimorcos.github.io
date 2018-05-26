@@ -278,6 +278,21 @@ a.multi-link {
   margin-top: -0.5em;
 }
 
+
+.pub_year {
+  font-size: 2.1*@defaultFontSize;
+  padding-left: 0 !important;
+}
+
+.year_link {
+  .pub_year;
+  margin-left: @defaultMargin; 
+}
+
+.mid_pub_year {
+  margin-top: 2.4*@defaultMargin;
+}
+
 .no-underline-hover:hover, .no-underline-hover:focus  {
   text-decoration: none;
 }
@@ -368,6 +383,13 @@ a.multi-link {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+
+.date_link_container {
+  margin-top: -2*@defaultMargin;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
 }
 
 .cvHeadingInvisible {
