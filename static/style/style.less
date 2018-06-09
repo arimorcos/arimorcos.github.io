@@ -313,6 +313,7 @@ a.multi-link {
 @pdfLinkColor: #7316AA;
 @openReviewLinkColor: #198A28;
 @arxivLinkColor: #B11E22;
+@soonLinkColor: #818387;
 @natureNeuroColor: #187D7B;
 @jNeuroColor: #154C7B;
 @posterColor: #E63E8F;
@@ -324,6 +325,12 @@ a.multi-link {
   .boxed-link;
   border-color: @scienceColor;
   color: @scienceColor;
+}
+
+.soon-link {
+  .boxed-link;
+  border-color: @soonLinkColor;
+  color: @soonLinkColor;
 }
 
 .pdf-link {
@@ -645,7 +652,7 @@ a.multi-link {
 .personalImgApplePicking {
   float: right;
   box-shadow: 0.6em 0.4em 0.5em darkgray;
-  height: 400px;
+  height: 360px;
   margin-left: 1.5*@defaultMargin;
   border-radius: 1%;
 }
@@ -663,7 +670,7 @@ a.multi-link {
     padding-left: 1.5em;
     text-indent:-1.5em;
     text-align: justify;
-    margin-bottom: 0.2*@defaultMargin;
+    margin-bottom: 0.4*@defaultMargin;
   }
 }
 

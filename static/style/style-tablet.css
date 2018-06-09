@@ -834,6 +834,18 @@ a.multi-link {
 .mini-top-padding {
   margin-top: -0.5em;
 }
+.pub_year {
+  font-size: 2.52em;
+  padding-left: 0 !important;
+}
+.year_link {
+  font-size: 2.52em;
+  padding-left: 0 !important;
+  margin-left: 2em;
+}
+.mid_pub_year {
+  margin-top: 4.8em;
+}
 .no-underline-hover:hover,
 .no-underline-hover:focus {
   text-decoration: none;
@@ -853,6 +865,15 @@ a.multi-link {
   text-decoration: none;
   border-color: #D20921;
   color: #D20921;
+}
+.soon-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-color: #818387;
+  color: #818387;
 }
 .pdf-link {
   border: 1px solid;
@@ -934,6 +955,12 @@ a.multi-link {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+.date_link_container {
+  margin-top: -4em;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
 }
 .cvHeadingInvisible {
   visibility: hidden;
@@ -1132,7 +1159,7 @@ a.multi-link {
 .personalImgApplePicking {
   float: right;
   box-shadow: 0.6em 0.4em 0.5em darkgray;
-  height: 400px;
+  height: 360px;
   margin-left: 3em;
   border-radius: 1%;
 }
@@ -1146,7 +1173,7 @@ a.multi-link {
   padding-left: 1.5em;
   text-indent: -1.5em;
   text-align: justify;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.8em;
 }
 /* Contact */
 .contactHeader h1 {
