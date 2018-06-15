@@ -866,6 +866,15 @@ a.multi-link {
   border-color: #D20921;
   color: #D20921;
 }
+.slides-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-color: #B000D3;
+  color: #B000D3;
+}
 .soon-link {
   border: 1px solid;
   padding: 3px 6px 2px 6px;
