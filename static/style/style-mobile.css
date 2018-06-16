@@ -841,6 +841,7 @@ a.multi-link {
 .year_link {
   font-size: 4.2em;
   padding-left: 0 !important;
+  margin-top: 1.2em;
   margin-left: 1.5em;
 }
 .mid_pub_year {
@@ -1240,6 +1241,10 @@ a.multi-link {
 .workshopHeading {
   font-size: 5em;
 }
+.neuronActivityImg {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
 .flex-container {
   display: block;
   text-align: center;
@@ -1264,6 +1269,9 @@ a.multi-link {
 .abstract_research_container {
   flex-direction: column;
   justify-content: center;
+}
+.pub_year {
+  margin-top: 1.2em;
 }
 .generalization_image {
   width: 80%;
@@ -1301,6 +1309,15 @@ body > div.page-wrap > div.container.publications.contentCard > div.flex-contain
 }
 .paper_object {
   flex-direction: column;
+}
+.paper_object h3 {
+  font-size: 4em;
+}
+.paper_object h4 {
+  font-size: 3em;
+}
+.paper_object h5 {
+  font-size: 2em;
 }
 .paper_object * {
   text-align: center;
