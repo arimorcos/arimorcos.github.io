@@ -10,6 +10,9 @@ html p,
 body p {
   color: #303030;
 }
+.container {
+  width: 85vw;
+}
 .tooltipster-sidetip.tooltipster-default .tooltipster-box {
   border-radius: 5px;
   border: 6px solid #4F78D1;
@@ -374,7 +377,7 @@ a.multi-link {
 }
 .generalization_image {
   object-fit: contain;
-  width: 30vw;
+  width: 30vmax;
   vertical-align: middle;
   display: table-cell;
 }
