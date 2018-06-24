@@ -58,8 +58,8 @@ function changeAnimation() {
         $(".navContact > a").toggleClass("animateContactColor");
         $(".navContact > a > img").toggleClass("animateContact");
     } else {
-        $(".navAbout > a").toggleClass("animateAboutMeColor");
-        $(".navAbout > a > img").toggleClass("animateAboutMe");
+        // $(".navAbout > a").toggleClass("animateAboutMeColor");
+        // $(".navAbout > a > img").toggleClass("animateAboutMe");
     }
 
 }

@@ -155,6 +155,10 @@ def publications():
 def contact():
     return render_template('contact.html')
 
+@app.route('/news/')
+def news():
+    return render_template('news.html')
+
 
 # route index to about page
 @app.route('/')
