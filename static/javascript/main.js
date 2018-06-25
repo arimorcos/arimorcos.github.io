@@ -37,7 +37,7 @@ function changeAnimation() {
     var url = window.location.href;
 
     // Process which class
-    if (url.search('about') > 0) {
+    if (url.search('about') > 0 || window.location.pathname == '/') {
         $(".navAbout > a").toggleClass("animateAboutMeColor");
         $(".navAbout > a > img").toggleClass("animateAboutMe");
     } else if (url.search('blog') > 0) {
