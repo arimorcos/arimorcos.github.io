@@ -314,9 +314,14 @@ a.multi-link {
   text-decoration: none;
 }
 
+.link-margin-left {
+	margin-left: @defaultMargin;
+}
+
 @pdfLinkColor: #7316AA;
 @openReviewLinkColor: #198A28;
 @arxivLinkColor: #B11E22;
+@pmlrLinkColor: #566592;
 @soonLinkColor: #818387;
 @natureNeuroColor: #187D7B;
 @jNeuroColor: #154C7B;
@@ -330,6 +335,12 @@ a.multi-link {
   .boxed-link;
   border-color: @scienceColor;
   color: @scienceColor;
+}
+
+.pmlr-link {
+  .boxed-link;
+  border-color: @pmlrLinkColor;
+  color: @pmlrLinkColor;
 }
 
 .slides-link {

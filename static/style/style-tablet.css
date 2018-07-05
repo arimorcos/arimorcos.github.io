@@ -860,6 +860,9 @@ a.multi-link {
   text-align: center;
   text-decoration: none;
 }
+.link-margin-left {
+  margin-left: 2em;
+}
 .science-link {
   border: 1px solid;
   padding: 3px 6px 2px 6px;
@@ -868,6 +871,15 @@ a.multi-link {
   text-decoration: none;
   border-color: #D20921;
   color: #D20921;
+}
+.pmlr-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-color: #566592;
+  color: #566592;
 }
 .slides-link {
   border: 1px solid;
