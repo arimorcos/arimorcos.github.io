@@ -873,6 +873,24 @@ a.multi-link {
   border-color: #D20921;
   color: #D20921;
 }
+.neurips-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-color: #E24E30;
+  color: #E24E30;
+}
+.github-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-color: #8051C9;
+  color: #8051C9;
+}
 .pmlr-link {
   border: 1px solid;
   padding: 3px 6px 2px 6px;
