@@ -872,6 +872,15 @@ a.multi-link {
   border-color: #D20921;
   color: #D20921;
 }
+.curr-opinion-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-color: #E9711B;
+  color: #E9711B;
+}
 .code-link {
   border: 1px solid;
   padding: 3px 6px 2px 6px;
