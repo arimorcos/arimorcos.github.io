@@ -203,6 +203,9 @@ body p {
 a.multi-link {
   padding-right: 0.75em;
 }
+button.multi-link {
+  margin-right: 0.75em;
+}
 .small-offset {
   margin-top: 0.5em;
 }

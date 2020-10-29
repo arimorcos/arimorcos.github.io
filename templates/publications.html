@@ -1,17 +1,17 @@
 {% extends "site_template.html" %}
 
 {% block headerName %}
-    <a href="/about" class="headerLink">
-        Ari Morcos
-    </a>
+<a href="/about" class="headerLink">
+    Ari Morcos
+</a>
 {% endblock %}
 
 {% block title %}
-    CV and Publications - Ari Morcos
+CV and Publications - Ari Morcos
 {% endblock %}
 
 {% block sectionName %}
-    Publications
+Publications
 {% endblock %}
 
 {% block content %}
@@ -29,15 +29,15 @@
 
     </div>
     <h2 class="lastUpdated text-center">
-            Last updated: October 2020
+        Last updated: October 2020
     </h2>
 
 
-<!--    <div class="date_link_container">-->
-<!--        <h2 class="year_link"><a href="#2018">2018</a></h2>-->
-<!--        <h2 class="year_link"><a href="#2016">2016</a></h2>-->
-<!--        <h2 class="year_link"><a href="#2015">2015</a></h2>-->
-<!--    </div> -->
+    <!--    <div class="date_link_container">-->
+    <!--        <h2 class="year_link"><a href="#2018">2018</a></h2>-->
+    <!--        <h2 class="year_link"><a href="#2016">2016</a></h2>-->
+    <!--        <h2 class="year_link"><a href="#2015">2015</a></h2>-->
+    <!--    </div> -->
 
     <h2 class="text-left pub_year" id="2020">2020</h2>
 
@@ -56,10 +56,10 @@
             </h5>
             <h5 class="text-left mini-top-padding">
                 <i>arXiv</i>, 2020.
-<!--                <p>-->
-<!--                    <br>Also appeared in: <br>-->
-<!--                    <br><i>NeurIPS Workshop on Science meets Engineering of Deep Learning</i>, 2019. </a>-->
-<!--                </p>-->
+                <!--                <p>-->
+                <!--                    <br>Also appeared in: <br>-->
+                <!--                    <br><i>NeurIPS Workshop on Science meets Engineering of Deep Learning</i>, 2019. </a>-->
+                <!--                </p>-->
             </h5>
             <h5 class="text-left flex-center">
                 <a class="multi-link no-underline-hover" href="/static/pdfs/cai_all_negs_equal_2020.pdf" target="_blank">
@@ -70,6 +70,9 @@
                 </a>
                 <button type="button" onclick="showHideBibtex('#all_negatives_equal')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
+                </button>
+                <button type="button" onclick="copyBibtex('#all_negatives_equal')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
                 </button>
 
             </h5>
@@ -105,10 +108,10 @@
             </h5>
             <h5 class="text-left mini-top-padding">
                 <i>arXiv</i>, 2020.
-<!--                <p>-->
-<!--                    <br>Also appeared in: <br>-->
-<!--                    <br><i>NeurIPS Workshop on Science meets Engineering of Deep Learning</i>, 2019. </a>-->
-<!--                </p>-->
+                <!--                <p>-->
+                <!--                    <br>Also appeared in: <br>-->
+                <!--                    <br><i>NeurIPS Workshop on Science meets Engineering of Deep Learning</i>, 2019. </a>-->
+                <!--                </p>-->
             </h5>
             <h5 class="text-left flex-center">
                 <a class="multi-link no-underline-hover" href="/static/pdfs/vedantam_curi.pdf" target="_blank">
@@ -120,8 +123,9 @@
                 <button type="button" onclick="showHideBibtex('#curi')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
-            </h5>
+                <button type="button" onclick="copyBibtex('#curi')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button></h5>
             <div class="bibtex">
                 @misc{vedantam2020curi, <br>
                       title={CURI: A Benchmark for Productive Concept Learning Under Uncertainty},  <br>
@@ -157,10 +161,10 @@
             </h5>
             <h5 class="text-left mini-top-padding">
                 <i>arXiv</i>, 2020.
-<!--                <p>-->
-<!--                    <br>Also appeared in: <br>-->
-<!--                    <br><i>ICML Workshop on Uncertainty and Robustness in Deep Learning</i>, 2020. </a>-->
-<!--                </p>-->
+                <!--                <p>-->
+                <!--                    <br>Also appeared in: <br>-->
+                <!--                    <br><i>ICML Workshop on Uncertainty and Robustness in Deep Learning</i>, 2020. </a>-->
+                <!--                </p>-->
             </h5>
             <h5 class="text-left flex-center">
                 <a class="multi-link no-underline-hover" href="/static/pdfs/leavitt_morcos_falsifiable_interp.pdf" target="_blank">
@@ -172,8 +176,9 @@
                 <button type="button" onclick="showHideBibtex('#falsifiable_interp')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
-            </h5>
+                <button type="button" onclick="copyBibtex('#falsifiable_interp')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button></h5>
             <div class="bibtex">
                 @misc{leavitt2020falsifiable, <br>
                       title={Towards falsifiable interpretability research},  <br>
@@ -215,30 +220,31 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/1906.03728" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
-<!--                <a class="multi-link no-underline-hover" href="https://papers.nips.cc/paper/7815-insights-on-representational-similarity-in-neural-networks-with-canonical-correlation" target="_blank">-->
-<!--                    <span class="neurips-link">NeurIPS</span>-->
-<!--                </a>-->
-<!--                <a class="multi-link no-underline-hover" href="../static/posters/morcos_raghu_bengio_neurips_2018_poster.pdf" target="_blank">-->
-<!--                    <span class="poster-link">Poster</span>-->
-<!--                </a>-->
+                <!--                <a class="multi-link no-underline-hover" href="https://papers.nips.cc/paper/7815-insights-on-representational-similarity-in-neural-networks-with-canonical-correlation" target="_blank">-->
+                <!--                    <span class="neurips-link">NeurIPS</span>-->
+                <!--                </a>-->
+                <!--                <a class="multi-link no-underline-hover" href="../static/posters/morcos_raghu_bengio_neurips_2018_poster.pdf" target="_blank">-->
+                <!--                    <span class="poster-link">Poster</span>-->
+                <!--                </a>-->
                 <a class="multi-link no-underline-hover" href="https://github.com/bbartoldson/GeneralizationStabilityTradeoff" target="_blank">
                     <span class="code-link">Code</span>
                 </a>
                 <button type="button" onclick="showHideBibtex('#gen_stability')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
-            </h5>
+                <button type="button" onclick="copyBibtex('#gen_stability')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button></h5>
             <div class="bibtex">
                 @incollection{bartoldson_gen_stability_tradeoff_2020, <br>
                     title = {The generalization-stability tradeoff in neural network pruning}, <br>
                     author = {Bartoldson, Brian R and Morcos, Ari S and Barbu, Adrian and Erlebacher Gordon}, <br>
                     booktitle = {Advances in Neural Information Processing Systems 33}, <br>
-<!--                    editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett}, <br>-->
-<!--                    pages = {4932&#45;&#45;4942}, <br>-->
+                <!--                    editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett}, <br>-->
+                <!--                    pages = {4932&#45;&#45;4942}, <br>-->
                     year = {2020}, <br>
                     publisher = {Curran Associates, Inc.}, <br>
-<!--                    url = {http://papers.nips.cc/paper/8739-one-ticket-to-win-them-all-generalizing-lottery-ticket-initializations-across-datasets-and-optimizers.pdf} <br>-->
+                <!--                    url = {http://papers.nips.cc/paper/8739-one-ticket-to-win-them-all-generalizing-lottery-ticket-initializations-across-datasets-and-optimizers.pdf} <br>-->
                     }
             </div>
         </span>
@@ -278,8 +284,9 @@
                 <button type="button" onclick="showHideBibtex('#selectivity_robustness')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
-            </h5>
+                <button type="button" onclick="copyBibtex('#selectivity_robustness')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button></h5>
             <div class="bibtex">
                 @misc{leavitt2020linking, <br>
                       title={Linking average- and worst-case perturbation robustness via class selectivity and dimensionality},  <br>
@@ -332,7 +339,9 @@
                 <button type="button" onclick="showHideBibtex('#selectivity_harmful')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#selectivity_harmful')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @misc{leavitt2020selectivity, <br>
@@ -389,7 +398,9 @@
                 <button type="button" onclick="showHideBibtex('#pareco')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#pareco')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                     @misc{chin2020pareco, <br>
@@ -435,7 +446,9 @@
                 <button type="button" onclick="showHideBibtex('#correlations_readout')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#correlations_readout')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @article {Valente2020.04.03.024133, <br>
@@ -445,7 +458,7 @@
                     year = {2020}, <br>
                     doi = {10.1101/2020.04.03.024133}, <br>
                     publisher = {Cold Spring Harbor Laboratory}, <br>
-<!--                    abstract = {The spatiotemporal structure of activity in populations of neurons is critical for accurate perception and behavior. Experimental and theoretical studies have focused on {\textquotedblleft}noise{\textquotedblright} correlations {\textendash} trial-to-trial covariations in neural activity for a given stimulus {\textendash} as a key feature of population activity structure. Much work has shown that these correlations limit the stimulus information encoded by a population of neurons, leading to the widely-held prediction that correlations are detrimental for perceptual discrimination behaviors. However, this prediction relies on an untested assumption: that the neural mechanisms that read out sensory information to inform behavior depend only on a population{\textquoteright}s total stimulus information independently of how correlations constrain this information across neurons or time. Here we make the critical advance of simultaneously studying how correlations affect both the encoding and the readout of sensory information. We analyzed calcium imaging data from mouse posterior parietal cortex during two perceptual discrimination tasks. Correlations limited the ability to encode stimulus information, but (seemingly paradoxically) correlations were higher when mice made correct choices than when they made errors. On a single-trial basis, a mouse{\textquoteright}s behavioral choice depended not only on the stimulus information in the activity of the population as a whole, but unexpectedly also on the consistency of information across neurons and time. Because correlations increased information consistency, sensory information was more efficiently converted into a behavioral choice in the presence of correlations. Given this enhanced-by-consistency readout, we estimated that correlations produced a behavioral benefit that compensated or overcame their detrimental information-limiting effects. These results call for a re-evaluation of the role of correlated neural activity, and suggest that correlations in association cortex can benefit task performance even if they decrease sensory information.}, <br>-->
+                <!--                    abstract = {The spatiotemporal structure of activity in populations of neurons is critical for accurate perception and behavior. Experimental and theoretical studies have focused on {\textquotedblleft}noise{\textquotedblright} correlations {\textendash} trial-to-trial covariations in neural activity for a given stimulus {\textendash} as a key feature of population activity structure. Much work has shown that these correlations limit the stimulus information encoded by a population of neurons, leading to the widely-held prediction that correlations are detrimental for perceptual discrimination behaviors. However, this prediction relies on an untested assumption: that the neural mechanisms that read out sensory information to inform behavior depend only on a population{\textquoteright}s total stimulus information independently of how correlations constrain this information across neurons or time. Here we make the critical advance of simultaneously studying how correlations affect both the encoding and the readout of sensory information. We analyzed calcium imaging data from mouse posterior parietal cortex during two perceptual discrimination tasks. Correlations limited the ability to encode stimulus information, but (seemingly paradoxically) correlations were higher when mice made correct choices than when they made errors. On a single-trial basis, a mouse{\textquoteright}s behavioral choice depended not only on the stimulus information in the activity of the population as a whole, but unexpectedly also on the consistency of information across neurons and time. Because correlations increased information consistency, sensory information was more efficiently converted into a behavioral choice in the presence of correlations. Given this enhanced-by-consistency readout, we estimated that correlations produced a behavioral benefit that compensated or overcame their detrimental information-limiting effects. These results call for a re-evaluation of the role of correlated neural activity, and suggest that correlations in association cortex can benefit task performance even if they decrease sensory information.}, <br>-->
                     URL = {https://www.biorxiv.org/content/early/2020/04/05/2020.04.03.024133}, <br>
                     eprint = {https://www.biorxiv.org/content/early/2020/04/05/2020.04.03.024133.full.pdf}, <br>
                     journal = {bioRxiv} <br>
@@ -543,7 +556,9 @@
                 <button type="button" onclick="showHideBibtex('#plan2vec')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#plan2vec')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @InProceedings{yang_plan2vec_l4dc_2020, <br>
@@ -595,16 +610,18 @@
                 <a class="multi-link no-underline-hover" href="https://openreview.net/forum?id=Hkl1iRNFwS" target="_blank">
                     <span class="openreview-link">OpenReview</span>
                 </a>
-<!--                <a class="multi-link no-underline-hover" href="../static/posters/morcos_raghu_bengio_neurips_2018_poster.pdf" target="_blank">-->
-<!--                    <span class="poster-link">Poster</span>-->
-<!--                </a>-->
+                <!--                <a class="multi-link no-underline-hover" href="../static/posters/morcos_raghu_bengio_neurips_2018_poster.pdf" target="_blank">-->
+                <!--                    <span class="poster-link">Poster</span>-->
+                <!--                </a>-->
                 <a class="multi-link no-underline-hover" href="https://github.com/facebookresearch/open_lth" target="_blank">
                     <span class="code-link">Code</span>
                 </a>
                 <button type="button" onclick="showHideBibtex('#early_phase')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#early_phase')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @inproceedings{ <br>
@@ -655,7 +672,9 @@
                 <button type="button" onclick="showHideBibtex('#lottery_tickets_rl_nlp')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#lottery_tickets_rl_nlp')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @inproceedings{ <br>
@@ -705,9 +724,9 @@
                 <a class="multi-link no-underline-hover" href="https://openreview.net/forum?id=H1gX8C4YPr" target="_blank">
                     <span class="openreview-link">OpenReview</span>
                 </a>
-<!--                <a class="multi-link no-underline-hover" href="../static/posters/morcos_raghu_bengio_neurips_2018_poster.pdf" target="_blank">-->
-<!--                    <span class="poster-link">Poster</span>-->
-<!--                </a>-->
+                <!--                <a class="multi-link no-underline-hover" href="../static/posters/morcos_raghu_bengio_neurips_2018_poster.pdf" target="_blank">-->
+                <!--                    <span class="poster-link">Poster</span>-->
+                <!--                </a>-->
                 <a class="multi-link no-underline-hover" href="https://github.com/facebookresearch/habitat-lab" target="_blank">
                     <span class="code-link">Code</span>
                 </a>
@@ -717,7 +736,9 @@
                 <button type="button" onclick="showHideBibtex('#dd_ppo')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#dd_ppo')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @inproceedings{ <br>
@@ -762,7 +783,9 @@
                 <button type="button" onclick="showHideBibtex('#latent_canon')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#latent_canon')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @misc{litany2020representation, <br>
@@ -807,7 +830,9 @@
                 <button type="button" onclick="showHideBibtex('#pointgoal_cca')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#pointgoal_cca')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @misc{wijmans2020analyzing, <br>
@@ -852,7 +877,9 @@
                 <button type="button" onclick="showHideBibtex('#lottery_tickets_ssl')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#lottery_tickets_ssl')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @misc{caron2020pruning, <br>
@@ -905,7 +932,9 @@
                 <button type="button" onclick="showHideBibtex('#one_ticket')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#one_ticket')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @incollection{morcos_one_ticket_neurips_2019, <br>
@@ -928,7 +957,7 @@
         <div>
             <img src="/static/images/publication_images/one_ticket.png" class="pull-right pub-image">
         </div>
-        
+
     </div>
 
     <div class="paper_object" id="luck_matters">
@@ -964,7 +993,9 @@
                 <button type="button" onclick="showHideBibtex('#luck_matters')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#luck_matters')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @misc{tian2019luck, <br>
@@ -1020,7 +1051,9 @@
                 <button type="button" onclick="showHideBibtex('#labc')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#labc')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @inproceedings{ <br>
@@ -1036,7 +1069,7 @@
         <div>
             <img src="/static/images/publication_images/labc.png" class="pull-right pub-image">
         </div>
-        
+
     </div>
 
     <div class="paper_object" id="synergy">
@@ -1072,7 +1105,9 @@
                 <button type="button" onclick="showHideBibtex('#synergy')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#synergy')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @article{barrett_morcos_curr_opinion_2019, <br>
@@ -1094,7 +1129,7 @@
         <div>
             <img src="/static/images/publication_images/synergy.png" class="pull-right pub-image">
         </div>
-        
+
     </div>
 
     <h2 class="text-left pub_year" id="2018">2018</h2>
@@ -1137,7 +1172,9 @@
                 <button type="button" onclick="showHideBibtex('#representational_similarity')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#representational_similarity')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @incollection{morcos_raghu_cca_neurips_2018, <br>
@@ -1160,7 +1197,7 @@
         <div>
             <img src="/static/images/publication_images/representational_similarity_image.png" class="pull-right pub-image">
         </div>
-        
+
     </div>
 
     <div class="paper_object" id="ctf">
@@ -1195,7 +1232,9 @@
                 <button type="button" onclick="showHideBibtex('#ctf')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#ctf')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @article {jaderberg_ctf_science_2018, <br>
@@ -1253,10 +1292,10 @@
         <div>
             <img src="/static/images/publication_images/ctf_vis.png" class="pull-right pub-image">
         </div>
-        
+
     </div>
 
-     <div class="paper_object" id="gqn">
+    <div class="paper_object" id="gqn">
 
         <span class="nopadding">
             <h3 class="text-left">
@@ -1288,7 +1327,9 @@
                 <button type="button" onclick="showHideBibtex('#gqn')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#gqn')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @article {Eslami1204, <br>
@@ -1379,7 +1420,7 @@
         <div>
             <img src="/static/images/publication_images/gqn_image.png" class="pull-right pub-image">
         </div>
-        
+
     </div>
 
     <div class="paper_object" id="abstract_reasoning">
@@ -1420,7 +1461,9 @@
                 <button type="button" onclick="showHideBibtex('#abstract_reasoning')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#abstract_reasoning')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @InProceedings{barrett_abstract_reasoning_icml_2018, <br>
@@ -1466,7 +1509,7 @@
         <div>
             <img src="/static/images/publication_images/abstract_reasoning.png" class="pull-right pub-image">
         </div>
-        
+
     </div>
 
     <div class="paper_object" id="deformation_stability">
@@ -1492,10 +1535,14 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/1804.04438" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
-                <button type="button" onclick="showHideBibtex('#deformation_stability')" class="multi-link no-underline-hover bibtex-button">
-                    <span >Show Bibtex</span>
+                <button type="button" onclick="showHideBibtex('#deformation_stability')"
+                        class="multi-link no-underline-hover bibtex-button">
+                    <span>Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#deformation_stability')"
+                        class="multi-link no-underline-hover bibtex-button">
+                    <span>Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @misc{ruderman2018pooling,<br>
@@ -1511,10 +1558,10 @@
         <div>
             <img src="/static/images/publication_images/deformation_sensitivity_transparent.png" class="pull-right pub-image">
         </div>
-        
+
     </div>
 
-<!--    {# <h2 class="text-left pub_year" id="2017">2017</h2> #}-->
+    <!--    {# <h2 class="text-left pub_year" id="2017">2017</h2> #}-->
 
     <div class="paper_object" id="single_directions">
 
@@ -1552,7 +1599,9 @@
                 <button type="button" onclick="showHideBibtex('#single_directions')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#single_directions')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @inproceedings{ <br>
@@ -1587,7 +1636,7 @@
         <div>
             <img src="/static/images/publication_images/single_directions_fig_1_transparent.png" class="pull-right pub-image">
         </div>
-        
+
     </div>
 
     <h2 class="text-left pub_year mid_pub_year" id="2016">2016</h2>
@@ -1619,7 +1668,9 @@
                 <button type="button" onclick="showHideBibtex('#history_dependent_variability')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#history_dependent_variability')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @article{morcos2016history, <br>
@@ -1692,7 +1743,9 @@
                 <button type="button" onclick="showHideBibtex('#rest')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#rest')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @article {Kim14872, <br>
@@ -1810,7 +1863,9 @@
                 <button type="button" onclick="showHideBibtex('#phd_thesis')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
                 </button>
-
+                <button type="button" onclick="copyBibtex('#phd_thesis')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
             </h5>
             <div class="bibtex">
                 @phdthesis{morcos_phd_thesis_2016, <br>
