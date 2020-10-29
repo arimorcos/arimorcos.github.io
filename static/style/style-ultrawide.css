@@ -691,14 +691,14 @@ body p {
 }
 .sectionHeading {
   font-weight: bold;
-  margin-bottom: 1.5em;
-  font-size: 3.6em;
+  margin-bottom: 0.75em;
+  font-size: 3em;
 }
 .line {
   background-color: #f6f6f6;
   height: 5px;
-  margin-top: 1em;
-  margin-bottom: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 .page-wrap:after {
   content: "";
@@ -707,7 +707,7 @@ body p {
 .contentCard {
   background-color: #f6f6f6;
   padding: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 /* Name header */
 .nameHeader {
@@ -715,9 +715,9 @@ body p {
 }
 .nameHeader h1 {
   color: #f6f6f6;
-  font-size: 6em;
+  font-size: 5em;
   font-weight: bolder;
-  text-shadow: 0.036em 0.036em #505050;
+  text-shadow: 0.03em 0.03em #505050;
 }
 .nameHeader a {
   color: inherit;
@@ -801,7 +801,7 @@ body p {
 /* Current Section */
 .currSection {
   background-color: #4f78d1;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .currSection h2 {
   color: #f6f6f6;
@@ -815,39 +815,39 @@ body p {
 }
 *[role="heading"] {
   font-weight: bold;
-  text-shadow: 0.036em 0.036em #505050;
+  text-shadow: 0.03em 0.03em #505050;
   color: #303030;
-  font-size: 3.6em;
+  font-size: 3em;
 }
 /* Research */
 .neuronActivityImg {
   float: right;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 a.multi-link {
-  padding-right: 1.5em;
+  padding-right: 0.75em;
 }
 .small-offset {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 .medium-offset {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 .mini-top-padding {
   margin-top: -0.5em;
 }
 .pub_year {
-  font-size: 2.52em;
+  font-size: 2.1em;
   padding-left: 0 !important;
 }
 .year_link {
-  font-size: 2.52em;
+  font-size: 2.1em;
   padding-left: 0 !important;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 .mid_pub_year {
-  margin-top: 4.8em;
+  margin-top: 2.4em;
 }
 .no-underline-hover:hover,
 .no-underline-hover:focus {
@@ -861,7 +861,7 @@ a.multi-link {
   text-decoration: none;
 }
 .link-margin-left {
-  margin-left: 2em;
+  margin-left: 1em;
 }
 .science-link {
   border: 1px solid;
@@ -1026,7 +1026,7 @@ a.multi-link {
   justify-content: space-between;
 }
 .date_link_container {
-  margin-top: -4em;
+  margin-top: -2em;
   display: flex;
   align-items: baseline;
   justify-content: flex-end;
@@ -1040,7 +1040,7 @@ a.multi-link {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 .paper_object div img,
 .paper_object div video {
@@ -1066,18 +1066,18 @@ a.multi-link {
 }
 .researchStatement p {
   text-align: justify;
-  font-size: 1.56em;
-  padding-left: 2em;
-  padding-right: 2em;
+  font-size: 1.3em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .researchStatement h2 {
   padding-left: 1vw;
-  text-shadow: 0.02em 0.02em #505050;
+  text-shadow: 0.01em 0.01em #505050;
   color: #303030;
 }
 .publications h2 {
   padding-left: 1vw;
-  text-shadow: 0.02em 0.02em #505050;
+  text-shadow: 0.01em 0.01em #505050;
   color: #303030;
 }
 .nopadding {
@@ -1088,7 +1088,7 @@ a.multi-link {
   font-weight: bold;
 }
 .cvHeading {
-  font-size: 3.6em;
+  font-size: 3em;
 }
 .cvHeading a {
   font-weight: bold;
@@ -1097,15 +1097,15 @@ a.multi-link {
   margin-bottom: 0;
 }
 .blogDate {
-  margin-top: 1em;
-  margin-bottom: 2em;
-  font-size: 1.8em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-size: 1.5em;
 }
 .blogSummaryBottom a {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .blogSummaryBottom a:hover {
-  text-shadow: 0.036em 0.036em #505050;
+  text-shadow: 0.03em 0.03em #505050;
   text-decoration: none;
   color: steelblue;
 }
@@ -1113,96 +1113,96 @@ a.multi-link {
   margin-right: -1em;
 }
 .bottomTagList p {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .bottomTagList a {
   font-size: 1em;
 }
 .rssSubscribe > p a {
-  font-size: 1.44em;
+  font-size: 1.2em;
   vertical-align: middle;
 }
 .rssSubscribe > p img {
   width: 35px;
 }
 .tagCloud a.tag1 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 100;
 }
 .tagCloud a.tag2 {
-  font-size: 1.56em;
+  font-size: 1.3em;
   font-weight: 200;
 }
 .tagCloud a.tag3 {
-  font-size: 1.92em;
+  font-size: 1.6em;
   font-weight: 300;
 }
 .tagCloud a.tag4 {
-  font-size: 2.28em;
+  font-size: 1.9em;
   font-weight: 400;
 }
 .tagCloud a.tag5 {
-  font-size: 2.64em;
+  font-size: 2.2em;
   font-weight: 500;
 }
 .tagCloud a.tag6 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 600;
 }
 .tagCloud a.tag7 {
-  font-size: 3.36em;
+  font-size: 2.8em;
   font-weight: 700;
 }
 .tagCloud a.tag8 {
-  font-size: 3.72em;
+  font-size: 3.1em;
   font-weight: 800;
 }
 .tagCloud a.tag9 {
-  font-size: 4.08em;
+  font-size: 3.4em;
   font-weight: 900;
 }
 .tagCloud .tag10 {
-  font-size: 4.44em;
+  font-size: 3.7em;
   font-weight: 1000;
 }
 .recentPostText {
-  font-size: 1.44em;
+  font-size: 1.2em;
 }
 .postContent {
-  font-size: 1.44em !important;
-  margin-bottom: 4em;
+  font-size: 1.2em !important;
+  margin-bottom: 2em;
 }
 .postContent p {
   text-align: justify;
 }
 .postUpdated {
   font-style: italic;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 .continueReading {
-  margin-bottom: 1em;
-  font-size: 2.1em !important;
+  margin-bottom: 0.5em;
+  font-size: 1.75em !important;
 }
 .postTitle {
-  font-size: 3.6em;
+  font-size: 3em;
   font-weight: bold;
 }
 .postTitle a:hover {
-  text-shadow: 0.036em 0.036em #505050;
+  text-shadow: 0.03em 0.03em #505050;
   text-decoration: none;
   color: steelblue;
 }
 .postDate {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .postNav {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .postNav a {
-  font-size: 2.4em;
+  font-size: 2em;
 }
 .postNav a:hover {
-  text-shadow: 0.036em 0.036em #505050;
+  text-shadow: 0.03em 0.03em #505050;
   text-decoration: none;
   color: white;
 }
@@ -1214,23 +1214,23 @@ a.multi-link {
 }
 /* About */
 .aboutSummary p {
-  padding-right: 1.2em;
+  padding-right: 1em;
   color: #303030;
-  font-size: 1.56em;
+  font-size: 1.3em;
   text-align: justify;
 }
 .personalImg {
   float: left;
   box-shadow: 0.6em 0.4em 0.5em darkgray;
   height: 300px;
-  margin-right: 2em;
+  margin-right: 1em;
   border-radius: 1%;
 }
 .personalImgApplePicking {
   float: right;
   box-shadow: 0.6em 0.4em 0.5em darkgray;
   height: 360px;
-  margin-left: 3em;
+  margin-left: 1.5em;
   border-radius: 1%;
 }
 .newsHeading {
@@ -1238,37 +1238,37 @@ a.multi-link {
 }
 .newsBullets li {
   color: #303030;
-  padding-right: 1.2em;
-  font-size: 1.56em;
+  padding-right: 1em;
+  font-size: 1.3em;
   padding-left: 1.5em;
   text-indent: -1.5em;
   text-align: justify;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.4em;
 }
 /* Contact */
 .contactHeader h1 {
   color: #303030;
   font-weight: bold;
-  font-size: 6em;
+  font-size: 5em;
   margin-bottom: 0.15em;
 }
 .socialLinks a {
   font-family: "Abel", sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 2.5em;
   vertical-align: middle;
 }
 .contactLink {
   display: flex;
   align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .contactLink img {
   width: 100%;
 }
 .socialLinks a:hover {
   font-weight: bolder;
-  text-shadow: -0.12em 0.12em 0.6em #a9a9a9;
+  text-shadow: -0.1em 0.1em 0.5em #a9a9a9;
   background-color: inherit;
   text-decoration: none;
 }
@@ -1281,50 +1281,15 @@ a.multi-link {
   color: #f6f6f6;
   background-color: #4f78d1;
   padding-top: 2em;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .copyrightText {
   margin-top: auto;
   margin-bottom: auto;
 }
-.flex-container {
-  display: block;
-  text-align: center;
+.container {
+  width: 60vw;
 }
-body > div.page-wrap > div.container.publications.contentCard > div.flex-container > h1.sectionHeading {
-  margin-bottom: 0.6em;
-}
-.cvHeadingInvisible {
-  display: none;
-}
-.cvHeading {
-  margin-bottom: 1em;
-  font-size: 3em;
-}
-.research_container {
-  flex-direction: column-reverse;
-  justify-content: center;
-}
-.research_container h2 {
-  font-size: 3em;
-  font-weight: bold;
-  text-shadow: none;
-}
-.research_container p {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-.image_div {
-  display: flex;
-  justify-content: center;
-}
-.abstract_research_container {
-  flex-direction: column;
-  justify-content: center;
-}
-.generalization_image {
-  width: 80%;
-  height: 100%;
-  padding-bottom: 6em;
-  padding-top: 2em;
+.paper_object div img {
+  width: 20vw;
 }

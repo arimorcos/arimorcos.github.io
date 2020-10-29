@@ -1046,6 +1046,7 @@ a.multi-link {
 .paper_object div img,
 .paper_object div video {
   object-fit: contain;
+  height: 25em;
   width: 30vw;
   vertical-align: middle;
   display: table-cell;
