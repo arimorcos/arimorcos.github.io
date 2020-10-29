@@ -265,6 +265,20 @@ a.multi-link {
   border-color: #e9711b;
   color: #e9711b;
 }
+.bibtex-button,
+.bibtex-button:focus,
+.bibtex-button:hover,
+.bibtex-button:active {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-color: #377ef0;
+  color: #377ef0;
+  background-color: #f6f6f6;
+  user-select: none;
+}
 .code-link {
   border: 1px solid;
   padding: 3px 6px 2px 6px;
@@ -408,6 +422,12 @@ a.multi-link {
 }
 .cvHeadingInvisible {
   visibility: hidden;
+}
+.bibtex {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  font-family: "Lucida Console", Consolas, monospace;
+  display: none;
 }
 .lastUpdated {
   margin-bottom: 2em;

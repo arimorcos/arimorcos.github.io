@@ -322,6 +322,7 @@ a.multi-link {
 @openReviewLinkColor: #198A28;
 @videoLinkColor: #FF0028;
 @arxivLinkColor: #B11E22;
+@bibtexLinkColor: #377ef0;
 @CurrOpinionColor: #E9711B;
 @pmlrLinkColor: #566592;
 @soonLinkColor: #818387;
@@ -352,6 +353,17 @@ a.multi-link {
   .boxed-link;
   border-color: @CurrOpinionColor;
   color: @CurrOpinionColor;
+}
+
+.bibtex-button,
+.bibtex-button:focus,
+.bibtex-button:hover,
+.bibtex-button:active {
+  .boxed-link;
+  border-color: @bibtexLinkColor;
+  color: @bibtexLinkColor;
+  background-color: @lightBackgroundAndText;
+  user-select: none;
 }
 
 .code-link {
@@ -458,6 +470,13 @@ a.multi-link {
 
 .cvHeadingInvisible {
   visibility: hidden;
+}
+
+.bibtex {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  font-family: "Lucida Console", Consolas, monospace;
+  display: none;
 }
 
 .lastUpdated {

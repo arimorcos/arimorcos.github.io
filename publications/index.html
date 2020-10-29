@@ -48,6 +48,9 @@
     <script type="text/javascript" src="/static/javascript/main.js"></script>
 
     
+    <script type="text/javascript" src="/static/javascript/utils.js"></script>
+
+    
     <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" src='http://w.sharethis.com/button/buttons.js'></script>
     <script type="text/javascript">stLight.options({publisher: "5da51cd4-4e57-428f-9aa9-8b6165d05b3f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
@@ -142,7 +145,11 @@
     </h2>
 
 
-    
+<!--    <div class="date_link_container">-->
+<!--        <h2 class="year_link"><a href="#2018">2018</a></h2>-->
+<!--        <h2 class="year_link"><a href="#2016">2016</a></h2>-->
+<!--        <h2 class="year_link"><a href="#2015">2015</a></h2>-->
+<!--    </div> -->
 
     <h2 class="text-left pub_year" id="2020">2020</h2>
 
@@ -173,7 +180,21 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2010.06682" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#all_negatives_equal')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{cai2020negatives,  <br>
+                      title={Are all negatives created equal in contrastive instance discrimination?}, <br>
+                      author={Tiffany Tianhui Cai and Jonathan Frankle and David J. Schwab and Ari S. Morcos}, <br>
+                      year={2020}, <br>
+                      eprint={2010.06682}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.CV} <br>
+                }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/all_negs_equal_schematic.png" class="pull-right pub-image">
@@ -208,7 +229,21 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2010.02855" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#curi')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{vedantam2020curi, <br>
+                      title={CURI: A Benchmark for Productive Concept Learning Under Uncertainty},  <br>
+                      author={Ramakrishna Vedantam and Arthur Szlam and Maximilian Nickel and Ari Morcos and Brenden Lake}, <br>
+                      year={2020}, <br>
+                      eprint={2010.02855}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.AI} <br>
+                }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/curi_fig1.png" class="pull-right pub-image">
@@ -246,7 +281,21 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2010.12016" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#falsifiable_interp')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{leavitt2020falsifiable, <br>
+                      title={Towards falsifiable interpretability research},  <br>
+                      author={Matthew L. Leavitt and Ari Morcos}, <br>
+                      year={2020}, <br>
+                      eprint={2010.12016}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.CY} <br>
+                }
+            </div>
         </span>
     </div>
 
@@ -287,7 +336,23 @@
                 <a class="multi-link no-underline-hover" href="https://github.com/bbartoldson/GeneralizationStabilityTradeoff" target="_blank">
                     <span class="code-link">Code</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#gen_stability')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @incollection{bartoldson_gen_stability_tradeoff_2020, <br>
+                    title = {The generalization-stability tradeoff in neural network pruning}, <br>
+                    author = {Bartoldson, Brian R and Morcos, Ari S and Barbu, Adrian and Erlebacher Gordon}, <br>
+                    booktitle = {Advances in Neural Information Processing Systems 33}, <br>
+<!--                    editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett}, <br>-->
+<!--                    pages = {4932&#45;&#45;4942}, <br>-->
+                    year = {2020}, <br>
+                    publisher = {Curran Associates, Inc.}, <br>
+<!--                    url = {http://papers.nips.cc/paper/8739-one-ticket-to-win-them-all-generalizing-lottery-ticket-initializations-across-datasets-and-optimizers.pdf} <br>-->
+                    }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/gen_stab.png" class="pull-right pub-image">
@@ -322,7 +387,21 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2010.07693" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#selectivity_robustness')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{leavitt2020linking, <br>
+                      title={Linking average- and worst-case perturbation robustness via class selectivity and dimensionality},  <br>
+                      author={Matthew L. Leavitt and Ari Morcos}, <br>
+                      year={2020}, <br>
+                      eprint={2010.07693}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.LG} <br>
+                }
+            </div>
             <h4 class="text-left medium-offset">
                 <a href="https://ai.facebook.com/blog/easy-to-interpret-neurons-may-hinder-learning-in-deep-neural-networks" target="_blank">
                     Facebook AI Blog: Easy-to-interpret neurons may hinder learning in deep neural networks
@@ -362,7 +441,21 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2003.01262" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#selectivity_harmful')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{leavitt2020selectivity, <br>
+                      title={Selectivity considered harmful: evaluating the causal impact of class selectivity in DNNs},  <br>
+                      author={Matthew L. Leavitt and Ari Morcos}, <br>
+                      year={2020}, <br>
+                      eprint={2003.01262}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.LG} <br>
+                }
+            </div>
             <h4 class="text-left medium-offset">
                 <a href="https://ai.facebook.com/blog/easy-to-interpret-neurons-may-hinder-learning-in-deep-neural-networks" target="_blank">
                     Facebook AI Blog: Easy-to-interpret neurons may hinder learning in deep neural networks
@@ -405,7 +498,21 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2007.11752" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#pareco')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                    @misc{chin2020pareco, <br>
+                          title={PareCO: Pareto-aware Channel Optimization for Slimmable Neural Networks}, <br>
+                          author={Ting-Wu Chin and Ari S. Morcos and Diana Marculescu}, <br>
+                          year={2020}, <br>
+                          eprint={2007.11752}, <br>
+                          archivePrefix={arXiv}, <br>
+                          primaryClass={cs.LG} <br>
+                    }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/pareco.png" class="pull-right pub-image">
@@ -437,7 +544,25 @@
                 <a class="multi-link no-underline-hover" href="https://www.biorxiv.org/content/10.1101/2020.04.03.024133v1.abstract" target="_blank">
                     <span class="arxiv-link">biorXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#correlations_readout')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @article {Valente2020.04.03.024133, <br>
+                    author = {Valente, Martina and Pica, Giuseppe and Runyan, Caroline A. and Morcos, Ari S. and Harvey, Christopher D. and Panzeri, Stefano}, <br>
+                    title = {Correlations enhance the behavioral readout of neural population activity in association cortex}, <br>
+                    elocation-id = {2020.04.03.024133}, <br>
+                    year = {2020}, <br>
+                    doi = {10.1101/2020.04.03.024133}, <br>
+                    publisher = {Cold Spring Harbor Laboratory}, <br>
+<!--                    abstract = {The spatiotemporal structure of activity in populations of neurons is critical for accurate perception and behavior. Experimental and theoretical studies have focused on {\textquotedblleft}noise{\textquotedblright} correlations {\textendash} trial-to-trial covariations in neural activity for a given stimulus {\textendash} as a key feature of population activity structure. Much work has shown that these correlations limit the stimulus information encoded by a population of neurons, leading to the widely-held prediction that correlations are detrimental for perceptual discrimination behaviors. However, this prediction relies on an untested assumption: that the neural mechanisms that read out sensory information to inform behavior depend only on a population{\textquoteright}s total stimulus information independently of how correlations constrain this information across neurons or time. Here we make the critical advance of simultaneously studying how correlations affect both the encoding and the readout of sensory information. We analyzed calcium imaging data from mouse posterior parietal cortex during two perceptual discrimination tasks. Correlations limited the ability to encode stimulus information, but (seemingly paradoxically) correlations were higher when mice made correct choices than when they made errors. On a single-trial basis, a mouse{\textquoteright}s behavioral choice depended not only on the stimulus information in the activity of the population as a whole, but unexpectedly also on the consistency of information across neurons and time. Because correlations increased information consistency, sensory information was more efficiently converted into a behavioral choice in the presence of correlations. Given this enhanced-by-consistency readout, we estimated that correlations produced a behavioral benefit that compensated or overcame their detrimental information-limiting effects. These results call for a re-evaluation of the role of correlated neural activity, and suggest that correlations in association cortex can benefit task performance even if they decrease sensory information.}, <br>-->
+                    URL = {https://www.biorxiv.org/content/early/2020/04/05/2020.04.03.024133}, <br>
+                    eprint = {https://www.biorxiv.org/content/early/2020/04/05/2020.04.03.024133.full.pdf}, <br>
+                    journal = {bioRxiv} <br>
+                }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/valente_2020.png" class="pull-right pub-image">
@@ -476,7 +601,21 @@
                 <a class="multi-link no-underline-hover" href="https://github.com/facebookresearch/open_lth" target="_blank">
                     <span class="code-link">Code</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#only_batch_norm')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{frankle2020training, <br>
+                      title={Training BatchNorm and Only BatchNorm: On the Expressive Power of Random Features in CNNs},  <br>
+                      author={Jonathan Frankle and David J. Schwab and Ari S. Morcos}, <br>
+                      year={2020}, <br>
+                      eprint={2003.00152}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.LG} <br>
+                }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/only_batch_norm.png" class="pull-right pub-image">
@@ -510,7 +649,31 @@
                 <a class="multi-link no-underline-hover" href="https://openreview.net/forum?id=RDWvNBSFphp" target="_blank">
                     <span class="openreview-link">OpenReview</span>
                 </a>
+                <a class="multi-link no-underline-hover" href="http://proceedings.mlr.press/v120/yang20b.html" target="_blank">
+                    <span class="pmlr-link">PMLR</span>
+                </a>
+                <button type="button" onclick="showHideBibtex('#plan2vec')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @InProceedings{yang_plan2vec_l4dc_2020, <br>
+                      title = 	 {Plan2Vec: Unsupervised Representation Learning by Latent Plans}, <br>
+                      author =       {Yang, Ge and Zhang, Amy and Morcos, Ari and Pineau, Joelle and Abbeel, Pieter and Calandra, Roberto}, <br>
+                      pages = 	 {935--946}, <br>
+                      year = 	 {2020}, <br>
+                      editor = 	 {Alexandre M. Bayen and Ali Jadbabaie and George Pappas and Pablo A. Parrilo and Benjamin Recht and Claire Tomlin and Melanie Zeilinger}, <br>
+                      volume = 	 {120}, <br>
+                      series = 	 {Proceedings of Machine Learning Research}, <br>
+                      address = 	 {The Cloud}, <br>
+                      month = 	 {10--11 Jun}, <br>
+                      publisher =    {PMLR}, <br>
+                      pdf = 	 {http://proceedings.mlr.press/v120/yang20b/yang20b.pdf}, <br>
+                      url = 	 {http://proceedings.mlr.press/v120/yang20b.html}, <br>
+                      abstract = 	 {In this paper, we introducePlan2Vec, an model-based method to learn state representation fromsequences of off-policy observation data via planning. In contrast to prior methods, plan2vec doesnot require grounding via expert trajectories or actions, opening it up to many unsupervised learningscenarios. When applied to control, plan2vec learns a representation that amortizes the planningcost, enabling test time planning complexity that is linear in planning depth rather than exhaustiveover the entire state space. We demonstrate the effectiveness of Plan2Vec on one simulated andtwo real-world image datasets, showing that Plan2Vec can effectively acquire representations thatcarry long-range structure to accelerate planning. Additional results and videos can be found athttps://sites.google.com/view/plan2vec} <br>
+                    }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/plan2vec.png" class="pull-right pub-image">
@@ -550,10 +713,21 @@
                 <a class="multi-link no-underline-hover" href="https://github.com/facebookresearch/open_lth" target="_blank">
                     <span class="code-link">Code</span>
                 </a>
-<!--                <a class="multi-link no-underline-hover" href="https://www.youtube.com/watch?v=5PBp_V5i1v4" target="_blank">-->
-<!--                    <span class="video-link">Video</span>-->
-<!--                </a>-->
+                <button type="button" onclick="showHideBibtex('#early_phase')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @inproceedings{ <br>
+                    frankle_early_phase_iclr_2020, <br>
+                    title={The Early Phase of Neural Network Training}, <br>
+                    author={Jonathan Frankle and David J. Schwab and Ari S. Morcos}, <br>
+                    booktitle={International Conference on Learning Representations}, <br>
+                    year={2020}, <br>
+                    url={https://openreview.net/forum?id=Hkl1iRNFwS} <br>
+                    }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/early_phase_timeline.png" class="pull-right pub-image">
@@ -590,7 +764,21 @@
                 <a class="multi-link no-underline-hover" href="https://www.youtube.com/watch?v=oOgbHpjTwwA" target="_blank">
                     <span class="video-link">Talk</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#curi')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @inproceedings{ <br>
+                    yu_lottery_tickets_rl_npl_iclr_2020, <br>
+                    title={Playing the lottery with rewards and multiple languages: lottery tickets in RL and NLP}, <br>
+                    author={Haonan Yu and Sergey Edunov and Yuandong Tian and Ari S. Morcos}, <br>
+                    booktitle={International Conference on Learning Representations}, <br>
+                    year={2020}, <br>
+                    url={https://openreview.net/forum?id=S1xnXRVFwH} <br>
+                    }
+            </div>
             <h4 class="text-left medium-offset">
                 <a href="https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks/" target="_blank">
                     Facebook AI Blog: Understanding the generalization of lottery tickets in neural networks
@@ -638,7 +826,21 @@
                 <a class="multi-link no-underline-hover" href="https://www.youtube.com/watch?v=5PBp_V5i1v4" target="_blank">
                     <span class="video-link">Video</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#dd_ppo')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @inproceedings{ <br>
+                    wijmans_dd_ppo_iclr_2020, <br>
+                    title={DD-PPO: Learning Near-Perfect PointGoal Navigators from 2.5 Billion Frames}, <br>
+                    author={Erik Wijmans and Abhishek Kadian and Ari Morcos and Stefan Lee and Irfan Essa and Devi Parikh and Manolis Savva and Dhruv Batra}, <br>
+                    booktitle={International Conference on Learning Representations}, <br>
+                    year={2020}, <br>
+                    url={https://openreview.net/forum?id=H1gX8C4YPr} <br>
+                    }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/dd_ppo.png" class="pull-right pub-image">
@@ -669,7 +871,21 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2002.11829" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#latent_canon')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{litany2020representation, <br>
+                      title={Representation Learning Through Latent Canonicalizations},  <br>
+                      author={Or Litany and Ari Morcos and Srinath Sridhar and Leonidas Guibas and Judy Hoffman}, <br>
+                      year={2020}, <br>
+                      eprint={2002.11829}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.LG} <br>
+                }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/latent_canon_schematic.png" class="pull-right pub-image">
@@ -700,7 +916,21 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2003.05993" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#pointgoal_cca')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{wijmans2020analyzing, <br>
+                      title={Analyzing Visual Representations in Embodied Navigation Tasks},  <br>
+                      author={Erik Wijmans and Julian Straub and Dhruv Batra and Irfan Essa and Judy Hoffman and Ari Morcos}, <br>
+                      year={2020}, <br>
+                      eprint={2003.05993}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.CV} <br>
+                }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/wijmans_analyzing.png" class="pull-right pub-image">
@@ -731,7 +961,21 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2001.03554" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#lottery_tickets_ssl')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{caron2020pruning, <br>
+                      title={Pruning Convolutional Neural Networks with Self-Supervision}, <br>
+                      author={Mathilde Caron and Ari Morcos and Piotr Bojanowski and Julien Mairal and Armand Joulin}, <br>
+                      year={2020}, <br>
+                      eprint={2001.03554}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.CV} <br>
+                }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/lottery_tickets_ssl.png" class="pull-right pub-image">
@@ -770,7 +1014,23 @@
                 <a class="multi-link no-underline-hover" href="https://www.youtube.com/watch?v=oOgbHpjTwwA" target="_blank">
                     <span class="video-link">Talk</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#one_ticket')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @incollection{morcos_one_ticket_neurips_2019, <br>
+                    title = {One ticket to win them all: generalizing lottery ticket initializations across datasets and optimizers}, <br>
+                    author = {Morcos, Ari and Yu, Haonan and Paganini, Michela and Tian, Yuandong}, <br>
+                    booktitle = {Advances in Neural Information Processing Systems 32}, <br>
+                    editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett}, <br>
+                    pages = {4932--4942}, <br>
+                    year = {2019}, <br>
+                    publisher = {Curran Associates, Inc.}, <br>
+                    url = {http://papers.nips.cc/paper/8739-one-ticket-to-win-them-all-generalizing-lottery-ticket-initializations-across-datasets-and-optimizers.pdf} <br>
+                    }
+            </div>
             <h4 class="text-left medium-offset">
                 <a href="https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks/" target="_blank">
                     Facebook AI Blog: Understanding the generalization of lottery tickets in neural networks
@@ -813,7 +1073,21 @@
                 <a class="multi-link no-underline-hover" href="../static/posters/luckmatters_workshop_poster.pdf" target="_blank">
                     <span class="poster-link">Poster</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#luck_matters')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{tian2019luck, <br>
+                      title={Luck Matters: Understanding Training Dynamics of Deep ReLU Networks},  <br>
+                      author={Yuandong Tian and Tina Jiang and Qucheng Gong and Ari Morcos}, <br>
+                      year={2019}, <br>
+                      eprint={1905.13405}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.LG} <br>
+                }
+            </div>
             <h4 class="text-left medium-offset">
                 <a href="https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks/" target="_blank">
                     Facebook AI Blog: Understanding the generalization of lottery tickets in neural networks
@@ -855,7 +1129,21 @@
                 <a class="multi-link no-underline-hover" href="https://openreview.net/forum?id=SylLYsCcFm" target="_blank">
                     <span class="openreview-link">OpenReview</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#labc')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @inproceedings{ <br>
+                    hill2018learning, <br>
+                    title={Learning to Make Analogies by Contrasting Abstract Relational Structure}, <br>
+                    author={Felix Hill and Adam Santoro and David Barrett and Ari Morcos and Timothy Lillicrap}, <br>
+                    booktitle={International Conference on Learning Representations}, <br>
+                    year={2019}, <br>
+                    url={https://openreview.net/forum?id=SylLYsCcFm}, <br>
+                }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/labc.png" class="pull-right pub-image">
@@ -893,7 +1181,27 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/1810.13373" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#synergy')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @article{barrett_morcos_curr_opinion_2019, <br>
+                    title = "Analyzing biological and artificial neural networks: challenges with opportunities for synergy?", <br>
+                    journal = "Current Opinion in Neurobiology", <br>
+                    volume = "55", <br>
+                    pages = "55 - 64", <br>
+                    year = "2019", <br>
+                    note = "Machine Learning, Big Data, and Neuroscience", <br>
+                    issn = "0959-4388", <br>
+                    doi = "https://doi.org/10.1016/j.conb.2019.01.007", <br>
+                    url = "http://www.sciencedirect.com/science/article/pii/S0959438818301569", <br>
+                    author = "David GT Barrett and Ari S Morcos and Jakob H Macke", <br>
+                    abstract = "Deep neural networks (DNNs) transform stimuli across multiple processing stages to produce representations that can be used to solve complex tasks, such as object recognition in images. However, a full understanding of how they achieve this remains elusive. The complexity of biological neural networks substantially exceeds the complexity of DNNs, making it even more challenging to understand the representations they learn. Thus, both machine learning and computational neuroscience are faced with a shared challenge: how can we analyze their representations in order to understand how they solve complex tasks? We review how data-analysis concepts and techniques developed by computational neuroscientists can be useful for analyzing representations in DNNs, and in turn, how recently developed techniques for analysis of DNNs can be useful for understanding representations in biological neural networks. We explore opportunities for synergy between the two fields, such as the use of DNNs as in silico model systems for neuroscience, and how this synergy can lead to new hypotheses about the operating principles of biological neural networks." <br>
+                }
+
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/synergy.png" class="pull-right pub-image">
@@ -938,7 +1246,23 @@
                 <a class="multi-link no-underline-hover" href="https://github.com/google/svcca" target="_blank">
                     <span class="code-link">Code</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#representational_similarity')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @incollection{morcos_raghu_cca_neurips_2018, <br>
+                    title = {Insights on representational similarity in neural networks with canonical correlation}, <br>
+                    author = {Morcos, Ari and Raghu, Maithra and Bengio, Samy}, <br>
+                    booktitle = {Advances in Neural Information Processing Systems 31}, <br>
+                    editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett}, <br>
+                    pages = {5727--5736}, <br>
+                    year = {2018}, <br>
+                    publisher = {Curran Associates, Inc.}, <br>
+                    url = {http://papers.nips.cc/paper/7815-insights-on-representational-similarity-in-neural-networks-with-canonical-correlation.pdf} <br>
+                }
+            </div>
             <h4 class="text-left medium-offset">
                 <a href="https://ai.googleblog.com/2018/06/how-can-neural-network-similarity-help.html" target="_blank">
                     Google AI Blog: How Can Neural Network Similarity Help Us Understand Training and Generalization?
@@ -980,7 +1304,29 @@
                 <a class="multi-link no-underline-hover" href="https://science.sciencemag.org/content/364/6443/859.abstract" target="_blank">
                     <span class="science-link">Science</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#ctf')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @article {jaderberg_ctf_science_2018, <br>
+                    author = {Jaderberg, Max and Czarnecki, Wojciech M. and Dunning, Iain and Marris, Luke and Lever, Guy and Casta{\~n}eda, Antonio Garcia and Beattie, Charles and Rabinowitz, Neil C. and Morcos, Ari S. and Ruderman, Avraham and Sonnerat, Nicolas and Green, Tim and Deason, Louise and Leibo, Joel Z. and Silver, David and Hassabis, Demis and Kavukcuoglu, Koray and Graepel, Thore}, <br>
+                    title = {Human-level performance in 3D multiplayer games with population-based reinforcement learning}, <br>
+                    volume = {364}, <br>
+                    number = {6443}, <br>
+                    pages = {859--865}, <br>
+                    year = {2019}, <br>
+                    doi = {10.1126/science.aau6249}, <br>
+                    publisher = {American Association for the Advancement of Science}, <br>
+                    abstract = {Artificially intelligent agents are getting better and better at two-player games, but most real-world endeavors require teamwork. Jaderberg et al. designed a computer program that excels at playing the video game Quake III Arena in Capture the Flag mode, where two multiplayer teams compete in capturing the flags of the opposing team. The agents were trained by playing thousands of games, gradually learning successful strategies not unlike those favored by their human counterparts. Computer agents competed successfully against humans even when their reaction times were slowed to match those of humans.Science, this issue p. 859Reinforcement learning (RL) has shown great success in increasingly complex single-agent environments and two-player turn-based games. However, the real world contains multiple agents, each learning and acting independently to cooperate and compete with other agents. We used a tournament-style evaluation to demonstrate that an agent can achieve human-level performance in a three-dimensional multiplayer first-person video game, Quake III Arena in Capture the Flag mode, using only pixels and game points scored as input. We used a two-tier optimization process in which a population of independent RL agents are trained concurrently from thousands of parallel matches on randomly generated environments. Each agent learns its own internal reward signal and rich representation of the world. These results indicate the great potential of multiagent reinforcement learning for artificial intelligence research.}, <br>
+                    issn = {0036-8075}, <br>
+                    URL = {https://science.sciencemag.org/content/364/6443/859}, <br>
+                    eprint = {https://science.sciencemag.org/content/364/6443/859.full.pdf}, <br>
+                    journal = {Science} <br>
+                }
+
+            </div>
             <h4 class="text-left medium-offset">
                 <a href="https://deepmind.com/blog/capture-the-flag/" target="_blank">
                     DeepMind Blog: Capture the Flag: the emergence of complex cooperative agents
@@ -1051,7 +1397,29 @@
                 <a class="multi-link no-underline-hover" href="http://science.sciencemag.org/content/360/6394/1204" target="_blank">
                     <span class="science-link">Science</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#gqn')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @article {Eslami1204, <br>
+                    author = {Eslami, S. M. Ali and Jimenez Rezende, Danilo and Besse, Frederic and Viola, Fabio and Morcos, Ari S. and Garnelo, Marta and Ruderman, Avraham and Rusu, Andrei A. and Danihelka, Ivo and Gregor, Karol and Reichert, David P. and Buesing, Lars and Weber, Theophane and Vinyals, Oriol and Rosenbaum, Dan and Rabinowitz, Neil and King, Helen and Hillier, Chloe and Botvinick, Matt and Wierstra, Daan and Kavukcuoglu, Koray and Hassabis, Demis}, <br>
+                    title = {Neural scene representation and rendering}, <br>
+                    volume = {360}, <br>
+                    number = {6394}, <br>
+                    pages = {1204--1210}, <br>
+                    year = {2018}, <br>
+                    doi = {10.1126/science.aar6170}, <br>
+                    publisher = {American Association for the Advancement of Science}, <br>
+                    abstract = {To train a computer to {\textquotedblleft}recognize{\textquotedblright} elements of a scene supplied by its visual sensors, computer scientists typically use millions of images painstakingly labeled by humans. Eslami et al. developed an artificial vision system, dubbed the Generative Query Network (GQN), that has no need for such labeled data. Instead, the GQN first uses images taken from different viewpoints and creates an abstract description of the scene, learning its essentials. Next, on the basis of this representation, the network predicts what the scene would look like from a new, arbitrary viewpoint.Science, this issue p. 1204Scene representation{\textemdash}the process of converting visual sensory data into concise descriptions{\textemdash}is a requirement for intelligent behavior. Recent work has shown that neural networks excel at this task when provided with large, labeled datasets. However, removing the reliance on human labeling remains an important open problem. To this end, we introduce the Generative Query Network (GQN), a framework within which machines learn to represent scenes using only their own sensors. The GQN takes as input images of a scene taken from different viewpoints, constructs an internal representation, and uses this representation to predict the appearance of that scene from previously unobserved viewpoints. The GQN demonstrates representation learning without human labels or domain knowledge, paving the way toward machines that autonomously learn to understand the world around them.}, <br>
+                    issn = {0036-8075}, <br>
+                    URL = {https://science.sciencemag.org/content/360/6394/1204}, <br>
+                    eprint = {https://science.sciencemag.org/content/360/6394/1204.full.pdf}, <br>
+                    journal = {Science} <br>
+                }
+
+            </div>
             <h4 class="text-left medium-offset">
                 <a href="https://deepmind.com/blog/neural-scene-representation-and-rendering/" target="_blank">
                     DeepMind Blog: Neural scene representation and rendering
@@ -1161,7 +1529,29 @@
                 <a class="multi-link no-underline-hover" href="/static/posters/abstract_reasoning_poster_icml_2018.pdf" target="_blank">
                     <span class="poster-link">Poster</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#abstract_reasoning')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @InProceedings{barrett_abstract_reasoning_icml_2018, <br>
+                      title = 	 {Measuring abstract reasoning in neural networks}, <br>
+                      author =       {Barrett, David and Hill, Felix and Santoro, Adam and Morcos, Ari and Lillicrap, Timothy}, <br>
+                      pages = 	 {511--520}, <br>
+                      year = 	 {2018}, <br>
+                      editor = 	 {Jennifer Dy and Andreas Krause}, <br>
+                      volume = 	 {80}, <br>
+                      series = 	 {Proceedings of Machine Learning Research}, <br>
+                      address = 	 {Stockholmsmässan, Stockholm Sweden}, <br>
+                      month = 	 {10--15 Jul}, <br>
+                      publisher =    {PMLR}, <br>
+                      pdf = 	 {http://proceedings.mlr.press/v80/barrett18a/barrett18a.pdf}, <br>
+                      url = 	 {http://proceedings.mlr.press/v80/barrett18a.html}, <br>
+                      abstract = 	 {Whether neural networks can learn abstract reasoning or whether they merely rely on superficial statistics is a topic of recent debate. Here, we propose a dataset and challenge designed to probe abstract reasoning, inspired by a well-known human IQ test. To succeed at this challenge, models must cope with various generalisation ’regimes’ in which the training data and test questions differ in clearly-defined ways. We show that popular models such as ResNets perform poorly, even when the training and test sets differ only minimally, and we present a novel architecture, with structure designed to encourage reasoning, that does significantly better. When we vary the way in which the test questions and training data differ, we find that our model is notably proficient at certain forms of generalisation, but notably weak at others. We further show that the model’s ability to generalise improves markedly if it is trained to predict symbolic explanations for its answers. Altogether, we introduce and explore ways to both measure and induce stronger abstract reasoning in neural networks. Our freely-available dataset should motivate further progress in this direction.} <br>
+                    }
+
+            </div>
             <h4 class="text-left medium-offset">
                 <a href="https://deepmind.com/blog/measuring-abstract-reasoning/" target="_blank">
                     DeepMind Blog: Measuring abstract reasoning in neural networks
@@ -1214,7 +1604,21 @@
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/1804.04438" target="_blank">
                     <span class="arxiv-link">arXiv</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#deformation_stability')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{ruderman2018pooling,<br>
+                      title={Pooling is neither necessary nor sufficient for appropriate deformation stability in CNNs}, <br>
+                      author={Avraham Ruderman and Neil C. Rabinowitz and Ari S. Morcos and Daniel Zoran},<br>
+                      year={2018},<br>
+                      eprint={1804.04438},<br>
+                      archivePrefix={arXiv},<br>
+                      primaryClass={cs.CV}<br>
+                }
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/deformation_sensitivity_transparent.png" class="pull-right pub-image">
@@ -1222,7 +1626,7 @@
         
     </div>
 
-    
+<!--    -->
 
     <div class="paper_object" id="single_directions">
 
@@ -1257,7 +1661,21 @@
                 <a class="multi-link no-underline-hover" href="/static/posters/single_directions_generalization_poster_iclr.pdf" target="_blank">
                     <span class="poster-link">Poster</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#single_directions')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @inproceedings{ <br>
+                    morcos_single_directions_iclr_2018, <br>
+                    title={On the importance of single directions for generalization}, <br>
+                    author={Ari S. Morcos and David G.T. Barrett and Neil C. Rabinowitz and Matthew Botvinick}, <br>
+                    booktitle={International Conference on Learning Representations}, <br>
+                    year={2018}, <br>
+                    url={https://openreview.net/forum?id=r1iuQjxCZ}, <br>
+                }
+            </div>
             <h4 class="text-left medium-offset">
                 <a href="https://deepmind.com/blog/understanding-deep-learning-through-neuron-deletion/" target="_blank">
                     DeepMind Blog: Understanding deep learning through neuron deletion
@@ -1310,7 +1728,23 @@
                 <a class="multi-link no-underline-hover" href="http://www.nature.com/neuro/journal/v19/n12/full/nn.4403.html" target="_blank">
                     <span class="natureneuro-link">Nature Neuroscience</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#history_dependent_variability')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @article{morcos2016history, <br>
+                      title={History-dependent variability in population dynamics during evidence accumulation in cortex}, <br>
+                      author={Morcos, Ari S and Harvey, Christopher D}, <br>
+                      journal={Nature neuroscience}, <br>
+                      volume={19}, <br>
+                      number={12}, <br>
+                      pages={1672--1681}, <br>
+                      year={2016}, <br>
+                      publisher={Nature Publishing Group} <br>
+                    }
+            </div>
             <h5 class="text-left">
                 <a class="multi-link" href="https://hms.harvard.edu/news/maze-runners" target="_blank">
                     <span>Harvard Medical School Press Release</span>
@@ -1367,7 +1801,29 @@
                 <a class="multi-link no-underline-hover" href="http://www.jneurosci.org/content/35/44/14872.short" target="_blank">
                     <span class="jneuro-link">Journal of Neuroscience</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#curi')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @article {Kim14872, <br>
+                    author = {Kim, Hyung Joon and Denli, Ahmet M. and Wright, Rebecca and Baul, Tithi D. and Clemenson, Gregory D. and Morcos, Ari S. and Zhao, Chunmei and Schafer, Simon T. and Gage, Fred H. and Kagalwala, Mohamedi N.}, <br>
+                    title = {REST Regulates Non{\textendash}Cell-Autonomous Neuronal Differentiation and Maturation of Neural Progenitor Cells via Secretogranin II}, <br>
+                    volume = {35}, <br>
+                    number = {44}, <br>
+                    pages = {14872--14884}, <br>
+                    year = {2015}, <br>
+                    doi = {10.1523/JNEUROSCI.4286-14.2015}, <br>
+                    publisher = {Society for Neuroscience}, <br>
+                    abstract = {RE-1 silencing transcription factor (REST), a master negative regulator of neuronal differentiation, controls neurogenesis by preventing the differentiation of neural stem cells. Here we focused on the role of REST in the early steps of differentiation and maturation of adult hippocampal progenitors (AHPs). REST knockdown promoted differentiation and affected the maturation of rat AHPs. Surprisingly, REST knockdown cells enhanced the differentiation of neighboring wild-type AHPs, suggesting that REST may play a non{\textendash}cell-autonomous role. Gene expression analysis identified Secretogranin II (Scg2) as the major secreted REST target responsible for the non{\textendash}cell-autonomous phenotype. Loss-of-function of Scg2 inhibited differentiation in vitro, and exogenous SCG2 partially rescued this phenotype. Knockdown of REST in neural progenitors in mice led to precocious maturation into neurons at the expense of mushroom spines in vivo. In summary, we found that, in addition to its cell-autonomous function, REST regulates differentiation and maturation of AHPs non{\textendash}cell-autonomously via SCG2.SIGNIFICANCE STATEMENT Our results reveal that REST regulates differentiation and maturation of neural progenitor cells in vitro by orchestrating both cell-intrinsic and non{\textendash}cell-autonomous factors and that Scg2 is a major secretory target of REST with a differentiation-enhancing activity in a paracrine manner. In vivo, REST depletion causes accelerated differentiation of newborn neurons at the expense of spine defects, suggesting a potential role for REST in the timing of the maturation of granule neurons.}, <br>
+                    issn = {0270-6474}, <br>
+                    URL = {https://www.jneurosci.org/content/35/44/14872}, <br>
+                    eprint = {https://www.jneurosci.org/content/35/44/14872.full.pdf}, <br>
+                    journal = {Journal of Neuroscience} <br>
+                }
+
+            </div>
         </span>
         <div>
             <img src="/static/images/publication_images/rest_image.png" class="pull-right pub-image">
@@ -1463,7 +1919,21 @@
                 <a class="multi-link no-underline-hover" href="/static/pdfs/MORCOS-DISSERTATION-2016.pdf" target="_blank">
                     <span class="pdf-link">PDF</span>
                 </a>
+                <button type="button" onclick="showHideBibtex('#curi')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+
             </h5>
+            <div class="bibtex">
+                @misc{vedantam2020curi, <br>
+                      title={CURI: A Benchmark for Productive Concept Learning Under Uncertainty},  <br>
+                      author={Ramakrishna Vedantam and Arthur Szlam and Maximilian Nickel and Ari Morcos and Brenden Lake}, <br>
+                      year={2020}, <br>
+                      eprint={2010.02855}, <br>
+                      archivePrefix={arXiv}, <br>
+                      primaryClass={cs.AI} <br>
+                }
+            </div>
         </span>
     </div>
 
