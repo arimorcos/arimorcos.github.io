@@ -1,9 +1,9 @@
 /* Main page background */
 html,
 body {
-  background-color: #2B2B2B;
+  background-color: #2b2b2b;
   font-family: "Open Sans", sans-serif;
-  color: #2B2B2B;
+  color: #2b2b2b;
   height: 100%;
 }
 html p,
@@ -15,20 +15,20 @@ body p {
 }
 .tooltipster-sidetip.tooltipster-default .tooltipster-box {
   border-radius: 5px;
-  border: 6px solid #4F78D1;
-  background: #F6F6F6;
+  border: 6px solid #4f78d1;
+  background: #f6f6f6;
 }
 .tooltipster-sidetip.tooltipster-default .tooltipster-arrow-border {
-  border-top-color: #4F78D1;
+  border-top-color: #4f78d1;
 }
 .tooltipster-sidetip.tooltipster-default .tooltipster-arrow-background {
-  border-top-color: #4F78D1;
+  border-top-color: #4f78d1;
 }
 /* Use this next selector to style things like font-size and line-height: */
 .tooltipster-sidetip.tooltipster-default .tooltipster-content {
   font-family: "Abel", sans-serif;
   font-size: 18px;
-  color: #2B2B2B;
+  color: #2b2b2b;
   line-height: 20px;
   padding: 8px 10px;
   overflow: hidden;
@@ -70,7 +70,7 @@ body p {
   font-size: 3em;
 }
 .line {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   height: 5px;
   margin-top: 0.5em;
   margin-bottom: 1em;
@@ -80,7 +80,7 @@ body p {
   display: block;
 }
 .contentCard {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 2em;
   margin-bottom: 1em;
 }
@@ -89,7 +89,7 @@ body p {
   text-align: center;
 }
 .nameHeader h1 {
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-size: 5em;
   font-weight: bolder;
   text-shadow: 0.03em 0.03em #505050;
@@ -108,7 +108,7 @@ body p {
 .navIcon a {
   display: inline-block;
   border-radius: 20%;
-  border: 5px solid #F6F6F6;
+  border: 5px solid #f6f6f6;
   padding: 10px;
   width: 80px;
   height: 80px;
@@ -175,16 +175,16 @@ body p {
 }
 /* Current Section */
 .currSection {
-  background-color: #4F78D1;
+  background-color: #4f78d1;
   margin-bottom: 1em;
 }
 .currSection h2 {
-  color: #F6F6F6;
+  color: #f6f6f6;
   margin-top: 1px;
   margin-bottom: 0;
 }
 .currSection h3 {
-  color: #F6F6F6;
+  color: #f6f6f6;
   margin-bottom: 4px;
   margin-top: 0;
 }
@@ -244,8 +244,17 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  border-color: #D20921;
-  color: #D20921;
+  border-color: #d20921;
+  color: #d20921;
+}
+.video-link {
+  border: 1px solid;
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-color: #ff0028;
+  color: #ff0028;
 }
 .curr-opinion-link {
   border: 1px solid;
@@ -253,8 +262,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  border-color: #E9711B;
-  color: #E9711B;
+  border-color: #e9711b;
+  color: #e9711b;
 }
 .code-link {
   border: 1px solid;
@@ -262,8 +271,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  border-color: #43E0BB;
-  color: #43E0BB;
+  border-color: #43e0bb;
+  color: #43e0bb;
 }
 .neurips-link {
   border: 1px solid;
@@ -271,8 +280,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  border-color: #E24E30;
-  color: #E24E30;
+  border-color: #e24e30;
+  color: #e24e30;
 }
 .github-link {
   border: 1px solid;
@@ -280,8 +289,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  border-color: #8051C9;
-  color: #8051C9;
+  border-color: #8051c9;
+  color: #8051c9;
 }
 .pmlr-link {
   border: 1px solid;
@@ -298,8 +307,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  border-color: #B000D3;
-  color: #B000D3;
+  border-color: #b000d3;
+  color: #b000d3;
 }
 .soon-link {
   border: 1px solid;
@@ -316,8 +325,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  border-color: #7316AA;
-  color: #7316AA;
+  border-color: #7316aa;
+  color: #7316aa;
 }
 .natureneuro-link {
   border: 1px solid;
@@ -325,8 +334,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: #187D7B;
-  border-color: #187D7B;
+  color: #187d7b;
+  border-color: #187d7b;
 }
 .cosyne-link {
   border: 1px solid;
@@ -334,8 +343,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: #8B0E49;
-  border-color: #8B0E49;
+  color: #8b0e49;
+  border-color: #8b0e49;
 }
 .abstract-link {
   border: 1px solid;
@@ -343,8 +352,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: #3959A1;
-  border-color: #3959A1;
+  color: #3959a1;
+  border-color: #3959a1;
 }
 .poster-link {
   border: 1px solid;
@@ -352,8 +361,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: #E63E8F;
-  border-color: #E63E8F;
+  color: #e63e8f;
+  border-color: #e63e8f;
 }
 .jneuro-link {
   border: 1px solid;
@@ -361,8 +370,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: #154C7B;
-  border-color: #154C7B;
+  color: #154c7b;
+  border-color: #154c7b;
 }
 .openreview-link {
   border: 1px solid;
@@ -370,8 +379,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: #198A28;
-  border-color: #198A28;
+  color: #198a28;
+  border-color: #198a28;
 }
 .arxiv-link {
   border: 1px solid;
@@ -379,8 +388,8 @@ a.multi-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: #B11E22;
-  border-color: #B11E22;
+  color: #b11e22;
+  border-color: #b11e22;
 }
 .flex-center {
   display: flex;
@@ -633,7 +642,7 @@ a.multi-link {
 }
 .socialLinks a:hover {
   font-weight: bolder;
-  text-shadow: -0.1em 0.1em 0.5em darkgray;
+  text-shadow: -0.1em 0.1em 0.5em #a9a9a9;
   background-color: inherit;
   text-decoration: none;
 }
@@ -643,8 +652,8 @@ a.multi-link {
   height: 5em;
 }
 .siteFooter {
-  color: #F6F6F6;
-  background-color: #4F78D1;
+  color: #f6f6f6;
+  background-color: #4f78d1;
   padding-top: 2em;
   font-size: 1em;
 }

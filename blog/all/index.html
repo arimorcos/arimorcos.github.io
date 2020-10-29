@@ -188,8 +188,8 @@
 <p>Furthermore, these analyses don't even get into the really interesting stuff one can do with search data given the histories of large quantities of users. Applying machine learning tools to these data to make inferences about users must have incredible power, and perhaps justifies the <a href="http://www.computerweekly.com/news/2240228286/The-Digital-CIO-Fear-of-Google-and-the-ethics-of-digital-business">growing</a> <a href="http://www.cnet.com/news/people-trust-nsa-more-than-google-survey-says/">tide of</a> <a href="http://www.imore.com/anticipation-google-worse-google-itself">Google-phobia</a>. That said, these data also have tremendous power to make our lives easier. I appreciate that my searches are more likely to return what I'm looking for because Google "knows" me. Ultimately, it's up to each of us individually to decide how much we're willing to give away in exchange for convenience. </p>
 <p>You may have noticed that this post is titled Part I. That's because I have several more ideas for analyses on this dataset. How often do I search for the same thing more than once and how much time passes in between? How do my queries evolve when I'm having trouble finding what I want? Expect a Part II with these analyses shortly! </p>
 <p>&nbsp;</p>
-<p>You can check out the iPython notebook used to perform these analyses <a href="http://nbviewer.ipython.org/github/arimorcos/blog_analyses/blob/master/Google%20Searches/Mining%20google%20searches.ipynb">here</a>.
-<div id="breakEnd"></div></p>
+<p>You can check out the iPython notebook used to perform these analyses <a href="http://nbviewer.ipython.org/github/arimorcos/blog_analyses/blob/master/Google%20Searches/Mining%20google%20searches.ipynb">here</a>.</p>
+<div id="breakEnd"></div>
                             </p>
                         </div>
 
@@ -502,37 +502,32 @@
 <h2>PRAW/Reddit API Basics</h2>
 <p>This isn't intended as a tutorial for PRAW. If you want that, I recommend visiting their <a href="https://praw.readthedocs.org/en/v2.1.20/" title="PRAW documentation">docs</a>. This section will only go through the fundamentals of PRAW necessary to create a data set from reddit. </p>
 <p>First, let's import praw and the redditDataset module</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">praw</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">praw</span>
 <span class="kn">import</span> <span class="nn">redditDataset</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Next, let's initialize a connection with PRAW as follows: </p>
-<div class="codehilite"><pre><span></span>redditObject = praw.Reddit(user_agent=&#39;get_reddit_dataset&#39;)
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="err">redditObject = praw.Reddit(user_agent=&#39;get_reddit_dataset&#39;)</span>
+</code></pre></div>
 
 <p>We can grab subreddits using <code>getSubreddits</code>. Here, we'll grab /r/funny and /r/gaming</p>
-<div class="codehilite"><pre><span></span>subreddits = redditDataset.getSubreddits(redditObject, [&#39;funny&#39;, &#39;gaming&#39;])
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="err">subreddits = redditDataset.getSubreddits(redditObject, [&#39;funny&#39;, &#39;gaming&#39;])</span>
+</code></pre></div>
 
 <p>PRAW also has a variety of functions to grab subreddits. One of the most useful is the method <code>get_popular_subreddits</code>.</p>
-<div class="codehilite"><pre><span></span>popularSubreddits = redditObject.get_popular_subreddits(limit=200)
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="err">popularSubreddits = redditObject.get_popular_subreddits(limit=200)</span>
+</code></pre></div>
 
 <p>This will return a generator containing the 200 most popular subreddits. PRAW has many other methods to grab specific submissions, comments, users, etc., but these are the only ones you'll need to know to use the module. </p>
 <p>Now that we have a reddit object and the subreddits to query, let's make a data set. </p>
 <h2>Grabbing a data set from a set of subreddits</h2>
 <p>Once you have a generator or list of subreddit objects and your praw object, call <code>createDataset</code> to start downloading comments and posts into a sqlite3 database. The database will be saved in <code>~\Databases\&lt;dbName&gt;db</code>.</p>
 <p>Let's grab all the posts from the funny subreddit from March 1, 2015: </p>
-<div class="codehilite"><pre><span></span>funnySubreddit = redditDataset.getSubreddits(redditObject, [&#39;funny&#39;])
-redditDataset.createDataset(redditObject, funnySubreddit, startDate=&#39;150301000000&#39;
-                            endDate=&#39;150301235959&#39;, dbName=&#39;March_01_2015_funny_posts&#39;
-                            fineScale=4)
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="err">funnySubreddit = redditDataset.getSubreddits(redditObject, [&#39;funny&#39;])</span>
+<span class="err">redditDataset.createDataset(redditObject, funnySubreddit, startDate=&#39;150301000000&#39;</span>
+<span class="err">                            endDate=&#39;150301235959&#39;, dbName=&#39;March_01_2015_funny_posts&#39;</span>
+<span class="err">                            fineScale=4)</span>
+</code></pre></div>
 
 <p>Basically, you give <code>createDataset</code> the reddit object, the subreddits (in list or generator form), a start and end date, a base name for the database, and a fine scale (which I'll get to in a moment). </p>
 <p>For the start and end date, provide a string in the format 'yymmddHHMMSS'. So, in the above example, we're pulling posts between March 1, 2015 at 12:00:00 AM and March 1, 2015 at 11:59:59 PM. </p>

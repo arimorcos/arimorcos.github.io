@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+flask = "*"
+flask-flatpages = "*"
+frozen-flask = "*"
+jinja2 = "*"
+markdown = "*"
+markupsafe = "*"
+pyyaml = "*"
+pygments = "*"
+itsdangerous = "*"
+werkzeug = "*"
+gunicorn = "*"
+mistune = "*"
+beautifulsoup4 = "*"
+lxml = "*"
+
+[requires]
+python_version = "3.9"
