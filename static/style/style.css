@@ -435,6 +435,7 @@ button.multi-link {
 .lastUpdated {
   margin-bottom: 2em;
   padding-left: 0 !important;
+  margin-left: -1.5em;
 }
 .paper_object {
   /*height: 500px;*/
