@@ -463,7 +463,7 @@ button.multi-link {
 }
 .generalization_image {
   object-fit: contain;
-  width: 30vmax;
+  height: 30em;
   vertical-align: middle;
   display: table-cell;
 }
