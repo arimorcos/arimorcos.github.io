@@ -131,5 +131,4 @@ crashlytics-build.properties
 [Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
-
-
+/version/*
