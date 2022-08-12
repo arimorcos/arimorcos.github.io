@@ -1,9 +1,12 @@
 function showHideBibtex(curr_paper) {
     let bibtex_element = document.querySelector(curr_paper.concat("> span > div.bibtex"))
+    let bibtex_button = document.querySelector(curr_paper.concat("> span > h5 > button"))
     if (bibtex_element.style.display === "") {
         bibtex_element.style.display = "block"
+        bibtex_button.textContent = "\n                    Hide Bibtex\n"
     } else {
         bibtex_element.style.display = ""
+        bibtex_button.textContent = "\n                    Show Bibtex\n"
     }
 }
 
