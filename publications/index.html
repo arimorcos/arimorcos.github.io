@@ -141,7 +141,7 @@ Publications
 
     </div>
     <h2 class="lastUpdated text-center">
-        Last updated: September 2022
+        Last updated: November 2022
     </h2>
 
 
@@ -152,7 +152,6 @@ Publications
     <!--    </div> -->
 
     <h2 class="text-left pub_year" id="2022">2022</h2>
-    
 
     <div class="paper_object" id="beyond_neural_scaling">
 
@@ -176,7 +175,8 @@ Publications
                 <sup>&#167;</sup>joint senior authors
             </h5>
             <h5 class="text-left mini-top-padding">
-                <i>Neural Information Processing Systems (NeurIPS)</i>, 2022.
+                <i>Neural Information Processing Systems (NeurIPS)</i> <b>Oral</b>, 2022. <br>
+                <i><b><a href="https://neurips.cc/virtual/2022/awards_detail" target="_blank">Outstanding Paper Award</a></b></i>
             </h5>
             <h5 class="text-left flex-center">
                 <a class="multi-link no-underline-hover" href="/static/pdfs/sorscher_2022.pdf" target="_blank">
@@ -184,6 +184,9 @@ Publications
                 </a>
                 <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2206.14486" target="_blank">
                     <span class="arxiv-link">arXiv</span>
+                </a>
+                <a class="multi-link no-underline-hover" href="https://openreview.net/forum?id=UmvSlP-PyV" target="_blank">
+                    <span class="neurips-link">NeurIPS</span>
                 </a>
                 <button type="button" onclick="showHideBibtex('#beyond_neural_scaling')" class="multi-link no-underline-hover bibtex-button">
                     <span >Show Bibtex</span>
@@ -193,19 +196,73 @@ Publications
                 </button>
             </h5>
             <div class="bibtex">
-                @misc{sorscher_data_pruning_2022, <br>
-                    doi = {10.48550/ARXIV.2206.14486}, <br>
-                    url = {https://arxiv.org/abs/2206.14486}, <br>
-                    author = {Sorscher, Ben and Geirhos, Robert and Shekhar, Shashank and Ganguli, Surya and Morcos, Ari S.}, <br>
-                    keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences}, <br>
-                    title = {Beyond neural scaling laws: beating power law scaling via data pruning}, <br>
-                    publisher = {arXiv}, <br>
-                    year = {2022} <br>
-                  } <br>
+                @inproceedings{ <br>
+                    sorscher2022beyond,<br>
+                    title={Beyond neural scaling laws: beating power law scaling via data pruning},<br>
+                    author={Ben Sorscher and Robert Geirhos and Shashank Shekhar and Surya Ganguli and Ari S. Morcos},<br>
+                    booktitle={Advances in Neural Information Processing Systems},<br>
+                    editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},<br>
+                    year={2022},<br>
+                    url={https://openreview.net/forum?id=UmvSlP-PyV}<br>
+                    }<br>
             </div>
         </span>
         <div>
             <img src="/static/images/publication_images/data_pruning.png" class="pull-right pub-image">
+        </div>
+
+    </div>
+
+    <div class="paper_object" id="lofi">
+
+        <span class="nopadding">
+            <h3 class="text-left">
+                <b>
+                    <a href="https://arxiv.org/abs/2210.11948" target="_blank">
+                        lo-fi: distributed fine-tuning without communication
+                    </a>
+                </b>
+            </h3>
+            <h5 class="text-left">
+                <a href="https://mitchellnw.github.io/" target="_blank">Mitchell Wortsman</a>, 
+                <a href="https://suchin.io/" target="_blank">Suchin Gururangan</a>, 
+                <a href="https://mrshenli.github.io/" target="_blank">Shen Li</a>, 
+                <a href="https://homes.cs.washington.edu/~ali/" target="_blank">Ali Farhadi</a>,
+                <a href="https://people.csail.mit.edu/ludwigs/" target="_blank">Ludwig Schmidt</a>,
+                <a href="https://ai.facebook.com/people/michael-rabbat" target="_blank">Michael Rabbat</a>, 
+                and <b>Ari S Morcos</b> 
+            </h5>
+            <h5 class="text-left mini-top-padding">
+                <i>arXiv</i>, 2022.
+            </h5>
+            <h5 class="text-left flex-center">
+                <a class="multi-link no-underline-hover" href="/static/pdfs/wortsman_lofi.pdf" target="_blank">
+                    <span class="pdf-link">PDF</span>
+                </a>
+                <a class="multi-link no-underline-hover" href="https://arxiv.org/abs/2210.11948" target="_blank">
+                    <span class="arxiv-link">arXiv</span>
+                </a>
+                <button type="button" onclick="showHideBibtex('#lofi')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Show Bibtex</span>
+                </button>
+                <button type="button" onclick="copyBibtex('#lofi')" class="multi-link no-underline-hover bibtex-button">
+                    <span >Copy Bibtex</span>
+                </button>
+            </h5>
+            <div class="bibtex">
+                @misc{https://doi.org/10.48550/arxiv.2210.11948, <br>
+                    doi = {10.48550/ARXIV.2210.11948},<br>
+                    url = {https://arxiv.org/abs/2210.11948},<br>
+                    author = {Wortsman, Mitchell and Gururangan,  Suchin and Li, Shen and Farhadi, Ali and Schmidt, Ludwig and Rabbat, Michael and Morcos, Ari S.},<br>
+                    keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},<br>
+                    title = {lo-fi: distributed fine-tuning without communication},<br>
+                    publisher = {arXiv},<br>
+                    year = {2022},<br>
+                  } <br>
+            </div>
+        </span>
+        <div>
+            <img src="/static/images/publication_images/lofi.png" class="pull-right pub-image">
         </div>
 
     </div>
