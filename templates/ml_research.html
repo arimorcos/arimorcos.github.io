@@ -32,6 +32,31 @@
                 Using rigorous, scientific methods (often inspired by neuroscience), my goal is to better understand the solutions used by DNNs and, perhaps most critically, their bottlenecks, so that we can intelligently design machine learning systems.
             </p>
 
+            <div class="research_container">
+                <!-- <div class="image_div">
+                    <img src="/static/images/ml_research_images/best_worst_gen_error.png" class="pull-left generalization_image">
+                </div> -->
+                <div>
+                    <h2 class="text-center">
+                        Understanding Data
+                    </h2>
+                        <p>
+                            The incredible progress of the last few years has been driven by the dramatic increase in both parameters and datasets enabled by the success of self-supervised learning. My current primary focus is on understanding the properties of data which drive generalizable representations and how we can use these properties to guide better data design, enabling us to train better models, faster and and on less data.
+                        </p>
+                        <div class="paper_example">
+                            <h4>
+                                <a href="../publications/#beyond_neural_scaling" target="_blank">Beyond neural scaling laws: beating power law scaling via data pruning</a></li>
+                            </h4>
+                        </div>
+                        
+                        <p>
+                            In one recent study, we used <b><a href="../publications/#single_directions" target="_blank">neuron ablation</a></b> to demonstrate that networks which <b>generalize well are much more robust to perturbation</b> of their hidden state than those which generalize poorly in a variety of contexts. We also showed that, though it may seem counterintuitive, dropout does not in fact regularize for this, yet batch normalization does. 
+                        </p>
+                        <p>
+                            We recently extended this work, using <b><a href="../publications/#representational_similarity" target="_blank">Canonical Correlation Analysis (CCA)</a></b> to measure the similarity of networks with different random initializations. We found that <b>networks which generalize converge to more similar solutions than those which memorize</b>, and that wider networks converge to more similar solutions than narrow networks. Moreover, we found that across these contexts, <b>the similarity of converged solutions was a strong predictor of test accuracy</b>, despite the fact that it was computed based only on the training set.
+                        </p>
+                </div>
+            </div>    
         <div class="research_container">
             <div class="image_div">
                 <img src="/static/images/ml_research_images/best_worst_gen_error.png" class="pull-left generalization_image">
